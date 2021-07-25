@@ -1,0 +1,1385 @@
+/*
+	========================================
+	  		Responsive CSS FOR Bellevue
+	======================================== 
+*/
+
+@media (min-width: 1400px){
+	.container{
+	  max-width: 1140px;
+	}
+}
+
+@media (max-width: 1600px){
+	.thmv-whats-nearby .thmv-nearby-img{
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 1500px){
+	.thmv-service.thmv-service-2{
+		padding: 100px 0px 120px;
+	}
+	.thmv-whats-nearby {
+    	margin: -70px 0px 60px;
+	}
+	.thmv-whats-nearby .thmv-list-info .list-group-item{
+		padding:12px 0px;
+	}
+	.thmv-whats-nearby .thmv-list-info,
+	.thmv-whats-nearby .thmv-list-info h2 {
+    	margin-bottom: 15px;
+	}
+}
+@media (max-width: 1300px){
+	.thmv-whats-nearby .thmv-list-info .list-group-item{
+		padding:8px 0px;
+		font-size: 16px;
+	}
+	.thmv-whats-nearby .thmv-list-info .list-group-item span{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	.thmv-leftmenu-option{
+		position: relative;
+		margin-top: 20px;
+	}
+	.thmv-offcanvas-body{
+      overflow-y: scroll;
+    }
+	.thmv-hostel-features{
+		padding: 100px 30px;
+	}
+	.thmv-yello-bg:before{
+		content:"";
+		left: 0;
+	}
+	.thmv-whats-nearby .thmv-list-info {
+    	max-width: 480px;
+	}
+	.thmv-whats-nearby .thmv-nearby-img{
+		padding: 0;
+	}
+	.thmv-whats-nearby .thmv-list-info, .thmv-whats-nearby .thmv-list-info h2{
+		margin-bottom: 5px;
+	}
+	.thmv-listing-row{
+		align-items:center;
+	}
+	.thmv-listing-row  .thmv-listing-info .thmv-dashed-separator{
+	    margin: 15px 0;
+	}
+	.thmv-listing-row  .thmv-listing-info h3{
+		font-size: 30px;
+    	line-height: 33px;
+	}
+	.thmv-availability-booking .thmv-tour-row .form-group{
+		width: 200px;
+	}
+	/* contact page style */
+	.thmv-contact-col {
+	    width: 455px;
+	    padding-top: 40px;
+	}
+	/* our menu style */
+	.thmv-menu-service {
+    	padding: 100px 30px 150px;
+	}
+	.thmv-menu-tabs .thmv-yello-bg:before{
+	    width: 570px;
+	    height: 550px;
+	}
+	.thmv-menu-tabs .nav-pills .nav-link.active:after{
+		width: 20%;
+		right: -24px;
+	}
+	
+}
+@media only screen and (max-width: 1024px){
+	.thmv-whats-nearby {
+    	margin: -50px 0px 60px;
+	}
+}
+@media only screen and (max-width: 991px){
+	body,
+	.thmv-whats-nearby .thmv-list-info .list-group-item,
+	.thmv-whats-nearby .thmv-list-info .list-group-item span{
+		font-size: 18px;
+      	line-height: 34px;
+	}
+	.slick-image-center .slick-list,
+	.slick-image-single .slick-list{
+		padding:0 !important;
+		height:450px;
+	}
+	.slick-image-center .slick-slide img,
+	.slick-image-single .slick-list img{
+		height: 450px;
+    	object-fit: cover;
+	}
+	.slick-image-center .slick-slide{
+		margin: 0;
+	}
+	.slick-slider .slick-prev{
+		left: 8.5%
+	}
+	.slick-slider .slick-next{
+		right: 8.5%
+	}
+	.slick-image-single.slick-slider .slick-prev {
+    	transform: translate(-50%, -50%);
+	}
+	.slick-image-single.slick-slider .slick-next {
+    	transform: translate(50%, -50%);
+	}
+	.br-none br,
+	.thmv-top-nav .navbar-nav.thmv-menu,
+	.thmv-search-form-tour .border-right:after{
+		display: none !important;
+	}
+	/*====== header nav bar ======*/
+	
+	/*====== header-datepicker ======*/
+	.thmv-tour-row{
+		background:transparent;
+	}
+	.thmv-date-col,
+    .thmv-guest-col,
+    .thmv-procode-col,
+    .thmv-promo-box .form-group{
+    	width:100%;
+    	background: #FFFFFF;
+    	margin-bottom: 10px;
+    }
+    .form-select-guests .dropdown-menu{
+    	border: 1px solid #171818;
+    }
+    .thmv-procode-col{
+    	background:transparent;
+    	padding: 0;
+    }
+    .thmv-promo-box{
+    	flex-flow: column;
+    	width: 100%;
+    }
+    .thmv-tour-searchtext{
+    	display: block;
+    }
+    .thmv-tour-row .form-group {
+    	padding: 10px 20px 23px 20px;
+	}	
+    .thmv-tour-row .form-group.thmv-promo-code{
+    	padding: 10px 30px 20px;
+    }
+    .thmv-tour-row .form-group.thmv-promo-code input,
+    .thmv-tour-row .form-group.thmv-promo-code input::placeholder{
+    	font-size: 18px;
+    	font-weight: 600;
+    	line-height: 21px;
+    	color:#000000;
+    	opacity:1;
+    }
+	.thmv-tour-search{
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		min-width:100%;
+		font-weight:600;
+	}
+	.thmv-tour-search i{
+		margin-right: 8px;
+	}
+	/* banner section style */
+	.thmv-main-banner {
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    min-height: 990px;
+	}
+	.thmv-main-banner .thmv-search-form-tour{
+		padding: 0px 35px;
+	}
+	.thmv-banner-title{
+		padding-top: 140px;
+	}
+	.thmv-banner-title p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.thmv-hostel-features{
+		padding: 70px 0px 10px;
+	}
+	.thmv-hostel-features .thmv-hostel-service-info{
+		margin-bottom: 70px;
+		max-width: 100%;
+	}
+	.thmv-yello-bg:before{
+		top: 0;
+	    width: 100%;
+	    height: 48%;
+	}
+	.thmv-hostel-features .thmv-hostel-service .thmv-service-row {
+    	margin:auto 10px;
+	}
+	.thmv-hostel-features .thmv-hostel-service{
+		margin: 70px 0px 0px;
+	}
+	.thmv-service-row .thmv-service-box{
+	    padding: 0px 50px;
+	    margin-bottom: 70px;
+	}
+	.thmv-covid{
+		padding: 15px 0px;
+		background: #F1F1F1;
+	}
+	.thmv-travelers {
+    	padding: 70px 0px 50px;
+	}
+	.thmv-travelers .thmv-travelers-title{
+		margin-bottom: 20px;
+	}
+	.thmv-travelers .thmv-travelers-info{
+		float: none;
+		margin-bottom: 30px;
+	}
+	.thmv-video-sec{
+		padding:20px 0px 30px;
+	}
+	.thmv-video-sec .container{
+		max-width:100%;
+	}
+	.thmv-video-sec .thmv-video-modal{
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.thmv-video-sec .modal-dialog {
+    	max-width: 600px;
+	}
+	.thmv-video-text{
+		padding:0px 20px;	
+	}
+	.thmv-service{
+		padding: 40px 0px 0px;
+	}
+	.thmv-service .thmv-service-row{
+		padding:0px 10px;
+		margin: 0;
+	}
+	.thmv-service .thmv-sec-title h2{
+		padding-bottom: 50px;
+	}
+	.thmv-best-solution,
+	.thmv-whats-nearby .thmv-nearby-img{
+		padding:0px 0px 20px;
+	}
+	.thmv-best-solution .container{
+		max-width:100%;
+		padding: 0;
+		background-position:left center;
+	}
+	.thmv-best-solution .thmv-best-solution-row{
+		background-position: left center;
+	}
+	.thmv-best-solution .thmv-solution-info{
+		margin: 80px 35px;
+	}
+	.thmv-best-solution .thmv-solution-info .thmv-sec-info,
+	.thmv-listing-row .thmv-listing-info h3,
+	.thmv-bredcom p,
+	.thmv-blog-row .thmv-blog-info .thmv-blog-date,
+	.thmv-blog-row .thmv-blog-info .thmv-blog-text,
+	.thmv-groups-info-text,
+	.thmv-contact-col .thmv-contact-title p,
+	.thmv-groups-features .thmv-hostel-service-info .thmv-hostel-info-text p,
+	.thmv-menu-tabs .thmv-tab-info p,
+	.thmv-creation-timelines .thmv-timelines-info .thmv-timelines-text{
+		font-size: 16px;
+		line-height: 30.4px;
+	}
+	.thmv-talk-to-us{
+		padding: 60px 20px 30px;
+	}
+	.thmv-talk-to-us .thmv-talk-to-info {
+		margin-bottom: 60px;
+	}
+	.thmv-talk-to-us .thmv-talk-to-info .thmv-brand-logos{
+		padding:0px 15px;
+	}
+	.thmv-talk-to-us .thmv-talk-to-progress .thmv-progress-info p{
+		margin-bottom: 15px;
+	}
+	.thmv-map{
+		padding:30px 0px 0px;
+	}
+	.thmv-footer {
+	    padding: 70px 10px 50px
+	}
+	.thmv-footer .thmv-subscription{
+		margin-top:50px;
+	}
+	.thmv-footer-bottom{
+		padding: 30px;
+	}
+	.thmv-footer-bottom .thmv-footer-menu,
+	.thmv-footer-bottom .thmv-footer-link,
+	.thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title {
+		margin: 5px 0px;
+	}
+
+	/*====== home page 2 ======*/
+	.thmv-traveler-card {
+    	padding: 30px 0px 50px;
+	}
+	.thmv-travelers.thmv-home-two{
+		padding: 70px 0px 50px
+	}
+	.thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title{
+		margin-bottom: 5px;
+	}
+	.thmv-service.thmv-service-2{
+		padding:70px 0px 10px;
+	}
+	.thmv-whats-nearby,
+	.thmv-booking-process{
+		margin:0px 0px 0px;
+	}
+	.thmv-whats-nearby .thmv-list-info {
+    	max-width: 100%;
+    	margin: 40px auto 0px;
+    	padding: 0px 35px;
+	}
+	.thmv-traveler-card.thmv-our-staff{
+		padding: 80px 0px 40px;
+    	margin: 40px 0px 0px;
+	}
+	.thmv-our-staff .thmv-section-title h2{
+		margin-bottom: 30px;
+	}
+	/*====== listing v1 =======*/
+	.thmv-liststyle-v1, .thmv-liststyle-v2{
+		padding-bottom: 80px;
+	}
+	.thmv-main-banner.thmv-top-half-from{
+		min-height: 560px;
+		align-items: flex-end;
+	}
+	.thmv-main-banner.thmv-top-half-from .thmv-search-form-tour{
+		margin-bottom: 30px;
+	}
+	.thmv-bredcom{
+		padding: 50px 10px 40px;
+	}
+	.thmv-listing-row .thmv-listing-info{
+		margin-top:40px;
+	}
+	.thmv-listing-row .thmv-listing-info .thmv-dashed-separator {
+    	margin: 25px 0;
+	}
+	.thmv-listing-row .thmv-listing-info h3 {
+    	font-size: 34px;
+    	line-height: 44.2px;
+	}
+	.thmv-listing-info .thmv-facility ul{
+		margin:25px 0px;
+	}
+	/*====== listing v2 ======*/
+	.thmv-booking-process .thmv-advance-booking{
+		padding:0px 20px;
+	}
+	.thmv-booking-process .thmv-advance-booking .thmv-check-availability a {
+	    padding: 18px 20px;
+	    margin: 15px 0px 5px;
+	    width: 100%;
+	}
+	.thmv-tour-row .form-group.thmv-promo-code {
+    	padding: 10px 30px 10px;
+	}
+	.thmv-availability-booking .thmv-search-form-tour .thmv-guest-col,
+	.thmv-availability-booking .thmv-search-form-tour .thmv-procode-col {
+    	width: 50%;
+	}
+	.thmv-availability-booking .thmv-search-form-tour .thmv-promo-box{
+		align-items:flex-start;
+	}
+	.thmv-availability-booking .thmv-search-form-tour .border-right:after{
+		display: block !important;
+	}
+	/*====== check-availability style ======*/
+	.thmv-bredcom h2{
+		line-height:34px;
+	}
+	.thmv-availability-v1 .slick-slider .slick-prev {
+    	left: 30px;
+	}
+	.thmv-availability-v1 .slick-slider .slick-next {
+    	right: 30px;
+	}
+	.thmv-availability-datepicker .thmv-sec-title {
+    	padding: 50px 10px 10px;
+	}
+	.thmv-availability-datepicker .thmv-sec-title{
+		font-size: 34px;
+	}
+	.thmv-check-available .datepick-month-row{
+		padding:0px 0px 30px;
+	}
+	.thmv-check-available .datepick-nav,
+	.thmv-availability-datepicker .thmv-check-available .is-datepick{
+		padding: 0;
+	}
+	.thmv-availability-booking .thmv-book-now,
+	.thmv-availability-datepicker .thmv-check-available{
+		margin:0 auto;
+	}
+	.thmv-availability-booking .thmv-book-now .thmv-book-price{
+		width:50%;
+	}
+	.thmv-availability-booking{
+		padding: 50px 0px 80px;
+	}
+	.thmv-availability-booking .thmv-tour-row {
+    	max-width: 100%;
+	}
+	.thmv-check-available .datepick-month-row .datepick-month.first {
+        margin: 0px 10px 0px 0px;
+  	}
+  	.thmv-check-available .datepick-month-row .datepick-month.last {
+        margin: 0px 0px 0px 10px;
+   	}
+   	.thmv-availability-datepicker .thmv-sec-title h4 {
+	    margin-bottom: 40px;
+	}
+	/*====== check-availability style v2 ======*/
+	.thmv-slick-img-slider.thmv-availability-v1,
+	.thmv-slick-img-slider.thmv-availability-v2{
+		padding:0px 40px;
+	}
+	.thmv-liststyle-v2.thmv-availability-v2{
+		margin: 30px 35px 40px;
+	}
+	.thmv-availability-v2 .thmv-check-available{
+		margin: 0;
+	}
+	/* ====== single-page ======= */
+	.thmv-single-page-slick .thmv-slick-img-slider{
+		padding:20px 0px 10px;
+	}
+	.thmv-single-info-text {
+    	padding: 10px 10px 70px;
+	}
+	.thmv-service-2.thmv-single-service{
+		margin-bottom: 10px;
+	}
+	/* ====== gallery style ======= */
+	.thmv-img-gallery {
+    	padding: 50px 10px;
+	}
+	/* =======covid 19 style ====== */
+	.thmv-covid-info-text,
+	.thmv-our-menu,
+	.thmv-nearby-listing{
+    	padding: 50px 10px;
+	}
+	.thmv-questions .thmv-form-box {
+	    padding: 50px 50px;
+	    max-width:100%;
+	}
+	.thmv-questions .thmv-form-info{
+		text-align:center;
+	}
+	.thmv-questions .thmv-question-form{
+		width:450px;
+		margin:0 auto;
+	}
+	.thmv-questions .thmv-question-form .btn{
+		margin-top: 20px;
+		width:100%;
+		float:none;
+	}
+	.thmv-questions .thmv-form-info h2::after{
+		left: -40px;
+	}
+	/* ======= our blog v1 style ====== */
+	.thmv-blog{
+		padding: 60px 10px 70px;
+	}
+
+    .thmv-blog-row .thmv-blog-info{
+        margin-top:30px;
+        padding:0px 12px;
+    }
+	.thmv-blog-row .thmv-blog-info a.learn-more-btn1{
+		margin-top: 20px;
+	}
+	/*======== our blog v2 style ======*/
+	.thmv-blog-v2 .thmv-blog-row:nth-child(even) .thmv-blog-info{
+		padding:0px 12px;
+	}
+	/* ============ offer style ============ */
+	.thmv-offers .thmv-blog-info h3 {
+        font-size: 34px;
+        line-height:44.2px;
+    }
+	.thmv-offers .thmv-blog-row .thmv-blog-info{
+		margin-top: 40px;
+	}
+	.thmv-offers .thmv-blog-row .thmv-blog-info .btn-style-three{
+		width: 100%;
+	}
+	.thmv-blog-v2.thmv-offers .thmv-blog-row:nth-child(even) .thmv-blog-info {
+    	padding: 0px 12px 20px;
+	}
+	.thmv-offers .thmv-questions .thmv-blck-bg{
+        margin-top: 60px;
+    }
+    /* ====== FAQ style ====== */
+    .thmv-faqs {
+    	padding: 20px 10px 50px;
+	}
+    .thmv-faqs .accordion-item::before{
+    	max-width: 635px;
+    }
+    /* ======= groups style ======== */
+    .thmv-groups-banner{
+    	padding: 0px 25px 20px;
+    	min-height: 550px;
+    }
+    .thmv-groups-features .thmv-hostel-service-info{
+    	margin-bottom: 0px;
+    }
+    .thmv-groups-features,
+    .thmv-groups-service{
+    	padding: 60px 0px 0px;
+    }
+    /* ======= about su style ====== */
+    .thmv-about-banner,
+    .thmv-reviews-banner{
+    	min-height:450px;
+    }
+    .thmv-about-features {
+    	padding: 10px 0px 10px;
+	}
+	.thmv-about-video {
+	    padding: 20px 0px 70px;
+	}
+	.thmv-about-talk-to-us {
+    	padding: 60px 20px 20px;
+	}
+	/* ======= our reviews ======= */
+	.thmv-reviews-banner{
+		margin-top: 0
+	}
+	/* ======= Our Staff Style ====== */
+	.thmv-our-all-staff {
+    	padding: 70px 0px 40px;
+	}
+	/* ======== contact style ======= */
+	.thmv-contact-col {
+	    margin-left: 25px;
+	    padding: 30px 10px 50px;
+	}
+	.thmv-contact-col .thmv-contact-title {
+    	padding-bottom: 10px;
+	}	
+	.thmv-contact-col .thmv-social-contact h5{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	/* ======== our reviews ======== */
+	.thmv-our-reviews {
+    	padding: 35px 15px 20px;
+	}
+	.thmv-user-review{
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	/* ========== nearby listing =========== */
+	.thmv-nearby-listing .thmv-menu-item{
+		margin-bottom: 50px;
+	}
+	.thmv-nearby-listing .thmv-menu-item:last-child{
+		margin-bottom: 0;
+	}
+	.thmv-covid-info-text, .thmv-our-menu, .thmv-nearby-listing {
+    	padding: 50px 10px;
+	}
+	.thmv-creation-timelines .thmv-timelines-info{
+		margin: 30px 0px 20px;
+	}
+	.thmv-creation-timelines .thmv-timelines-info .thmv-timelines-text,
+	.thmv-creation-timelines .thmv-timelines-info h3 {
+    	padding-top: 15px;
+	}
+	.thmv-creation-timelines .thmv-timeline-three-col{
+		margin-bottom: 30px;
+	}
+	.thmv-creation-timelines {
+	    padding: 90px 10px 50px;
+	}
+	/* ======= our menu ====== */
+	.thmv-menu-service{
+		padding:10px 0px 70px;
+	}
+	.thmv-menu-tabs .nav-pills .nav-link{
+		width:50%;
+	}
+	.thmv-menu-tabs .thmv-yello-bg:before{
+		width:95%;
+		left: -5%;
+    	top: -5%;
+	}
+	.thmv-menu-tabs .nav-pills .nav-link.active:after {
+    	width: 22%;
+    	right: 0;
+	}
+	.thmv-menu-tabs .tab-content{
+		padding: 190px 0px 65px;
+	}
+	.thmv-menu-tabs .nav-pills{
+		padding-top: 30px;
+	}
+	.thmv-menu-tabs .thmv-tab-info{
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+	.thmv-menu-tabs .thmv-tab-info>div,
+	.thmv-menu-form{
+		padding: 0;
+	}
+	.thmv-menu-tabs .tab-content .thmv-tab-info:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (max-width:767px){
+	body,
+	.thmv-banner-title p,
+	.thmv-traveler-card.thmv-our-staff .thmv-cards .card .thmv-card-title,
+	.thmv-traveler-card.thmv-our-staff .thmv-cards .card .thmv-card-post,
+	.thmv-tour-row .form-group.thmv-promo-code input,
+	.thmv-tour-row .form-group.thmv-promo-code input::placeholder,
+	.thmv-availability-datepicker .thmv-check-available .datepick-month-header select,
+	.thmv-faqs .accordion-item .accordion-button h5,
+	.thmv-contact-col .thmv-contact-text p,
+	.thmv-contact-col .thmv-social-contact h5,
+	.thmv-user-review .thmv-user-info h5{
+		font-size: 16px;
+		line-height:26.6px;
+	}
+	h1{
+		font-size: 30px;
+		line-height: 39px;
+	}
+	h2,
+	h4,
+	h5,
+	.thmv-service .thmv-sec-title h2,
+	.thmv-blog-row .thmv-blog-info .thmv-blog-title,
+	.thmv-creation-timelines .thmv-timelines-info h3{ 
+      font-size: 22px;
+      line-height:28.6px;
+    }
+
+    .btn-style-one,
+    .btn-style-two,
+    .btn-style-one-wight,
+    .btn-style-three{
+	    font-size: 16px;
+	    line-height: 20.8px;
+	    padding: 11px 11px;
+    }
+    .slick-image-center .slick-list,
+    .slick-image-single .slick-list{
+		padding:0 !important;
+		height:300px;
+	}
+	.slick-image-center .slick-slide img,
+	.slick-image-single .slick-list img{
+		width: 100%;
+		height: 300px;
+		display: block;
+    	object-fit: cover;
+	}
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next{
+    	width:40px;
+    	height:40px;
+    }
+    .slick-prev:before,
+    .slick-next:before{
+    	line-height: 40px;
+    	font-size: 12px;
+    }
+    .slick-slider .slick-prev{
+    	left: 7%;
+    }
+    .slick-slider .slick-next{
+    	right: 7%;
+    }
+	/*====== header style ======*/
+	.thmv-top-nav .thmv-menu-right .navbar-nav,
+	.thmv-availability-booking .thmv-search-form-tour .border-right:after{
+		display: none !important;
+	}
+	.thmv-top-nav nav{
+		padding:15px 10px;
+	}
+	.thmv-top-nav .navbar-brand{
+		margin:0px 15px;
+	}
+	/*====== header-datepicker ======*/
+	.thmv-main-banner .thmv-search-form-tour {
+    	padding: 0 10px;
+	}
+	.thmv-tour-row .form-group {
+    	padding: 8px 0px 15px;
+	}
+	.thmv-tour-row .form-group.thmv-promo-code {
+	    padding: 8px 12px 15px;
+	}
+	.thmv-tour-search{
+		height: 58px;
+	}
+	/*====== banner style ======*/
+	.thmv-main-banner{
+		min-height: 650px;
+	}
+	.thmv-banner-title {
+    	padding-top: 60px;
+	}
+	.thmv-banner-title p{
+		margin-top: 10px;
+	}
+	.thmv-tour-row{
+		margin: 40px auto 0;
+	}
+
+	/*====== hostel-features ======*/
+	.thmv-hostel-features {
+    	padding: 60px 10px 20px;
+	}
+	.thmv-hostel-features .thmv-hostel-service-info{
+		margin-bottom: 40px;
+	}
+	.thmv-yello-bg:before {
+	    height: 37%;
+	}	
+	.thmv-service-row .thmv-service-box{
+		padding: 0;
+		margin-bottom: 40px;
+	}	
+	.thmv-covid {
+	    padding: 20px 0px;
+	    background: #F1F1F1;
+	}
+	.thmv-covid .container{
+		padding: 0
+	}
+	.thmv-covid h4,
+	.thmv-covid p{
+		margin-bottom: 10px	
+	}
+	.thmv-covid p,
+	.thmv-travelers .thmv-travelers-info,
+	.thmv-video-text p,
+	.thmv-traveler-card .thmv-section-title p,
+	.thmv-whats-nearby .thmv-list-info .list-group-item,
+	.thmv-whats-nearby .thmv-list-info .list-group-item span,
+	.thmv-footer-bottom .thmv-footer-menu li,
+	.thmv-footer-bottom .thmv-footer-menu li a,
+	.thmv-footer-bottom .thmv-footer-link li a,
+	.thmv-listing-row .thmv-listing-info p,
+	.thmv-covid-info-text p,
+	.thmv-blog-row .thmv-blog-info .thmv-blog-date,
+	.thmv-blog-row .thmv-blog-info .thmv-blog-text,
+	.thmv-offers .thmv-blog-info .thmv-offer li,
+	.thmv-faqs .accordion-item .accordion-body p,
+	.thmv-user-review .thmv-user-info p,
+	.thmv-our-reviews .thmv-user-review-text p,
+	.thmv-menu-tabs .tab-content .thmv-tab-info p{
+		font-size: 14px;
+	}
+	.thmv-travelers,
+	.thmv-service.thmv-service-2{
+		padding: 60px 10px 30px;
+	}
+	
+	.thmv-traveler-card .thmv-cards .card .card-body{
+		padding: 10px 0px 20px;
+	}
+	.thmv-video-sec .thmv-video-modal{
+		margin-bottom: 30px;
+	}
+	.thmv-video-sec .thmv-play-btn{
+	    width: 60px;
+		height: 60px;
+	}
+	.thmv-video-sec .thmv-play-btn i{
+		font-size: 20px;
+		line-height: 50px;
+	}
+	.thmv-video-text {
+		padding: 0px 60px;
+	}
+	.thmv-service {
+    	padding: 20px 10px 10px;
+	}
+	.thmv-service .thmv-sec-title h2{
+		padding-bottom: 40px;
+	}
+	.thmv-best-solution .thmv-solution-info {
+    	margin: 100px 10px;
+	}
+	.thmv-traveler-card .thmv-section-title{
+		margin-bottom: 40px;
+	}
+	.thmv-travelers .thmv-travelers-title,
+	.thmv-video-text h2,
+	.thmv-best-solution .thmv-solution-info .thmv-sec-sub-title,
+	.thmv-best-solution .thmv-solution-info .thmv-sec-title,
+	.thmv-talk-to-us .thmv-talk-to-info .thmv-we-are-on h6{
+		margin-bottom: 15px;
+	}
+	.thmv-talk-to-us{
+		padding: 50px 10px 10px;
+	}
+	.thmv-talk-to-us .thmv-talk-to-info .thmv-brand-logos{
+		padding: 0px;		
+	}
+	.thmv-talk-to-us .thmv-talk-to-progress .thmv-progress-info p,
+	.thmv-traveler-card .thmv-section-title h2,
+	.thmv-whats-nearby .thmv-list-info,
+	.thmv-whats-nearby .thmv-list-info h2{
+		margin-bottom: 10px;
+	}
+	.thmv-footer{
+    	padding: 50px 10px 40px;
+	}
+	.thmv-footer footer .thmv-contact-us {
+    	flex-flow: column;
+	}
+	.thmv-footer .thmv-contact-us .thmv-social li{
+		display: inline-block;
+	}
+	.thmv-footer footer .thmv-contact-us .thmv-soci,
+	.thmv-footer footer .thmv-contact-us .thmv-address{
+		width:100%;
+		margin:10px 0 5px;
+	}
+	.thmv-footer .thmv-subscription{
+    	margin-top: 30px;
+	}
+	.thmv-subscription .input-group button{
+		width: 51px;
+    	height: 51px;
+	}
+	.thmv-footer .thmv-subscription h5{
+		margin-bottom:8px;
+	}
+	.thmv-footer .thmv-subscription .input-group{
+		margin-top: 10px;
+	}
+	.thmv-footer .thmv-social{
+		margin-right: auto;
+	}
+	.thmv-footer-bottom{
+		padding:30px 25px;
+	}
+	 .thmv-traveler-card.thmv-our-staff .thmv-section-title h2{
+	 	margin-bottom: 20px;
+	 }
+
+	/*========= home page 2 =========*/
+	.thmv-traveler-card {
+    	padding: 30px 10px 20px;
+	}
+	.thmv-travelers.thmv-home-two{
+		padding: 50px 0px 30px
+	}
+	.thmv-traveler-card .thmv-cards .card .card-body {
+    	padding: 20px 0px 30px;
+	}
+	.thmv-whats-nearby .thmv-nearby-img{
+		height: 400px;
+	}
+	.thmv-whats-nearby .thmv-nearby-img img{
+		object-fit:cover;
+		height: 380px;
+	}
+	.thmv-whats-nearby .thmv-list-info .list-group-item{
+		padding: 15px 0px;
+	}
+	.thmv-whats-nearby .thmv-list-info{
+		margin: 5px auto 0px;
+    	padding: 0px 20px;
+	}
+	.thmv-talk-to-us .thmv-talk-to-info{
+		margin-bottom: 30px;
+	}
+	.thmv-traveler-card.thmv-our-staff {
+    	padding: 60px 10px 15px;
+    	margin: 30px 0px 0px;
+	}
+	/*========= listing style 1 =========*/
+	.thmv-liststyle-v1{
+		padding-bottom: 60px;
+	}
+	.thmv-bredcom {
+    	padding: 30px 10px 30px;
+	}
+	.thmv-listing-row{
+		padding:0px 10px ;
+	}
+	.thmv-main-banner.thmv-top-half-from {
+    	min-height: 435px;
+	}
+	.thmv-main-banner.thmv-top-half-from .thmv-search-form-tour {
+    	margin-bottom: 15px;
+	}
+	.thmv-listing-row {
+    	margin-bottom: 40px;
+	}
+    .slick-listing .slick-list{
+		padding:0 !important;
+		height:250px;
+	}
+	.slick-listing .slick-list img{
+		width: 100%;
+		height: 250px;
+		display: block;
+    	object-fit: cover;
+	}
+	.thmv-listing-row .thmv-listing-info h3,
+	.thmv-availability-booking .thmv-book-now .thmv-book-price h5{
+		font-size: 18px;
+		font-weight: 700;
+		line-height:23.4px;
+	}
+	.thmv-listing-row .thmv-listing-info,
+	.thmv-booking-process{
+    	margin-top: 25px;
+	}
+	.thmv-listing-row .thmv-listing-info .thmv-dashed-separator {
+    	margin: 20px 0;
+	}
+	.thmv-listing-info .thmv-facility ul{
+		width:280px;
+	}
+	/*========= list style v2 =========*/
+	.thmv-liststyle-v2{
+		padding-bottom: 10px;
+	}
+	.thmv-booking-process{
+		margin-top: 20px;
+	}
+	.thmv-booking-process .thmv-advance-booking ul {
+	    padding: 20px;
+	    display: flex;
+	    justify-content: center;
+	    flex-flow: column;
+	}
+	.thmv-booking-process .thmv-advance-booking ul li,
+	.thmv-booking-process .thmv-advance-booking .thmv-check-availability a{
+		margin:5px 0px;
+	}
+	.thmv-advance-booking .thmv-cancellation,
+	.thmv-advance-booking .thmv-booknow-text{
+		margin-bottom: 10px;
+	}
+	.thmv-liststyle-v2 .thmv-liststyle-v2-items{
+    	padding-bottom: 30px;
+    	margin-bottom: 10px;
+	}
+
+
+	/*========= check-availability =========*/
+	.thmv-slick-img-slider.thmv-availability-v1,
+	.thmv-slick-img-slider.thmv-availability-v2 {
+    	padding: 0px 20px;
+	}
+	.thmv-bredcom.thmv-availability {
+    	padding: 90px 10px 15px;
+	}
+	.thmv-bredcom p{
+		line-height: 24px;
+	}
+	.thmv-slick-img-slider,
+	.thmv-availability-datepicker .thmv-sec-title{
+    	padding: 15px 20px 10px;
+	}
+	.thmv-availability-v1 .slick-slider .slick-prev {
+    	left: 20px;
+	}
+	.thmv-availability-v1 .slick-slider .slick-next {
+    	right: 20px;
+	}
+	.thmv-availability-datepicker .thmv-availability-booking{
+		padding: 40px 10px 10px;
+	}
+	.thmv-availability-booking .thmv-tour-row .form-group,
+	.thmv-availability-booking .thmv-search-form-tour .thmv-guest-col,
+	.thmv-availability-booking .thmv-search-form-tour .thmv-procode-col,
+	.thmv-availability-booking .thmv-book-now {
+    	width: 100%;
+	}
+	.thmv-availability-booking .thmv-search-form-tour .thmv-guest-col,
+	.thmv-availability-booking .thmv-search-form-tour .thmv-procode-col {
+    	border: 1px solid rgba(23, 24, 24, 0.1 );
+	}
+	.thmv-availability-booking .thmv-tour-row{
+		border: none;
+	}
+	.thmv-availability-booking .thmv-tour-row .form-group {
+    	padding: 15px 10px 20px 10px;
+	}
+	.thmv-availability-booking .thmv-search-form-tour .thmv-promo-code {
+	    padding: 13px 20px 15px;
+	    margin: 0;
+	}
+	.thmv-availability-booking .thmv-book-now .thmv-book-price,
+	.thmv-availability-booking .thmv-book-now-btn{
+		padding: 0;
+	}
+	.thmv-availability-booking .thmv-book-now .thmv-book-price h5.thmv-per-bad{
+		font-weight: 400;
+	}
+	.thmv-availability-booking .thmv-book-now-btn{
+		margin-bottom: 50px;
+	}
+	.thmv-availability-datepicker .thmv-sec-title h4 {
+    	margin: 10px 0px;
+	}
+	.thmv-check-available .datepick{
+		padding: 0px 10px;
+	}
+	.thmv-availability-two.thmv-availability-datepicker .thmv-sec-title h4{
+		padding-top: 20px;
+	}
+	/*===== gallery style =======*/
+	.thmv-img-gallery {
+    	padding: 10px 10px 40px;
+	}
+	.thmv-video-text {
+    	padding: 0px 10px;
+	}
+	.thmv-video-sec {
+    	padding: 50px 0px 30px;
+	}
+	/* ======== single page atyle ======= */
+	.thmv-single-info-text {
+    	padding: 20px 10px 50px;
+	}
+	.thmv-service-2.thmv-single-service {
+    	margin-bottom: 20px;
+	}
+	/* ======= gallery page ======== */
+	.thmv-gallery-video{
+		padding: 30px 0px 30px;
+	}
+	/* =======covid 19 style ====== */
+	.thmv-questions .thmv-form-box{
+		padding:50px 20px;
+	}
+	.thmv-questions .thmv-question-form{
+		width:100%;
+		margin:0 auto;
+	}	
+	.thmv-questions .thmv-form-info h2:after{
+		left: -34px;
+	}
+	.thmv-question-form {
+		margin:-10px;
+	}
+	.thmv-questions {
+    	padding: 0px 0px 60px;
+	}
+	.thmv-covid-info-text {
+    	padding: 50px 10px 30px;
+	}
+	/* ======= our blog v1 style ====== */
+	.thmv-blog-row .thmv-blog-info,
+	.thmv-offers .thmv-blog-row .thmv-blog-info {
+    	margin-top: 20px;
+	}
+	.thmv-blog{
+		padding: 30px 10px 60px;
+	}
+	.thmv-blog-row .thmv-blog-info a.learn-more-btn1{
+		margin-top: 15px;
+	}
+	.thmv-blog-row .thmv-blog-info .thmv-blog-text{
+		line-height:26.6px;
+	}
+	.thmv-pagination .pagination .page-item .page-link,
+    .thmv-pagination .pagination .page-item:first-child .page-link,
+    .thmv-pagination .pagination .page-item:last-child .page-link{
+    	width: 46px;
+    	height: 46px;
+    	line-height: 34px;
+    	font-size: 16px;
+    }
+    .thmv-pagination {
+	    margin-top: 40px;
+	}
+	.thmv-blog .thmv-blog-row {
+    	margin-bottom: 30px;
+	}
+	/* =========== offer style ========= */
+	.thmv-offers .thmv-blog-info .thmv-offer li{
+		line-height: 26.6px;
+	}
+	.thmv-offers .thmv-blog-info .thmv-offer ul {
+    	margin: 0px 0px 30px 20px;
+	}
+	.thmv-offers .thmv-blog-info .thmv-offer li::after{
+		left: -2%;
+	}
+	.thmv-blog-v2.thmv-offers .thmv-blog-row:nth-child(even) .thmv-blog-info {
+    	padding: 0px 12px 10px;
+	}
+	.thmv-offers .thmv-questions .thmv-blck-bg{
+        margin-top: 50px;
+    }
+    /* ====== FAQ style ====== */
+    .thmv-faqs {
+    	padding: 10px 10px 50px;
+	}
+	.thmv-faqs .accordion-header{
+		flex-flow: column;
+	}
+	.thmv-faqs .accordion-item .accordion-collapse .accordion-body{
+		padding: 0;
+	}
+	.thmv-faqs .accordion-item{
+		padding: 30px 0px 0px;
+	}
+	.thmv-faqs .accordion-item .accordion-button,
+	.thmv-faqs .accordion-item .accordion-collapse .accordion-body{
+		padding:15px 0 0px;
+	}
+	.thmv-faqs .accordion-item .accordion-button,
+	.thmv-faqs .accordion-item .accordion-collapse,
+	.thmv-faqs .accordion-item .accordion-collapse .accordion-body{
+		margin:0;
+	}
+	.thmv-faqs .accordion-item::before {
+    	max-width: 100%;
+	    left: 0;
+	}
+	.thmv-faqs .thmv-accordion-number{
+		margin-right: auto;
+		margin-top: 30px;
+	}
+	.thmv-faqs .accordion-item:first-child .accordion-header .thmv-accordion-number{
+		margin-top: 0;
+	}
+	.accordion-button::after{
+		position: absolute;
+	    top: -35px;
+	    right: 0;
+	}
+	/* ======= groups style ======== */
+	.thmv-groups-banner {
+	    padding: 0px 10px 20px;
+	    min-height: 530px;
+	    background-position: 8% center;
+	}
+	.thmv-groups-banner .thmv-solution-info .thmv-sent-rq-btn {
+    	margin-top: 20px;
+	}
+	.thmv-best-solution.thmv-groups-banner .thmv-solution-info{
+		padding-top:70px;
+	}
+	.thmv-groups-info-text,
+	.thmv-covid-info-text,
+	.thmv-our-menu,
+	.thmv-nearby-listing{
+    	padding: 30px 10px 30px;
+	}
+	.thmv-groups-features.thmv-hostel-features {
+    	padding: 50px 10px 20px;
+	}
+	.thmv-groups-features .thmv-hostel-service-info {
+    	margin-bottom: 0;
+	}
+	.thmv-groups-features.thmv-hostel-features .thmv-hostel-service{
+		margin: 40px 0px 0px;
+	}
+	.thmv-groups-features .thmv-service-row .thmv-service-box{
+		margin-bottom: 30px;
+	}
+	.thmv-groups-service{
+		padding: 50px 10px 10px;
+	}
+	.thmv-groups-service .thmv-sec-title h2 {
+    	padding-bottom: 30px;
+	}
+	.thmv-groups-service .thmv-service-row,
+	.thmv-about-features .thmv-hostel-service,
+	.thmv-menu-service .thmv-hostel-service{
+		margin: 0px 0px;
+	}
+	/* ======= about style ======= */
+	.thmv-about-banner {
+    	min-height: 200px;
+    	margin-top: 10px;
+	}
+	.thmv-about-features{
+		padding: 50px 10px 20px;
+	}
+	.thmv-about-video {
+    	padding: 40px 0px 50px;
+	}
+	/* ======= Our Staff Style ====== */
+	.thmv-our-all-staff {
+    	padding: 60px 10px 20px;
+	}
+	.thmv-traveler-card .thmv-cards .card .card-body {
+    	padding: 20px 0px 30px;
+	}
+	/* ======== contact style ======= */
+	.thmv-contact-col{
+		width: 100%;
+		margin: 0;
+		padding: 20px 10px 50px;
+	}
+	.thmv-contact-col .thmv-phone-numbre, .thmv-contact-col .thmv-phone-address {
+    	display: flex;
+    	margin: 5px 0px 20px;
+	}
+	.thmv-contact-col .thmv-phone-numbre .thmv-contact-text,
+	.thmv-contact-col .thmv-phone-address .thmv-contact-text {
+    	margin-left: 15px;
+	}
+	.thmv-contact-col .thmv-contact-icon i {
+    	font-size: 20px;
+	}
+	.thmv-contact-map {
+		min-height: 450px;
+	}
+
+	/* ========our reviews======== */
+	.thmv-our-reviews .thmv-user-review-text{
+		padding: 30px 0px; 
+	}
+	.thmv-our-reviews {
+    	padding: 30px 10px 15px;
+	}
+	.thmv-user-review img {
+    	width: 75px;
+	}
+	.thmv-reviews-sec{
+		padding: 30px 15px 0px;
+	}
+	.thmv-our-reviews:last-child {
+    	padding: 30px 0px 30px;
+	}
+	/* ========== what's nearby ============= */
+	.thmv-nearby-listing .thmv-menu-item {
+    	padding: 0px 12px;
+	}
+	.thmv-creation-timelines {
+    	padding: 60px 10px 30px;
+	}
+	/* ======= our menu ====== */
+	.thmv-menu-tabs{
+		position: relative
+	}
+	.thmv-menu-tabs .thmv-tabs-box{
+		position: unset !important;
+	}
+	.thmv-menu-tabs .thmv-yello-bg:before {
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	}
+	.thmv-menu-tabs .nav-pills .nav-link {
+    	width: 100%;
+	}
+	.thmv-menu-tabs .nav-pills {
+		margin: 0;
+		padding:60px 10px 50px;
+	}
+	.thmv-menu-tabs .nav-pills .nav-link,
+	.thmv-menu-tabs .tab-content .thmv-tab-info .thmv-tab-title h5{
+		font-size: 18px;
+		line-height: 23.4px;
+	}
+	.thmv-menu-tabs .thmv-yello-bg:before{
+		height: 380px;
+	}
+	.thmv-menu-tabs .tab-content {
+    	padding: 60px 10px 65px;
+	}
+	.thmv-menu-tabs .thmv-tab-info{
+		margin-bottom: 30px;
+	}
+}
+
+
+@media only screen and (max-width:575px){
+	.thmv-top-nav .navbar .container{
+		display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    align-content: space-around;
+	    justify-content: flex-start;
+	    align-items: center;
+	}
+	.thmv-top-nav .navbar .navbar-brand{
+		margin-right: auto;
+	}
+	.thmv-top-nav .navbar-collapse {
+		display: contents;
+	}
+	.thmv-top-nav .navbar-collapse .thmv-menu-right a.btn-style-two{
+		width: 135px;
+	}
+	.slick-image-center .slick-list,
+	.slick-image-single .slick-list{
+		padding:0 !important;
+		height:200px;
+	}
+	.slick-image-center .slick-slide img,
+	.slick-image-single .slick-list img{
+		width: 100%;
+		height: 200px;
+		display: block;
+    	object-fit: cover;
+	}
+	.btn-style-one,
+	.btn-style-one-wight,
+	.btn-style-three{
+		width: 100%;
+	}
+	.thmv-best-solution .thmv-solution-info .thmv-sent-rq-btn a{
+		width:150px;
+		margin-right: 6px;
+	}
+	.thmv-best-solution .thmv-solution-info .thmv-sent-rq-btn a:last-child{
+		margin-right: 0px;
+    	margin-top: 20px !important;
+	}
+	.thmv-talk-to-us .thmv-talk-to-info .thmv-we-are-on .thmv-brand-logos img{
+		margin: 10px 5px;
+    	width: 140px;
+	}
+	.thmv-listing-info .thmv-listing-check a{
+		display: block;
+		text-align: center;
+	}
+	.thmv-listing-row {
+    	margin-bottom: 30px;
+	}
+	.thmv-listing-info .thmv-listing-check a.btn-style-three{
+		margin:0px 0px 20px;
+	}
+	.thmv-offers .thmv-blog-info .thmv-offer li::after{
+		top: 10px;
+		left:-4%;
+    	transform: translate(-50% , 100%);
+	}
+}

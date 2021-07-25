@@ -1,0 +1,2182 @@
+/*==========================================
+      MASTER STYLESHEET FOR Bellevue
+==========================================*/
+
+/*==========================================
+     ||||| START TABLE OF CONTENT |||||
+==========================================
+
+Created by Bellevue Theme
+
+1.  Global styles
+2.  Header styles
+        - header-v2  styles
+3.  Main banner styles
+4.  Features Of Our Hostel Section Style
+5.  Covid Updates  styles
+6.  Focused on travelers styles
+7.  Slick image slider styles
+8.  Video Modal styles
+9.  Services Section Style
+10. Best Solution Section style
+11. Peoplle talk about us Section Style
+12. Our Location Section Style
+13. Footer Section Style
+14. Footer Bottom Section Style
+
+<<<=====>>> Home page 2 <<<=====>>>
+    - 1. Full width slick slider
+    - 2. Focused on travelers styles
+    - 3. Services Section style
+    - 4. What's nearby Section style
+    - 5. Our staff Section style
+    - 6. Map Section style
+
+<<<=====>>> Listing page V1 <<<=====>>>
+    - 1. Banner Section style start
+    - 2. List style v1
+
+<<<=====>>> Listing page V2 <<<=====>>>
+    - 1. List style v2
+
+<<<=====>>> Check Availability v1 page <<<=====>>>
+    - 1. bredcom style start
+    - 2. full width datepiker style start
+    - 3. listing booking
+
+<<<=====>>> Check Availability V2 page <<<=====>>>
+
+<<<=====>>> Singl page  <<<=====>>>
+
+<<<=====>>> gallery page <<<=====>>>
+
+<<<=====>>> Covid-19 page <<<=====>>>
+    - 1. questions from style
+
+<<<=====>>>  Our Blog page <<<=====>>>
+    - 1. pagination    
+
+<<<=====>>> our blog v2 page <<<=====>>>
+
+<<<=====>>> offer page <<<=====>>>
+
+<<<=====>>> FAQ page <<<=====>>>
+
+<<<=====>>> groups page <<<=====>>>
+
+<<<=====>>> about page <<<=====>>>
+
+<<<=====>>> our reviews page <<<=====>>>
+
+<<<=====>>>  Our Staff page <<<=====>>>
+
+<<<=====>>>  Our Staff v2 page <<<=====>>>
+
+<<<=====>>> Contact Form page <<<=====>>>
+    - 1. Contact Form Style  
+
+<<<=====>>> our menu page <<<=====>>>
+    - 1. tabs Style
+
+<<<=====>>> what's nearby page <<<=====>>>
+
+
+
+/*==========================================
+    |||||  END TABLE OF CONTENT  |||||
+==========================================*/
+/*  ==========================================================================
+    1. Global styles
+    ========================================================================== */
+    body {
+      font-family: 'Work Sans', sans-serif;
+      color:#171818;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.2px;
+    }
+    p,ul {
+      padding: 0;
+      margin: 0;
+    }
+    h1,h2,h3,h4,h5,h6{
+      margin:0;
+      padding: 0;
+      font-weight: 700;
+    }
+    h1{
+      font-size: 60px;
+      line-height: 78px;  
+    }
+    h2{
+      font-size: 40px;
+      line-height: 52px;
+    }
+    h3{
+      font-size: 34px;
+      line-height: 44px;
+    }
+    h4{
+      font-size: 30px;
+      line-height: 39px;
+    }
+    h5{
+      font-size: 24px;
+      line-height: 31px;
+    }
+    h6{
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none; 
+      display: inline-block; 
+      outline: none;
+      color:#171818;
+      -webkit-transition: .5s ease;
+      transition: .5s ease;
+    }
+    a:hover,a:focus,a:visited {
+      text-decoration: none; 
+      outline: none;
+      -webkit-transition: .5s ease;
+      transition: .5s ease;
+    }
+    p{
+        color: #171818;
+        opacity:0.5;
+    }
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+    button {
+      border:none; 
+      outline:none; 
+      box-shadow: none; 
+      display: block; 
+      padding: 0; 
+      background: transparent;
+    }
+    button:focus,
+    input:focus{
+      outline: none;
+      box-shadow:none !important;
+    }
+    input,textarea {
+      font-family: 'Work Sans', sans-serif;
+      display: block; 
+      font-size: 16px; 
+      line-height: 30px; 
+      outline: none; 
+      box-shadow: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    textarea{
+    	resize:none;
+    }
+    input:focus,
+    textarea:focus,
+    .form-select:focus,
+    .form-control:focus{
+      outline: none;
+      box-shadow: none;
+    }
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-top: 3px;
+      font-size: 16px;
+    }
+    .clear_fix { 
+      clear:both;
+    }
+    .clear_fix:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+    .float_left {
+      float: left;
+    }
+    .float_right {
+      float: right;
+    }    
+
+    /*background color*/
+    .thmv-bg-yellow{
+      background:#FBE946;
+    }
+    .thmv-bg-grey{
+      background:#F1F1F1;
+    }
+    .thmv-blck-bg{
+      background:#171818;      
+    }
+
+    /*btn style*/
+    .learn-more-btn1{
+      font-size: 16px;
+      line-height: 21px;
+      margin-top: 30px;
+      font-weight: 600;
+      transition:all 0.3s;
+    }
+    .learn-more-btn1 i{
+      font-size: 15px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .learn-more-btn1:hover{
+        color:#171818;
+        opacity:0.7;
+    }
+
+    /*Button Style One*/
+    .btn-style-one,
+    .btn-style-one-wight {
+      color: #171818;  
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: -0.2px;
+      font-weight: 600;
+      text-align: center;
+      background: transparent;
+      border: 1px solid #171818;
+      min-width: 173px;
+      padding: 17px 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      -webkit-transition: all 0.3s ease 0s;
+         -moz-transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+           -o-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s;
+    }
+    .btn-style-one:hover,
+    .btn-style-one-wight:hover{
+      background: #FBE946;
+      color:#171818;
+      border: 1px solid #FBE946;
+    }
+    .btn-style-one-wight{
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+    }
+
+    /*Button Style Two*/
+    .btn-style-two,
+    .btn-style-three {
+      color: #171818;  
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: -0.2px;
+      font-weight: 600;
+      text-align: center;
+      background: #ffffff;
+      width: 173px;
+      padding: 17px 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      -webkit-transition: all 0.3s ease 0s;
+         -moz-transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+           -o-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s;
+    }
+    .btn-style-two:hover,
+    .btn-style-three:hover{
+      background: #000000;
+      color:#ffffff;
+    }
+
+    /*Button Style Three*/
+    .btn-style-three {
+      background: #FBE946;
+    }
+
+    /* opacity */
+    .opacity-full,
+    .opacity-full p{
+        opacity:1;
+    }
+/*  ==========================================================================
+    2.        Header styles
+    ========================================================================== */
+    .navbar-toggler-icon {
+        width: auto;
+        height: 30px;
+    }
+    .navbar-toggler-icon i {
+        color: #fff;
+        font-size: 30px;
+    }
+    .thmv-transparent-menu{
+      position: absolute;
+      width: 100%;
+      top: 10px;
+    }
+    .fixed-top{
+      position: fixed;
+      background: #ffffff;
+      top: 0;
+      border-bottom: 1px solid #EBECEF;
+      transition:all 0.3s;
+    }
+    .thmv-navbar-light .navbar-brand {
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .thmv-navbar-light .nav-link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0 10px;
+    }
+    .thmv-menu-drop .form-select {
+        background: transparent;
+        font-size: 18px;
+        border: none;
+        color: #ffffff;
+        font-weight: 600;
+        background-image: none;
+        padding: 0 20px 0 0;
+    }
+    .thmv-menu-drop{
+      position: relative;      
+    }
+    .thmv-menu-drop:before {
+        content: "\f0d7";
+        position: absolute;
+        right: 15px;
+        top: 0;
+        width: 10px;
+        height: 5px;
+        transform: translate(0px, -50%);
+        pointer-events: none;
+        font-family: 'Font Awesome 5 Free';
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+    }
+    .thmv-menu-drop .form-select option {
+        color: #171818;
+        width: 150px;
+    }
+    .thmv-menu-right li {
+        position: relative;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+    .thmv-menu-right li:not(:last-child):after {
+        content: "";
+        position: absolute;
+        background: #fff;
+        height: 22px;
+        width: 1px;
+        top: 50%;
+        right: 0;
+        transform: translate(0px, -50%);
+    }
+    .fixed-top .navbar-toggler-icon i {
+        color: #171818;
+    }
+    .thmv-navbar-light.fixed-top .navbar-brand{
+      color: #171818;
+    }
+    .thmv-navbar-light.fixed-top .nav-link{
+      color: #171818;
+    }
+    .fixed-top .btn-style-two{
+      background: #171818;
+      color: #ffffff;
+    }
+    .fixed-top .btn-style-two:hover{
+        background: #fbe946;
+        color: #171818;
+    }
+    .fixed-top .thmv-menu-drop .form-select {
+        color: #171818;
+    }
+    .fixed-top .thmv-menu-right li:not(:last-child):after{
+        background: #171818;
+    }
+    .fixed-top .thmv-menu-drop:before {
+        color: #171818;
+    }
+    .thmv-offcanvas-header {
+        display: flex;
+        align-items: center;
+        padding: 35px 40px;
+    }
+    .thmv-offcanvas-title {
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 35px;
+    }
+    .thmv-menu-officon {
+        font-size: 30px;
+    }
+    .thmv-offcanvas-body{
+      padding: 0;
+    }
+    .thmv-leftside-menu li a {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23px;
+        display: block;
+        position: relative;
+        padding: 15px 40px;
+    }
+    .thmv-leftside-menu li a:hover{
+      color: #171818;
+
+    }
+    .thmv-leftside-menu li a:after {
+        content: "";
+        background: #FBE946;
+        width: 26px;
+        height: 8px;
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translate(0px, -50%);
+        transition: all 0.3s ease 0s;
+    }
+    .thmv-leftside-menu li a:hover:after {
+        left: 0;
+    }
+    .thmv-leftside-menu li .active:after{
+        left: 0;
+    }
+    .thmv-leftmenu-option {
+        position: absolute;
+        background: #FBE946;
+        width: 100%;
+        bottom: 0;
+        padding: 35px 40px;
+    }
+    .thmv-select-label {
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 0.32;
+        padding-bottom: 5px;
+    }
+    .thmv-offcanvas-menu-drop {
+        border-bottom: 1px solid rgb(51 57 86 / 10%);
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+    }
+    .thmv-offcanvas-menu-drop .form-select {
+        background-color: transparent;
+        background-image: url(../images/en-black-arrow.png);
+        border: none;
+        padding: 0;
+        font-weight: 600;
+        position: relative;
+        background-size: 12px 7px;
+    }
+/*  ==========================================================================
+            header v2  styles
+    ========================================================================== */
+    .thmv-header-v2 .thmv-transparent-menu{
+        top: 0;
+        border-bottom:1px  solid rgba(0, 0, 0, 0.1);
+        background:#FFFFFF;
+        z-index:20;
+    }
+    .thmv-header-v2 .navbar-toggler-icon i,
+    .thmv-header-v2 .thmv-navbar-light .navbar-brand,
+    .thmv-header-v2 .thmv-navbar-light .nav-link,
+    .thmv-header-v2 .thmv-menu-drop .form-select,
+    .thmv-header-v2 .thmv-menu-drop:before{
+        color:#000000;
+    }
+/*  ==========================================================================
+    3.        Main banner styles
+    ========================================================================== */
+    .thmv-main-banner{
+      background: url('../images/top-header-bg.jpg');
+      background-position: center;
+      min-height: 779px;
+      display: flex;
+      align-items: center;
+    }
+    .thmv-banner-title h1 {
+        color: #fff;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .thmv-banner-title p {
+        color: #fff;
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .thmv-tour-row {
+        background: #ffffff;
+        max-width: 846px;
+        margin: 50px auto 0;
+        align-items: flex-end;
+    }
+    .thmv-date-col{
+      width: 290px;
+    }
+    .thmv-guest-col{
+      width: 228px;
+    }
+    .thmv-procode-col{
+      width: 328px;
+    }
+    .thmv-guest-col .dropdown-toggle::after{
+      display: none;
+    }
+    .thmv-tour-row label {
+        color: #171818;
+        opacity: 0.3;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .thmv-check-form .form-control {
+        padding: 0;
+        border: none;
+        font-weight: 600;
+        line-height: 21px;
+    }
+    .thmv-guest-col .render {
+        font-weight: 600;
+        line-height: 21px;
+    }
+    .thmv-promo-code input {
+        padding: 0;
+        border: none;
+        color: #171818;
+        letter-spacing: -0.2px;
+    }
+    .thmv-promo-code input::placeholder {
+      color: #171818;
+      opacity: 0.3;
+    }
+
+    .thmv-promo-code input:-ms-input-placeholder {
+      color: #171818;
+      opacity: 0.3;
+    }
+
+    .thmv-promo-code input::-ms-input-placeholder {
+      color: #171818;
+      opacity: 0.3;
+    }
+    .thmv-tour-search {
+        width: 100%;
+        background: #FBE946;
+        min-width: 88px;
+        height: 88px;
+        margin-left: auto;
+    }
+    .thmv-tour-searchtext{
+      display: none;
+    }
+    .thmv-tour-row .form-group {
+        padding: 0 0 25px 20px;
+    }
+    .thmv-search-form-tour .border-right {
+        position: relative;
+    }
+    .thmv-search-form-tour .border-right:after {
+        content: "";
+        background: #171818;
+        width: 1px;
+        height: 46px;
+        position: absolute;
+        right: 0px;
+        opacity: 0.1;
+        top: 30px;
+        transform: translate(0px, -50%);
+    }
+    .thmv-promo-box {
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    /*================================
+          Guests Dropdown Design 
+     ================================*/    
+      .form-select-guests .dropdown-menu {
+          min-width: 228px;
+          z-index: 2;
+          padding: 10px;
+          border: none;
+          border-radius: 0;
+      }
+      .form-select-guests .dropdown-item-row {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+      }
+      .form-select-guests .dropdown-item-row .label {
+          color: #171818;
+          font-weight: 500;
+      }
+      .form-select-guests .btn-add, 
+      .form-select-guests .btn-minus {
+          font-size: 12px;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          line-height: 30px;
+          background: #eef1f7;
+          border-radius: 4px;
+          text-align: center;
+          cursor: pointer;
+      }
+      .form-select-guests .count-display {
+          width: 30px;
+          font-weight: 500;
+          display: inline-block;
+          text-align: center;
+      }
+      /*================================
+            Datepicker Design 
+       ================================*/
+       .datepick {
+           font-family: 'Work Sans', sans-serif;
+           font-size: 18px;
+           border: 1px solid #171818;
+           width: 355px !important;
+           border-radius: 0;
+       }
+       .datepick-nav, .datepick-ctrl {
+           background-color: #ffffff;
+           display: flex;
+           justify-content: space-between;
+       }
+       .datepick a {
+           color: #171818;
+           padding: 0;
+           background: #ffffff;
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+       }
+       .datepick-month {
+           border: none;
+           width: 100%;
+       }
+       .datepick-month th, .datepick-month th a {
+           background-color: #ffffff;
+           color: #171818;
+           font-weight: 600;
+           border: none;
+       }
+       .datepick-month-header, .datepick-month-header select, .datepick-month-header input {
+           background-color: #ffffff;
+           color: #171818;
+       }
+       .datepick-cmd-prev,
+       .datepick-cmd-next {
+           font-size: 0;
+           position: relative;
+       }
+       .datepick-cmd-prev:after,
+       .datepick-cmd-next:after {
+           content: "\f060";
+           font-family: 'Font Awesome 5 Free';
+           font-size: 18px;
+           background: #171818;
+           color: #ffffff;
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+           display: inline-block;
+           text-align: center;           
+       }
+       .datepick-cmd-next:after {
+           content: "\f061";        
+       }
+       .datepick-month td {
+           background-color: #ffffff;
+           border: none;
+       }
+       .datepick-month td .datepick-weekend {
+           background-color: #ffffff;
+       }
+       .datepick-month td .datepick-selected {
+           background-color: #FBE946;
+           color: #171818;
+           border: 1px solid #171818;
+           font-weight: 700;
+       }
+       .datepick-month td .datepick-highlight {
+        background-color: rgb(251 233 70 / 20%);
+       }
+       .datepick-ctrl {
+           justify-content: flex-end;
+       }
+       .datepick-ctrl .datepick-cmd {
+           background: #171818;
+           color: #ffffff;
+           width: auto;
+           margin-left: 15px;
+           padding: 0 10px;
+       }
+       .datepick-ctrl .datepick-cmd:hover {
+           background-color: #FBE946;
+           color: #171818;
+       }
+/*  ==========================================================================
+    4.    Features Of Our Hostel Section Style Start
+    ========================================================================== */
+    .thmv-hostel-features{
+        padding:150px 0px;
+        position: relative;
+    }
+    .thmv-hostel-features .thmv-hostel-service{
+        margin-top: 20px;
+    }
+    .thmv-hostel-features .thmv-hostel-service .thmv-service-row{
+        margin-bottom:20px;
+    }
+    .thmv-hostel-features .thmv-hostel-service .thmv-service-row:last-child,
+    .thmv-hostel-service-info .thmv-hostel-info-text p:last-child{
+        margin-bottom: 0;
+    }
+    .thmv-hostel-service-info{
+        max-width: 500px;
+        margin-right: auto;
+        position: relative;
+        z-index: 10;
+    }
+    .thmv-hostel-service-info h2,
+    .thmv-hostel-service-info .thmv-hostel-info-text p{
+        margin-bottom: 15px;
+    }
+    .thmv-yello-bg:before{
+        content:"";
+        background-color:#FBE946;
+        display: block;
+        width: 50%;
+        height:100%;
+        position: absolute;
+        left: -2.5%;
+        top: -11%;
+        z-index:1;
+    }
+/*  ==========================================================================
+    5.    Covid Updates  styles
+    ========================================================================== */
+    .thmv-covid{
+      padding:30px 0px 50px;
+    }
+    .thmv-covid .thmv-covid-row{
+      background: #F1F1F1;
+      padding:40px 0px;
+      margin: 0;
+    }
+    .thmv-covid h4,
+    .thmv-covid p{
+      margin-bottom: 15px;
+    }
+    .thmv-covid p{
+      color: #171818;
+    }
+    .thmv-covid a{
+      font-weight: 600;
+      line-height: 21px;
+      margin-top: 0;
+    }
+/*  ==========================================================================
+    6.    focused on travelers styles
+    ========================================================================== */
+    .thmv-travelers{
+      padding:50px 0px;
+    }
+    .thmv-travelers .thmv-travelers-title {
+      margin-bottom: 30px;
+    }
+    .thmv-travelers .thmv-travelers-info{
+      color: #171818;
+      float:right;
+    }
+/*  ==========================================================================
+    7.    slick image slider styles
+    ========================================================================== */    
+    .thmv-slick-img-slider{
+      padding:10px 0px 40px;
+    }
+    .slider {
+        width: 100%;
+        margin: 0px auto;
+        padding:0px;
+    }
+    .slick-slide {
+      margin: 0px 10px;
+    }
+    .thmv-slick-img-slider .slick-list{
+      padding:0 20% !important;
+    }
+    .slick-prev:before,
+    .slick-next:before { 
+      font-family:"Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 60px;
+      color:#FFFFFF;
+      transition: all 0.3s ease 0s;
+      opacity:1;
+    }
+    .slick-slider .slick-prev:hover:before,
+    .slick-slider .slick-next:hover:before{
+      color: #171818;
+      cursor: pointer;
+    }
+    .slick-prev:before {
+      content: "\f060";
+    }
+    .slick-next:before {
+      content: "\f061";
+    }
+    .slider .slick-slider{
+      position: relative;
+    }
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next{
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      background: #171818;
+      position: absolute;
+      z-index: 1;
+      transition: all 0.3s ease 0s;
+    }
+    .slick-slider .slick-prev:hover,
+    .slick-slider .slick-next:hover{
+      background: #FBE946;
+    }
+    .slick-slider .slick-prev{
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+    .slick-slider .slick-next{
+      right: 20%;
+      transform: translate(50%, -50%);
+    }
+/*  ==========================================================================
+    8.    Video Modal styles
+    ========================================================================== */
+    .thmv-video-sec{
+      padding:50px 0px;
+    }
+   .thmv-video-modal img{
+      width: 100%;
+    }
+    .thmv-video-modal{
+      position: relative;
+    }
+    .thmv-video-modal .embed-container { 
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    } 
+    .thmv-video-modal .embed-container iframe,
+    .thmv-video-modal .embed-container object,
+    .thmv-video-modal .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .thmv-video-sec .thmv-play-btn{
+      background:#FFFFFF;
+      border:none;
+      border-radius: 100px;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease 0s;
+    }
+    .thmv-video-sec .thmv-play-btn i{
+      color: #FBE946;
+      font-size: 32px;
+      line-height:52px;
+      transition: all 0.3s ease 0s;
+    }
+    .thmv-video-sec .thmv-play-btn:hover,
+    .thmv-video-modal .modal-body .btn-close:hover{
+      background:#FBE946;
+    }
+    .thmv-video-sec .thmv-play-btn:hover i,
+    .thmv-video-modal .modal-body .btn-close:hover i{
+      color: #000000;
+    }
+    .thmv-video-modal .modal-content{
+      border-radius:0;
+    }
+    .thmv-video-modal .modal-body{
+      position: relative;
+    }
+    .thmv-video-modal .modal-body .btn-close{
+      position: absolute;
+      right: 0px;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      background: #000;
+      border: none;
+      border-radius: 0;
+      line-height: 30px;
+      opacity:1;
+      transition: all 0.3s ease 0s;
+    }
+    .thmv-video-modal .modal-body .btn-close i{
+      color: #FFFFFF;
+      font-size: 14px;
+      transition: all 0.3s ease 0s;
+    }
+    .thmv-video-modal .modal-dialog video{
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .thmv-video-text h2{
+      margin-bottom:20px;
+    }
+/*  ==========================================================================
+    9.    Services Section Style Start
+    ========================================================================== */
+    .thmv-service{
+      padding:40px 0px 30px;
+    }
+    .thmv-service .thmv-sec-title h2{
+      font-size: 30px;
+      padding-bottom:60px;
+    }
+    .thmv-service .thmv-service-row{
+      margin-bottom: 50px;
+    }
+    .thmv-service .thmv-service-row:last-child{
+        margin-bottom: 0;
+    }
+    .thmv-service-row .thmv-service-box{
+      margin-bottom:30px;
+    }
+    .thmv-service-row .thmv-svg-icon{
+      margin-bottom: 30px;
+    }
+    .thmv-service-row .thmv-service-info p{
+      font-size: 14px;
+      line-height: 26.6px;
+      margin-top:7px;
+    }
+/*  ==========================================================================
+    10.    Best Solution Section style start
+    ========================================================================== */
+    .thmv-best-solution{
+      padding:50px 0px;
+    }
+    .thmv-best-solution .thmv-best-solution-row{
+      background-image:url("../images/best-solution-bg-img.jpg");
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+    }
+    .thmv-best-solution .thmv-solution-info{
+      max-width:380px;
+      margin: 90px 100px;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sec-sub-title,
+    .thmv-best-solution .thmv-solution-info .thmv-sec-title,
+    .thmv-best-solution .thmv-solution-info .thmv-sec-info{
+      color:#FFFFFF;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sec-sub-title{
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sec-title,
+    .thmv-talk-to-us .thmv-talk-to-info .thmv-we-are-on h6{
+      margin-bottom: 25px;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sent-rq-btn{
+      margin-top: 40px;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sent-rq-btn a{
+      margin-right:15px;
+    }
+    .thmv-best-solution .thmv-solution-info .thmv-sent-rq-btn .learn-more-btn1{
+      color:#FFFFFF;
+    }
+/*  ==========================================================================
+    11.   peoplle talk about us Section Style start
+    ========================================================================== */
+    .thmv-talk-to-us{
+        padding:50px 0px;  
+    }
+    .thmv-talk-to-us .thmv-talk-to-info .thmv-svg-icon{
+      margin-bottom: 20px;
+    }
+    .thmv-talk-to-us .thmv-talk-to-info .thmv-rating i{
+      color:#FBE946;
+    }
+    .thmv-talk-to-us .thmv-talk-to-info h2 {
+      margin-bottom: 15px;
+    }
+    .thmv-talk-to-us .thmv-talk-to-info .thmv-we-are-on{
+      margin-top: 20px;
+    }
+    .thmv-talk-to-us .thmv-talk-to-info .thmv-we-are-on .thmv-brand-logos img{
+      margin-right: 20px;
+    }
+    /*-------> progress bar style <--------*/
+    .thmv-talk-to-us .thmv-talk-to-progress .thmv-progressbar{
+      margin-bottom:42px;
+    }
+    .thmv-talk-to-us .thmv-talk-to-progress .progress{
+        border-radius:0;
+        height:5px;
+    }
+    .thmv-talk-to-us .thmv-talk-to-progress .thmv-progress-info p{
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom:8px;
+      opacity: 1;
+    }
+    .thmv-talk-to-us .thmv-talk-to-progress .thmv-progressbar:last-child{
+      margin-bottom: 20px;
+    }
+/*  ==========================================================================
+    12. Our Location Section Style Start
+    ========================================================================== */
+    .thmv-map{
+      padding:50px 0px 0px;
+    }
+/*  ==========================================================================
+    13. Footer Section Style Start
+    ========================================================================== */    
+    .thmv-footer{
+        padding:80px 0px;
+        border-top: 1px solid #EBECEF;
+    }
+    .thmv-footer footer .thmv-contact-us{
+      display: flex;
+      align-items: center;
+      margin:10px 0px 5px;
+    }
+    .thmv-footer footer .thmv-contact-us .thmv-social li{
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .thmv-footer footer .thmv-contact-us .thmv-address{
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-left: 40px;
+    }
+    .thmv-footer footer .thmv-contact-us .thmv-social li i{
+      font-size: 40px;
+      transition:all 0.3s ease 0s;
+    }
+    .thmv-footer footer .thmv-contact-us .thmv-social li i:hover{
+      color:#FBE946
+    }
+    .thmv-subscription .input-group input{
+      padding: 12px 0px;
+      border: none;
+      border-bottom: 1px solid #EBECEE;
+      border-radius: 0;
+    }
+    .thmv-subscription .input-group input::placeholder{
+      color:#171818;
+    }
+    .thmv-subscription .input-group button{
+      width:61px;
+      height: 61px;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      transition:all 0.3s ease 0s;
+    }
+/*  ==========================================================================
+    14. Footer Bottom Section Style Start
+    ========================================================================== */    
+    .thmv-footer-bottom{
+      border-top:1px solid #EBECEF;
+      padding:20px 0px;
+    }
+    .thmv-footer-bottom ul{
+      display: inline-block;
+    }
+    .thmv-footer-bottom ul li{
+      display: inline-block;
+      margin-right:20px;
+    }
+    .thmv-footer-bottom ul li:last-child{
+      margin-right: 0;
+    }
+    .thmv-footer-bottom .thmv-footer-menu li,
+    .thmv-footer-bottom .thmv-footer-menu li a{
+      font-weight: 700;
+      line-height: 30px;
+      color:#171818;
+      transition:all 0.3s;
+    }
+    .thmv-footer-bottom .thmv-footer-link li a{
+      font-weight: 600;
+      line-height: 30px;
+      color:#171818;
+      transition:all 0.3s;
+    }
+    .thmv-footer-bottom .thmv-footer-link li a:hover,
+    .thmv-footer-bottom .thmv-footer-menu li a:hover{
+     color:#FBE946;   
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Home Page 2 <=======*/
+/*  ==========================================================================
+    ========================================================================== */ 
+/*  ==========================================================================
+    1. full width slick slider
+    ========================================================================== */    
+    .thmv-slick-img-slider .slick-image-single .slick-slide{
+        margin:0;
+    }
+    .thmv-slick-img-slider .slick-image-single .slick-list{
+        padding:0 0 !important;
+    }
+    .slick-image-single.slick-slider .slick-prev{
+        transform: translate(20%, -50%);
+    }
+    .slick-image-single.slick-slider .slick-next{
+        transform: translate(-20%, -50%);
+    }
+/*  ==========================================================================
+    2. focused on travelers card section style start
+    ========================================================================== */    
+    .thmv-travelers.thmv-home-two{
+        padding: 80px 0px 50px;
+    }
+    .thmv-traveler-card{
+        padding:70px 0px 100px;
+    }
+    .thmv-traveler-card .thmv-section-title{
+        margin-bottom:50px;
+    }
+    .thmv-traveler-card .thmv-cards .card,
+    .thmv-traveler-card .thmv-cards .card img{
+        border:none;
+        border-radius:0;
+    }
+    .thmv-traveler-card .thmv-cards .card .card-body{
+        padding:20px 0px;
+    }
+    .thmv-traveler-card .thmv-cards .card .card-body h6{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    .thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    .thmv-traveler-card .thmv-cards .card .card-body .card-text{
+        font-size: 14px;
+        line-height: 26.6px;
+    }
+/*  ==========================================================================
+    3. Services Section style Start
+    ========================================================================== */    
+    .thmv-service.thmv-service-2{
+        background: #F1F1F1;
+        padding:100px 0px 170px;
+    }
+/*  ==========================================================================
+    4. what's nearby Section style Start
+    ========================================================================== */    
+    .thmv-whats-nearby{
+        margin:-100px 0px 60px;
+        position: relative;
+    }
+    .thmv-whats-nearby .thmv-list-info{
+        max-width: 569px;
+    }
+    .thmv-whats-nearby .thmv-nearby-img{
+        padding-left: 0;
+        padding-right: 40px;
+    }
+    .thmv-whats-nearby .thmv-list-info,
+    .thmv-whats-nearby .thmv-list-info h2{
+        margin-bottom:30px;
+    }
+    .thmv-whats-nearby .thmv-list-info .list-group-item,
+    .thmv-nearby-listing .list-group-item{
+        padding-left:0;
+        padding-right: 0;
+        border-style:dashed;
+    }
+    .thmv-whats-nearby .thmv-list-info .list-group-item,
+    .thmv-nearby-listing .list-group-item {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.4px;
+        padding: 20px 0px;
+    }
+    .thmv-whats-nearby .thmv-list-info .list-group-item span,
+    .thmv-nearby-listing .list-group-item span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        min-width:60px;
+        margin-left:10px;
+        opacity: 0.5;
+    }
+/*  ==========================================================================
+    5. our staff Section style Start
+    ========================================================================== */    
+    .thmv-traveler-card.thmv-our-staff{
+        background-color:#000000;
+        padding:100px 0px;
+        margin:50px 0px 0px;
+    }
+    .thmv-our-staff .thmv-section-title h2{
+        color:#FFFFFF;
+    }
+    .thmv-our-staff .thmv-cards .card{
+        background:transparent;
+    }
+    .thmv-traveler-card.thmv-our-staff .thmv-cards .card .thmv-card-title{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 29px;
+        color:#FFFFFF;
+        margin-bottom: 8px;
+    }
+    .thmv-traveler-card.thmv-our-staff .thmv-cards .card .thmv-card-post{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        color:rgba(255, 255, 255, 0.5);
+    }
+/*  ==========================================================================
+    6. map-2 Section style Start
+    ========================================================================== */    
+    .thmv-map.thmv-map-2{
+        padding: 0;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Listing page V1 <=======*/
+/*  ==========================================================================
+    ========================================================================== */ 
+/*  ==========================================================================
+    1. Banner Section style start
+    ========================================================================== */
+        .thmv-main-banner.thmv-list-v1{
+            background: url("../images/listing-top-banner-img.jpg");
+            background-size: cover;
+            background-position:top center;
+            min-height: 400px;
+        }
+        .thmv-bredcom {
+            padding:50px 30px;
+        }
+/*  ==========================================================================
+    2. list style v1 style start
+    ========================================================================== */
+        .thmv-liststyle-v1,
+        .thmv-liststyle-v2{
+            padding-bottom: 90px;
+        }
+
+        .thmv-listing-row{
+            margin-bottom: 80px;
+            align-items:center;
+        }
+        .thmv-listing-row:last-child{
+            margin-bottom: 0;
+        }
+        .thmv-listing-row .slick-listing .slick-slide{
+            margin: 0;
+        }
+        .slick-listing.slick-slider .slick-prev,
+        .slick-listing.slick-slider .slick-next{
+            width:45px;
+            height:45px;
+            background: #ffffff;
+        }
+        .slick-listing.slick-slider .slick-prev:hover,
+        .slick-listing.slick-slider .slick-next:hover{
+            background: #171818;
+        }
+        .slick-listing.slick-slider  .slick-prev:before,
+        .slick-listing.slick-slider  .slick-next:before{
+            color:#171818;
+            line-height:46px;
+        }
+        .slick-listing.slick-slider  .slick-prev:hover:before,
+        .slick-listing.slick-slider  .slick-next:hover:before{
+            color:#FFFFFF;
+        }
+        .thmv-listing-row .slick-listing.slick-slider .slick-prev{
+            left: 100%;
+            top: 100%;
+            transform: translate(0% , -50%);
+            margin:-32px 0px 0px -110px;
+        }
+        .thmv-listing-row .slick-listing.slick-slider .slick-next{
+            right: 0;
+            top: 100%;
+            transform: translate(0% , -50%);
+            margin:-32px 10px 0px;
+        }
+        .thmv-listing-info{
+            padding-left: 20px;
+        }
+        .thmv-listing-info .thmv-dashed-separator{
+            border-top:2px dashed #171818;
+            width: 100%;
+            display: block;
+            margin:20px 0;
+        }
+         .thmv-listing-info .thmv-facility ul{
+            margin: 15px 0px 20px;
+            display: flex;
+            width: 310px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .thmv-listing-info .thmv-facility ul li{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 15px;
+        }
+        .thmv-listing-info .thmv-facility ul li img{
+            width: 25px;
+            margin-bottom:8px;
+        }
+        .thmv-listing-info .thmv-facility ul li span{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+        .thmv-listing-info .thmv-listing-check a{
+            font-weight: 700;
+        }
+        .thmv-listing-info .thmv-listing-check a.btn-style-three{
+            width: auto;
+            margin-right:20px;
+        }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Listing page V2 <=======*/
+/*  ==========================================================================
+    ========================================================================== */ 
+/*  ==========================================================================
+    1. list style v2 style start
+    ========================================================================== */    
+    .thmv-liststyle-v2 .thmv-liststyle-v2-items{
+        margin-bottom: 60px;
+    }
+    .thmv-booking-process{
+        margin:30px 0px 0px;
+    }
+    .thmv-booking-process .thmv-advance-booking{
+        margin-bottom: 18px;
+    }
+    .thmv-booking-process .thmv-advance-booking ul{
+        padding: 11px 15px;
+    }
+    .thmv-booking-process .thmv-advance-booking ul li{
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    .thmv-booking-process .thmv-advance-booking ul li.thmv-guests-info{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .thmv-booking-process .thmv-advance-booking ul li:last-child{
+        float: right;
+        margin-right: 0;
+    }
+    .thmv-booking-process .thmv-advance-booking i{
+        margin-right:5px;
+    }
+    .thmv-booking-process .thmv-advance-booking .thmv-cancellation{
+        color:#0CD38C;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .thmv-booking-process .thmv-advance-booking .thmv-check-availability a{
+        width: auto;
+        padding: 11px 20px;
+    }
+    .thmv-liststyle-v2 .thmv-liststyle-v2-items:last-child{
+        margin-bottom: 0;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Check Availability v1 page <=======*/
+/*  ==========================================================================
+    ========================================================================== */ 
+/*  ==========================================================================
+    1. bredcom style start
+    ========================================================================== */    
+    .thmv-bredcom.thmv-availability{
+        padding:100px 10px 30px;   
+    }
+    .thmv-availability-datepicker .thmv-sec-title h4{
+        margin-bottom: 50px;
+    }
+/*  ==========================================================================
+    2. full width datepiker style start
+    ========================================================================== */
+    .thmv-check-available .datepick{
+        width:100% !important;
+        max-width:100%;
+        border:none;
+    }
+    .thmv-check-available .datepick-cmd-prev:after,
+    .thmv-check-available .datepick-cmd-next:after{
+        font-size: 14px;
+    }
+    .thmv-check-available .datepick-nav{
+        margin-bottom: -35px;
+        padding: 0px 30px;
+    }
+    .thmv-check-available .datepick-month-row{
+        display: flex;
+        justify-content: space-around;
+        padding:0px 30px 30px;
+    }
+    .thmv-check-available .datepick-nav a:nth-child(2){
+        display: none;
+    }
+    .thmv-check-available .datepick-month-header{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .thmv-check-available .datepick-month thead,
+    .thmv-check-available{
+        border-bottom: 1px dashed #000000;
+    }
+    .thmv-check-available .datepick a,
+    .thmv-check-available .datepick span{
+        padding:6px 0px;
+        width: 100%;
+        height: auto;
+        line-height:30px;
+        background:none;
+    }
+    .thmv-check-available .datepick a:hover,
+    .thmv-check-available .datepick span:hover{
+        background:none;
+    }
+    .thmv-check-available .datepick-month th,
+    .thmv-check-available .datepick-month th a{
+        padding-bottom: 20px;
+    }
+    .thmv-check-available .datepick-month table tbody td a{
+        margin:0 auto;   
+    }
+   .thmv-check-available .datepick-month-row .datepick-month table tbody tr:first-child td{
+        padding-top: 20px;
+   }
+   .thmv-check-available .datepick-month-row .datepick-month.first {
+        margin: 0px 30px 0px 0px;
+   }
+   .thmv-check-available .datepick-month-row .datepick-month.last {
+        margin: 0px 0px 0px 30px;
+   }
+   .thmv-check-available .datepick-month-row .datepick-month td .datepick-selected{
+    font-weight:400;
+    border:none;
+   }
+/*  ==========================================================================
+    3. listing booking style start
+    ========================================================================== */
+   .thmv-availability-booking{
+        padding:40px 0px 100px;
+   }
+   .thmv-availability-booking .thmv-tour-row,
+   .thmv-availability-booking .form-select-guests .dropdown-menu{
+        border:1px solid rgba(23, 24, 24, 0.1 );
+   }
+   .thmv-availability-booking .thmv-tour-row,
+   .thmv-availability-booking .thmv-book-now{
+        margin:20px 0px 0px;
+   }
+   .thmv-availability-booking .thmv-tour-row{
+    max-width:470px;
+   }
+    .thmv-availability-booking .thmv-tour-row .form-group {
+        padding: 5px 10px 20px 10px;
+    }
+    .thmv-availability-booking .thmv-search-form-tour .border-right:after{
+        color: rgba(23, 24, 24, 0.1);
+        height: 40px;
+        top: 40px;
+        transform: translate(0px, -50%);
+    }
+    .thmv-availability-booking .thmv-search-form-tour .thmv-guest-col,
+    .thmv-availability-booking .thmv-search-form-tour .thmv-procode-col{
+        width: auto;
+    }
+    .thmv-availability-booking .thmv-search-form-tour .thmv-promo-code input,
+    .thmv-availability-booking .thmv-search-form-tour .thmv-promo-code input::placeholder,
+    .thmv-availability-booking .thmv-search-form-tour .thmv-guest-col .render{
+        font-size: 18px;
+        color:#171818;
+        line-height:23.4px;
+        font-weight:600;
+        opacity: 1;
+    }
+    .thmv-availability-booking .thmv-book-now{
+        width:400px;
+        margin-left: auto;
+    }
+    .thmv-availability-booking .thmv-book-now h5{
+        margin: 25px 0px;
+    }
+    .thmv-availability-booking .thmv-book-now .thmv-per-bad{
+        font-weight: 400;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Check Availability V2 page <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-slick-img-slider.thmv-availability-v2{
+        padding-bottom:0;
+    }
+    .thmv-liststyle-v2.thmv-availability-v2 .thmv-booking-process {
+        margin: 30px 0px;
+    }
+    .thmv-liststyle-v2.thmv-availability-v2{
+        background-color: #F1F1F1;
+        padding-bottom: 0;
+        border:none;
+        margin-bottom: 50px;
+    }
+    .thmv-liststyle-v2.thmv-availability-v2 .thmv-booking-process .thmv-advance-booking ul{
+        padding:11px 0px;
+        border-bottom: 1px dashed #000000;
+    }
+    .thmv-liststyle-v2.thmv-availability-v2 .thmv-booking-process .thmv-advance-booking:last-child{
+        margin-bottom: 0;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Singl page <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-single-info-text {
+        padding: 50px 10px 100px;
+    } 
+    .thmv-service-2.thmv-single-service{
+        padding:100px 30px 70px;
+        margin-bottom: 90px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> gallery page <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-gallery-video.thmv-video-sec .thmv-play-btn i{
+      color:#0636B0;
+    }
+    .thmv-gallery-video.thmv-video-sec .thmv-play-btn:hover,
+    .thmv-gallery-video .thmv-video-modal .modal-body .btn-close:hover{
+      background:#0636B0;
+    }
+    .thmv-gallery-video.thmv-video-sec .thmv-play-btn:hover i,
+    .thmv-gallery-video .thmv-video-modal .modal-body .btn-close:hover i{
+      color: #FFFFFF;
+    }
+    .thmv-img-gallery{
+        padding:50px 10px 70px;   
+    }
+    .thmv-img-gallery .thmv-gallery-items{
+        padding:0px 10px;
+        margin-bottom:20px;
+        
+    }
+    .thmv-img-wrapper{
+        overflow:hidden;
+    }
+    .thmv-img-gallery .thmv-gallery-items img{
+        transition:all 0.3s;
+    }
+    .thmv-img-gallery .thmv-gallery-items:hover img{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Covid-19 page <=======*/
+    /*  ==========================================================================
+    ========================================================================== */    
+    .thmv-covid-info-text,
+    .thmv-our-menu,
+    .thmv-nearby-listing{
+        padding:90px 10px 70px;
+    }
+    .thmv-covid-info-text p{
+        margin-bottom: 20px;
+    }
+    .thmv-blck-bg p,
+    .thmv-blck-bg h2{
+        color:#FFFFFF;
+    }
+/*  ========================================================================== 
+    1. questions from style
+    ========================================================================== */ 
+    
+    .thmv-top-banner-full{
+        height: 200px;
+        background-image: url("../images/top-banner-img.jpg");
+        background-size: cover;
+        background-position: 40% center;
+    }
+    .thmv-questions{
+        padding:0px 0px 90px;
+    }
+    .thmv-questions .thmv-form-box{
+        padding:50px 95px;
+        max-width:1120px;
+        margin:0px auto;
+    }
+    .thmv-questions .thmv-form-info h2{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .thmv-questions .thmv-form-info h2::after{
+        content: '';
+        background: #FBE946;
+        width: 75px;
+        height: 12px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translate(-60%, -50%);
+        left: -50px;
+    }
+    .thmv-questions .thmv-form-info{
+        padding-bottom: 25px;
+    }
+    .thmv-questions  .thmv-question-form input{
+        height:50px;
+        background:none;
+        border:0;
+        border-radius:0;
+        border-bottom: 1px solid #FFFFFF;
+        color:#FFFFFF;
+    }
+    .thmv-questions  .thmv-question-form input::placeholder{
+        color:#FFFFFF;
+    }
+    .thmv-questions  .thmv-question-form .btn{
+        border-radius:0;
+        width:250px;
+        float:right;
+        transition: all 0.3s;
+    }
+    .thmv-questions  .thmv-question-form .btn:hover{
+        background:#FFFFFF;
+        color:#171818;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Our Blog page <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-blog{
+        padding:80px 10px 90px;
+    }
+    .thmv-blog .thmv-blog-info{
+        padding-left:20px;
+    }
+    .thmv-blog .thmv-blog-row{
+        margin-bottom:60px;
+    }
+    .thmv-blog .thmv-blog-row:last-child{
+        margin-bottom:0px;
+    }
+    .thmv-blog-row .thmv-blog-info .thmv-blog-title{
+        padding:10px 0 20px;
+    }
+/*  ========================================================================== 
+    1. pagination    
+    ========================================================================== */
+
+    .thmv-pagination{
+        margin-top: 60px;
+    }    
+    .thmv-pagination .pagination .page-item .page-link,
+    .thmv-pagination .pagination .page-item:first-child .page-link,
+    .thmv-pagination .pagination .page-item:last-child .page-link{
+        border:0;
+        border-radius:0;
+        width:61px;
+        height:61px;
+        line-height:46px;
+        text-align:center;
+        font-size: 20px;
+        font-weight: 700;
+        color:#171818;
+    }
+    .thmv-pagination .pagination .page-item.active .page-link,
+    .thmv-pagination .pagination .page-item:hover .page-link{
+        background:#171818;
+        color:#FFFFFF;
+        cursor: pointer;
+    }
+    .thmv-pagination .pagination .page-item{
+        margin:0px 3px;
+    }
+/* ============================================================ */
+    /* ========= our blog v2 page =========== */
+    /* ============================================================ */
+    .thmv-blog-v2 .thmv-blog-row:nth-child(even) .thmv-blog-info{
+        margin-top: 0;
+        margin-bottom:20px;
+        padding-left: 12px;
+        padding-right:20px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> offer page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-offers .thmv-blog-info h3 {
+        font-size: 30px;
+        line-height:39px;
+    }
+    .thmv-offers .thmv-blog-info .thmv-offer h5{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .thmv-offers .thmv-blog-info .thmv-offer{
+        margin: 10px 0px 20px;
+    }
+    .thmv-offers .thmv-blog-info .thmv-offer ul{
+        margin: 10px 0px 30px 30px;
+    }
+    .thmv-offers .thmv-blog-info .thmv-offer li{
+        font-size: 18px;
+        line-height: 34.2px;
+        opacity:0.5;
+        position: relative;
+    }
+    .thmv-offers .thmv-blog-info .thmv-offer li::after{
+        content:"";
+        background: #171818;
+        display:inline-block;
+        width:4px;
+        height:4px;
+        border-radius:100%;
+        position: absolute;
+        left: -3%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .thmv-offers .thmv-questions .thmv-blck-bg{
+        margin-top: 80px;
+        overflow: hidden;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> FAQ page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-faqs{
+        padding:60px 10px 80px;
+    }
+    .thmv-faqs .accordion-header{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .thmv-faqs .thmv-accordion-number{
+        width: 46px;
+        height: 46px;
+        line-height:46px;
+        font-size: 20px;
+        display: inline-block;
+        text-align:center;
+    }
+    .thmv-faqs .accordion-item {
+        border:0;
+        position: relative;
+    }
+    .thmv-faqs .accordion-item::before{
+        content:"";
+        display: block;
+        width:100%;
+        height: 1px;
+        max-width: 675px;
+        background:rgba(0, 0, 0, 0.10);
+        position: absolute;
+        left:65px;
+    }
+    .thmv-faqs .accordion-item:first-child::before{
+        display: none;
+    }
+    .thmv-faqs .accordion-item .accordion-button{
+        background:transparent;
+        border:0;
+         box-shadow:none;
+    }
+    .thmv-faqs .accordion-item .accordion-button h5{
+        font-size: 20px;
+        max-width:550px;
+    }
+    .thmv-faqs .accordion-item .accordion-body p{
+        opacity:1;
+    }
+    .thmv-faqs .accordion-item .accordion-collapse{
+        margin-left: 45px;
+    }
+    .thmv-faqs .accordion-button:not(.collapsed),
+    .thmv-faqs .accordion-button:not(.collapsed),
+    .accordion-button:not(.collapsed)::after{
+        color: #171818;
+    }
+    .accordion-button::after {
+        content: "\f078";
+        font-family: 'Font Awesome 5 Free';
+        color: #000000;
+        font-weight: 600;
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        background-image:none;
+        transition: transform .2s ease-in-out;
+    }
+    .accordion-button:not(.collapsed)::after{
+        background-image:none;
+    }
+    .thmv-faqs .accordion-item .accordion-button{
+        padding: 30px 0px;
+        margin-left: 20px;
+    }
+    .thmv-faqs .accordion-item .accordion-collapse .accordion-body{
+        padding:0px 0px 40px;
+        margin-left: 20px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> groups page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-groups-banner{
+        background-image: url("../images/groups-top-banner-img.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        min-height:650px;
+        display: flex;
+        align-items: center;
+    }
+    .thmv-groups-banner .thmv-best-solution-row{
+        background-image:none;
+    }
+    .thmv-best-solution.thmv-groups-banner .thmv-solution-info{
+        max-width: 100%;
+        margin: 0;
+        padding-top: 50px;
+    }
+    .thmv-groups-features,
+    .thmv-groups-service{
+        padding: 70px 0px 60px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> about page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */    
+    .thmv-about-banner{
+        background-image: url("../images/about-top-banner-img.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        min-height:650px;
+        display: flex;
+        align-items: center;
+    }
+    .thmv-about-features{
+        padding: 60px 0px 40px;
+    }
+    .thmv-about-travelers {
+        padding: 80px 0px 40px;
+    }
+    .thmv-about-video {
+        padding: 60px 0px 100px;
+    }
+    .thmv-about-talk-to-us {
+        padding: 90px 0px 70px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Our Staff page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */      
+    .thmv-our-all-staff{
+        padding: 80px 0px 50px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Our Staff v2 page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-contact-form{
+        padding: 0;
+    }
+    .thmv-form-blck.thmv-question-form input{
+        color:#171818;
+        border-color:#171818;
+    }
+    .thmv-form-blck.thmv-question-form input::placeholder{
+        color:#171818;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> Contact Form page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-contact-info {
+        margin-top: 74px;
+    }
+    .thmv-contact-col{
+        width: 545px;
+        margin-left: auto;
+        padding-top: 30px;
+    }
+    .thmv-contact-col .thmv-contact-title{
+        padding-bottom: 30px;
+    }
+    .thmv-contact-col .thmv-phone-numbre,
+    .thmv-contact-col .thmv-phone-address{
+        display: flex;
+        margin:40px 0px 40px;
+    }
+    .thmv-contact-col .thmv-phone-numbre .thmv-contact-text,
+    .thmv-contact-col .thmv-phone-address .thmv-contact-text{
+        margin-left:20px;
+    }
+    .thmv-contact-col .thmv-contact-icon i{
+        font-size: 28px;
+    }
+    .thmv-contact-col .thmv-contact-text p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29px;
+        opacity: 1;
+    }
+    .thmv-contact-col .thmv-phone-numbre .thmv-contact-text p{
+        padding-bottom: 10px;
+    }
+    .thmv-contact-us ul{
+        margin-top: 20px;
+    }
+    .thmv-contact-us ul li {
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .thmv-contact-us ul li i {
+        font-size: 40px;
+        transition: all 0.3s ease 0s;
+    }
+    .thmv-contact-map {
+        min-height:600px;
+    }
+    .thmv-contact-map img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+/*  ========================================================================== 
+    1. Contact Form Style  
+    ========================================================================== */ 
+    .thmv-talk-to-reviews{
+        padding: 70px 0px;
+    }
+    .thmv-our-reviews{
+        border-bottom: 1px solid #EBECEF;
+        padding:30px 0px;
+    }
+    .thmv-our-reviews:last-child{
+        border-bottom: none;
+        padding:30px 0px 50px;
+    }
+    .thmv-user-review{
+        display: flex;
+        align-items: center;
+    }
+    .thmv-user-review img{
+        width: 100px;
+    }
+    .thmv-user-review .thmv-user-info{
+        margin-left: 20px;
+    }
+    .thmv-user-review .thmv-user-info h5{
+        font-size: 22px;
+    }
+    .thmv-our-reviews .thmv-user-review-text{
+        padding:40px 0;
+    }
+    .thmv-our-reviews .thmv-user-review-text::after,
+    .thmv-our-reviews .thmv-user-review-text::before{
+        content:"";
+        background-image:url("../images/icons/quotes.svg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        width: 19px;
+        height: 16px;
+        display: inline-block;
+        position: absolute;
+    }
+    .thmv-our-reviews .thmv-user-review-text::before{
+        top: 20px;
+        left: 0px;
+    }
+    .thmv-our-reviews .thmv-user-review-text::after{
+        bottom:20px;
+        right:0px;
+        transform: rotate(180deg);
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> our reviews page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-reviews-banner{
+        background-image: url("../images/our-reviews-top-banner-img.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        min-height:650px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .thmv-reviews-sec{
+        padding-bottom: 20px;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> our menu page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */ 
+    .thmv-our-menu-banner{
+        background-image:url("../images/our-menu-top-banner-img.jpg");
+    }
+    .thmv-menu-service{
+        padding: 60px 0px 140px;
+    }
+/*  ========================================================================== 
+    1. tabs Style
+    ========================================================================== */ 
+    .thmv-tab-info{
+        max-width:660px;
+        margin:0 auto;
+        margin-bottom:60px;
+    }
+    .thmv-menu-tabs .tab-content{
+        width: 100%;
+        padding: 100px 0px 50px;
+    }
+    .thmv-menu-tabs .tab-content .thmv-tab-title{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom: 15px;
+    }
+    .thmv-menu-tabs .tab-content .thmv-tab-info .thmv-tab-title h5{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .thmv-menu-tabs .nav-pills .nav-link{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 39px;
+        color: #171818;
+        text-align:left;
+        padding:15px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    .thmv-menu-tabs .nav-pills .nav-link.active,
+    .thmv-menu-tabs .nav-pills .show>.nav-link{
+        background:transparent;
+        color:#171818;
+        font-weight: 700;
+    }
+    .thmv-menu-tabs .nav-pills .nav-link.active:after{
+        content:"";
+        background: #171818;
+        width: 60px;
+        height:4px;
+        display: inline-block;
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .thmv-menu-tabs .thmv-yello-bg:before {
+        content: "";
+        width: 655px;
+        height: 650px;
+        position: absolute;
+        left: -33.6%;
+        top: -11%;
+        z-index: 1;
+    }
+/*  ========================================================================== 
+    ========================================================================== */ 
+    /*=======> what's nearby page  <=======*/
+    /*  ==========================================================================
+    ========================================================================== */
+    .thmv-whats-nearby-banner{
+        background-image:url("../images/whats-nearby-top-banner-img.jpg");
+    }
+    .thmv-nearby-listing .thmv-menu-item{
+        padding:0 20px;
+    }
+    .thmv-nearby-listing .thmv-menu-item h2{
+        padding-bottom:10px;
+    }
+    .thmv-creation-timelines {
+        padding:90px 10px;
+    }
+    .thmv-creation-timelines .thmv-timelines-info .thmv-timelines-text{
+        padding-top: 20px;
+    }
+    .thmv-timeline-three-col p{
+        margin: 15px 0px 5px;
+        opacity:1;
+        font-weight: 600;
+    }
