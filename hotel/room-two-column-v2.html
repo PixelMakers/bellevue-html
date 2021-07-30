@@ -48,7 +48,7 @@
    <body>
       <!-- Header Section Start -->
       <!-- ======Top Menu Start====== -->
-      <div class="thmv-top-nav" id="home-top">
+      <div class="thmv-top-nav">
          <nav id="navbar_top" class="navbar navbar-expand-sm fixed-top thmv-navbar-light ">
             <div class="container thmv-mob-nav">
                <div class="thmv-menu-left">
@@ -71,7 +71,7 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse justify-content-end collapse show" id="navbarSupportedContent">
-                  <a class="navbar-brand mx-auto d-none d-md-block" href="#">Logotype</a>
+                  <a class="navbar-brand mx-auto d-none d-md-block" href="index.html">Logotype</a>
                   <div class="d-flex thmv-right-menu">
                      <ul class="thmv-social d-none d-lg-flex">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -93,15 +93,14 @@
             <div class="offcanvas-body thmv-offcanvas-body">
                <div class="thmv-leftside-menu">
                   <ul>
-                     <li><a class="active" href="#" title="">Home</a></li>
-                     <li><a href="#" title="">About Us</a></li>
-                     <li><a href="#" title="">Food/menu</a></li>
-                     <li><a href="#" title="">Faq</a></li>
-                     <li><a href="#" title="">Blog</a></li>
-                     <li><a href="#" title="">Gallery</a></li>
-                     <li><a href="#" title="">Covid updates page</a></li>
-                     <li><a href="#" title="">Booking for groups</a></li>
-                     <li><a href="#" title="">Contact Us</a></li>
+                     <li><a href="index.html" title="">Home</a></li>
+                     <li><a href="about-us.html" title="">About Us</a></li>
+                     <li><a class="active" href="about-us.html" title="">Rooms</a></li></li>
+                     <li><a href="menu.html" title="">Food/menu</a></li>
+                     <li><a href="explore.html" title="">explore</a></li>
+                     <li><a href="our-history.html" title="">Our History</a></li>
+                     <li><a href="package-specials.html" title="">Package Specials</a></li>
+                     <li><a href="contact-us.html" title="">Contact Us</a></li>
                   </ul>
                </div>
                <div class="thmv-leftmenu-option">
@@ -142,7 +141,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="thmv-subpage-title">
-                        <h2>Rooms</h2>
+                        <h2 class="text-uppercase">Rooms</h2>
                      </div>
                   </div>
                </div>
@@ -374,7 +373,7 @@
                         </div>
                      </div>      
                   </div>
-                  <d iv class="col-xl-4 col-lg-5 d-none d-lg-block">
+                  <div class="col-xl-4 col-lg-5 d-none d-lg-block">
                      <!-- Check Availability Form Start -->
                         <div class="thmv-checkavai-form">
                            <div class="thmv-form-availability">
@@ -581,7 +580,7 @@
       </div>
       <!--Right side floting buttons -->
       <div class="thmv-home-side thmv-rooms-floting-btn">
-         <a href="#home-top" type="button" class="thmv-backto-top-sticky">
+         <a href="#" id="home-top" type="button" class="thmv-backto-top-sticky d-flex">
             <i class="fas fa-chevron-up"></i>Go to top
          </a>
          <button type="button" class="thmv-calendar-sticky d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-calendar-day"></i></button>

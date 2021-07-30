@@ -1,3 +1,4 @@
+// ====== Right side floting buttons ====== //
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -8,6 +9,32 @@ $(window).scroll(function() {
     }
 });
 
+// ==== back To Top jquery  ===== //
+$(document).ready(function(){ 
+   $(window).scroll(function(){ 
+       if ($(this).scrollTop() > 100) { 
+           $('#home-top').fadeIn(); 
+       } else { 
+           $('#home-top').fadeOut(); 
+       } 
+   }); 
+   $('#home-top').click(function(){ 
+       $("html, body").animate({ scrollTop: 0 }, 100); 
+       return false; 
+   }); 
+});
+
+// ======= our menu responsive tabs ========//
+
+  $(".responsive-tabs i.fa").click(function () {
+      $(this).parent().toggleClass("open");
+  });
+
+  $(".responsive-tabs > li button").click(function () {
+      $(".responsive-tabs > li").removeClass("active");
+      $(this).parent().addClass("active");
+      $(".responsive-tabs").toggleClass("open");
+  });
 
 
   // =============================Search Form Guest Script====================
@@ -141,6 +168,17 @@ $(window).scroll(function() {
     alert('The date chosen is ' + date);
   }
 
+  $('#inlineDatepicker1').datepick({monthsToShow: 1, monthsToStep: 1, rangeSelect: true,renderer:{
+      weekendClass: 'datepick-weekend thmv-date-weekendClass',
+      multiClass:'thmv-date-multiClass',
+      defaultClass:'thmv-date-defaultClass',
+      selectedClass:'datepick-selected thmv-date-selectedClass',
+      highlightedClass:'thmv-date-highlightedClass',
+      todayClass:'datepick-today thmv-date-todayClass',
+      otherMonthClass:'thmv-date-otherMonthClass',
+      disabledClass:'thmv-date-disabledClass'
+  }});
+
 // =============================Date Picker Script End====================
 
 // slick-image-center slider //
@@ -156,7 +194,7 @@ $(".slick-image-center").slick({
   autoplaySpeed:5000,
   responsive: [
     {
-      breakpoint: 991,
+      breakpoint: 995,
       settings: {
         centerMode:false,
         dots: true,
@@ -181,7 +219,7 @@ $(".slick-rooms-slider").slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 995,
       settings: {
         centerMode:false,
         slidesToShow: 2,
@@ -189,7 +227,7 @@ $(".slick-rooms-slider").slick({
       }
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         centerMode:false,
         slidesToShow: 1,
@@ -202,52 +240,53 @@ $(".slick-rooms-slider").slick({
 // Rooms Singla Slider 
 $(".thmv-header-slick").slick({
   infinite: true,
-  centerMode: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
   arrows:true,
+  centerMode: true,
   pauseOnHover:true,
   autoplay:true,
   speed: 1000,
-  autoplaySpeed:5000,
+  autoplaySpeed:1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 991,
       settings: {
         centerMode:false,
-        dots: true,
+        arrows:false,
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }
-
     }
   ]
 });
 
-// rooms single & suites slider //
-$(".slick-rooms-single-slider").slick({
+// room single modern review slider
+
+$(".thmv-modern-review").slick({
   infinite: true,
-  centerMode: true,
   arrows:false,
+  dots:false,
   pauseOnHover:true,
   autoplay:true,
   speed: 1000,
-  autoplaySpeed:5000,
+  autoplaySpeed:1000,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 995,
       settings: {
-        centerMode:false,
+        dots:false,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 767,
+      breakpoint: 780,
       settings: {
-        centerMode:false,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }

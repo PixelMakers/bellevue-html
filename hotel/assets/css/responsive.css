@@ -15,6 +15,10 @@
 @media (max-width: 1300px){}
 
 @media only screen and (max-width: 1199px){
+	.thmv-leftmenu-option {
+	    position: relative;
+	    margin-top: 20px;
+	}
 	.thmv-footer-social .thmv-social li{
 		padding:0px 15px;
 	}
@@ -39,6 +43,18 @@
     .thmv-room-card .thmv-listroom-detail .thmv-queenbed{
     	padding: 5px 0 0px;
     }
+    .thmv-price-details.thmv-pricev2-details{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+     .thmv-package-outiline.thmv-covid-sec .thmv-about-covid {
+		padding: 30px;
+	}
+	.thmv-room-details{
+		padding-right: 20px;
+	}
 }
 @media only screen and (max-width: 1024px){}
 @media only screen and (max-width: 991px){
@@ -55,16 +71,31 @@
 			line-height: 41px;
 			font-weight: 600;
 		}
-		.thmv-covid-sec .thmv-about-covid p{
+		.thmv-covid-sec .thmv-about-covid p,
+		.thmv-about .thmv-about-info .thmv-expo-name,
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li p,
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li a,
+		.thmv-history-bio .thmv-year-history p,
+		.thmv-contact .thmv-contact-info ul li p{
 			font-size: 18px;
 			line-height: 36px;
 		}
-		.thmv-facilities-sec .thmv-facilities-info p{
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li h5,
+		.thmv-contact .thmv-contact-info ul li h5{
+			margin-bottom: 5px;
+		}
+		.thmv-facilities-sec .thmv-facilities-info p,
+		.thmv-instagram-feed.thmv-holiday .thmv-whatdo-box p,
+		.thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul li{
 			font-size: 16px;
 			line-height: 32px;
 		}
 		.thmv-rooms-img-slider .thmv-room-info h6,
-		.thmv-rooms-img-slider .thmv-room-info p{
+		.thmv-rooms-img-slider .thmv-room-info p,
+		.thmv-room-single .thmv-room-single-info-text,
+		.thmv-contact-form form input,
+		.thmv-contact-form form textarea,
+		.thmv-listroom-info .thmv-listimg-top h5{
 			font-size: 14px;
 			line-height: 28px;
 		}
@@ -79,7 +110,6 @@
 		.thmv-right-menu {
 			min-width: auto;
 		}
-		
 	/*=====  End Of Navbar Section Style  ======*/
 	/*=================================
 		=            Home Page            =
@@ -173,7 +203,8 @@
 				padding: 100px 10px 50px;
 			}	
 			.thmv-our-service .thmv-service-info,
-			.thmv-review-sec .thmv-review-info {
+			.thmv-review-sec .thmv-review-info,
+			.thmv-rooms-suites .thmv-rooms-info{
 	    		width: 75% !important;
 			}
 			.thmv-our-service .thmv-services {
@@ -207,6 +238,10 @@
 			.thmv-nearby .thmv-nearby-info .thmv-sec-title{
 				text-align: center;
 			}
+			.thmv-nearby .thmv-nearby-info .thmv-sec-title::after{
+				transform: translate(5px, -60%);
+    			left: 50%;
+			}
 			.thmv-nearby .thmv-nearby-info{
 				padding:100px 10px 0px;
 				padding-left: 10px !important;
@@ -217,6 +252,9 @@
 			}
 			.thmv-nearby .thmv-nearby-info p{
 				text-align: center;
+			}
+			.thmv-nearby-us{
+				margin: 30px 0px;
 			}
 			.thmv-nearby .thmv-nearby-us ul {
 				display: flex;
@@ -235,7 +273,7 @@
 			.thmv-nearby-us .thmv-nearby-places {
 				margin-left: 15px;
 			}
-			/*----------  Review Section style Start  ----------*/
+		/*----------  Review Section style Start  ----------*/
 			.thmv-review-sec {
 				padding: 120px 10px 70px;
 			}			
@@ -243,7 +281,7 @@
 			.thmv-insta-feed-sec {
 				padding-top: 20px;
 			}
-			/*----------  Instagram Feed Section Style  ----------*/
+		/*----------  Instagram Feed Section Style  ----------*/
 			.thmv-instagram-feed {
 				padding: 170px 10px 70px;
 			}		
@@ -254,7 +292,7 @@
 			.thmv-footer-sec .thmv-about{
 				margin-bottom: 30px
 			}
-			/*----------  Footer Section style   ----------*/
+		/*----------  Footer Section style   ----------*/
 			.thmv-footer-sec {
 				padding: 50px 10px;
 				width: 80%;
@@ -282,14 +320,14 @@
 				margin-top:20px;
 			}
 			.thmv-footer-sec .thmv-footer-social a.btn-outline{
-				min-width:auto;
+				min-width:200px;
 				padding:13px 30px;
 			}
 			.thmv-footer-sec .thmv-footer-social h6,
 			.thmv-footer-sec .thmv-footer-social a.btn-outline{
 				margin: 0;
 			}
-			/*----------  Right side floting buttons Style  ----------*/
+		/*----------  Right side floting buttons Style  ----------*/
 		    .thmv-home-floting-btn .thmv-backto-top-sticky,
 		    .thmv-home-floting-btn .thmv-calendar-sticky,
 		    .thmv-home-floting-btn .thmv-messenger-sticky{
@@ -298,75 +336,483 @@
 		    .thmv-rooms-floting-btn .thmv-calendar-sticky{
 		    	display: block;
 		    }
+		    .thmv-home-side{
+		    	right: 0;
+		    }
 	/*=====  End Of Home page  ======*/		
-/*=============================================
-	=      Room Listing one Columns Sectin Styles       =
-	=============================================*/
-		.thmv-room_list_sec,
-		.thmv-room-listv2-sec,
-		.thmv-room-listv3-sec{
-			padding-bottom: 100px;
-			padding-right: 10px;
-			padding-left: 10px;
+	/*=============================================
+		=      Room Listing one Columns Sectin Styles       =
+		=============================================*/
+			.thmv-room_list_sec,
+			.thmv-room-listv2-sec,
+			.thmv-room-listv3-sec{
+				padding-bottom: 100px;
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-top: 60px;
+			}
+			.thmv-room_head_title:after{
+	            display: none;
+	        }
+	        .thmv-room_head_title {
+	            min-height: 260px;
+	        }
+	        .thmv-subpage-title h2 {
+	            padding-top: 60px;
+	        }
+	        .thmv-room-headv2 {
+	            min-height: 260px;
+	        }
+	        .thmv-room-headv2:after {
+	            width: 55%;
+	            height: 260px;
+	        }
+	        .thmv-subpage-titlev2 h2 {
+	            margin-top: 50px;
+	        }
+	        .thmv-subpage-titlev3 h2 {
+	            margin: 40px 0 20px;
+	        }
+	/*=====  End Of Room Listing one Columns Sectin Style  ======*/
+	/*=============================================
+		=      Room Listing Two Columns Sectin Styles       =
+		=============================================*/	
+		.thmv-two-col-roomlist-v1{
+	        padding-top: 30px;
+	    }
+		.thmv-two-col-roomlist-v1 .thmv-listroom-info {
+			flex-flow: row;
 		}
-		.thmv-room_head_title:after{
-            display: none;
-        }
-        .thmv-room_head_title {
-            min-height: 260px;
-        }
-        .thmv-subpage-title h2 {
-            padding-top: 60px;
-        }
-        .thmv-room-headv2 {
-            min-height: 260px;
-        }
-        .thmv-room-headv2:after {
-            width: 55%;
-            height: 260px;
-        }
-        .thmv-subpage-titlev2 h2 {
-            margin-top: 50px;
-        }
-        .thmv-subpage-titlev3 h2 {
-            margin: 160px 0 20px;
-        }
-/*=====  End Of Room Listing one Columns Sectin Style  ======*/
-/*=============================================
-	=      Room Listing Two Columns Sectin Styles       =
-	=============================================*/	
-	.thmv-two-col-roomlist-v1 .thmv-listroom-info {
-		flex-flow: row;
-	}
-	.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec{
-		justify-content: end;
-	}
-/*=====  End Of Room Listing Two Columns Sectin Style  ======*/
-/*=============================================
-	=            Room Listing Card One Columns Section Style            =
-	=============================================*/
-	.thmv-room-card .thmv-listroom-info .thmv-listimg-top h5{
-		margin-bottom: 30px;
-	}
-	.thmv-room-card .thmv-listroom-info{
-		padding-bottom: 15px;
-	}
-    .thmv-room-card .thmv-listroom-detail .thmv-queenbed{
-    	padding:10px 0px;
-    }
-/*=============================================
-	=            Room Single Carousel 1            =
-	=============================================*/
-	.thmv-header-room-single-v1 .thmv-header-slick .slick-list {
-		padding: 0 4% !important;
-	}
+		.thmv-two-col-roomlist-v1 .thmv-listimg-from h4 {
+		    width: 140px;
+		    font-size: 20px;
+		    line-height: 40px;
+		    padding: 10px 5px;
+		}
+		.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec{
+			justify-content: end;
+		}
+	/*=====  End Of Room Listing Two Columns Sectin Style  ======*/
+	/*=============================================
+		=            Room Listing Card One Columns Section Style            =
+		=============================================*/
+			.thmv-room-card .thmv-listroom-info .thmv-listimg-top h5{
+				margin-bottom: 30px;
+				line-height: 14px;	
+			}
+			.thmv-room-card .thmv-listroom-info{
+				padding-bottom: 15px;
+			}
+		    .thmv-room-card .thmv-listroom-detail .thmv-queenbed{
+		    	padding:10px 0px;
+		    }
+	/*=====  End of Room Listing Card One Columns Section Style  ======*/    
+	/*====================================================
+		=            Room Single V1 Section Style            =
+		====================================================*/
+			.thmv-header-room-single-v1 .thmv-header-slick .slick-list {
+				padding: 0 4% !important;
+			}
+			.thmv-room-single {
+				padding: 35px 10px 80px;
+			}
+			.thmv-room-single .thmv-Signature-title h2{
+				font-size: 34px;
+				line-height:48px;
+			}
+			.thmv-room-single .thmv-separate{
+				margin: 25px 0px;
+			}
+			.thmv-single-services.thmv-nearby-us .thmv-nearby-places p{
+				margin-bottom: 0
+			}
+			.thmv-room-single .thmv-room-pagination{
+		        margin-bottom: 80px;
+		    }
+		    .thmv-checkavai-form .thmv-form-availability,
+		    .thmv-checkavai-form .thmv-availability-check{
+		    	max-width:310px;
+		    	margin:0px auto;
+		    }
+	     	/*----------  Discount Section Style  ----------*/
+			    .thmv-discount{
+			        margin-top: 45px;
+			        height: 300px
+			    }
+			    .thmv-discount img{
+			    	height: 300px;
+			    	width:100%;
+			    	object-fit:cover;
+			    }
+			    .thmv-discount a{
+			        font-size: 22px;
+			        min-width:305px;
+			        padding:20px 10px;
+			        margin:-150px auto 0px;
+			    }
+			/*----------  Room Single Slider  ----------*/
+				.thmv-rooms-suites.thmv-room-single-suites {
+					padding: 100px 10px 70px;
+				}
+				.thmv-header-room-single-v1 .thmv-header-slick .slick-slide{
+			        height: 330px;
+			    }
+			    .thmv-room-single .thmv-room-info h5{
+			        font-size: 24px;
+			        line-height: 31px;
+			    }
+			    .thmv-room-single .thmv-room-price p{
+			        font-size:20px;
+			        line-height: 40px;
+			        padding: 5px 25px
+			    }
+	/*=====  End of Room Single V1 Section Style  ======*/
+	/*================================================
+		=            Room Single Modern Style            =
+		================================================*/
+		.thmv-room-modern .thmv-top-banner-mob{
+			max-width:100%;
+			padding: 0;			
+		}
+		.thmv-room-modern .thmv-top-banner-mob .thmv-header-img{
+			height:358px;
+		}
+		.thmv-room-modern .thmv-top-banner-mob .thmv-header-img img{
+			width:100%;
+			height:358px;
+			object-fit:cover;
+		}
+		/*.thmv-room-single-modern .thmv-single-services ul {
+			flex-flow: column;
+		} */
+		.thmv-room-single-modern .thmv-single-services ul li {
+			width: 100%;
+		}
+		.thmv-room-single-modern .thmv-nearby-us ul li:last-child {
+    		margin-bottom: 10px;
+		}
+		.thmv-room-single-modern .thmv-single-about {
+			margin-top: 30px;
+		}
+		.thmv-room-single.thmv-room-single-modern {
+			padding: 35px 10px 60px;
+		}
+		.thmv-modern-full-img {
+			margin-bottom: 60px;
+			height:447px;
+		}
+		.thmv-modern-full-img img{
+			height:447px;
+			object-fit:cover;
+		}
+		.thmv-modern-nearby {
+			padding: 0px 10px 80px;
+		}
+		.thmv-rooms-suites.thmv-modern-room-single {
+			padding: 180px 0px 50px;
+		}
+		.thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5{
+			font-size: 34px;
+			line-height: 36px;
+		}
+		.thmv-room-single-modern .thmv-single-services.thmv-nearby-us{
+			margin:30px 0px 20px;
+		}
+		.thmv-apartments-rates .thmv-rates-box .thmv-separate{
+			margin:30px 0px;
+		}
+		.thmv-modern-nearby .thmv-nearby-info .thmv-sec-title  h2{
+			font-size: 42px;
+			line-height: 54px;
+		}
+	/*=====  End of Room Single Modern Style  ======*/
+	/*============================================
+		=            Explore Sectin Style            =
+		============================================*/
+		.thmv-tab-column-reverse{
+	        flex-direction: column-reverse;
+	    }
+	    .explore-top-sec {
+	        min-height: 270px;
+	    }
+	    .explore-top-title h1{
+	        font-size: 42px;
+	    }
+	    .explore-top-title {
+	        padding: 30px 50px;
+	    }
+	    .thmv-expogird-img {
+	        text-align: center;
+	    }
+	    .thmv-expogird-info {
+	        margin-left: 0;
+	        text-align: center;
+	    }
+	    .thmv-expo-rating {
+	        margin-top: 25px;
+	    }
+	    .thmv-expo-name h4 {
+	        display: inline-block;
+	    }
+	    .thmv-expo-rating{
+	        justify-content: center;
+	        margin-top: 25px;
+	    }
+	    .thmv-expo-btn{
+	        display: block;
+	        margin: 0 auto;
+	    }
+	    .thmv-explore-grid {
+	        padding-bottom: 50px;
+	    }
+	    .thmv-explore-top-sec {
+	    	min-height: 400px;
+	    }
+	    .thmv-explore-grid-v2 .thmv-expogird-info .thmv-expo-name h3{
+			padding-bottom: 15px;
+		}
+	/*=====  End of Explore Sectin Style  ======*/
+	/*=============================================
+		=            Package-Specials Style            =
+		=============================================*/
+		.thmv-expo-titlev2{
+			font-size: 42px;
+			line-height:54px;
+		}
+		.thmv-package-outiline.thmv-covid-sec .thmv-about-covid {
+			padding: 65px;
+		}
+		.thmv-package-top-sec{
+			height: 285px;
+		}
+		.thmv-package-top-sec img{
+			width:100%;
+			height: 285px;	
+		}
+		.thmv-packages-grid .thmv-expogird-img{
+			width: 560px;
+			margin: 0px auto 20px;
+		}
+		.thmv-packages-grid .thmv-expo-row{
+			padding:0px 0px 50px;
+		}
+		.thmv-packages-grid{
+			padding-bottom: 70px;
+		}
+		.thmv-packages-grid .thmv-expo-row:last-child,
+		.thmv-see-all-package{
+			padding-bottom: 0;
+		}
+		.thmv-spcial-offser .container{
+			max-width:100%;
+			padding: 0;
+		}
+		.thmv-spcial-offser-box h2{
+			font-size: 42px;
+			line-height: 54px;
+		}
+		.thmv-spcial-offser{
+			padding-bottom: 40px;
+		}
+		.thmv-list-box {
+			margin-bottom: 50px;
+		}
+		.thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul{
+			margin-top: 5px;
+		}
+		.thmv-see-all-package .thmv-list-box .thmv-listroom-detail p{
+			padding:5px 0px;
+		}
+		.thmv-holiday{
+			padding: 115px 10px 0px;
+		}
+		.thmv-holiday.thmv-instagram-feed .thmv-insta-feed-sec img{
+		 	margin-bottom: 0
+		}
+		.thmv-holiday .thmv-insta-feed-sec .thmv-whatdo-box {
+			margin-bottom: 30px;
+		}
+		.thmv-package-outiline{
+			padding: 50px 10px 70px;
+		}
+		.thmv-two-col-roomlist-v1.thmv-see-all-package{
+			padding-top: 110px;
+		}
+		.thmv-instagram-feed.thmv-holiday{
+			padding: 120px 10px 0px;
+		}
+	/*=====  End of Package-Specials Style  ======*/
+	/*========================================
+		=            About us Section            =
+		========================================*/
+		.thmv-about .thmv-about-info .thmv-expo-name{
+			padding: 0;
+			text-align: left;
+		}
+		.thmv-about-info .thmv-expogird-img{
+			margin-top: 40px;
+		}
+		.thmv-about-video {
+			padding: 180px 0px 0px;
+		}
+		.thmv-about-video .thmv-video-sec{
+			height: 500px
+		}
+		.thmv-about-video .thmv-video-sec .thmv-video-modal img{
+			width: 100%;
+			height: 500px;
+			object-fit:cover;	
+		}
+		.thmv-video-sec .thmv-play-btn{
+		    width: 80px;
+			height: 80px;
+		}
+		.thmv-video-sec .thmv-play-btn i{
+			font-size: 20px;
+			line-height: 50px;
+		}
+		.modal-dialog{
+			max-width: 600px;
+		}
+		.thmv-our-team .container{
+			max-width:75%;
+		}
+		.thmv-our-team .thmv-insta-feed-sec .thmv-whatdo-box img{
+			margin-bottom: 0;
+		}
+		.thmv-our-team .thmv-insta-feed-sec .thmv-whatdo-box h4{
+			padding-bottom: 0;
+		}
+		.thmv-our-team {
+			padding: 170px 10px 0px;
+		}
+		/*----------  getin touch section style  ----------*/
+			.thmv-get-in-touch {
+			    padding: 165px 10px 80px;
+			}
+			.thmv-get-in-touch .thmv-info-title,
+			.thmv-get-in-touch .thmv-contact-form{
+				text-align: center;
+			}
+			.thmv-title-effect-light::before{
+				left: 50%;
+				transform: translate(-50%, -60%);
+			}
+			.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul {
+				margin-top: 50px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li{
+				width:50%;
+				border-bottom:none;
+			}
+			.thmv-get-in-touch.thmv-bg-dark .thmv-contact-form{
+				padding:150px 10px 0px;
+			}
+	/*=====  End of About us Section  ======*/
+	/*=================================================
+		=            our history section style            =
+		=================================================*/
+		.thmv-our-history{
+			margin-bottom: 10px;
+		}
+		.thmv-our-history .thmv-about-info .thmv-expogird-img {
+			margin-top: 20px;
+		}
+		.thmv-about.thmv-our-history .thmv-about-info:nth-child(odd) .thmv-expogird-info .thmv-expo-name,
+	    .thmv-about.thmv-our-history .thmv-about-info:nth-child(even) .thmv-expogird-info .thmv-expo-name{
+	        padding-right:0px;
+	        padding-left: 0px;
+	    }
+		.thmv-our-history.thmv-about .thmv-about-info {
+			padding: 0px 0px 5px;
+		}
+		.thmv-about.thmv-our-history .thmv-about-info .thmv-expogird-info{
+			padding-top:30px;
+		}
+		.thmv-history-bio .thmv-year-history:nth-child(2n+1) .thmv-year-history-info {
+	    	padding:30px 10px;
+		}
+		.thmv-history-bio .thmv-year-history:nth-child(2n) .thmv-year-history-info{
+			padding:30px 10px;
+		}
+		.thmv-year-history .thmv-year{
+			margin-bottom: 30px
+		}
+		.thmv-year-history-img{
+			height:550px;
+		}
+		.thmv-year-history-img img{
+			width:100%;
+			height:550px;
+			object-fit:cover;
+			margin:0px auto;
+		}
+		.thmv-year-history {
+		    margin-bottom: 20px;
+		}
+		.thmv-history-bio {
+		    padding: 0px 10px 110px;
+		}
 
-
-/*=====  End of Room Single Carousel 1  ======*/
-
-
-/*=====  End of Room Listing Card One Columns Section Style  ======*/
-
+	/*=====  End of our history section style  ======*/
+	/*=================================================
+		=            Contact us Section Style             =
+		=================================================*/
+		.thmv-contact-bred{
+			padding:0px 10px;
+		}
+		.thmv-contact .thmv-expo-titlev2{
+			margin-bottom: 0;
+		}
+		.thmv-get-in-touch.thmv-contact {
+			padding: 70px 10px 30px;
+		}
+		.thmv-contact .thmv-contact-info ul{
+			flex-wrap:wrap;
+		}
+		.thmv-contact .thmv-contact-info ul li{
+			width: 50%;
+			margin-bottom: 40px;
+		}
+		.thmv-contact-sec{
+			padding: 0px 0px 100px;
+		}
+		.thmv-contact-sec .thmv-contact-form {
+			padding-top: 160px;
+		}
+		.thmv-contact-sec .thmv-title-effect::before{
+			left: 50%;
+			transform: translate(-100%, -60%);
+		}
+		.thmv-contact-sec .thmv-contact-form form{
+			margin: 20px auto 0px;
+		}
+		.thmv-contact-sec .thmv-contact-info,
+		.thmv-contact-sec .thmv-contact-info img{
+			height:750px;
+		}
+	/*=====  End of Contact us Section Style   ======*/
+	/*==============================================
+	    =            Our menu section style            =
+	    ==============================================*/
+	    .thmv-our-menu,
+	    .thmv-our-menu img{
+	    	height:260px;
+	    }
+	    .thmv-menu-tabs .nav-pills button{
+	    	font-size: 22px;
+	    	line-height: 28px;
+	    	padding:10px 15px;
+	    }
+	    .thmv-menu-tabs {
+			padding: 10px 40px 50px;
+		}
+		.thmv-our-service.thmv-our-menu-slider {
+			padding: 20px 5px 70px;
+		}
+	/*=====  End of Our menu section style   ======*/
 }
 @media only screen and (max-width:767px){
 	/*----------  Globel Style  ----------*/
@@ -385,13 +831,22 @@
 			font-size: 30px;
 			line-height: 39px;
 		}
-		/* .thmv-covid-sec .thmv-about-covid p{
+		.thmv-room-single-modern .thmv-room-details .thmv-room-details-price,
+		.thmv-room-single-modern .thmv-single-about h5{
 			font-size: 18px;
 			line-height: 36px;
-		} */
+		}
 		.thmv-wel-text a.btn-outline-light,
 		.thmv-wel-text a.btn-outline-light i,
-		.thmv-our-service .thmv-slider-service-box h5{
+		.thmv-our-service .thmv-slider-service-box h5,
+		.thmv-packages-grid .thmv-expogird-info .thmv-expo-name p,
+		.thmv-expo-bred,
+		.thmv-spcial-offser-box p,
+		.thmv-our-team .thmv-insta-feed-sec .thmv-whatdo-box h4,
+		.thmv-our-history .thmv-expogird-info p,
+		.thmv-history-bio .thmv-year-history p,
+		.tab-content .thmv-tabs-info p,
+		.thmv-expo-name p{
 			font-size: 16px;
 			line-height: 32px;
 		}
@@ -399,7 +854,9 @@
 	    .thmv-facilities-sec .thmv-facilities-info p,
 	    .thmv-wel-info p,
 	    .thmv-covid-sec .thmv-about-covid p,
-	    .thmv-our-service .thmv-slider-service-box p{
+	    .thmv-our-service .thmv-slider-service-box p,
+	    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail p,
+	    .thmv-listroom-info .thmv-queenbed{
 	    	font-size: 14px;
 	    	line-height: 28px;
 	    }	
@@ -419,6 +876,7 @@
 			margin-left: auto;
 		}
 	/*=====  End Of Navbar Section Style  ======*/
+
 	/*=================================
 		=            Home Page            =
 		=================================*/
@@ -441,8 +899,7 @@
 				margin-top: 10px;
 			}
 		/*----------  Facilities Sectin Style  ----------*/
-			.thmv-facilities-sec,
-			.thmv-our-hotel .thmv-hotel-info{
+			.thmv-facilities-sec{
 			    padding: 30px 10px;
 			}
 			.thmv-facilities-info{
@@ -460,9 +917,13 @@
 			.thmv-rooms-suites .thmv-rooms-info,
 			.thmv-our-service .thmv-service-info,
 			.thmv-review-sec .thmv-review-info,
-			.thmv-instagram-feed .thmv-insta-feed-info {
+			.thmv-instagram-feed .thmv-insta-feed-info,
+			.thmv-see-all-package .thmv-rooms-info{
 				width:100% !important;
 			}	
+			.thmv-our-hotel .thmv-hotel-info{
+				 padding:0px 10px 30px;
+			}
 			.thmv-our-hotel .slick-image-center	.slick-list{
 				padding: 0% !important;
 			}
@@ -535,11 +996,13 @@
 			.thmv-covid-sec .thmv-rules-box .thmv-border-box{
 				padding: 40px 10px 30px;
 			}
-			.thmv-covid-sec .thmv-promotions-box{
-				margin-top: 20px;
+			.thmv-covid-sec .thmv-rules-box .thmv-border-box h3,
+			.thmv-covid-sec .thmv-promotions-box h3{
+				font-weight: 700;
 			}
 			.thmv-covid-sec .thmv-promotions-box {
 				padding: 40px 15px 30px;
+				margin-top: 20px;
 			}			
 		/*----------  At Your Service Section Style  ----------*/
 			.thmv-our-service {
@@ -560,7 +1023,7 @@
 				margin: -45px 20px 0px;
 			}
 			.thmv-our-service .thmv-slider-service-box h5{
-				font-weight: 400;
+				font-weight: 500;
 				margin-bottom: 0;
 			}
 			.thmv-our-service hr.thmv-ser-separator{
@@ -588,8 +1051,8 @@
 			}
 			.thmv-service-box .thmv-user-info{
 				bottom: 15px;
+				position: unset;
 			}
-
 		/*----------  Instagram Feed Section Style  ----------*/
 			.thmv-instagram-feed {
 				padding: 150px 10px 60px;
@@ -641,132 +1104,700 @@
 		    .thmv-home-floting-btn .thmv-messenger-sticky{
 		        display: block;
 		    }
-
-		        
+		    .thmv-calendar-sticky,
+		    .thmv-backto-top-sticky,
+		    .thmv-messenger-sticky {
+			    margin-bottom: 10px;
+			}
 	/*=====  End Of Home Page  ======*/
-/*=============================================
-	=  Room Listing one Columns Sectin Style   =
-	=============================================*/
-		.thmv-subpage-title {
-            text-align: center;
-        }
-        .thmv-subpage-title h2 {
-            font-size: 36px;
-        }
-        .thmv-room_head_title {
-            min-height: 240px;
-        }
-        .thmv-calendar-sticky {
-            width: 53px;
-            height: 53px;
-            font-size: 22px;
-        }
-        .thmv-listimg img {
-            height: 320px;
-            object-fit: cover;
-        }
-        .thmv-listroom-info {
-            flex-wrap: wrap;
-        }
-        .thmv-listroom-info .thmv-queenbed{
-        	display: block;
-        	width: 100%;
-        }
-        .thmv-listroom-servicec li {
-            margin-left: 0;
-            margin-right: 25px;
-        }
-        .thmv-listroom-detail h5 {
-            font-size: 24px;
-            line-height: 31px;
-        }
-        /*----------  Room listing v2   ----------*/
-        .thmv-room-headv2 {
-            min-height: 240px;
-        }
-        .thmv-room-headv2:after {
-            width: 100%;
-            height: 240px;
-            left: 0;
-        }
-        .thmv-subpage-titlev2 h2 {
-            margin-top: 50px;
-            font-size: 36px;
-        }
-        .thmv-subpage-titlev2 {
-            text-align: center;
-        }
-        .thmv-room-listv2-sec {
-		    padding-top: 50px;
+
+	/*=============================================
+		=  Room Listing one Columns Sectin Style   =
+		=============================================*/
+			.thmv-subpage-title {
+	            text-align: center;
+	        }
+	        .thmv-subpage-title h2 {
+	            font-size: 36px;
+	        }
+	        .thmv-room_head_title {
+	            min-height: 240px;
+	        }
+	        .thmv-calendar-sticky {
+	            width: 53px;
+	            height: 53px;
+	            font-size: 22px;
+	        }
+	        .thmv-listimg img {
+	            height: 320px;
+	            object-fit: cover;
+	        }
+	        .thmv-listroom-info {
+	            flex-wrap: wrap;
+	        }
+	        .thmv-listroom-info .thmv-queenbed{
+	        	display: block;
+	        	width: 100%;
+	        }
+	        .thmv-listroom-servicec li {
+	            margin-left: 0;
+	            margin-right: 25px;
+	        }
+	        .thmv-listroom-detail h5 {
+	            font-size: 24px;
+	            line-height: 31px;
+	        }
+	        /*----------  Room listing v2   ----------*/
+	        .thmv-room-headv2 {
+	            min-height: 240px;
+	        }
+	        .thmv-room-headv2:after {
+	            width: 100%;
+	            height: 240px;
+	            left: 0;
+	        }
+	        .thmv-subpage-titlev2 h2 {
+	            margin-top: 50px;
+	            font-size: 36px;
+	        }
+	        .thmv-subpage-titlev2 {
+	            text-align: center;
+	        }
+	        .thmv-room-listv2-sec {
+			    padding-top: 50px;
+			}
+			/*----------  Room listing v3   ----------*/
+	        .thmv-subpage-titlev3 h2 {
+	            font-size: 36px;
+	        }
+	/*=====  End Of Room Listing One Columns Sectin Style   ======*/
+
+	/*=============================================
+		=  Room Listing Two Columns Sectin Style   =
+		=============================================*/	
+		.thmv-two-col-roomlist-v1 .thmv-listroom-info{
+			flex-flow:column;
 		}
-		/*----------  Room listing v3   ----------*/
-        .thmv-subpage-titlev3 h2 {
-            margin: 140px 0 20px;
-            font-size: 36px;
-        }
-/*=====  End Of Room Listing One Columns Sectin Style   ======*/
-/*=============================================
-	=  Room Listing Two Columns Sectin Style   =
-	=============================================*/	
-	.thmv-two-col-roomlist-v1 .thmv-listroom-info{
-		flex-flow:column;
-	}
-	.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec{
-		justify-content: start;
-	}
-	.thmv-two-col-roomlist-v1 .thmv-listimg{
-        height:270px;
-    }
-    .thmv-two-col-roomlist-v1 .thmv-listimg img{
-        height:270px;
-        width: 100%;
-        object-fit:cover;
-    }
-/*=====  End Of Roomlisting Section Style  ======*/	
-/*=============================================
-	=      End of Room Listing Card One Columns Section Style      =
-	=============================================*/
-	.thmv-room-card .thmv-listimg img{
-		height: 300px;
-	}
-	.thmv-room-card .thmv-listroom-info {
-		padding: 20px 0px 10px;
-	}
-	.thmv-room-card .thmv-listroom-info .thmv-listimg-top h5 {
-		margin-bottom: 20px;
-		font-size: 18px;
-	}
-	.thmv-room-card .thmv-listroom-info h5{
-		font-size: 24px;
-	}
-	.thmv-room-card .thmv-listroom-detail .thmv-queenbed {
-		padding: 5px 0px 0px;
-	}
-	.thmv-room-card .thmv-card-listing-service {
-		position: unset;
-		bottom: 10px;
-		margin-top: 20px
-	}
-	.thmv-room-card .thmv-listroom-servicec li img {
-		width: 16px;
-	}
-	.thmv-room-card .thmv-list-box{
-		margin-bottom: 40px;
-	}
+		.thmv-two-col-roomlist-v1 .thmv-listroom-info .thmv-listroom-servicec{
+			justify-content: start;
+		}
+		.thmv-two-col-roomlist-v1 .thmv-listimg{
+	        height:270px;
+	    }
+	    .thmv-two-col-roomlist-v1 .thmv-listimg img{
+	        height:270px;
+	        width: 100%;
+	        object-fit:cover;
+	    }
+	    .thmv-two-col-roomlist-v1 .thmv-room-pagination{
+	    	margin-top: 0;
+	    }
+	/*=====  End Of Roomlisting Section Style  ======*/	
 
-/*=====  End of End of Room Listing Card One Columns Section Style  ======*/
+	/*=============================================
+		=      End of Room Listing Card One Columns Section Style      =
+		=============================================*/
+		.thmv-room-card .thmv-listimg img{
+			height: 300px;
+		}
+		.thmv-room-card .thmv-listroom-info {
+			padding: 20px 0px 10px;
+		}
+		.thmv-room-card .thmv-listroom-info .thmv-listimg-top h5 {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+		.thmv-room-card .thmv-listroom-info h5{
+			font-size: 24px;
+		}
+		.thmv-room-card .thmv-listroom-detail .thmv-queenbed {
+			padding: 5px 0px 0px;
+		}
+		.thmv-room-card .thmv-card-listing-service {
+			position: unset;
+			bottom: 10px;
+			margin-top: 20px
+		}
+		.thmv-room-card .thmv-listroom-servicec li img {
+			width: 16px;
+		}
+		.thmv-room-card .thmv-list-box{
+			margin-bottom: 40px;
+		}
+	/*=====  End of End of Room Listing Card One Columns Section Style  ======*/
 
+	/*====================================================
+		=            Room Single V1 Section Style            =
+		====================================================*/
+		.thmv-room-details{
+			padding:0px 22px;
+		}
+		.thmv-header-room-single-v1 .thmv-header-slick .slick-slide,
+		.thmv-header-room-single-v1 .thmv-header-slick .slick-slide img {
+			height: 250px;
+		}
+		.thmv-header-room-single-v1 .thmv-header-slick .slick-list {
+			padding: 0 8% !important;
+		}
+		.thmv-side-bar{
+			padding: 0 !important;
+			width:100%;
+		}
+		.thmv-room-single {
+			padding: 30px 0px 80px;
+		}
+		.thmv-Signature-title p,
+		.thmv-amenities .thmv-amenities-col:last-child .thmv-nearby-us ul li:last-child{
+			margin-bottom: 0;
+		}
+		.thmv-room-single .thmv-Signature-title p{
+			margin-bottom: 10px;
+		}
+		.thmv-room-single .thmv-Signature-title h2 {
+			font-size: 22px;
+			line-height: 38px;
+		}
+		.thmv-room-single .thmv-Signature-title {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.thmv-amenities h5,
+		.thmv-price h5,
+		.thmv-availability h5,
+		.thmv-reviews-sec h5{
+			font-size: 18px;
+			line-height:32px;
+			margin-bottom: 20px;
+		}
+		.thmv-price .thmv-price-details {
+			margin-bottom: 20px;
+		}
+		/* .thmv-price .thmv-price-details:nth-child(n2){
+			margin-bottom: 0
+		} */ /*------------> you have a four price then uncomment this css */
+		.thmv-price-details.thmv-pricev2-details{
+			width:50%;
+		}
+		.thmv-single-services.thmv-nearby-us ul li{
+			align-items: flex-start;
+		}
+		.thmv-amenities .thmv-single-services.thmv-nearby-us ul li,
+		.thmv-single-services.thmv-nearby-us ul li{
+			align-items: center;
+		}
+		.thmv-single-services.thmv-nearby-us .thmv-nearby-places h6{
+			margin-bottom: 5px;
+		}
+		.thmv-single-services.thmv-nearby-us .thmv-nearby-places p{
+			line-height: 18px;
+		}
+		.thmv-amenities .thmv-amenities-services{
+			flex-direction:column;
+		}
+		.thmv-amenities .thmv-amenities-col{
+			width: 100%;
+		}
+		.thmv-amenities .thmv-amenities-col .thmv-nearby-us{
+			margin: 0
+		}
+		.thmv-amenities .thmv-amenities-col .thmv-nearby-us ul li:last-child{
+			margin-bottom: 20px;
+		}
+		.thmv-availability-datepik .datepick-month-header select{
+			font-size: 14px;
+		}
+		.thmv-availability .thmv-nearby-us {
+			margin-top: 20px;
+			max-width: 100%;
+		}
+		.thmv-availability .thmv-single-services.thmv-nearby-us,
+		.thmv-reviews-sec h5{
+			margin-bottom: 0;
+		}
+		.thmv-reviews-sec .thmv-progress-sec {
+			padding:0px 0px;
+			border-top: 1px solid #EDE8E9;
+			border-left:0;
+		}
+		.thmv-reviews-sec .thmv-rating-title{
+			justify-content: center;
+		}
+		.thmv-review-row .thmv-all-rating {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.thmv-reviews-sec .thmv-progress-sec{
+			padding-top: 20px;
+		}
+		.thmv-review-row {
+	    	padding: 20px 20px 30px;
+		}
+		.thmv-reviews-sec .thmv-user-review .thmv-user-title {
+			flex-flow: column-reverse;
+		}
+		.thmv-reviews-sec .thmv-user-review .thmv-user-text p {
+			line-height: 22px;
+			margin: 5px 0px 20px; 
+		}
+		.thmv-checkavai-form .thmv-form-availability{
+			text-align: center;
+		}
+	    /*----------  Discount Section Style  ----------*/
+		    .thmv-discount{
+		        margin-top: 45px;
+		        height: 300px
+		    }
+		    .thmv-discount img{
+		    	height: 300px;
+		    	width:100%;
+		    	object-fit:cover;
+		    }
+		    .thmv-discount a{
+		        font-size: 22px;
+		        min-width:300px;
+		        padding:20px 10px;
+		        margin:-150px auto 0px;
+		    }
+		/*----------  Room Single Slider  ----------*/
+			.thmv-rooms-suites.thmv-room-single-suites {
+				padding: 100px 10px 30px;
+			}
+			.thmv-room-single-suites .thmv-rooms-info {
+				padding:0px 10px;
+				margin-bottom: 20px
+			}
+
+			.thmv-review-row{
+				margin-top: 20px;
+			}
+	/*=====  End of Room Single V1 Section Style  ======*/
+
+	/*================================================
+		=            Room Single Modern Style            =
+		================================================*/
+		.thmv-room-modern .thmv-top-banner-mob .thmv-header-img img {
+			height: 280px;
+		}
+		.thmv-room-modern .thmv-top-banner-mob .thmv-header-img,
+		.thmv-room-modern .thmv-top-banner-mob .thmv-header-img img{
+			height: auto;
+		}
+		.thmv-room-modern .thmv-col-2-img .thmv-show-al-photos {
+			position: absolute;
+			right: 50%;
+			bottom: 50px;
+			transform: translate(50%, 0px);
+		}
+		.thmv-room-single.thmv-room-single-modern {
+			padding: 20px 10px 60px;
+		}
+		.thmv-room-single-modern .thmv-room-details .thmv-Signature-v2 {
+			align-items: center;
+		}
+		.thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5{
+			display: flex;
+			align-items: first baseline;
+		}
+		.thmv-room-single-modern .thmv-room-details .thmv-room-details-price span{
+			margin-left: 10px
+		}
+		.thmv-room-single-modern .thmv-single-about .thmv-paragraph,
+		.thmv-room-single-modern .thmv-single-about .thmv-paragraph p{
+			margin-top: 10px;
+		}
+		.thmv-amenities-services.thmv-about-list .thmv-single-services ul{
+			flex-flow:wrap;
+		}
+		.thmv-amenities-services.thmv-about-list .thmv-single-services ul li{
+			width:50%;
+			margin-bottom: 10px;
+		}
+		.thmv-amenities-services.thmv-about-list .thmv-nearby-icon{
+			max-width:10px;
+			width:35px;
+			justify-content: center;
+		}
+		.thmv-amenities-services.thmv-about-list .thmv-amenities-col{
+			padding: 0;
+		}
+		.thmv-room-single.thmv-room-single-modern {
+			padding: 20px 10px 50px;
+		}
+		.thmv-modern-full-img{
+			padding:0px 0px;
+			margin-bottom: 50px;
+			height: 350px;
+		}
+		.thmv-modern-full-img img{
+			height: 350px;
+			object-fit:cover;
+		}
+		.thmv-apartments-rates .thmv-apartments-info h6 {
+			margin-bottom: 10px;
+		}
+		.thmv-apartments-rates .thmv-apartments-date p{
+			padding:10px 0px;
+		}
+		.thmv-apartments-rates .thmv-apartments-check{
+			text-align: left !important;
+		}
+		.thmv-apartments-rates .thmv-apartments-check a{
+			margin-top: 10px;
+		}
+		.thmv-modern-nearby.thmv-nearby .thmv-nearby-info .thmv-sec-title {
+			text-align: left;
+		}
+		.thmv-modern-nearby.thmv-nearby .thmv-nearby-info .thmv-sec-title .thmv-title-effect::before {
+			transform: translate(5px, -60%);
+			left: 0;
+		}
+		.thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo img {
+			margin-bottom: 20px;
+		}
+		.thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo {
+			margin: 20px 0px 20px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.thmv-modern-nearby {
+			padding: 0px 10px 30px;
+		}
+		.thmv-rooms-suites.thmv-modern-room-single {
+			padding: 180px 10px 50px;
+		}
+		.thmv-rooms-suites.thmv-modern-room-single .thmv-rooms-info {
+			padding: 0px 10px;
+			margin-bottom: 20px;
+		}
+		.thmv-room-single-modern .thmv-single-services ul{
+			flex-flow:column;
+		}
+		.thmv-modern-nearby .thmv-nearby-info .thmv-sec-title  h2 {
+		    font-size: 30px;
+		    line-height: 39px;
+		}
+	/*=====  End of Room Single Modern Style  ======*/
+
+	/*=============================================
+		=            Explore Sectin Style             =
+		=============================================*/
+		.explore-top-title h1 {
+	        font-size: 30px;
+	        line-height: 40px;
+	    }
+	    .explore-top-title {
+	        padding: 20px 30px;
+	    }
+	    .thmv-expogird-info {
+	        text-align: left;
+	    }
+	    .thmv-expo-rating {
+	        justify-content: start;
+	        margin-top: 20px;
+	    }
+	    .thmv-expo-name h4 {
+	        margin: 25px 0;
+	    }
+	    .thmv-expo-btn {
+	        max-width: 100%;
+	    }
+	    .thmv-expo-row {
+	        padding: 15px 0;
+	    }
+	    .thmv-explore-top-title{
+	    	padding:30px 10px;
+	    }
+	    .thmv-explore-top-sec{
+	    	padding:0 10px;
+	    }
+	    .thmv-expo-bred{
+	    	padding: 30px 10px 10px;
+	    }
+	    .thmv-explore-grid{
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+	    }
+	    .thmv-expo-name h3{
+	    	padding-bottom: 10px;
+	    }
+	    .thmv-expogird-info-left {
+		    margin: 0;
+		}
+		.thmv-explore-grid-bred .thmv-expo-titlev2{
+			font-size: 30px;
+			line-height: 39px;
+		}
+		
+	/*=====  End of Explore Sectin Style   ======*/
+
+	/*=============================================
+		=            Package-Specials Style            =
+		=============================================*/
+
+		.thmv-packa-bred .thmv-expo-titlev2,
+		.thmv-explore-grid-bred .thmv-expo-titlev2{
+			padding-left: 70px;
+			font-size: 30px;
+    		line-height: 39px;
+		}
+		.thmv-packa-bred .thmv-expo-titlev2::after,
+		.thmv-explore-grid-bred .thmv-expo-titlev2::after{
+			width: 54px;
+			top:20px;
+		}
+		.thmv-packages-grid .thmv-expogird-img{
+			width: 100%;
+		}
+		.thmv-packages-grid .thmv-expogird-img{
+			margin-bottom: 0;
+		}
+		.thmv-see-all-package {
+		    padding:120px 20px 0px;
+		}
+		.thmv-see-all-package .thmv-sec-title{
+			margin-bottom: 15px;
+		}
+		.thmv-see-all-package .thmv-list-box{
+			margin-bottom: 40px;
+		}
+		.thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul{
+			display: block;
+		}
+		.thmv-instagram-feed.thmv-holiday{
+			padding:125px 10px 0px;
+		}
+		.thmv-instagram-feed.thmv-holiday .thmv-insta-feed-sec{
+			padding-top: 30px;
+		}
+		.thmv-package-outiline {
+			padding: 30px 10px 50px;
+		}
+		.thmv-package-outiline .thmv-about-covid{
+			padding: 20px;
+		}
+		.thmv-package-outiline.thmv-covid-sec .thmv-about-covid {
+			padding: 20px;
+		}
+		
+	/*=====  End of Package-Specials Style   ======*/
+
+	/*=============================================
+		=            about sectin style            =
+		=============================================*/
+		.thmv-about-bred .thmv-expo-titlev2,
+		.thmv-history-bred .thmv-expo-titlev2,
+		.thmv-contact-bred .thmv-expo-titlev2,
+		.thmv-our-menu-bred .thmv-expo-titlev2{
+			font-size: 30px;
+			line-height:39px;
+		}
+		.thmv-about-hotel.thmv-our-hotel .thmv-hotel-info {
+	        padding: 10px 10px 20px;
+	    }
+	    .thmv-about-video {
+	        padding: 150px 0px 0px;
+	    }
+	    .thmv-about-video .thmv-video-sec,
+	    .thmv-about-video .thmv-video-sec .thmv-video-modal img{
+	        height: 250px;
+	    }
+	    .thmv-our-team{
+	    	    padding: 150px 10px 20px;
+	    }
+	    .thmv-our-team .container {
+			max-width: 100%;
+		}
+		.thmv-our-team .thmv-insta-feed-sec .thmv-whatdo-box p{
+			font-size: 14px;
+			line-height: 24px;
+		}
+		.thmv-whatdo-box {
+			margin-bottom: 30px;
+		}
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul{
+			margin-top: 20px;
+		}
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li{
+			width:100%;
+			border-bottom:1px solid #ffffff; 
+			padding: 40px 0px 30px;
+		}	
+		.thmv-get-in-touch.thmv-bg-dark .thmv-contact-form {
+			padding: 120px 10px 0px;
+		}
+	/*=====  End of about sectin style  ======*/
+
+	/*===========================================
+		=            our history section            =
+		===========================================*/
+		.thmv-history-bred .thmv-expo-titlev2{
+			margin-bottom: 0
+		}
+		.thmv-our-history .thmv-expogird-info p{
+			padding-bottom: 10px;
+		}
+		.thmv-year-history-img,
+		.thmv-year-history-img img{
+			height: 300px
+		}
+		.thmv-year-history {
+			margin-bottom: 15px;
+		}
+		.thmv-history-bio {
+			padding: 0px 10px 60px;
+		}
+		.thmv-year-history .thmv-year {
+			margin-bottom: 20px;
+			font-size: 16px;
+			line-height:20px;
+			padding: 10px;
+		}
+	/*=====  End of our history section  ======*/
+	
+	/*================================================
+		=            Contact us Section Style            =
+		================================================*/
+		.thmv-get-in-touch.thmv-contact {
+			padding: 0px 10px 0px;
+		}
+		.thmv-contact .thmv-contact-info ul li{
+			width:100%;
+		}
+		.thmv-contact .thmv-contact-info .thmv-info-icon i{
+			width:30px;
+			text-align: center;
+			display: inline-block;
+		}
+		.thmv-map-sec iframe{
+			height: 400px;
+		}
+		.thmv-contact-sec .thmv-contact-info,
+		.thmv-contact-sec .thmv-contact-info img{
+			height:365px;
+		}
+		.thmv-contact-sec .thmv-contact-form {
+			padding-top: 140px;
+		}
+		.thmv-contact-sec {
+			padding: 0px 0px 80px;
+		}
+	/*=====  End of Contact us Section Style  ======*/
+
+	/*==============================================
+	    =            Our menu section style            =
+	    ==============================================*/
+	    .thmv-our-menu,
+	    .thmv-our-menu img{
+	    	height:240px;
+	    }
+	    .thmv-our-menu-bred{
+	    	padding:0px 10px;
+	    }
+	    .thmv-our-menu-bred .thmv-expo-titlev2 {
+	    	margin-bottom: 15px
+	    }
+	    .thmv-menu-tabs .nav-pills .nav-item{
+	    	margin:0;
+	    }
+	    .thmv-menu-tabs {
+			padding: 10px 20px 50px;
+		}
+		.thmv-menu-tabs .nav-pills .nav-item,
+		.thmv-menu-tabs .nav-pills .nav-item button{
+			width: 100%;
+			text-align-last: left
+		}
+		.thmv-menu-tabs .nav-pills button {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.thmv-menu-tabs .nav-pills{
+			padding: 0;
+		}
+		.thmv-menu-tabs ul.nav-pills li{
+			position: relative;
+		}
+		.thmv-menu-tabs ul.nav-pills li::after {
+   			content: "";
+		    background-image: url("../images/icons/criteria-light.svg");
+		    width: 20px;
+		    height: 20px;
+		    position: absolute;
+		    top: 50%;
+		    right: 16px;
+		    background-repeat: no-repeat;
+		    transform: translate(-0% , -30%);
+		}
+		.thmv-menu-tabs .nav-pills li{
+			border-bottom:1px solid #0F0F0F;
+		}
+		.thmv-menu-tabs .nav-pills li:last-child{
+			border:none;
+		}
+		.responsive-tabs.nav-tabs {
+		    position: relative;
+		    z-index: 1;
+		    overflow: visible;
+		    border:1px solid #0F0F0F;;
+		    margin-bottom:30px !important;	
+		}
+		.responsive-tabs.nav-tabs > li {
+		    display: none;
+		    float: none;
+		    text-align: center;
+		}
+		.responsive-tabs.nav-tabs > li.active {
+		    display: block;
+		}
+
+		.responsive-tabs.nav-tabs.open > li {
+		    display: block;
+		}
+		.responsive-tabs.nav-tabs.open > li a {
+		    border-radius: 0;
+		}
+		.responsive-tabs.nav-tabs.open > li:first-of-type a {
+		    border-radius: 2px 2px 0 0;
+		}
+		.responsive-tabs.nav-tabs.open > li:last-of-type a {
+		    border-radius: 0 0 2px 2px;
+		}
+	/*=====  End of Our menu section style   ======*/
 }
 @media only screen and (max-width:575px){
 	/*=================================
-	=            Home Page            =
-	=================================*/
-		/*----------  Footer Section Style  ----------*/
-		.thmv-footer-sec .thmv-footer-social a.btn-outline{
-			width:100%;
+		=            Home Page            =
+		=================================*/
+			/*----------  Footer Section Style  ----------*/
+			.thmv-footer-sec .thmv-footer-social a.btn-outline{
+				width:100%;
+			}
+	
+	/*=====  End of Home Page  ======*/
+	.thmv-apartments-rates .thmv-apartments-check a{
+		width:100%;
+	}	
+}
+
+@media only screen and (max-width:359px){
+	/*=================================
+		=            Home Page            =
+		=================================*/
+		.thmv-banner-title{
+			padding: 40px 15px;
+		}
+		.datepick{
+			width:100% !important;
+		}
+		.datepick-cmd-prev:after,
+		.datepick-cmd-next:after{
+			font-size: 14px;
 		}
 	
 	
 	/*=====  End of Home Page  ======*/
-	
+
 }

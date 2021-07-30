@@ -11,7 +11,6 @@ Created by Bellevue Theme
 1.  Global styles
 
 
-
 /*==========================================
     |||||  END TABLE OF CONTENT  |||||
 ==========================================*/
@@ -34,7 +33,7 @@ Created by Bellevue Theme
       margin:0;
       padding: 0;
       font-weight: 600;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
     }
     h1{
       font-size: 48px;
@@ -153,7 +152,7 @@ Created by Bellevue Theme
       background:#181818;
     }
     .thmv-bg-glass{
-        background-color: rgba(255, 255, 255, 0.5); 
+        background-color: rgba(255, 255, 255, 0.7); 
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px); 
 
@@ -172,6 +171,7 @@ Created by Bellevue Theme
     .read-more-btn i{
       font-size: 12px;
       margin-left: 6px;
+      margin-bottom: 3px;
       vertical-align: middle;
       transition: all 0.3s;
     }
@@ -410,6 +410,7 @@ Created by Bellevue Theme
     }
     .thmv-navbar-light.fixed-top .navbar-brand{
       color: #1C1715;
+      text-transform: uppercase;
     }
     .thmv-navbar-light.fixed-top .nav-link{
       color: #1C1715;
@@ -564,7 +565,7 @@ Created by Bellevue Theme
             margin-left: auto;
         }
         .thmv-tour-row .form-group {
-            /* display: flex; */
+            display: flex;
             border: 1px solid #1C1715;        
             width:230px;
             height: 50px;
@@ -678,6 +679,7 @@ Created by Bellevue Theme
        .datepick-month-header, .datepick-month-header select, .datepick-month-header input {
            background-color: #ffffff;
            color: #1C1715;
+           height: 34px;
        }
        .datepick-cmd-prev,
        .datepick-cmd-next {
@@ -735,6 +737,24 @@ Created by Bellevue Theme
        .datepick-cmd:hover{
         background:transparent;
        }
+       /* .datepick-month td a.thmv-date-selectedClass{
+            background:transparent !important;
+            color: #1C1715;
+            opacity:0.3;
+        }
+        .datepick-month td a.thmv-date-selectedClass{
+            position: relative;
+        }
+        .datepick-month td a.thmv-date-selectedClass::before{
+            content:"";
+            width:100%;
+            height:1px;
+            background: #000;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: rotate(140deg);
+        } */
 /*=====  End of Search Box Section Style  ======*/
 
 /*=============================================
@@ -744,7 +764,7 @@ Created by Bellevue Theme
         padding:150px 10px;
     }
     .thmv-facilities-sec .thmv-facilities-info{
-        margin-top:25px;
+        margin-top:30px;
     }
     .thmv-facilities-sec .thmv-facilities-info h5{
         font-size: 22px;
@@ -794,6 +814,7 @@ Created by Bellevue Theme
         font-family:"Font Awesome 5 Free";
         font-weight: 500;
         font-size: 8px;
+        opacity: 1;
     }
     .slick-dots li.slick-active button::before{
         font-weight: 600;
@@ -829,7 +850,8 @@ Created by Bellevue Theme
         line-height: 36px;
         color:#FFFFFF;
     }
-    .thmv-wel-info .thmv-brand-logo{
+    .thmv-wel-info .thmv-brand-logo,
+    .thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo{
         margin-top:50px;
         display: flex;
         align-items: center;
@@ -856,6 +878,9 @@ Created by Bellevue Theme
     .thmv-room-view{
         position: relative;
     }
+    .thmv-room-view img{ 
+        width:100%;
+    }
     .thmv-room-view .thmv-room-price{
         position: absolute;
         bottom: 0;
@@ -871,9 +896,12 @@ Created by Bellevue Theme
     .thmv-rooms-img-slider .thmv-room-info{
         display: none;
     }
+    .thmv-rooms-img-slider .slick-active.slick-center + .slick-slide .thmv-room-info {
+        display: none !important;
+    }
     .thmv-rooms-img-slider .slick-active .thmv-room-info,
     .thmv-rooms-img-slider  .slick-current.slick-active .thmv-room-info{
-        display:inline-block;s
+        display:inline-block;
     }
     .thmv-rooms-img-slider .thmv-room-info{
         margin-top: 20px;
@@ -910,7 +938,7 @@ Created by Bellevue Theme
     =         About Covid Section Style            =
     =============================================*/
     .thmv-covid-sec{
-        padding:150px 10px; 
+        padding:150px 10px 120px; 
     }
     .thmv-covid-sec .thmv-about-covid{
         border: 5px solid #181818;
@@ -1043,7 +1071,7 @@ Created by Bellevue Theme
         padding:100px 10px;
     }
     .thmv-nearby-us{
-        margin-top: 30px;
+        margin: 30px 0px 50px;
     }
     .thmv-nearby-us ul li{
         display: flex;
@@ -1068,6 +1096,7 @@ Created by Bellevue Theme
         font-size: 14px;
         font-weight: 400;
         opacity:0.5;
+        margin-bottom: 0;
     }
 /*=====  End of What's Nearby Section Style  ======*/
 
@@ -1196,6 +1225,7 @@ Created by Bellevue Theme
     .thmv-footer .thmv-bottom-footer .thmv-payment i{
         color:#ffffff;
         font-size: 27px;
+        margin-top: 4px;
         margin-left:30px;
         opacity:0.8;
         transition:all 0.3s;
@@ -1230,6 +1260,16 @@ Created by Bellevue Theme
     .thmv-home-side-show{
         opacity: 1;
         z-index: 10;
+    }
+    .thmv-home-side-show #home-top,
+    #home-top{
+        display: flex !important;
+    }
+    #home-top,
+    #home-top:hover,
+    #home-top:active,
+    #home-top:visited{
+        color: #000;
     }
     .thmv-calendar-sticky,
     .thmv-backto-top-sticky,
@@ -1430,7 +1470,8 @@ Created by Bellevue Theme
         text-align: center;
         padding: 10px 5px;
     }
-    .thmv-listimg-from h4 {
+    .thmv-listimg-from h4,
+    .thmv-see-all-package.thmv-two-col-roomlist-v1 .thmv-listimg-from h4 {
         font-size: 20px;
         line-height: 26px;
         position: absolute;
@@ -1444,7 +1485,7 @@ Created by Bellevue Theme
         border-bottom: 1px solid rgb(135 135 135 / 20%);
         padding: 15px 0;
     }
-    .thmv-queenbed {
+    .thmv-listroom-detail p.thmv-queenbed {
         font-size: 16px;
         margin-bottom: 0;
     }
@@ -1468,6 +1509,8 @@ Created by Bellevue Theme
     .thmv-listroom-detail p {
         margin: 0;
         padding: 10px 0;
+        font-size: 14px;
+        line-height:28px;
     }
     .thmv-listroom-detail .read-more-btn {
         font-size: 14px;
@@ -1510,6 +1553,8 @@ Created by Bellevue Theme
             line-height: 31px;
             letter-spacing: -0.02em;
             margin-bottom: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
         }
         .thmv-availability-check .thmv-mo-check-form input::placeholder {
           color: #1C1715;
@@ -1522,6 +1567,7 @@ Created by Bellevue Theme
         }
         .thmv-availability-check .thmv-mo-check-form input {
             color: #1C1715;
+            font-size: 14px;
             border: 1px solid #DBDBDB;
         }
         .thmv-availability-check .thmv-mo-check-form .form-group i {
@@ -1573,13 +1619,11 @@ Created by Bellevue Theme
             justify-content:space-between;
             font-size: 24px;
             line-height: 31px;
-            font-weight: 700;
         }
         .thmv-extra-services .thmv-your-price h5{
             margin:0px 0px 30px;
+            font-weight: 700;
         }
-
-
 /*=====  End of Room Listing One Column V1 Sectin Style  ======*/
 
 /*==============================================
@@ -1628,7 +1672,7 @@ Created by Bellevue Theme
     ======================================*/
     .thmv-subpage-titlev3 h2 {
         font-size: 38px;
-        margin: 160px 0 30px;
+        margin: 80px 0 20px;
         border-bottom: 1px solid #1C1715;
         display: inline-block;
         padding-bottom: 10px;
@@ -1639,6 +1683,7 @@ Created by Bellevue Theme
 /*============================================================
     =            Room Listing Two Columns v1 Sectin Style            =
     ============================================================*/
+
     .thmv-two-col-roomlist-v1 .thmv-listimg{
         height:300px;
     }
@@ -1674,7 +1719,7 @@ Created by Bellevue Theme
         margin-right: 0;
     }
     .thmv-two-col-roomlist-v1 .thmv-listroom-detail h5 {
-        font-size: 22px;
+        font-size: 24px;
         line-height: 28px;
     }    
     .thmv-two-col-roomlist-v1 .thmv-listroom-detail p{
@@ -1700,6 +1745,12 @@ Created by Bellevue Theme
         color: #FFF;
         position: unset;
         margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .thmv-room-card .thmv-listroom-info h5{
+        font-size: 22px;
+        line-height: 28px;
     }
     .thmv-room-card .thmv-listroom-detail{
         padding-top: 5px;
@@ -1714,8 +1765,11 @@ Created by Bellevue Theme
 /*=====  End of Room Listing Card One Columns Section Style  ======*/
 
 /*=============================================
-    =    Room Single Carousel Slider v1    =
+    =    Room Single v1    =
     =============================================*/
+    .thmv-room-single .thmv-room-info{
+        padding:0px 22px;
+    }
     .thmv-header-room-single-v1 .thmv-header-slick .slick-list{
         padding: 0 24% !important;
     }
@@ -1729,334 +1783,1201 @@ Created by Bellevue Theme
         object-fit:cover;
     }
     /*----------  Slick Slider Arrow Style  ----------*/
-    
-    .slick-prev:before,
-    .slick-next:before { 
-      font-family:"Font Awesome 5 Free";
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 60px;
-      color:#1C1715;
-      transition: all 0.3s ease 0s;
-      opacity:1;
-    }
-    .slick-slider .slick-prev:hover:before,
-    .slick-slider .slick-next:hover:before{
-      color: #908E8E;
-      cursor: pointer;
-    }
-    .slick-prev:before {
-      content: "\f060";
-    }
-    .slick-next:before {
-      content: "\f061";
-    }
-    .slider .slick-slider{
-      position: relative;
-    }
-    .slick-slider .slick-prev,
-    .slick-slider .slick-next{
-      width: 60px;
-      height: 60px;
-      display: inline-block;
-      background: #FFFFFF;
-      position: absolute;
-      z-index: 1;
-      transition: all 0.3s ease 0s;
-    }
-    .slick-slider .slick-prev:hover,
-    .slick-slider .slick-next:hover{
-      background: #1C1715;
-    }
-    .slick-slider .slick-prev{
-      left: 20%;
-      transform: translate(-50%, -50%);
-    }
-    .slick-slider .slick-next{
-      right: 20%;
-      transform: translate(50%, -50%);
-    }
-    .slick-slider .slick-prev:hover::before,
-    .slick-slider .slick-next:hover::before {
-        color: #FFFFFF;
-        cursor: pointer;
-    }
+        .slick-prev:before,
+        .slick-next:before { 
+          font-family:"Font Awesome 5 Free";
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 60px;
+          color:#1C1715;
+          transition: all 0.3s ease 0s;
+          opacity:1;
+        }
+        .slick-slider .slick-prev:hover:before,
+        .slick-slider .slick-next:hover:before{
+          color: #908E8E;
+          cursor: pointer;
+        }
+        .slick-prev:before {
+          content: "\f060";
+        }
+        .slick-next:before {
+          content: "\f061";
+        }
+        .slider .slick-slider{
+          position: relative;
+        }
+        .slick-slider .slick-prev,
+        .slick-slider .slick-next{
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          background: #FFFFFF;
+          position: absolute;
+          z-index: 1;
+          transition: all 0.3s ease 0s;
+        }
+        .slick-slider .slick-prev:hover,
+        .slick-slider .slick-next:hover{
+          background: #1C1715;
+        }
+        .slick-slider .slick-prev{
+          left: 20%;
+          transform: translate(-50%, -50%);
+        }
+        .slick-slider .slick-next{
+          right: 20%;
+          transform: translate(50%, -50%);
+        }
+        .slick-slider .slick-prev:hover::before,
+        .slick-slider .slick-next:hover::before {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
     /*----------  Signature Suite Sectin Style  ----------*/
-    .thmv-room-single{
-        padding:85px 10px 130px;
-    }
-    .thmv-separate{
-        margin:30px 0px;
-        height:2px;
-        background: #EDE8E9;
-        opacity: 1;
-    }
-    .thmv-Signature-title p{
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        color: #908E8E;
-        display: flex;
-        align-items: center;
-    }
-    .thmv-Signature-title p strong{
-        color: #1C1715;
-        margin-right:6px;
-    }
-    .thmv-Signature-title p .fa-star,
-    .thmv-reviews-sec .thmv-user-review .thmv-user-title p i{
-        color: #FFA800;
-        font-size: 16px;
-        margin-right:8px;
-    }
-    .thmv-Signature-title p .fa-circle {
-        font-size: 5px;
-        margin: 4px 10px 0px;
-    }
-    .thmv-single-services.thmv-nearby-us .thmv-nearby-icon {
-        width: 100%;
-        min-width: 48px;
-        min-height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #F7F7F7;
-    }
-    .thmv-single-services.thmv-nearby-us .thmv-nearby-places h6 {
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 700;
-    }
-    .thmv-amenities h5,
-    .thmv-price h5,
-    .thmv-availability h5,
-    .thmv-reviews-sec h5{
-        font-size: 22px;
-        line-height:32px;
-        font-weight: 800;
-        margin-top: -10px;
-        text-transform: capitalize;
-    }
-    .thmv-amenities .thmv-amenities-services{
-        display: flex;
-    }
-    .thmv-amenities .thmv-amenities-col{
-        width:50%;
-    }
-    .thmv-amenities .thmv-amenities-col .thmv-nearby-places{
-        display: flex;
-        align-items: center;
+        .thmv-room-single{
+            padding:85px 10px 130px;
+        }
+        .thmv-separate{
+            margin:30px 0px 20px;
+            height:2px;
+            background: #EDE8E9;
+            opacity: 1;
+        }
+        .thmv-Signature-title h2{
+            font-size: 34px;
+            line-height: 48px;
+            font-weight: 700;
+        }
+        .thmv-Signature-title p{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #908E8E;
+            display: flex;
+            align-items: center;
+        }
+        .thmv-Signature-title p strong{
+            color: #1C1715;
+            margin-right:6px;
+        }
+        .thmv-Signature-title p .fa-star,
+        .thmv-reviews-sec .thmv-user-review .thmv-user-title p i{
+            color: #FFA800;
+            font-size: 16px;
+            margin-right:8px;
+        }
+        .thmv-Signature-title p .fa-circle {
+            font-size: 4px;
+            margin: 0px 10px 0px;
+        }
+        .thmv-room-details{
+            padding-right: 60px;
+        }
+        .thmv-room-details .thmv-room-single-info-text{
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .thmv-single-services.thmv-nearby-us .thmv-nearby-icon {
+            width: 100%;
+            min-width: 48px;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F7F7F7;
+        }
+        .thmv-single-services.thmv-nearby-us .thmv-nearby-places h6 {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .thmv-amenities h5,
+        .thmv-price h5,
+        .thmv-availability h5,
+        .thmv-reviews-sec h5{
+            font-size: 22px;
+            line-height:32px;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        .thmv-room-details .thmv-single-services.thmv-nearby-us{
+            margin-bottom: 0;
+        }
+        .thmv-amenities .thmv-amenities-services{
+            display: flex;
+        }
+        .thmv-amenities .thmv-amenities-col{
+            width:50%;
+        }
+        .thmv-amenities .thmv-amenities-col .thmv-nearby-places{
+            display: flex;
+            align-items: center;
 
-    }
-    .thmv-amenities .thmv-amenities-col .thmv-nearby-places p{
-        opacity: 1;
-        margin-bottom: 0;
-    }
-    .thmv-price h5,
-    .thmv-availability h5{
-        margin-bottom: 30px;
-    }
-    .thmv-price .thmv-price-details{
-        text-align: center;
-    }
-    .thmv-price .thmv-price-details h5,
-    .thmv-price .thmv-price-details p{
-        font-size: 14px;
-        max-width:135px;
-        margin-bottom: 0;
-    }
-    .thmv-price .thmv-price-details h5{
-        background: #1C1715;
-        margin-bottom: 0;
-        color: #FFFFFF;
-    }
-    .thmv-availability-datepik .datepick{
-        border: 0;
-        width:100% !important;
-    }
-    .thmv-availability-datepik .datepick-cmd-today{
-        display: none;
-    }
-    .thmv-availability-datepik .datepick-month-header{
-        height: 50px;
-        padding: 10px;
-        margin-top: -45px;
-        margin-bottom: 15px;
-    }
-    .thmv-availability-datepik .datepick-month thead{
-        margin-top:20px !important;
-        border: 0;
-    }
-    .thmv-availability-datepik .datepick-month td{
-        min-width:40px !important;
-    }
-    .thmv-availability-datepik .datepick-month td a {
-        background-color: #ffffff;
-        margin: 0 auto;
-        width: 100%;
-    }
-    .thmv-availability-datepik .datepick-month td .datepick-today{
-        width: 100%;   
-    }
-    .datepick-month td .datepick-selected{
-        border:none;
-    }
-    .datepick-month span{
-        padding: 0;
-        margin: 0 auto;
-        padding:5px 0px;
-        width:100%;
-    }
-    .thmv-availability-datepik .datepick-month td .datepick-selected{
-        background: #0F0F0F;
-    }
-    .thmv-availability .thmv-nearby-us{
-        max-width:250px;
-        margin-left: auto;
-    }
-    .thmv-availability .thmv-single-services{
-        margin-top: 0;s
-    }
-    .thmv-availability .thmv-single-services .thmv-nearby-places h6{
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        text-transform: capitalize;
-    }
-    .thmv-availability .thmv-single-services.thmv-nearby-us ul li{
-        margin-bottom: 0;
-    }
-    .thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon{
-       background:none;
-    }
-    .thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon img{
-        width:29px;
-        height:29px;
-    }
-    .thmv-availability .thmv-nearby-us .thmv-nearby-places {
-        margin-left: 15px;
-        display: flex;
-        align-items: center;
-    }
+        }
+        .thmv-amenities .thmv-amenities-col .thmv-nearby-places p{
+            opacity: 1;
+            margin-bottom: 0;
+        }
+        .thmv-price h5,
+        .thmv-availability h5{
+            margin-bottom: 20px;
+        }
+        .thmv-price .thmv-price-details{
+            text-align: center;
+        }
+        .thmv-price .thmv-price-details h5,
+        .thmv-price .thmv-price-details p{
+            font-size: 14px;
+            max-width:135px;
+            margin-bottom: 0;
+        }
+        .thmv-price .thmv-price-details h5{
+            background: #1C1715;
+            margin-bottom: 0;
+            color: #FFFFFF;
+        }
+        .thmv-price-details.thmv-pricev2-details{
+            display: flex;
+            align-items: center;
+        }
+        .thmv-pricev2-details .thmv-doller-sign{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .thmv-pricev2-details .thmv-doller-sign h6{
+            width: 48px;
+            height:48px;
+            background: #1C1715;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thmv-pricev2-details .thmv-day-price{
+            text-align:left;
+            margin-left: 15px;
+        }
+        .thmv-pricev2-details .thmv-day-price h5{
+            background: transparent;
+            color:#1C1715;
+            line-height:21px;
+        }
+        .thmv-pricev2-details .thmv-day-price p{
+            line-height:21px;
+            opacity:0.5;
+        }
+        .thmv-availability-datepik .datepick{
+            border: 0;
+            width:100% !important;
+        }
+        .thmv-availability-datepik .datepick-cmd-today{
+            display: none;
+        }
+        .thmv-availability-datepik .datepick-month-header{
+            height: 50px;
+            padding: 10px;
+            margin-top: -45px;
+            margin-bottom: 15px;
+        }
+        .thmv-availability-datepik .datepick-month thead{
+            margin-top:20px !important;
+            border: 0;
+        }
+        .thmv-availability-datepik .datepick-month td{
+            min-width:40px !important;
+        }
+        .thmv-availability-datepik .datepick-month td a {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .thmv-availability-datepik .datepick-month td .datepick-today{
+            background-color: #f0c0c0;
+            width: 100%;  
+        }
+        .thmv-availability-datepik .datepick-month td a.thmv-date-highlightedClass{
+            background:rgb(28 23 21/ 20%);
+        }
+        
+        .datepick-month td .datepick-selected{
+            border:none;
+        }
+        .datepick-month span{
+            padding: 0;
+            margin: 0 auto;
+            padding:5px 0px;
+            width:100%;
+        }
+        .thmv-availability-datepik .datepick-month td .datepick-selected{
+            background: #0F0F0F;
+        }
+        .thmv-availability .thmv-nearby-us{
+            max-width:250px;
+            margin-left: auto;
+        }
+        .thmv-availability .thmv-single-services{
+            margin-top: 0;
+        }
+        .thmv-availability .thmv-single-services .thmv-nearby-places h6{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        .thmv-availability .thmv-single-services.thmv-nearby-us ul li{
+            margin-bottom: 0;
+        }
+        .thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon{
+           background:none;
+        }
+        .thmv-availability .thmv-single-services.thmv-nearby-us .thmv-nearby-icon img{
+            width:29px;
+            height:29px;
+        }
+        .thmv-availability .thmv-nearby-us .thmv-nearby-places {
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+        }
     /*----------  Rreviews Section Style  ----------*/
-    .thmv-review-row{
-        padding:20px;
-        border:1px solid #EDE8E9;
-        margin:30px 0px 40px;
-    }
-    .thmv-reviews-sec .thmv-all-rating .thmv-rating-title h2{
-        font-size: 34px;
-        line-height: 48px;
-        font-weight:800;
-    }
-    .thmv-reviews-sec .thmv-all-rating .thmv-rating-title i{
-        font-size: 28px;
-        line-height: 28px;
-        margin-right: 10px;
-        color: #FFA800;
-    }
-    .thmv-reviews-sec .thmv-progress-sec{
-        padding-left: 30px;
-        border-left:1px solid #EDE8E9;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(1) .thmv-progress .progress .progress-bar{
-        background-color: #2AC084;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(1) .thmv-progress .progress{
-         background-color: #2AC08420;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(2) .thmv-progress .progress .progress-bar{
-        background-color: #FDF0D5;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(2) .thmv-progress .progress{
-         background-color: #FDF0D520;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(3) .thmv-progress .progress .progress-bar{
-        background-color: #EB5E55;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(3) .thmv-progress .progress{
-         background-color: #EB5E5520;
-    }
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progress{
-        width:70px;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-    .thmv-reviews-sec .thmv-progress-sec ul li:last-child{
-        margin-bottom: 0;
-    }
-    .thmv-reviews-sec .thmv-all-rating p,
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6,
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info p,
-    .thmv-reviews-sec .thmv-user-review .thmv-user-text p,
-    .thmv-room-single .thmv-room-info h6,
-    .thmv-room-single .thmv-room-info p{
-        font-size: 14px;
-        line-height: 21px;
-        text-transform: capitalize;
-    }
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6{
-        font-weight: 700;
-    }
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progress{
-        text-align: right;
-    }
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progress .progress {
-        height: 4px;
-        margin-top: 5px;
-        transform:rotate(180deg);
-    }
-    .thmv-reviews-sec .thmv-progress-sec .thmv-progress h5,
-    .thmv-reviews-sec .thmv-user-review .thmv-user-title h6{
-        font-size: 16px;
-        line-height:24px;
-        font-weight: 700;
-        text-transform: capitalize;
-    }
+        .thmv-review-row{
+            padding:20px;
+            border:1px solid #EDE8E9;
+            margin:30px 0px 40px;
+        }
+        .thmv-reviews-sec .thmv-all-rating .thmv-rating-title h2{
+            font-size: 34px;
+            line-height: 48px;
+            font-weight:800;
+        }
+        .thmv-reviews-sec .thmv-all-rating .thmv-rating-title i{
+            font-size: 28px;
+            line-height: 28px;
+            margin-right: 10px;
+            color: #FFA800;
+        }
+        .thmv-reviews-sec .thmv-progress-sec{
+            padding-left: 30px;
+            border-left:1px solid #EDE8E9;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(1) .thmv-progress .progress .progress-bar{
+            background-color: #2AC084;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(1) .thmv-progress .progress{
+             background-color: #2AC08420;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(2) .thmv-progress .progress .progress-bar{
+            background-color: #FDF0D5;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(2) .thmv-progress .progress{
+             background-color: #FDF0D520;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(3) .thmv-progress .progress .progress-bar{
+            background-color: #EB5E55;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:nth-child(3) .thmv-progress .progress{
+             background-color: #EB5E5520;
+        }
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progress{
+            width:70px;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .thmv-reviews-sec .thmv-progress-sec ul li:last-child{
+            margin-bottom: 0;
+        }
+        .thmv-reviews-sec .thmv-all-rating p,
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6,
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info p,
+        .thmv-reviews-sec .thmv-user-review .thmv-user-text p,
+        .thmv-room-single .thmv-room-info h6,
+        .thmv-room-single .thmv-room-info p{
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
+        }
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progtess-info h6{
+            font-weight: 700;
+        }
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progress{
+            text-align: right;
+        }
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progress .progress {
+            height: 4px;
+            margin-top: 5px;
+            transform:rotate(180deg);
+        }
+        .thmv-reviews-sec .thmv-progress-sec .thmv-progress h5,
+        .thmv-reviews-sec .thmv-user-review .thmv-user-title h6{
+            font-size: 16px;
+            line-height:24px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
     /*----------  User Review Section Style ----------*/
-    .thmv-reviews-sec .thmv-user-review .thmv-user-title{
+        .thmv-reviews-sec .thmv-user-review .thmv-user-title{
+            display: flex;
+            justify-content:space-between;
+        }
+        .thmv-reviews-sec .thmv-user-review .thmv-user-text p{
+            line-height: 28px;
+            margin:5px 0px 15px;
+        }
+        .thmv-reviews-sec .thmv-user-review .thmv-user-data{
+            display: flex;
+            align-items: center;
+        }
+        .thmv-reviews-sec .thmv-user-data .thmv-user-img img{
+            width: 36px;
+            margin-right: 10px;
+        }
+        .thmv-reviews-sec .thmv-user-data .thmv-user-name h6{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+        .thmv-reviews-sec .thmv-user-data .thmv-user-name p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .thmv-reviews-sec .thmv-user-review .thmv-review-box{
+            margin-bottom: 40px;
+        }
+        .thmv-reviews-sec .thmv-user-review .thmv-review-box:last-child{
+            margin-bottom: 0;
+        }
+    /*----------  Discount Section Style  ----------*/
+        .thmv-discount{
+            margin-top: 65px;
+            text-align:center;
+        }
+        .thmv-discount a{
+            font-size: 22px;
+            min-width:305px;
+            padding:20px 10px;
+            margin:-150px auto 0px;
+        }
+    /*----------  Room Single Slider  ----------*/
+        /* .thmv-room-single .thmv-room-info h5{
+            font-size: 24px;
+            line-height: 31px;
+        }
+        .thmv-room-single .thmv-room-price p{
+            font-size:20px;
+            line-height: 40px;
+            padding: 5px 25px
+        }
+        .thmv-rooms-img-slider .slick-rooms-single-slider .thmv-room-info{
+            display:block;
+        } */
+        .thmv-rooms-suites.thmv-room-single-suites{
+            padding:100px 10px 100px;
+        }
+        .thmv-rooms-suites.thmv-room-single-suites .thmv-sec-title h2{
+            font-size: 32px;
+            line-height:41px;
+        }
+        .thmv-single-room-blok .thmv-room-info {
+            padding: 25px 0px;
+        }
+        .thmv-single-room-blok .thmv-room-view .thmv-room-price p{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .thmv-single-room-blok .thmv-room-info h5{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+        }
+        .thmv-single-room-blok .thmv-room-info h6{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .thmv-single-room-blok .thmv-room-info p{
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .thmv-single-room-blok .thmv-room-info::after{
+            display: none;
+        }
+        .thmv-room-details .thmv-single-services.thmv-nearby-us{
+            margin:30px 0px 40px;
+        }
+/*=====  End of Room Single v1  ======*/
+
+/*=============================================
+    =    Room Single v1.2    =
+    =============================================*/
+    .thmv-header-room-single-v2 .thmv-header-img img{
+        width:100%;
+        height:485px;
+        object-fit:cover;
+    }
+/*=====  End of Room Single v1.2  ======*/
+
+/*=============================================
+    =    Room Single Modern v2    =
+    =============================================*/
+    .thmv-room-modern .thmv-col-2-img{
+        margin-top: 25px;
+    }
+    .thmv-room-modern .thmv-col-2-img .thmv-header-img{
+        position: relative;
+    }
+    .thmv-room-modern .thmv-col-2-img .thmv-show-al-photos{
+        position: absolute;
+        right: 10px;
+        bottom: 10px
+    }
+    .thmv-room-modern .thmv-show-al-photos a.btn-full-filled{
         display: flex;
+        text-transform: capitalize;
+        width:175px;
+        padding:15px 15px;
+        color:#908E8E;
+        background:linear-gradient(0deg, rgba(58, 51, 53, 0.04), rgba(58, 51, 53, 0.04)), #FFFFFF;
+        border:0;
+        text-align:right;
+        
+    }
+    .thmv-room-modern .thmv-show-al-photos a.btn-full-filled:hover{
+        color:#908E8E;
+        background:#1C1715;
+    }
+    .thmv-room-modern .thmv-show-al-photos a.btn-full-filled img{
+        margin-right: 10px;
+        width:18px;
+    }
+    .thmv-room-modern .thmv-show-al-photos a.btn-full-filled h6{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .thmv-room-single.thmv-room-single-modern{
+        padding:45px 10px 100px;
+    }
+    .thmv-room-single-modern .thmv-room-details .thmv-Signature-v2{
+        display: flex;
+        align-items:flex-end;
         justify-content:space-between;
     }
-    .thmv-reviews-sec .thmv-user-review .thmv-user-text p{
-        line-height: 28px;
-        margin:5px 0px 10px;
+    /* .thmv-room-single-modern .thmv-room-details .thmv-room-details-price{
+        margin-bottom: 10px;    
+    } */
+    .thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5{
+        text-transform: capitalize;
+        font-weight: 800;
     }
-    .thmv-reviews-sec .thmv-user-review .thmv-user-data{
+    .thmv-room-single-modern .thmv-room-details .thmv-room-details-price h5 span{
+        font-size: 16px;
+        font-weight: 300;
+        color: #908E8E;
+        text-transform: lowercase;
+    }
+    .thmv-room-single-modern .thmv-single-services ul{
+        display: flex;
+    }
+    .thmv-room-single-modern .thmv-single-services ul li{
+        width: 25%;
+    }
+    .thmv-room-single-modern .thmv-nearby-us ul li:last-child{
+        margin-bottom: 20px;
+    }
+    /* about */
+    .thmv-room-single-modern .thmv-single-about{
+        margin-top: 40px;
+    }
+    .thmv-room-single-modern .thmv-single-about h5{
+        font-size:22px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+    .thmv-room-single-modern .thmv-single-about .thmv-paragraph,
+    .thmv-room-single-modern .thmv-single-about .thmv-paragraph p{
+        margin-top: 30px;
+    }
+    .thmv-room-single-modern .thmv-single-about .thmv-paragraph p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .thmv-amenities-services.thmv-about-list .thmv-nearby-icon{
+        background:transparent;
+        min-width: 38px;
+        min-height: 38px;
+        justify-content: flex-start;
+    }
+    .thmv-amenities-services.thmv-about-list .thmv-single-services ul{
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .thmv-amenities-services.thmv-about-list .thmv-single-services ul li{
+        width: 33.33%;
         display: flex;
         align-items: center;
     }
-    .thmv-reviews-sec .thmv-user-data .thmv-user-img img{
-        width: 36px;
-        margin-right: 10px;
+    .thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places{
+        margin-left: 0;
     }
-    .thmv-reviews-sec .thmv-user-data .thmv-user-name h6{
+    .thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places{
+        justify-content: flex-start;
+    }
+    .thmv-amenities-services.thmv-about-list .thmv-nearby-us .thmv-nearby-places p{
+        opacity: 1;
+    }
+    .thmv-room-single-modern .thmv-single-services ul li{
+        margin-bottom: 10px;
+    }
+    .thmv-modern-full-img{
+        margin-bottom: 100px;
+    }
+    .thmv-apartments{
+        padding:150px 10px 100px ;
+    }
+    .thmv-apartments-rates .thmv-apartments-info h6{
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    .thmv-apartments-rates .thmv-apartments-info p,
+    .thmv-apartments-rates .thmv-apartments-date p{
+        margin-bottom: 0px;
+        line-height:18px;
+    }
+    .thmv-apartments-rates{
+        margin-top: 30px;
+    }
+    .thmv-modern-review .slick-slide .thmv-service-box .thmv-rating img{
+        width:200px;
+        margin:0 auto;
+    }
+    .thmv-modern-nearby{
+        padding: 0px 10px 140px;
+    }
+    .thmv-modern-nearby .thmv-nearby-info .thmv-brand-logo {
+        margin: 40px 0px 20px;
+    }
+    .thmv-rooms-suites.thmv-modern-room-single{
+        background: #F7F7F7;
+        padding:200px 0px 100px;
+    }
+/*=====  End of Room Single v2  ======*/
+
+/*================================================
+    =            Expore Top Section Style            =
+    ================================================*/
+    .thmv-explore-top-sec {
+        background: url('../images/explore/explore-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+    }
+    .thmv-explore-top-title {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        border-left: 10px solid #1C1715;
+        padding: 30px 90px;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(25px);
+    }
+    /*----------  Explore Section CSS  ----------*/
+        .thmv-explore-grid {
+            padding-bottom: 100px;
+        }
+        .thmv-expo-bred {
+            display: flex;
+            padding: 40px 0 20px;
+            font-size: 18px;
+            opacity: 0.5;
+        }
+        .thmv-expo-row{
+            padding: 20px 0;
+        }
+        .thmv-expo-rating {
+            display: flex;
+        }
+        .thmv-expo-rating ul {
+            display: flex;
+        }
+        .thmv-expo-rating ul li {
+            color: #FFC804;
+            margin-right: 5px;
+        }
+        .thmv-expo-rating p {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .thmv-expo-location {
+            font-size: 18px;
+        }
+        .thmv-expo-location i {
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        .thmv-expo-name h3 {
+            text-transform: none;
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 20px;
+            line-height: 31px;
+        }
+        .thmv-expo-name p {
+            opacity: 0.6;
+            margin: 0;
+        }
+        .thmv-expo-btn{
+            max-width: 250px;
+            width: 100%;
+        }
+        .thmv-expo-name h4 {
+            text-transform: inherit;
+            font-size: 20px;
+            line-height: 26px;
+            border-left: 7px solid #191B18;
+            padding-left: 10px;
+            margin: 35px 0;
+        }
+        .thmv-expogird-info {
+            margin-left: 30px;
+        }
+        .thmv-expogird-info-left{
+            margin: 0 30px 0 0;
+        }
+    /*----------  What We Do CSS  ----------*/
+        .thmv-whatdo-box {
+            margin-bottom: 50px;
+        }
+        .thmv-whatdo-box img:hover {
+            filter: grayscale(100%);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .thmv-whatdo-box h4 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: inherit;
+            line-height: 28px;
+            padding: 20px 0 10px;
+        }
+        .thmv-whatdo-box p {
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.5;
+        }
+    /*----------  explore page version2 CSS  ----------*/
+        .thmv-expo-titlev2 {
+            position: relative;
+            padding-left: 200px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .thmv-expo-titlev2:after {
+            content: "";
+            background: #1C1715;
+            width: 170px;
+            height: 5px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0px, -50%);
+        }
+        .thmv-what-we-sec {
+            padding-top: 40px;
+        }
+/*=====  End of Expore Top Section Style  ======*/
+
+/*=================================================
+    =            package and spacial style            =
+    =================================================*/
+    .thmv-package-top-sec {
+        height:485px;   
+    }
+    .thmv-package-top-sec img{
+        width:100%;   
+        height:485px;
+        object-fit:cover;
+    }
+    .thmv-packages-grid .thmv-expogird-info .thmv-expo-name h3{
+        margin-bottom: 15px;
+    }
+    /*----------  Spcial Offser Style  ----------*/
+    .thmv-spcial-offser-box{
+        padding: 80px 20px;
+        max-width:560px;
+        margin:0 auto;
+    }
+    .thmv-spcial-offser-box h2,
+    .thmv-spcial-offser-box p{
+        color: #ffffff;
+    }   
+    .thmv-spcial-offser-box p{
+        margin:20px 0px 30px;
+    }
+    .thmv-spcial-offser{
+        padding-bottom:100px;
+    }
+    .thmv-spcial-offser-box a.btn-full-filled-light{
+        width:250px;
+    }
+    .thmv-spcial-offser-box a.btn-full-filled-light:hover {
+        border-color:#FFFFFF;
+    }
+    /*----------  See All Packages Style ----------*/
+    .thmv-see-all-package{
+        padding: 150px 10px 0px;
+    }
+     .thmv-see-all-package .thmv-list-box .thmv-listimg-top h5{
         font-size: 14px;
-        line-height: 21px;
-        font-weight: 700;
-    }
-    .thmv-reviews-sec .thmv-user-data .thmv-user-name p{
-        font-size: 12px;
         line-height: 18px;
+        font-weight: 700;
+     }
+     .thmv-see-all-package.thmv-two-col-roomlist-v1 .thmv-listimg-from h4{
+        bottom:10px;
+     }
+    .thmv-see-all-package .thmv-rooms-info,
+    .thmv-see-all-package .thmv-sec-title{
+        margin-bottom: 30px;
     }
-    .thmv-reviews-sec .thmv-user-review .thmv-review-box{
-        margin-bottom: 40px;
+    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul{
+        margin-top: 15px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap:wrap;
     }
-    .thmv-reviews-sec .thmv-user-review .thmv-review-box:last-child{
+    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail .thmv-single-col-ul li{
+        width:100%;
+    }
+    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul li{
+        width: 50%;
+        position: relative;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail ul li::before {
+      content: "\f45c";
+      font-family: 'Font Awesome 5 Free';
+      font-size: 8px;
+      color:#1C1715;
+      opacity:0.3;
+      font-weight: bold;
+      display: inline-block;
+      position:absolute;
+      left:0;
+      top: 50%;
+      transform:translate(-0% , -50%);
+    }
+    .thmv-see-all-package .thmv-list-box .thmv-listroom-detail .thmv-learn-more{
+        margin-top: 20px;
+        width:100%;
+    }
+    /*----------  A Perfect Holiday Style  ----------*/
+    .thmv-instagram-feed.thmv-holiday{
+        padding: 200px 10px 120px;
+    }
+    .thmv-holiday .thmv-sec-title h2,
+    .thmv-holiday .thmv-insta-feed-sec .thmv-whatdo-box h4,
+    .thmv-holiday .thmv-insta-feed-sec .thmv-whatdo-box p{
+        color: #1C1715;
+    }
+    .thmv-holiday .thmv-insta-feed-sec .thmv-whatdo-box{
         margin-bottom: 0;
     }
-    /*----------  Room Single Slider  ----------*/
-    .thmv-room-single .thmv-room-info h5{
+    .thmv-package-outiline{
+        padding:0px 0px 150px;
+    }
+/*=====  End of package and spacial style  ======*/
+
+/*=====================================
+    =            About us and team             =
+    =====================================*/
+    .thmv-about .thmv-about-info .thmv-expo-name{
+        padding-right: 70px;
+    }
+    .thmv-about .thmv-about-info{
+        padding: 0px 0px 60px;
+    }
+    .thmv-about-video{
+        padding:220px 0px 0px;
+    }
+    .thmv-about-video .thmv-sec-title{
+        padding-bottom: 50px;
+    }
+    /*----------  video modul  ----------*/
+        .thmv-video-modal img{
+          width: 100%;
+        }
+        .thmv-video-modal{
+          position: relative;
+        }
+        .thmv-video-modal .embed-container { 
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+        } 
+        .thmv-video-modal .embed-container iframe,
+        .thmv-video-modal .embed-container object,
+        .thmv-video-modal .embed-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .thmv-video-sec .thmv-play-btn{
+          background:#FFFFFF;
+          border:none;
+          border-radius: 100px;
+          width: 90px;
+          height: 90px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.3s ease 0s;
+        }
+        .thmv-video-sec .thmv-play-btn i{
+          color: #1C1715;
+          font-size: 32px;
+          line-height:52px;
+          transition: all 0.3s ease 0s;
+        }
+        .thmv-video-sec .thmv-play-btn:hover,
+        .thmv-video-modal .modal-body .btn-close:hover{
+          background:#1C1715;
+        }
+        .thmv-video-sec .thmv-play-btn:hover i,
+        .thmv-video-modal .modal-body .btn-close:hover i{
+          color: #FFFFFF;
+        }
+        .thmv-video-modal .modal-content{
+          border-radius:0;
+        }
+        .thmv-video-modal .modal-body{
+          position: relative;
+        }
+        .thmv-video-modal .modal-body .btn-close{
+          position: absolute;
+          right: 0px;
+          z-index: 1;
+          width: 30px;
+          height: 30px;
+          background: #000;
+          border: none;
+          border-radius: 0;
+          line-height: 30px;
+          opacity:1;
+          transition: all 0.3s ease 0s;
+        }
+        .thmv-video-modal .modal-body .btn-close i{
+          color: #FFFFFF;
+          font-size: 14px;
+          transition: all 0.3s ease 0s;
+        }
+        .thmv-video-modal .modal-dialog video{
+          width:100%;
+          height:100%;
+          display: block;
+        }
+        .thmv-video-text h2{
+          margin-bottom:20px;
+        }
+    /*----------  our team section  ----------*/
+        .thmv-our-team {
+            padding: 250px 10px 30px;
+        }
+        .thmv-our-team.thmv-instagram-feed .thmv-sec-title h2,
+        .thmv-our-team.thmv-instagram-feed .thmv-insta-feed-info p,
+        .thmv-our-team .thmv-whatdo-box h4,
+        .thmv-our-team .thmv-whatdo-box p{
+            color:#1C1715;
+        }
+        .thmv-our-team .thmv-insta-feed-sec .thmv-whatdo-box h4{
+            padding-bottom: 0;
+        }
+    /*----------  get in touch section  ----------*/
+        .thmv-get-in-touch{
+            padding: 250px 10px 150px;
+        }    
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info .thmv-info-title h2,
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-form .thmv-form-title h2,
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info .thmv-info-icon i,
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info h5,
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info p,
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info a{
+            color:#FFFFFF;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul{
+            margin-top: 50px;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li{
+            display: flex;
+            padding:30px 0px;
+            border-bottom:1px solid #FFFFFF50;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li:last-child{
+            border:none;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li i{
+            margin-right:16px;
+            width:30px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li h5{
+            font-size: 22px;
+            font-weight:600;
+            text-transform: capitalize;
+            line-height: 22px;
+            margin-bottom: 15px;
+        }
+        .thmv-get-in-touch.thmv-bg-dark .thmv-contact-info ul li p{
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+        .thmv-contact-form form{
+            margin-top: 20px;
+        }
+        .thmv-contact-form form input,
+        .thmv-contact-form form textarea{
+            height: 50px;
+            border-radius:0;
+        }
+        .thmv-bg-dark .thmv-contact-form form input::placeholder,
+        .thmv-bg-dark .thmv-contact-form form textarea::placeholder{
+            color:#ffffff;
+        }
+        .thmv-bg-dark .thmv-contact-form form input,
+        .thmv-bg-dark .thmv-contact-form form textarea{
+            border-color:#ffffff50;
+            color:#ffffff;
+            background:transparent;
+            font-size: 14px;
+        }
+        .thmv-contact-form form button{
+            border-radius:0;
+            border-color:#ffffff50;
+            padding:15px 10px;
+            text-transform: capitalize;
+        }
+        .thmv-bg-dark .thmv-contact-form form button:hover{
+            border-color:#FFFFFF;
+        }
+        .thmv-bg-dark .thmv-contact-form form input:focus,
+        .thmv-bg-dark .thmv-contact-form form textarea:focus{
+            background:transparent;
+            border-color:#ffffff;
+            color:#ffffff;
+        }
+/*=====  End of About us and team   ======*/
+
+/*=================================================
+    =            Our History section style            =
+    =================================================*/
+    .thmv-history-bred,
+    .thmv-our-history{
+        padding:0px 10px;
+    }
+    .thmv-history-bred .thmv-expo-titlev2{
+        margin-bottom: 10px;
+    }
+    .thmv-about.thmv-our-history .thmv-about-info .thmv-expogird-info{
+        margin: 0;
+    }
+    .thmv-about.thmv-our-history .thmv-about-info:nth-child(odd) .thmv-expogird-info .thmv-expo-name {
+        padding-right:90px;
+        padding-left: 0;
+    }
+    .thmv-about.thmv-our-history .thmv-about-info:nth-child(even) .thmv-expogird-info .thmv-expo-name {
+        padding-left: 90px;
+        padding-right: 0;
+    }
+    .thmv-history-bio{
+        padding: 0px 10px 130px;
+    }
+    .thmv-year-history-info{
+        padding-right: 50px;
+    }
+    .thmv-year-history{
+        margin-bottom: 70px;
+    }
+    .thmv-year-history:last-child{
+        margin-bottom: 0;
+    }
+    .thmv-year-history .thmv-year{
+        display: inline-block;
+        color:#FFFFFF;
+        padding: 6px 25px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    .thmv-year-history h6{
         font-size: 24px;
         line-height: 31px;
+        text-transform:unset;
+        font-weight: 500;
+        margin-bottom: 20px;
     }
-    .thmv-room-single .thmv-room-price p{
-        font-size:20px;
-        line-height: 40px;
-        padding: 5px 25px
+    .thmv-year-history p{
+        opacity:0.6;
+        margin-bottom: 20px;
     }
-/*=====  End of Room Single Carousel Slider v1  ======*/
+    .thmv-history-bio .thmv-year-history:nth-child(odd) .thmv-year-history-info {
+        padding-right:60px;
+        padding-left: 12px;
+    }
+    .thmv-history-bio .thmv-year-history:nth-child(even) .thmv-year-history-info {
+        padding-left: 60px;
+        padding-right: 12px;
+    }
+/*=====  End of Our History section style  ======*/
+
+/*==========================================
+    =            Contact Us Section            =
+    ==========================================*/
+    .thmv-contact-bred{
+        padding:0px 10px 50px;
+    }
+    .thmv-get-in-touch.thmv-contact {
+        padding: 0px 0px 80px;
+    }
+    .thmv-contact .thmv-contact-info ul{
+        display: flex;
+    }
+    .thmv-contact .thmv-contact-info ul li{
+        width: 33.33%;
+        display: flex;
+    }
+    .thmv-contact .thmv-contact-info ul li i{
+        margin-right:20px;
+        font-size: 24px;
+    }
+    .thmv-contact .thmv-contact-info ul li h5{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    .thmv-contact .thmv-contact-info ul li p{
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .thmv-contact-sec{
+        padding:0px 0px;
+    }
+    .thmv-contact-sec .thmv-contact-info{
+        height:850px;
+        padding: 0;
+    }
+    .thmv-contact-sec .thmv-contact-info img{
+        height:850px;
+        width:100%;
+        object-fit:cover;
+    }
+    .thmv-contact-sec .thmv-contact-form form{
+        margin-top: 0px;
+        max-width:460px;
+    }
+    .thmv-contact-sec .thmv-contact-form{
+        padding-top: 120px;
+    }
+    .thmv-contact-form form input::placeholder,
+    .thmv-contact-form form textarea::placeholder{
+        color:#1C1715;
+    }
+    .thmv-contact-form form input,
+    .thmv-contact-form form textarea{
+        border-color:#1C1715;
+        color:#1C1715;
+        background:transparent;
+    }
+    .thmv-contact-form form button:hover{
+        border-color:#1C1715;
+    }
+    .thmv-contact-form form input:focus,
+    .thmv-contact-form form textarea:focus{
+        background:transparent;
+        border-color:#1C1715;
+        color:#1C1715;
+    }
+/*=====  End of Contact Us Section  ======*/
+
+/*==============================================
+    =            Our menu section style            =
+    ==============================================*/
+    .thmv-our-menu{
+        height: 485px;
+    }
+    .thmv-our-menu img {
+        width: 100%;
+        height: 485px;
+        object-fit: cover;
+    }
+    .thmv-menu-tabs{
+        padding:30px 10px 50px;
+    }
+    .responsive-tabs.nav-tabs {
+        border-bottom: none;
+        padding:0px 10px;
+    }
+    .tab-content .thmv-tabs-box{
+        margin-bottom: 30px;
+        padding:0;
+    }
+    .tab-content .thmv-tabs-info p{
+        opacity:0.5;
+    }
+    .tab-content .thmv-tab-title{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 10px;
+    }
+    .tab-content .thmv-tab-title h5{
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+    .thmv-menu-tabs .nav-pills .nav-item{
+        margin-right:5px;
+    }
+    .thmv-menu-tabs .nav-pills .nav-item:last-child{
+        margin-right: 0;
+    }
+    .thmv-menu-tabs .nav-pills button{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight:700;
+        padding:10px 40px;
+        border-radius:0;
+        color:#0F0F0F50;
+        transition: all 0.3s;
+    }
+    .thmv-menu-tabs .nav-pills .nav-link:hover,
+    .thmv-menu-tabs .nav-pills .nav-link.active,
+    .thmv-menu-tabs .nav-pills .show > .nav-link{
+        color:#FFFFFF;
+        background: #0F0F0F;
+    }
+    .thmv-our-service.thmv-our-menu-slider {
+        padding:60px 10px 60px;
+    }
+/*=====  End of Our menu section style  ======*/
+
+
+
+

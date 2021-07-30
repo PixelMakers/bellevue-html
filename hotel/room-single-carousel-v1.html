@@ -48,7 +48,7 @@
    <body>
       <!-- Header Section Start -->
       <!-- ======Top Menu Start====== -->
-      <div class="thmv-top-nav" id="home-top">
+      <div class="thmv-top-nav">
          <nav id="navbar_top" class="navbar navbar-expand-sm fixed-top thmv-navbar-light ">
             <div class="container thmv-mob-nav">
                <div class="thmv-menu-left">
@@ -71,7 +71,7 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse justify-content-end collapse show" id="navbarSupportedContent">
-                  <a class="navbar-brand mx-auto d-none d-md-block" href="#">Logotype</a>
+                  <a class="navbar-brand mx-auto d-none d-md-block" href="index.html">Logotype</a>
                   <div class="d-flex thmv-right-menu">
                      <ul class="thmv-social d-none d-lg-flex">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -93,15 +93,14 @@
             <div class="offcanvas-body thmv-offcanvas-body">
                <div class="thmv-leftside-menu">
                   <ul>
-                     <li><a class="active" href="#" title="">Home</a></li>
-                     <li><a href="#" title="">About Us</a></li>
-                     <li><a href="#" title="">Food/menu</a></li>
-                     <li><a href="#" title="">Faq</a></li>
-                     <li><a href="#" title="">Blog</a></li>
-                     <li><a href="#" title="">Gallery</a></li>
-                     <li><a href="#" title="">Covid updates page</a></li>
-                     <li><a href="#" title="">Booking for groups</a></li>
-                     <li><a href="#" title="">Contact Us</a></li>
+                     <li><a href="index.html" title="">Home</a></li>
+                     <li><a href="about-us.html" title="">About Us</a></li>
+                     <li><a class="active" href="about-us.html" title="">Rooms</a></li></li>
+                     <li><a href="menu.html" title="">Food/menu</a></li>
+                     <li><a href="explore.html" title="">explore</a></li>
+                     <li><a href="our-history.html" title="">Our History</a></li>
+                     <li><a href="package-specials.html" title="">Package Specials</a></li>
+                     <li><a href="contact-us.html" title="">Contact Us</a></li>
                   </ul>
                </div>
                <div class="thmv-leftmenu-option">
@@ -159,13 +158,13 @@
          <div class="thmv-room-single">
             <div class="container">
                <div class="row">
-                  <div class="col-xl-8 col-lg-7">
+                  <div class="col-xl-8 col-lg-7 thmv-room-details">
                      <div class="thmv-Signature-title">
                         <p><i class="fas fa-star"></i> <strong>4.91</strong> (98) <i class="fas fa-circle"></i> Popular</p>
                         <h2>SIGNATURE SUITE</h2>
                      </div>
                      <hr class="thmv-separate">
-                     <p>
+                     <p class="thmv-room-single-info-text">
                         “On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying.<br><br>
 
                         In a free hour, when our power of choice is untrammeled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will.
@@ -290,7 +289,7 @@
                                     </li>
                                     <li>
                                        <div class="thmv-nearby-icon">
-                                          <img src="assets/images/icons/calendar.svg" alt="">
+                                          <img src="assets/images/icons/wifi-1.svg" alt="">
                                        </div>
                                        <div class="thmv-nearby-places">
                                           <p>Wifi</p>
@@ -366,13 +365,13 @@
                      <div class="thmv-reviews-sec">
                         <h5>Reviews</h5>
                         <div class="row thmv-review-row align-items-center">
-                           <div class="col-md-3 thmv-rating-col">
+                           <div class="col-md-3 col-12 thmv-rating-col">
                               <div class="thmv-all-rating">
                                  <div class="thmv-rating-title d-flex align-items-center"><i class="fas fa-star"></i><h2>4.91</h2></div>
                                  <p class="thmv-p-light">Based on 235 reviews</p>
                               </div>
                            </div>
-                           <div class="col-md-9 thmv-progress-sec">
+                           <div class="col-md-9 col-12 thmv-progress-sec">
                               <ul>
                                  <li>
                                     <div class="thmv-progtess-info">
@@ -401,7 +400,7 @@
                                  <li>
                                     <div class="thmv-progtess-info">
                                        <h6>Negative</h6>
-                                       <p class="thmv-p-light">under 2 start</p>
+                                       <p class="thmv-p-light mb-0">under 2 start</p>
                                     </div>
                                     <div class="thmv-progress">
                                        <h5>5%</h5>
@@ -488,9 +487,9 @@
                            </nav>
                         </div>
                   </div>
-                  <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+                  <div class="col-xl-4 col-lg-5 col-md-12 thmv-side-bar">
                      <!-- Check Availability Form Start -->
-                        <div class="thmv-checkavai-form mt-0 thmv-checkavai-form">
+                        <div class="mt-0 thmv-checkavai-form">
                            <div class="thmv-form-availability">
                               <h5>Your Reservation</h5>
                            </div>
@@ -604,12 +603,16 @@
                                  </div>
                               </div>
                               <div class="form-group">
-                                 <button class="thmv-tour-search btn-full-filled" type="submit">Search</button>
+                                 <button class="thmv-tour-search btn-full-filled" type="submit">Booking</button>
                               </div>
-                              <div class="thmv-criteria_info text-center">
+                              <div class="thmv-criteria_info text-center d-none">
                                  <a href="#"><img src="assets/images/icons/criteria.svg" alt=""> Search by criteria</a>
                               </div>                              
                            </form>
+                        </div>
+                        <div class="thmv-discount">
+                           <img src="assets/images/get-discount.jpg" alt="">
+                           <a href="#" class="btn-full-filled-light text-capitalize">Get a discount - 10%</a>
                         </div>
                      <!-- Check Availability Form End -->
                   </div>
@@ -617,8 +620,9 @@
             </div>
          </div>
       <!-- Room Listing End -->
-            <!-- Rooms & Suites section start -->
-      <section class="thmv-rooms-suites thmv-room-single">
+
+      <!-- Rooms & Suites section start -->
+      <section class="thmv-rooms-suites thmv-room-single-suites">
          <div class="container">
             <div class="row">
                <div class="thmv-sec-title text-center">
@@ -628,85 +632,48 @@
                   <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. </p>
                </div>
             </div>
-            <div class="row thmv-rooms-img-slider">
-               <div class="slick-rooms-single-slider slider">
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-1.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-2.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-3.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-4.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-1.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
-                     <div class="thmv-img-gray-hover">
-                        <div class="thmv-room-view">
-                           <img src="assets/images/rooms-suites-img/room-2.jpg">
-                           <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
-                        </div>
-                        <div class="thmv-room-info">
-                           <h5>SIGNATURE SUITE</h5>
-                           <h6>Sleeps 2, Queen Bed</h6>
-                           <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
-                           <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
-                        </div>
-                     </div>
+            <div class="row thmv-single-room-blok">
+               <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover">
+                  <div class="thmv-room-view">
+                     <img src="assets/images/rooms-suites-img/room-1.jpg">
+                     <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
                   </div>
+                  <div class="thmv-room-info">
+                     <h5>SIGNATURE SUITE</h5>
+                     <h6>Sleeps 2, Queen Bed</h6>
+                     <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
+                     <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover">
+                  <div class="thmv-room-view">
+                     <img src="assets/images/rooms-suites-img/room-2.jpg">
+                     <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
+                  </div>
+                  <div class="thmv-room-info">
+                     <h5>SIGNATURE SUITE</h5>
+                     <h6>Sleeps 2, Queen Bed</h6>
+                     <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
+                     <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover d-block d-md-none d-lg-block">
+                  <div class="thmv-room-view">
+                     <img src="assets/images/rooms-suites-img/room-3.jpg">
+                     <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
+                  </div>
+                  <div class="thmv-room-info">
+                     <h5>SIGNATURE SUITE</h5>
+                     <h6>Sleeps 2, Queen Bed</h6>
+                     <p>Lorem ipsum, or lipsum as it is sometimes known, is text used in laying out print, graphic or web designs. </p>
+                     <a class="read-more-btn" href="#">Read More <i class="fas fa-plus"></i></a>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
       <!-- Rooms & Suites section end -->
+
       <!-- Footer section start -->
       <section class="thmv-footer">
          <div class="container-fluid">
@@ -753,13 +720,13 @@
                      <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-end">
                         <ul class="d-flex thmv-payment justify-content-center justify-content-md-end">
                            <li>
-                              <a href=""><i class="fab fa-cc-visa"></i></a>
+                              <a href="#"><i class="fab fa-cc-visa"></i></a>
                            </li>
                            <li>
-                              <a href=""><i class="fab fa-cc-paypal"></i></a>
+                              <a href="#"><i class="fab fa-cc-paypal"></i></a>
                            </li>
                            <li>
-                              <a href=""><i class="fab fa-cc-mastercard"></i></a>
+                              <a href="#"><i class="fab fa-cc-mastercard"></i></a>
                            </li>
                         </ul>
                      </div>
@@ -847,13 +814,10 @@
       </div>
       <!--Right side floting buttons -->
       <div class="thmv-home-side thmv-rooms-floting-btn">
-         <a href="#home-top" type="button" class="thmv-backto-top-sticky">
+         <a href="#" id="home-top" type="button" class="thmv-backto-top-sticky">
             <i class="fas fa-chevron-up"></i>Go to top
          </a>
          <button type="button" class="thmv-calendar-sticky d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-calendar-day"></i></button>
-         <a href="#" type="button" class="thmv-messenger-sticky d-block d-lg-none">
-            <i class="fab fa-facebook-messenger"></i>
-         </a>
       </div>
       
 

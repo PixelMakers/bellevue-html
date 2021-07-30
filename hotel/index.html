@@ -48,7 +48,7 @@
    <body>
       <!-- Header Section Start -->
       <!-- ======Top Menu Start====== -->
-      <div class="thmv-top-nav" id="home-top">
+      <div class="thmv-top-nav" >
          <nav id="navbar_top" class="navbar navbar-expand-sm fixed-top thmv-navbar-light ">
             <div class="container thmv-mob-nav">
                <div class="thmv-menu-left">
@@ -71,7 +71,7 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse justify-content-end collapse show" id="navbarSupportedContent">
-                  <a class="navbar-brand mx-auto d-none d-md-block" href="#">Logotype</a>
+                  <a class="navbar-brand mx-auto d-none d-md-block" href="index.html">Logotype</a>
                   <div class="d-flex thmv-right-menu">
                      <ul class="thmv-social d-none d-lg-flex">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -93,15 +93,14 @@
             <div class="offcanvas-body thmv-offcanvas-body">
                <div class="thmv-leftside-menu">
                   <ul>
-                     <li><a class="active" href="#" title="">Home</a></li>
-                     <li><a href="#" title="">About Us</a></li>
-                     <li><a href="#" title="">Food/menu</a></li>
-                     <li><a href="#" title="">Faq</a></li>
-                     <li><a href="#" title="">Blog</a></li>
-                     <li><a href="#" title="">Gallery</a></li>
-                     <li><a href="#" title="">Covid updates page</a></li>
-                     <li><a href="#" title="">Booking for groups</a></li>
-                     <li><a href="#" title="">Contact Us</a></li>
+                     <li><a class="active" href="index.html" title="">Home</a></li>
+                     <li><a href="about-us.html" title="">About Us</a></li>
+                     <li><a href="about-us.html" title="">Rooms</a></li></li>
+                     <li><a href="menu.html" title="">Food/menu</a></li>
+                     <li><a href="explore.html" title="">explore</a></li>
+                     <li><a href="our-history.html" title="">Our History</a></li>
+                     <li><a href="package-specials.html" title="">Package Specials</a></li>
+                     <li><a href="contact-us.html" title="">Contact Us</a></li>
                   </ul>
                </div>
                <div class="thmv-leftmenu-option">
@@ -112,7 +111,7 @@
                            <option selected>Prague</option>
                            <option value="1">Prague2</option>
                            <option value="2">Prague3</option>
-                        </select>
+                        </select>   
                      </li>
                      <li class="thmv-offcanvas-menu-drop thmv-language-select">
                         <p class="thmv-select-label">Language</p>
@@ -301,7 +300,27 @@
             <div class="row">
                <div class="col-lg-5 thmv-wel-text">
                   <h2 class="thmv-br-mob-none">Welcome to <br>Paradise!</h2>
-                  <a href="#" class="btn-outline-light"><i class="fas fa-play"></i>&nbsp;&nbsp; Watch the video</a>
+                  <a href="#" class="btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fas fa-play"></i>&nbsp;&nbsp; Watch the video</a>
+                   <!-- Modal Start -->
+                  <div class="row thmv-video-sec">
+                     <div class="col-lg-12 thmv-video-modal">
+                        <div class="modal-dialog modal-dialog-centered m-0">
+                           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered">
+                                 <div class="modal-content">
+                                    <div class="modal-body p-0">
+                                       <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                                       <div class="embed-container">
+                                          <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" allowfullscreen="" autoplay="" frameborder="0"></iframe>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>               
+                  <!-- Modal End -->
                </div>
                <div class="col-lg-6 offset-lg-1 thmv-wel-info">
                   <div class="thmv-paragraph">
@@ -689,7 +708,7 @@
          <div class="container">
             <div class="row">
                <div class="thmv-sec-title text-center">
-                  <h2 class="thmv-title-effect-light-center text-uppercase">#instagram</h2>
+                  <h2 class="thmv-title-effect-light-center text-capitalize">#instagram</h2>
                </div>
                <div class="thmv-insta-feed-info w-50 mx-auto text-center">
                   <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
@@ -852,11 +871,11 @@
       </div>
       <!--Right side floting buttons -->
       <div class="thmv-home-side thmv-home-floting-btn">
-         <a href="#home-top" type="button" class="thmv-backto-top-sticky">
+         <a href="" id="home-top" class="thmv-backto-top-sticky">
             <i class="fas fa-chevron-up"></i>Go to top
          </a>
          <button type="button" class="thmv-calendar-sticky" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-calendar-day"></i></button>
-         <a href="#" type="button" class="thmv-messenger-sticky">
+         <a href="" type="button" class="thmv-messenger-sticky">
             <i class="fab fa-facebook-messenger"></i>
          </a>
       </div>
