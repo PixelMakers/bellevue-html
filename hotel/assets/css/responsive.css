@@ -15,6 +15,10 @@
 @media (max-width: 1300px){}
 
 @media only screen and (max-width: 1199px){
+	.thmv-offcanvas-body {
+	    padding: 0;
+	    max-height: 100%;
+	}
 	.thmv-leftmenu-option {
 	    position: relative;
 	    margin-top: 20px;

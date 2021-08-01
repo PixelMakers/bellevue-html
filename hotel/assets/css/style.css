@@ -23,7 +23,7 @@ Created by Bellevue Theme
       font-size: 16px;
       line-height: 30px;
       letter-spacing: -0.2px;
-      overflow-x: hidden;
+      overflow-x: hidden !important;
     }
     p,ul {
       padding: 0;
@@ -430,6 +430,7 @@ Created by Bellevue Theme
     }
     .thmv-offcanvas-body{
       padding: 0;
+      max-height:500px;
     }
     .thmv-leftside-menu li a {
         font-size: 18px;
@@ -442,7 +443,7 @@ Created by Bellevue Theme
     .thmv-leftside-menu li a:hover{
       color: #1C1715;
     }
-    .thmv-leftside-menu li a:after {
+    .thmv-leftside-menu li a:after{
         content: "";
         background: #1C1715;
         width: 26px;
@@ -452,12 +453,12 @@ Created by Bellevue Theme
         top: 50%;
         transform: translate(0px, -50%);
         transition: all 0.3s ease 0s;
+        opacity: 0;
     }
-    .thmv-leftside-menu li a:hover:after {
-        left: 0;
-    }
+    .thmv-leftside-menu li a:hover:after,
     .thmv-leftside-menu li .active:after{
         left: 0;
+        opacity: 1;
     }
     .thmv-leftmenu-option {
         position: absolute;
@@ -2977,7 +2978,20 @@ Created by Bellevue Theme
         padding:60px 10px 60px;
     }
 /*=====  End of Our menu section style  ======*/
+#cd-lateral-nav .sub-menu {
+  padding: 0 10px 20px 15px;
+  display: none;
+}
 
-
-
-
+#cd-lateral-nav.lateral-menu-is-open {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);  
+  -webkit-overflow-scrolling: touch;
+}
+#cd-lateral-nav .item-has-children > a {
+  position: relative;
+  font-weight: 600;
+}
