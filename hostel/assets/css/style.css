@@ -431,7 +431,15 @@ Created by Bellevue Theme
         font-size: 30px;
     }
     .thmv-offcanvas-body{
-      padding: 0;
+      padding: 0px;
+      padding-bottom:10px;
+      max-height:550px;
+    }
+     .thmv-leftside-menu{
+        max-height: calc(100% - 420px);
+        position: absolute;
+        width: 100%;
+        overflow-y: scroll;
     }
     .thmv-leftside-menu li a {
         font-size: 18px;
@@ -443,7 +451,6 @@ Created by Bellevue Theme
     }
     .thmv-leftside-menu li a:hover{
       color: #171818;
-
     }
     .thmv-leftside-menu li a:after {
         content: "";
@@ -455,12 +462,13 @@ Created by Bellevue Theme
         top: 50%;
         transform: translate(0px, -50%);
         transition: all 0.3s ease 0s;
+        opacity: 0;
     }
-    .thmv-leftside-menu li a:hover:after {
-        left: 0;
-    }
+    .thmv-leftside-menu li.item-has-children a,
+    .thmv-leftside-menu li a:hover:after,
     .thmv-leftside-menu li .active:after{
         left: 0;
+        opacity: 1;
     }
     .thmv-leftmenu-option {
         position: absolute;
@@ -488,6 +496,39 @@ Created by Bellevue Theme
         font-weight: 600;
         position: relative;
         background-size: 12px 7px;
+    }
+    #cd-lateral-nav .sub-menu {
+      padding: 0 10px 20px 15px;
+      display: none;
+    }
+
+    #cd-lateral-nav.lateral-menu-is-open {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);  
+      -webkit-overflow-scrolling: touch;
+    }
+    #cd-lateral-nav .item-has-children > a {
+      position: relative;
+      font-weight: 600;
+    }
+    #cd-lateral-nav .item-has-children{
+        position: relative;
+    }
+    #cd-lateral-nav .item-has-children::after{
+        content: "\f0d7";
+        position: absolute;
+        right: 10%;
+        top: 25px;
+        width: 10px;
+        transform: translate(10px, -50%);
+        pointer-events: none;
+        font-family: 'Font Awesome 5 Free';
+        font-size: 18px;
+        font-weight: 900;
+        color: #1C1715;    
     }
 /*  ==========================================================================
             header v2  styles

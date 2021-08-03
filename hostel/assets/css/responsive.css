@@ -42,12 +42,19 @@
 }
 
 @media only screen and (max-width: 1199px){
+	.thmv-leftside-menu{
+		position: unset;
+    	max-height: initial;
+	}
 	.thmv-leftmenu-option{
 		position: relative;
 		margin-top: 20px;
 	}
+
 	.thmv-offcanvas-body{
       overflow-y: scroll;
+      max-height: 100%;
+      padding-bottom: 0;
     }
 	.thmv-hostel-features{
 		padding: 100px 30px;
