@@ -530,6 +530,18 @@ Created by Bellevue Theme
         font-weight: 900;
         color: #1C1715;    
     }
+    .item-has-children .sub-menu > li:first-child{
+        border-top:1px solid rgba(0, 0, 0, 0.1);
+    }
+    .item-has-children .sub-menu > li a{
+        opacity:0.6;
+        transition:all 0.3s;
+    }
+    .item-has-children .sub-menu > li a:hover,
+    .item-has-children .sub-menu > li a.active{
+        opacity: 1;
+        text-decoration: underline;
+    }
 /*  ==========================================================================
             header v2  styles
     ========================================================================== */

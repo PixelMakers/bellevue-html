@@ -1,8 +1,3 @@
-// offcanvas menu
-$(".thmv-has-sub button").click(function(){
-  $(".thmv-has-sub .thmv-inner-menu").slideToggle();
-});
-
 // ====== Right side floting buttons ====== //
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
@@ -299,14 +294,9 @@ $(".thmv-modern-review").slick({
   ]
 });
 
-
-
-
-
-
-
+//========== Offcanvas menu
 jQuery(document).ready(function($){
-  var $lateral_menu_trigger = $('#cd-menu-trigger'),
+  var $lateral_menu_trigger = $('#cd-menu-trsgger'),
     $content_wrapper = $('.cd-main-content'),
     $navigation = $('header');
 
@@ -323,26 +313,9 @@ jQuery(document).ready(function($){
     $('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
     
     //check if transitions are not supported - i.e. in IE9
-    if($('html').hasClass('no-csstransitions')) {
-      $('body').toggleClass('overflow-hidden');
-    }
-  });
-
-  //close lateral menu clicking outside the menu itself
-  $content_wrapper.on('click', function(event){
-    if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
-      $lateral_menu_trigger.removeClass('is-clicked');
-      $navigation.removeClass('lateral-menu-is-open');
-      $content_wrapper.removeClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-        $('body').removeClass('overflow-hidden');
-      });
-      $('#cd-lateral-nav').removeClass('lateral-menu-is-open');
-      //check if transitions are not supported
-      if($('html').hasClass('no-csstransitions')) {
-        $('body').removeClass('overflow-hidden');
-      }
-
-    }
+    // if($('html').hasClass('no-csstransitions')) {
+    //   $('body').toggleClass('overflow-hidden');
+    // }
   });
 
   //open (or close) submenu items in the lateral menu. Close all the other open submenu items.
