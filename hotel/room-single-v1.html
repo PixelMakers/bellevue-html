@@ -520,131 +520,133 @@
                   </div>
                   <div class="col-xl-4 col-lg-5 col-md-12 thmv-side-bar">
                      <!-- Check Availability Form Start -->
-                        <div class="mt-0 thmv-checkavai-form">
-                           <div class="thmv-form-availability">
-                              <h5>Your Reservation</h5>
+                        <div class="thmv-side-bar-sticky">
+                           <div class="mt-0 thmv-checkavai-form">
+                              <div class="thmv-form-availability">
+                                 <h5>Your Reservation</h5>
+                              </div>
+                              <form class="thmv-availability-check" _lpchecked="1">
+                                 <div class="thmv-mo-check-form">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control check-in-out" id="popupDatepickerfrom1" placeholder="Check-in Date" name="dates">
+                                       <i class="fas fa-calendar-day"></i>
+                                    </div>
+                                    <div class="form-group">
+                                       <input type="text" class="form-control check-in-out" id="popupDatepickerto1" placeholder="Check-out Date" name="dates">
+                                       <i class="fas fa-calendar-day"></i>
+                                    </div>
+                                 </div>
+                                 <div class="dropdown form-select-guests thmv-mo-guest-col">
+                                    <div class="form-group">
+                                       <div class="form-content dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                          <div class="wrapper-more">
+                                             <div class="render">
+                                                <span class="adults"><span class="one d-none">2 adults</span> <span class="multi" data-html=":count Adults">2 adults</span></span>,
+                                                <span class="children">
+                                                   <span class="one d-none" data-html=":count Child">1 Child</span>
+                                                   <span class="multi" data-html=":count Children">0 children</span>
+                                                </span>
+                                                <i class="fas fa-user-friends thmv-mo-peoples-icon"></i>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="dropdown-menu select-guests-dropdown" x-placement="bottom-start" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                          <input type="hidden" name="adults" value="4" min="1" max="20">
+                                          <input type="hidden" name="children" value="5" min="0" max="20">
+                                          <div class="dropdown-item-row">
+                                             <div class="label">adults</div>
+                                             <div class="val">
+                                                <span class="btn-minus" data-input="adults"><i class="fas fa-minus"></i></span>
+                                                <span class="count-display">4</span>
+                                                <span class="btn-add" data-input="adults"><i class="fas fa-plus"></i></span>
+                                             </div>
+                                          </div>
+                                          <div class="dropdown-item-row m-0">
+                                             <div class="label">children</div>
+                                             <div class="val">
+                                                <span class="btn-minus" data-input="children"><i class="fas fa-minus"></i></span>
+                                                <span class="count-display">5</span>
+                                                <span class="btn-add" data-input="children"><i class="fas fa-plus"></i></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="thmv-extra-services">
+                                    <h5>Extra Services</h5>
+                                    <ul class="thmv-extra-services-list">
+                                       <li>
+                                          <div class="thmv-services-checkbox">
+                                             <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                               <label class="form-check-label" for="flexCheckDefault">
+                                                 Cleaning Fee
+                                               </label>
+                                             </div>
+                                          </div>
+                                          <div class="thmv-services-price">
+                                             <h6>20$</h6>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="thmv-services-checkbox">
+                                             <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                               <label class="form-check-label" for="flexCheckDefault">
+                                                 Airport pickup
+                                               </label>
+                                             </div>
+                                          </div>
+                                          <div class="thmv-services-price">
+                                             <h6>15$</h6>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="thmv-services-checkbox">
+                                             <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                               <label class="form-check-label" for="flexCheckDefault">
+                                                 Breakfast
+                                               </label>
+                                             </div>
+                                          </div>
+                                          <div class="thmv-services-price">
+                                             <h6>10$ / per person</h6>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="thmv-services-checkbox">
+                                             <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                               <label class="form-check-label" for="flexCheckDefault">
+                                                 Parking
+                                               </label>
+                                             </div>
+                                          </div>
+                                          <div class="thmv-services-price">
+                                             <h6>5$ / per night</h6>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                    <hr class="thmv-separate">
+                                    <div class="thmv-your-price">
+                                       <h5>Your Price:</h5>
+                                       <h5>70$</h5>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <button class="thmv-tour-search btn-full-filled" type="submit">Booking</button>
+                                 </div>
+                                 <div class="thmv-criteria_info text-center d-none">
+                                    <a href="#"><img src="assets/images/icons/criteria.svg" alt=""> Search by criteria</a>
+                                 </div>                              
+                              </form>
                            </div>
-                           <form class="thmv-availability-check" _lpchecked="1">
-                              <div class="thmv-mo-check-form">
-                                 <div class="form-group">
-                                    <input type="text" class="form-control check-in-out" id="popupDatepickerfrom1" placeholder="Check-in Date" name="dates">
-                                    <i class="fas fa-calendar-day"></i>
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" class="form-control check-in-out" id="popupDatepickerto1" placeholder="Check-out Date" name="dates">
-                                    <i class="fas fa-calendar-day"></i>
-                                 </div>
-                              </div>
-                              <div class="dropdown form-select-guests thmv-mo-guest-col">
-                                 <div class="form-group">
-                                    <div class="form-content dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                       <div class="wrapper-more">
-                                          <div class="render">
-                                             <span class="adults"><span class="one d-none">2 adults</span> <span class="multi" data-html=":count Adults">2 adults</span></span>,
-                                             <span class="children">
-                                                <span class="one d-none" data-html=":count Child">1 Child</span>
-                                                <span class="multi" data-html=":count Children">0 children</span>
-                                             </span>
-                                             <i class="fas fa-user-friends thmv-mo-peoples-icon"></i>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="dropdown-menu select-guests-dropdown" x-placement="bottom-start" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                       <input type="hidden" name="adults" value="4" min="1" max="20">
-                                       <input type="hidden" name="children" value="5" min="0" max="20">
-                                       <div class="dropdown-item-row">
-                                          <div class="label">adults</div>
-                                          <div class="val">
-                                             <span class="btn-minus" data-input="adults"><i class="fas fa-minus"></i></span>
-                                             <span class="count-display">4</span>
-                                             <span class="btn-add" data-input="adults"><i class="fas fa-plus"></i></span>
-                                          </div>
-                                       </div>
-                                       <div class="dropdown-item-row m-0">
-                                          <div class="label">children</div>
-                                          <div class="val">
-                                             <span class="btn-minus" data-input="children"><i class="fas fa-minus"></i></span>
-                                             <span class="count-display">5</span>
-                                             <span class="btn-add" data-input="children"><i class="fas fa-plus"></i></span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="thmv-extra-services">
-                                 <h5>Extra Services</h5>
-                                 <ul class="thmv-extra-services-list">
-                                    <li>
-                                       <div class="thmv-services-checkbox">
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Cleaning Fee
-                                            </label>
-                                          </div>
-                                       </div>
-                                       <div class="thmv-services-price">
-                                          <h6>20$</h6>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="thmv-services-checkbox">
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Airport pickup
-                                            </label>
-                                          </div>
-                                       </div>
-                                       <div class="thmv-services-price">
-                                          <h6>15$</h6>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="thmv-services-checkbox">
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Breakfast
-                                            </label>
-                                          </div>
-                                       </div>
-                                       <div class="thmv-services-price">
-                                          <h6>10$ / per person</h6>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="thmv-services-checkbox">
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Parking
-                                            </label>
-                                          </div>
-                                       </div>
-                                       <div class="thmv-services-price">
-                                          <h6>5$ / per night</h6>
-                                       </div>
-                                    </li>
-                                 </ul>
-                                 <hr class="thmv-separate">
-                                 <div class="thmv-your-price">
-                                    <h5>Your Price:</h5>
-                                    <h5>70$</h5>
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <button class="thmv-tour-search btn-full-filled" type="submit">Booking</button>
-                              </div>
-                              <div class="thmv-criteria_info text-center d-none">
-                                 <a href="#"><img src="assets/images/icons/criteria.svg" alt=""> Search by criteria</a>
-                              </div>                              
-                           </form>
-                        </div>
-                        <div class="thmv-discount">
-                           <img src="assets/images/get-discount.jpg" alt="">
-                           <a href="#" class="btn-full-filled-light text-capitalize">Get a discount - 10%</a>
-                        </div>
+                           <div class="thmv-discount">
+                              <img src="assets/images/get-discount.jpg" alt="">
+                              <a href="#" class="btn-full-filled-light text-capitalize">Get a discount - 10%</a>
+                           </div>
+                        </div>   
                      <!-- Check Availability Form End -->
                   </div>
                </div>

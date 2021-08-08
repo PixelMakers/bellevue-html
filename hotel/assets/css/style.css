@@ -1588,10 +1588,14 @@ Created by Bellevue Theme
             padding: 4px 21px;
         }
     /*----------  Check Availability style  ----------*/
-        .thmv-checkavai-form {
+        .thmv-checkavai-form{
             border: 10px solid #000;
             margin-top: 75px;
             padding: 50px 20px;
+            --offset:9rem;
+            align-self: start;
+            position: sticky;
+            top: var(--offset);
         }
         .thmv-form-availability h5,
         .thmv-extra-services h5{ 
@@ -1770,6 +1774,10 @@ Created by Bellevue Theme
     }    
     .thmv-two-col-roomlist-v1 .thmv-listroom-detail p{
         font-weight: 400;
+    }
+    .thmv-two-col-roomlist-v1 .thmv-checkavai-form,
+    .thmv-two-col-roomlist-v2 .thmv-checkavai-form{
+        --offset:7.5rem;
     }
 /*=====  End of Room Listing Two Columns v1 Sectin Style  ======*/
 
@@ -2199,6 +2207,16 @@ Created by Bellevue Theme
             margin-bottom: 0;
         }
     /*----------  Discount Section Style  ----------*/
+        .thmv-side-bar-sticky .thmv-checkavai-form{
+            align-self:unset;
+            top:unset;
+        }
+        .thmv-side-bar-sticky{
+            --offset:10rem;
+            align-self: start;
+            position: sticky;
+            top: var(--offset);
+        }
         .thmv-discount{
             margin-top: 65px;
             text-align:center;

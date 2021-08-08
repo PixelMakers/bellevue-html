@@ -1,0 +1,1856 @@
+/*==========================================
+      MASTER STYLESHEET FOR Bellevue
+==========================================*/
+/* #FBE946 */
+/*==========================================
+     ||||| START TABLE OF CONTENT |||||
+==========================================
+
+Created by Bellevue Theme
+
+1. Global styles
+
+/*==========================================
+    |||||  END TABLE OF CONTENT  |||||
+==========================================*/
+/*  ==========================================================================
+    1. Global Styles
+    ========================================================================== */
+    body {
+      font-family: 'Lato', serif; 
+      color:#191B18;
+      font-size: 18px;
+      line-height: 36px;
+      overflow-x: hidden;
+    }
+    p,ul {
+      padding: 0;
+      margin: 0;
+    }
+    h1,h2,h3,h4,h5,h6{
+      margin:0;
+      padding: 0;
+      font-weight: 400;
+      font-family: 'Spinnaker', sans-serif;
+    }
+    h1{
+      font-size: 54px;
+      line-height: 70px;  
+    }
+    h2{
+      font-size: 30px;
+      line-height: 39px;
+    }
+    h3{
+      font-size: 24px;
+      line-height: 31px;
+    }
+    h4{
+      font-size: 22px;
+      line-height: 28px;
+    }
+    h5{
+      font-size: 18px;
+      line-height: 24px;
+    }
+    h6{
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+    a {
+      color: #191B18;
+      text-decoration: none; 
+      display: inline-block; 
+      outline: none;
+      transition: .5s ease;
+    }
+    a:hover{
+        color: #191B1870;
+        text-decoration: none; 
+        outline: none;
+        transition: 0.3s ease;
+    }
+    p{
+        color: #191B18;
+        margin-bottom: 10px;
+    }
+    p.thmv-p-light{
+        color: #191B18;
+        opacity:0.5;
+    }
+    .thmv-paragraph p:last-child{
+        margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+    button {
+      border:none; 
+      outline:none; 
+      box-shadow: none; 
+      display: block; 
+      padding: 0; 
+      background: transparent;
+    }
+    button:focus,
+    input:focus{
+      outline: none;
+      box-shadow:none !important;
+    }
+    input,textarea {
+      font-family: 'Lato', sans-serif;
+      display: block; 
+      font-size: 16px; 
+      line-height: 30px; 
+      outline: none; 
+      box-shadow: none;
+      transition: all 0.3s ease-in-out;
+    }
+    textarea{
+        resize:none;
+    }
+    input:focus,
+    textarea:focus,
+    .form-select:focus,
+    .form-control:focus{
+      outline: none;
+      box-shadow: none;
+    }
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-top: 3px;
+      font-size: 16px;
+    }
+    .clear_fix { 
+      clear:both;
+    }
+    .clear_fix:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+    .float_left {
+      float: left;
+    }
+    .float_right {
+      float: right;
+    }
+    hr.thmv-separator{
+        margin:30px 0px;
+    }
+
+    /*====== Read More Button Style ======*/
+    .read-more-btn{
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 400;
+      position: relative;
+      transition: all 0.3s;
+    }
+    .read-more-btn:hover{
+        opacity:1;
+    }
+    .read-more-btn::after{
+        content:"";
+        background-image:url("../images/icons/arrow-right.svg");
+        background-size:cover;
+        display: inline-block;
+        width:20px;
+        height:10px;
+        position: absolute;
+        top: 50%;
+        transform:translate(50% , -30%);
+        transition: all 0.3s;
+    }
+    .read-more-btn:hover::after{
+        transform:translate(80% , -30%);
+        
+    }
+    /*====== Button Style ======*/
+    .btn-full-filled,
+    .btn-full-filled-light{
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 700;
+      text-align: center;
+      border:1px solid #191B18;
+      min-width: 220px;
+      padding: 17px 30px;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      position: relative;
+      transition: all 0.3s ease 0s;
+
+    }
+    .btn-full-filled{
+        background:#191B18;
+        color:#ffffff;
+        border-color:#191B18;
+    }
+    .btn-full-filled:hover{
+        background:transparent;
+        color:#191B18;
+        border-color:#191B18;
+    }
+    .btn-full-filled-light{
+        background: #FFFFFF;
+        color:#191B18;
+        border-color:#FFFFFF;
+    }
+    .btn-full-filled-light:hover{
+        background: #191B18;
+        color:#FFFFFF; 
+        border-color:#191B18;   
+    }
+    /* Image Hover Grayscale */
+    .thmv-img-gray img,
+    .thmv-img-gray-hover img:hover {
+        filter: grayscale(100%);
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .thmv-img-gray img:hover{
+        filter: grayscale(0%);
+        transition: all 0.3s;
+        cursor: pointer;   
+    }
+
+    /* heading style */
+    .thmv-heading-style{
+        position: relative;
+    }
+    .thmv-heading-style::before{
+        content:"";
+        width:1px;
+        height:95px;
+        display: inline-block;
+        background:#FFFFFF;
+        position: absolute;
+        bottom: 0;
+        left:30%;
+        transform: translate(0%, -70%);
+
+    }
+
+    /* slick Slider */
+
+    .slider {
+        width: 100%;
+        margin: 0px auto;
+        padding:0px;
+    }
+    .slick-slide {
+      margin: 0px 10px;
+    }
+    .slick-dots li button{
+        width:12px;
+        height: 12px;
+    }
+    .slick-dots li button::before{
+        width:12px;
+        height:12px;
+        display: inline-block;
+        background:transparent;
+        border:1px solid #000;
+        font-size: 0;
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before{
+        background:#000;
+        opacity: 1;
+    }
+
+/*=====================================
+    =            theme colors             =
+    =====================================*/
+    /*----------  theme globel color  ----------*/
+        .thmv-dark-color{
+            color:#191B18;
+        }
+        .thmv-dark-bg{
+            background:#191B18;
+        }    
+        .thmv-light-color{
+            color:#ffffff;
+        }
+        .thmv-light-bg{
+            background:#ffffff;
+        }
+
+    /*----------  theme color 1  ----------*/
+    
+        /* Theme colors Tundora    " #404040 " */
+            .thmv-bg-tundora{
+                background-color: #404040;
+            }
+            .thmv-color-tundora{
+                color: #404040;      
+            }
+
+        /* Theme colors full light gray    " #EAEAEA " */
+            .thmv-bg-full-light-gray{
+                background-color: #EAEAEA;
+            }
+            .thmv-color-full-light-gray{
+                color: #EAEAEA;      
+            }
+
+    /*----------  theme color 2  ----------*/   
+        
+        /* Theme colors Gray Asparagus " #4E524C " */
+            .thmv-bg-gray-Asparagus{
+                background-color: #4E524C;
+            }
+            .thmv-color-gray-Asparagus{
+                color: #4E524C;      
+            }
+
+        /* Theme colors sisal " #D8D4C2 " */
+            .thmv-bg-sisal{
+                background-color: #D8D4C2;
+            }
+            .thmv-color-sisal{
+                color: #D8D4C2;      
+            }
+
+    /*----------  theme color 3  ----------*/   
+        
+        /* Theme colors Tiber " #042E28 " */
+            .thmv-bg-tiber{
+                background-color: #042E28;
+            }
+            .thmv-color-tiber{
+                color: #042E28;      
+            }
+
+        /* Theme colors sisal " #D8D4C2 " */
+            .thmv-bg-sisal{
+                background-color: #D8D4C2;
+            }
+            .thmv-color-sisal{
+                color: #D8D4C2;      
+            }
+
+    /*----------  theme color 4  ----------*/   
+        
+        /* Theme colors Boston Blue " #3E96B6 " */
+            .thmv-bg-boston-blue{
+                background-color: #3E96B6;
+            }
+            .thmv-color-boston-blue{
+                color: #3E96B6;      
+            }
+
+        /* Theme colors Apricot Peach " #FBC9B3 " */
+              .thmv-bg-apricot-peach{
+                background-color: #FBC9B3;
+            }
+            .thmv-color-apricot-peach{
+                color: #FBC9B3;      
+            }
+
+    /*----------  theme color 5  ----------*/   
+        
+        /* Theme colors Governor Bay " #4636AE " */
+            .thmv-bg-governor-bay{
+                background-color: #4636AE;
+            }
+            .thmv-color-governor-bay{
+                color: #4636AE;      
+            }
+
+        /* Theme colors Sunglow " #FFD231 " */ 
+            .thmv-bg-sunglow{
+                background-color: #FFD231;
+            }
+            .thmv-color-sunglow{
+                color: #FFD231;      
+            }
+/*=====  End of theme colors   ======*/
+        
+
+/*=============================================
+    =         Header Section Styles            =
+    =============================================*/
+    .thmv-top-nav{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    #navbar_top{
+        position: relative;
+    }
+    .thmv-logo h3{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 900; 
+        text-transform: uppercase;
+    }
+    .thmv-logo img{
+        width:100%;
+        max-width:170px;
+    }
+    .thmv-top-nav-fix .thmv-bg-transparent .thmv-logo h3{
+        color:#FFFFFF;
+    }
+    .thmv-top-nav-fix .thmv-bg-transparent.fixed-top .thmv-logo h3{
+        color:#191B18;   
+    }
+    .navbar-toggler-icon {
+        width: auto;
+        height: 30px;
+    }
+    .navbar-toggler-icon i {
+        color: #191B18;
+        font-size: 30px;
+    }
+    
+    .thmv-navbar-light{
+        background: #ffffff;
+        border-bottom: 1px solid #EBECEF;
+        transition:all 0.3s;
+        padding: 0;
+    }
+    .thmv-navbar-light.thmv-bg-transparent{
+        background:transparent;
+        border:none;
+    }
+    .thmv-navbar-light .nav-link {
+        color: #282828;
+        font-size: 16px;
+        line-height: 99px;
+        font-weight: 400;
+        padding: 0;
+        padding:0px 20px !important;
+        height:99px;
+        position: relative;
+    }
+
+    .thmv-menu .nav-item:hover .nav-link{
+        color: #404040 !important;
+    }
+    .thmv-menu .nav-item.active .nav-link{
+        color: #404040 !important;
+    }
+    .thmv-menu .nav-link {
+        position: relative;
+        display: inline-block;
+    }
+    .thmv-menu .nav-item{
+        position: relative;
+        transition: all 200ms linear;
+    }
+    .thmv-menu .nav-item:after{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        content: '';
+        background-color: #404040;
+        opacity: 0;
+        transition: all 200ms linear;
+    }
+    .thmv-menu .nav-item:hover:after{
+        bottom: 0;
+        opacity: 1;
+    }
+    .thmv-menu .nav-item.active:hover:after{
+        opacity: 0;
+    }
+    .thmv-menu .nav-item .dropdown-menu {
+        transform: translate3d(0, 10px, 0);
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        display: block;
+        padding: 0;
+        margin: 0;
+        transition: all 200ms linear;
+        min-width:250px;
+        border:none;
+        border-radius:0;
+    }
+    .thmv-menu .nav-item.show .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 999px;
+        transform: translate3d(0, 0px, 0);
+    }
+    .thmv-menu .dropdown-menu {
+        margin: 0;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #404040;
+        background-color: #EAEAEA;
+        border: none;
+        transition: all 200ms linear;
+    }
+    .thmv-menu .dropdown-toggle::after {
+        display: none;
+    }
+
+    .thmv-menu .dropdown-item {
+        padding: 3px 15px;
+        color: #404040;
+        transition: all 200ms linear;
+    }
+    .thmv-menu .dropdown-item:hover, 
+    .thmv-menu .dropdown-item:focus {
+        color: #fff;
+        background-color: rgba(64, 64, 64, .6);
+    }
+    .thmv-sub-menu{
+        min-width:200px;
+        background:#f5f5f5;
+        position: absolute;
+        top: 100%;
+        transform:translate(0% , 15%);
+        opacity: 0;
+        display: none;
+        transition:all 0.3s;
+    }
+    .thmv-sub-menu li a{
+        line-height:24px;
+        padding:15px;
+        display: block;
+    }
+    .thmv-sub-menu li a:hover{
+        background:#000;
+        color:#FFFFFF;
+    }
+    .thmv-navbar-light .navbar-nav .thmv-menu:hover .thmv-sub-menu{
+        top: 100%;
+        transform:translate(0% , 0%);
+        opacity:1;
+        display: block;
+    }
+    .thmv-right-menu .thmv-social{
+        display: flex;
+        align-items: center;
+        justify-content:end;
+        width:130px;
+        margin-left: 40px;
+    }
+    .thmv-right-menu .thmv-social li{
+        margin-left:10px;
+        position: relative;
+    }
+    .thmv-right-menu .thmv-social li a{
+        width:40px;
+        height: 40px;
+        border-radius:100px;
+        background:#ffffff;
+        text-align: center;
+    }
+    .thmv-right-menu .thmv-social li i{
+        font-size: 16px;
+    }
+    .thmv-right-menu .btn-outline{
+        margin-left:15px;
+    }
+    .thmv-navbar-light.fixed-top{
+        border-bottom:1px solid #cccccc;
+    }
+    .thmv-navbar-light.fixed-top .navbar-brand{
+      color: #191B18;
+      text-transform: uppercase;
+    }
+    .thmv-navbar-light.fixed-top .nav-link{
+      color: #191B18;
+    }
+    .thmv-navbar-light.fixed-top.thmv-bg-transparent{
+        background:#FFFFFF;
+    }
+    .navbar-toggler {
+        float: right;
+        border: none;
+        padding-right: 0;
+    }
+    .navbar-toggler:active,
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .thmv-navbar-light .navbar-toggler-icon {
+        width: 24px;
+        height: 17px;
+        background-image: none;
+        position: relative;
+        border-bottom: 3px solid #000;
+        transition: all 300ms linear;
+    }
+    .thmv-navbar-light .navbar-toggler-icon:after, 
+    .thmv-navbar-light .navbar-toggler-icon:before{
+        width: 24px;
+        position: absolute;
+        height: 3px;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        content: '';
+        z-index: 2;
+        transition: all 300ms linear;
+    }
+    .thmv-navbar-light .navbar-toggler-icon:after{
+        top: 7px;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+        transform: rotate(45deg);
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+        transform: translateY(7px) rotate(-45deg);
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        border-color: transparent;
+    }
+/*=====  End of Header Section Styles  ======*/
+
+/* Theme colors Boston Blue " #3E96B6 " */
+            .thmv-bg-boston-blue{
+                background-color: #3E96B6;
+            }
+            .thmv-color-boston-blue{
+                color: #3E96B6;      
+            }
+
+        /* Theme colors Apricot Peach " #FBC9B3 " */
+              .thmv-bg-apricot-peach{
+                background-color: #FBC9B3;
+            }
+            .thmv-color-apricot-peach{
+                color: #FBC9B3;      
+            }
+
+/*----------  home style 1 colors  ----------*/
+    .thmv-dark-color{
+        color:#191B18;
+    }
+    .thmv-dark-bg{
+        background:#191B18;
+    }    
+    .thmv-home-1 .thmv-wel-text h6,
+    .thmv-home-1 .thmv-wel-text .thmv-wel-title,
+    .thmv-home-1 .thmv-wel-info,
+    .thmv-home-1 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-1 .thmv-uniq-offer  .thmv-welcome-box h2,
+    .thmv-home-1 .thmv-uniq-offer  .thmv-welcome-box p,
+    .thmv-home-1 .thmb-book-room .thmv-welcome-box h2,
+    .thmv-home-1 .thmb-book-room .thmv-welcome-box p{
+        color:#ffffff;
+    }
+    .thmv-light-bg,
+    .thmv-home-1 .thmv-testimonial-box,{
+        background:#ffffff;
+    }    
+    .thmv-bg-tundora,
+    .thmv-home-1 .thmv-header-sec,
+    .thmv-home-1 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-1 .thmv-welcome-sec .thmv-welcome-info::before,
+    .thmv-home-1 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-1 .thmv-quote-icon,
+    .thmv-home-1 .slick-dots li.slick-active button:before,
+    .thmv-home-1 .thmv-uniq-offer .thmv-uniq-box,
+    .thmv-home-1 .thmb-book-room,
+    .thmv-home-1 .datepick-popup .datepick-cmd-prev:after,
+    .thmv-home-1 .datepick-popup  .datepick-cmd-next:after,
+    .thmv-home-1 .datepick-popup .datepick-ctrl .datepick-cmd{
+        background-color: #404040;
+    }
+    .thmv-color-tundora{
+        color: #404040;      
+    }
+    .thmv-home-1 .slick-dots li button::before{
+        border-color:#404040;
+    }
+    .thmv-bg-full-light-gray,
+    .thmv-home-1 .thmv-welcome-sec,
+    .thmv-home-1 .thmv-testi,
+    .thmv-home-1 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-1 .thmv-testi .slick-testimonial-slider::before,
+    .thmv-home-1 .thmv-booking-sec .thmv-booking-img .thmv-book-price{
+        background-color: #EAEAEA;
+    }
+    .thmv-color-full-light-gray{
+        color: #EAEAEA;      
+    }
+    .thmv-home-1 .thmv-wel-col .btn-full-filled,
+    .thmv-home-1 .thmv-uniq-box .btn-full-filled,
+    .thmv-home-1 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+        background: #ffffff;
+        color: #191B18;
+        border-color: #ffffff;
+    }
+    .thmv-home-1 .thmv-wel-col .btn-full-filled:hover,
+    .thmv-home-1 .thmv-uniq-box .btn-full-filled:hover,
+    .thmv-home-1 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover{
+        background: #191B18;
+        color: #FFFFFF;
+        border-color: #191B18;
+    }
+
+/*----------  home style 2 colors  ----------*/
+    .thmv-dark-color{
+        color:#191B18;
+    }
+    .thmv-dark-bg{
+        background:#191B18;
+    }    
+    .thmv-home-2 .thmv-wel-text h6,
+    .thmv-home-2 .thmv-wel-text .thmv-wel-title,
+    .thmv-home-2 .thmv-wel-info,
+    .thmv-home-2 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-2 .thmv-uniq-offer  .thmv-welcome-box h2,
+    .thmv-home-2 .thmv-uniq-offer  .thmv-welcome-box p,
+    .thmv-home-2 .thmb-book-room .thmv-welcome-box h2,
+    .thmv-home-2 .thmb-book-room .thmv-welcome-box p{
+        color:#ffffff;
+    }
+    .thmv-light-bg{
+        background:#ffffff;
+    }    
+    .thmv-bg-gray-Asparagus,
+    .thmv-home-2 .thmv-header-sec,
+    .thmv-home-2 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-2 .thmv-welcome-sec .thmv-welcome-info::before,
+    .thmv-home-2 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-2 .thmv-quote-icon,
+    .thmv-home-2 .slick-dots li.slick-active button:before,
+    .thmv-home-2 .thmv-uniq-offer .thmv-uniq-box,
+    .thmv-home-2 .thmb-book-room,
+    .thmv-home-2 .datepick-popup .datepick-cmd-prev:after,
+    .thmv-home-2 .datepick-popup  .datepick-cmd-next:after,
+    .thmv-home-2 .datepick-popup .datepick-ctrl .datepick-cmd{
+        background-color: #4E524C;
+    }
+    .thmv-color-gray-Asparagus
+    .thmv-home-2 .thmv-color-gray-Asparagus{
+        color: #4E524C;      
+    }
+    .thmv-border-gray-Asparagus
+    .thmv-home-2 .thmv-border-gray-Asparagus,
+    .thmv-home-2 .slick-dots li button::before{
+        border-color:#4E524C;
+    }
+    .thmv-bg-sisal,
+    .thmv-home-2 .thmv-welcome-sec,
+    .thmv-home-2 .thmv-testimonial-box,
+    .thmv-home-2 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-2 .thmv-testi .slick-testimonial-slider::before,
+    .thmv-home-2 .thmv-booking-sec .thmv-booking-img .thmv-book-price{
+        background-color: #D8D4C2;
+    }
+    .thmv-color-sisal{
+        color: #D8D4C2;      
+    }
+    .thmv-border-sisal{
+        border-color: #D8D4C2;      
+    }
+    .thmv-home-2 .thmv-wel-col .btn-full-filled,
+    .thmv-home-2 .thmv-uniq-box .btn-full-filled,
+    .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+        background: #F1E7A9;
+        color: #191B18;
+        border-color: #F1E7A9;
+    }
+    .thmv-home-2 .thmv-wel-col .btn-full-filled:hover,
+    .thmv-home-2 .thmv-uniq-box .btn-full-filled:hover,
+    .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover{
+        background: #191B18;
+        color: #FFFFFF;
+        border-color: #191B18;
+    }
+
+/*----------  home style 3 colors  ----------*/
+    .thmv-dark-color{
+        color:#191B18;
+    }
+    .thmv-dark-bg{
+        background:#191B18;
+    }    
+    .thmv-home-3 .thmv-wel-text h6,
+    .thmv-home-3 .thmv-wel-text .thmv-wel-title,
+    .thmv-home-3 .thmv-wel-info,
+    .thmv-home-3 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-3 .thmv-uniq-offer  .thmv-welcome-box h2,
+    .thmv-home-3 .thmv-uniq-offer  .thmv-welcome-box p,
+    .thmv-home-3 .thmb-book-room .thmv-welcome-box h2,
+    .thmv-home-3 .thmb-book-room .thmv-welcome-box p{
+        color:#ffffff;
+    }
+    .thmv-light-bg{
+        background:#ffffff;
+    }    
+    .thmv-bg-tiber,
+    .thmv-home-3 .thmv-header-sec,
+    .thmv-home-3 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-3 .thmv-welcome-sec .thmv-welcome-info::before,
+    .thmv-home-3 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-3 .thmv-quote-icon,
+    .thmv-home-3 .slick-dots li.slick-active button:before,
+    .thmv-home-3 .thmv-uniq-offer .thmv-uniq-box,
+    .thmv-home-3 .thmb-book-room,
+    .thmv-home-3 .datepick-popup .datepick-cmd-prev:after,
+    .thmv-home-3 .datepick-popup  .datepick-cmd-next:after,
+    .thmv-home-3 .datepick-popup .datepick-ctrl .datepick-cmd{
+        background-color: #042E28;
+    }
+    .thmv-color-tiber
+    .thmv-home-3 .thmv-color-tiber{
+        color: #042E28;      
+    }
+    .thmv-border-gray-tiber
+    .thmv-home-3 .thmv-border-gray-tiber,
+    .thmv-home-3 .slick-dots li button::before{
+        border-color:#042E28;
+    }
+    .thmv-bg-sisal,
+    .thmv-home-3 .thmv-welcome-sec,
+    .thmv-home-3 .thmv-testimonial-box,
+    .thmv-home-3 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-3 .thmv-testi .slick-testimonial-slider::before,
+    .thmv-home-3 .thmv-booking-sec .thmv-booking-img .thmv-book-price{
+        background-color: #D8D4C2;
+    }
+    .thmv-color-sisal{
+        color: #D8D4C2;      
+    }
+    .thmv-border-sisal{
+        border-color: #D8D4C2;      
+    }
+    .thmv-home-3 .thmv-wel-col .btn-full-filled,
+    .thmv-home-3 .thmv-uniq-box .btn-full-filled,
+    .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+        background: #FFFFFF;
+        color: #191B18;
+        border-color: #FFFFFF;
+    }
+    .thmv-home-3 .thmv-wel-col .btn-full-filled:hover,
+    .thmv-home-3 .thmv-uniq-box .btn-full-filled:hover,
+    .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover{
+        background: #D8D4C2;
+        color: #191B18;
+        border-color: #D8D4C2;
+    }
+
+/*----------  home style 4 colors  ----------*/
+    .thmv-dark-color,
+    .thmv-home-nav-4 .thmv-right-menu .thmv-social li a:hover{
+        color:#191B18;
+    }
+    .thmv-dark-bg{
+        background:#191B18;
+    }    
+    .thmv-light-color,
+    .thmv-home-4 .thmv-wel-text h6,
+    .thmv-home-4 .thmv-wel-text .thmv-wel-title,
+    .thmv-home-4 .thmv-wel-info,
+    .thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-uniq-offer  .thmv-welcome-box h2,
+    .thmv-home-4 .thmv-uniq-offer  .thmv-welcome-box p,
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box h2,
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box p,
+    .thmv-home-nav-4 .thmv-right-menu .thmv-social li a{
+        color:#ffffff;
+    }
+    .thmv-light-bg,
+    .thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::before{
+        background:#ffffff;
+    }    
+    .thmv-bg-boston-blue,
+    .thmv-home-4 .thmv-header-sec,
+    .thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-quote-icon,
+    .thmv-home-4 .slick-dots li.slick-active button:before,
+    .thmv-home-4 .thmv-uniq-offer .thmv-uniq-box,
+    .thmv-home-4 .thmb-book-room,
+    .thmv-home-4 .datepick-popup .datepick-cmd-prev:after,
+    .thmv-home-4 .datepick-popup  .datepick-cmd-next:after,
+    .thmv-home-4 .datepick-popup .datepick-ctrl .datepick-cmd,
+    .thmv-home-nav-4 .thmv-right-menu .thmv-social li a{
+        background-color: #3E96B6;
+    }
+    .thmv-color-boston-blue,
+    .thmv-home-4 .thmv-color-tiber{
+        color: #3E96B6;      
+    }
+    .thmv-border-boston-blue,
+    .thmv-home-4 .thmv-border-gray-tiber,
+    .thmv-home-4 .slick-dots li button::before{
+        border-color:#3E96B6;
+    }
+    .thmv-bg-apricot-peach,
+    .thmv-home-4 .thmv-welcome-sec,
+    .thmv-home-4 .thmv-testimonial-box,
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::before,
+    .thmv-home-4 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+    .thmv-home-nav-4 .thmv-right-menu .thmv-social li a:hover{
+        background-color: #FBC9B3;
+    }
+    .thmv-color-apricot-peach{
+        color: #FBC9B3;      
+    }
+    .thmv-border-apricot-peach{
+        border-color: #FBC9B3;      
+    }
+    .thmv-home-4 .thmv-wel-col .btn-full-filled,
+    .thmv-home-4 .thmv-uniq-box .btn-full-filled,
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+        background: #FFFFFF;
+        color: #12617E;
+        border-color: #FFFFFF;
+    }
+    .thmv-home-4 .thmv-wel-col .btn-full-filled:hover,
+    .thmv-home-4 .thmv-uniq-box .btn-full-filled:hover,
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover{
+        background: #FBC9B3;
+        color: #191B18;
+        border-color: #191B18;
+    }
+
+/*----------  home style 5 colors  ----------*/
+    .thmv-dark-color,
+    .thmv-home-nav-5 .thmv-right-menu .thmv-social li a:hover{
+        color:#191B18;
+    }
+    .thmv-dark-bg{
+        background:#191B18;
+    }    
+    .thmv-light-color,
+    .thmv-home-5 .thmv-wel-text h6,
+    .thmv-home-5 .thmv-wel-text .thmv-wel-title,
+    .thmv-home-5 .thmv-wel-info,
+    .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-uniq-offer  .thmv-welcome-box h2,
+    .thmv-home-5 .thmv-uniq-offer  .thmv-welcome-box p,
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box h2,
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box p,
+    .thmv-home-nav-5 .thmv-right-menu .thmv-social li a{
+        color:#ffffff;
+    }
+    .thmv-light-bg,
+    .thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::before{
+        background:#ffffff;
+    }    
+    .thmv-bg-governor-bay,
+    .thmv-home-5 .thmv-header-sec,
+    .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-quote-icon,
+    .thmv-home-5 .slick-dots li.slick-active button:before,
+    .thmv-home-5 .thmv-uniq-offer .thmv-uniq-box,
+    .thmv-home-5 .thmb-book-room,
+    .thmv-home-5 .datepick-popup .datepick-cmd-prev:after,
+    .thmv-home-5 .datepick-popup  .datepick-cmd-next:after,
+    .thmv-home-5 .datepick-popup .datepick-ctrl .datepick-cmd,
+    .thmv-home-nav-5 .thmv-right-menu .thmv-social li a{
+        background-color: #4636AE;
+    }
+    .thmv-color-governor-bay,
+    .thmv-home-5 .thmv-color-tiber{
+        color: #4636AE;      
+    }
+    .thmv-border-governor-bay,
+    .thmv-home-5 .thmv-border-gray-tiber,
+    .thmv-home-5 .slick-dots li button::before{
+        border-color:#4636AE;
+    }
+    .thmv-bg-sunglow,
+    .thmv-home-5 .thmv-welcome-sec,
+    .thmv-home-5 .thmv-testimonial-box,
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::before,
+    .thmv-home-5 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+    .thmv-home-nav-5 .thmv-right-menu .thmv-social li a:hover{
+        background-color: #FFD231;
+    }
+    .thmv-color-sunglow{
+        color: #FFD231;      
+    }
+    .thmv-border-sunglow{
+        border-color: #FFD231;      
+    }
+    .thmv-home-5 .thmv-wel-col .btn-full-filled,
+    .thmv-home-5 .thmv-uniq-box .btn-full-filled,
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+        background: #FFD231;
+        color: #4636AE;
+        border-color: #FFD231;
+    }
+    .thmv-home-5 .thmv-wel-col .btn-full-filled:hover,
+    .thmv-home-5 .thmv-uniq-box .btn-full-filled:hover,
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover{
+        background: #FFFFFF;
+        color: #191B18;
+        border-color: #191B18;
+    }    
+
+/*=======================================
+    =            home page style            =
+    =======================================*/
+    /*----------  navbar style  ----------*/
+        .thmv-top-navbar{
+            display: flex;
+            align-items: center;
+        }
+        .thmv-top-nav.thmv-top-nav-fix{
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        .thmv-top-navbar .logo{
+            width: 20%;
+        }
+        .thmv-nav-menu {
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .thmv-nav-menu ul{
+            display: block;
+        }
+        .thmv-nav-menu ul li{
+            float: left;
+        }
+        .thmv-nav-menu-list li a {
+            padding: 0 20px;
+            line-height: 99px;
+            font-size: 16px;
+        }
+        .thmv-nav-menu li.has-sub {
+            position: relative;
+        }
+        .thmv-top-navbar:after,
+        .thmv-top-navbar>ul:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0
+        }
+        .thmv-top-navbar #head-mobile {
+            display: none
+        }
+        .thmv-top-navbar>ul>li {
+            float: left
+        }
+        .thmv-top-navbar>ul>li>a {
+            padding: 17px;
+            font-size: 16px;
+            color: #282828;
+        }
+        .thmv-top-navbar>ul>li.has-sub>a {
+            padding-right: 30px;
+            position: relative;
+        }
+        .thmv-nav-menu>ul>li.has-sub>a:after {
+            content: "\f078";
+            font-size: 10px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #000000;
+            position: absolute;
+            top: 0%;
+            right: 5px;
+            transition: all 0.3s;
+            transform: translate(0px , 2px);
+        }
+        .thmv-nav-menu>ul>li.has-sub:hover>a:after {    
+            top: 0%;
+            transform:rotate(180deg);
+        }
+        .thmv-top-navbar ul ul {
+            position: absolute;
+            left: -9999px
+        }
+        .thmv-top-navbar ul ul li {
+            -webkit-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            background: #404040;
+            transition: all .25s ease
+        }
+        .thmv-top-navbar li:hover>ul {
+            left: auto
+        }
+        .thmv-top-navbar ul ul ul {
+            margin-left: 100%;
+            top: 0
+        }
+        .thmv-top-navbar ul ul li a {
+            border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+            padding: 15px 15px;
+            width: 220px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 400;
+            line-height: initial;
+        }
+        .thmv-top-navbar ul ul li:last-child>a,
+        .thmv-top-navbar ul ul li.last-item>a {
+            border-bottom: 0
+        }
+        .thmv-top-navbar ul ul li:hover>a,
+        .thmv-top-navbar ul ul li a:hover {
+            color: #fff
+        }
+        .thmv-top-navbar ul ul li.has-sub>a:before {
+            content: "\f078";
+            font-size: 10px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transition: all 0.3s;
+            transform: translate(-0%, -50%);
+        }
+        .thmv-top-navbar ul ul>li.has-sub:hover>a:before {
+            top: 36%;    
+            transform:rotate(-180deg);
+        }
+        .thmv-top-navbar ul ul li.has-sub:hover,
+        .thmv-top-navbar ul li.has-sub ul li.has-sub ul li:hover {
+            background: #363636;
+        }
+        .thmv-top-navbar ul ul ul li.active a {
+            border-left: 1px solid #333
+        }
+        .thmv-top-navbar>ul>li.has-sub>ul>li.active>a,
+        .thmv-top-navbar>ul ul>li.has-sub>ul>li.active>a {
+            border-top: 1px solid #333
+        }
+        .thmv-nav-menu ul .has-sub ul {
+            display: block;
+        }
+        .thmv-top-nav-fix .thmv-right-menu .thmv-social li a{
+            background: transparent;
+            height:auto;
+        }
+    /*----------  Datepiker style  ----------*/   
+       .datepick {
+           font-family: 'Trirong', sans-serif;
+           font-size: 18px;
+           border: 2px solid rgb(28 23 21 / 20%);
+           width: 355px !important;
+           border-radius: 0;
+       }
+       .datepick-nav, .datepick-ctrl {
+           background-color: #ffffff;
+           display: flex;
+           justify-content: space-between;
+       }
+       .datepick a {
+           color: #1C1715;
+           padding: 0;
+           background: #ffffff;
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+       }
+       .datepick-month {
+           border: none;
+           width: 100%;
+       }
+       .datepick-month th, .datepick-month th a {
+           background-color: #ffffff;
+           color: #1C1715;
+           font-weight: 600;
+           border: none;
+       }
+       .datepick-month-header, .datepick-month-header select, .datepick-month-header input {
+           background-color: #ffffff;
+           color: #1C1715;
+           height: 34px;
+       }
+       .datepick-cmd-prev,
+       .datepick-cmd-next {
+           font-size: 0;
+           position: relative;
+       }
+       .datepick-cmd-prev:after,
+       .datepick-cmd-next:after {
+           content: "\f060";
+           font-family: 'Font Awesome 5 Free';
+           font-size: 18px;
+           background: #1C1715;
+           color: #ffffff;
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+           display: inline-block;
+           text-align: center;           
+       }
+       .datepick-cmd-next:after {
+           content: "\f061";        
+       }
+       .datepick-month td {
+           background-color: #ffffff;
+           border: none;
+       }
+       .datepick-month td .datepick-weekend {
+           background-color: #ffffff;
+       }
+       .datepick-month td .datepick-selected {
+           background-color: #1C1715;
+           color: #FFFFFF;
+           border: 1px solid #1C1715;
+           font-weight: 700;
+       }
+       .datepick-month td .datepick-highlight {
+        background-color: rgb(28 23 21 / 20%);
+       }
+       .datepick-ctrl {
+           justify-content: flex-end;
+       }
+       .datepick-ctrl .datepick-cmd {
+           background: #1C1715;
+           color: #ffffff;
+           width: auto;
+           margin-left: 15px;
+           padding: 0 10px;
+       }
+       .datepick-ctrl .datepick-cmd:hover {
+           background-color: rgb(28 23 21 / 20%);
+           color: #1C1715;
+       }
+       .datepick-popup .datepick-nav .datepick-cmd-today,
+       .datepick-popup .datepick-nav .datepick-cmd:hover,
+       .datepick-cmd:hover{
+        background:transparent;
+       }
+       /* .datepick-month td a.thmv-date-selectedClass{
+            background:transparent !important;
+            color: #1C1715;
+            opacity:0.3;
+        }
+        .datepick-month td a.thmv-date-selectedClass{
+            position: relative;
+        }
+        .datepick-month td a.thmv-date-selectedClass::before{
+            content:"";
+            width:100%;
+            height:1px;
+            background: #000;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: rotate(140deg);
+        } */
+    /*----------  top banner section style  ----------*/
+        .thmv-wel-col{
+            max-width:550px;
+            margin-left: auto;
+            padding: 0;
+        }
+        .thmv-wel-text{
+            max-width:460px;
+        }
+        .thmv-wel-text h6{
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 400;
+            font-family:"Lato";
+            display: inline-block;
+        }
+        .thmv-wel-text .thmv-wel-title{
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 15px 0px;
+        }
+        .thmv-wel-info{
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 400;
+            margin-bottom: 35px;
+        }
+    /*----------  welcome section style  ----------*/
+        .thmv-welcome-sec{
+            padding:130px 0px 0px;
+            margin-bottom: 170px;
+        }
+        .thmv-welcome-sec .thmv-welcome-img{
+            margin-bottom: -100px;
+        }
+        .thmv-welcome-sec .thmv-welcome-info,
+        .thmv-testi .slick-testimonial-slider{
+            position: relative;
+        }
+        .thmv-welcome-sec .thmv-welcome-info::after,
+        .thmv-welcome-sec .thmv-welcome-info::before,
+        .thmv-testi .slick-testimonial-slider::after,
+        .thmv-testi .slick-testimonial-slider::before{
+            content:"";
+            display: inline-block;
+            height: 2px;
+            width:200px;
+            position: absolute;
+            left: 0px;
+            top: -12px;
+            transform: translate(-20%, -20%);
+            opacity: 0.5;
+        }
+        .thmv-welcome-sec .thmv-welcome-info::after,
+        .thmv-testi .slick-testimonial-slider::after{
+            content:"";
+            width: 2px;
+            height:200px;
+        }
+        .thmv-welcome-box{
+            max-width:560px;
+            margin-top: 70px;
+            margin-left:auto;
+        }
+        .thmv-welcome-box .thmv-pills-blok p{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 36px;
+            font-weight: 400;
+            padding:2px 20px;
+            margin-bottom: 0;
+        }
+        .thmv-welcome-box h2{
+            margin:30px 0px;
+        }
+        .thmv-welcome-box .read-more-btn{
+            margin-top: 30px;
+        }
+    /*----------  photo gallery section  ----------*/
+        .thmv-gallery-sec{
+            padding:130px 0px 80px;
+        }
+        .thmv-gallery-sec .thmv-img-box,
+        .thmv-what-todo-photos .thmv-img-box{
+            overflow: hidden;
+        }
+        .thmv-gallery-sec .thmv-img-box img,
+        .thmv-what-todo-photos .thmv-img-box img{
+            transform: scale(1);
+            transition: all 0.3s;
+        }
+
+        .thmv-img-box:hover img,
+        .thmv-what-todo-photos .thmv-img-box:hover img{
+            transform: scale(1.1);
+            filter: grayscale(100%);
+            cursor: pointer;
+        }
+    /*----------  floor plan  ----------*/
+        .thmv-floor-sec{
+            padding:100px 0px 150px;
+        }
+        .thmv-floor-sec .thmv-welcome-box{
+            max-width:100%;
+            margin-top: 0;
+        }
+        /* .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p{
+            line-height: 32px;
+            padding:0px 20px;
+        } */
+        .thmv-floor-sec .thmv-floor-img img{
+            width:500px;
+        }
+        .thmvfloor-list-icon{
+            margin-top: 40px;
+        }
+        .thmvfloor-list-icon ul li{
+            border-bottom:1px solid rgba(78, 82, 76, 0.1);
+            padding:20px 0px;
+            display: flex;
+        }            
+        .thmvfloor-list-icon ul li:last-child{
+            border:none;
+        }
+        .thmvfloor-list-icon .thmv-listing-icon{
+            margin-right: 25px;
+        }
+        .thmvfloor-list-icon .thmv-listing-info p{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    /*----------  people say section start  ----------*/
+        .thmv-testimonial-sec {
+            padding:70px 0px;
+        }
+        .thmv-quote-img{
+            padding:30px 10px;
+        }
+        .thmv-testi{
+            padding:95px 0px;
+            position: relative;
+        }
+        .thmv-testi .thmv-welcome-box{
+            margin-left: 0;
+            margin-top: 0;
+            max-width:360px;
+        }
+        .thmv-testi .slick-testimonial-slider{
+            margin-top: -230px;
+        }
+        .thmv-testimonial-box{
+            background: rgba(255, 255, 255, 1);
+            padding: 80px 50px
+        }
+        .thmv-testimonial-box .thmv-testimonial-header{
+            position: relative;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header::before {
+            content: "";
+            background-image: url("../images/icons/quote-light-home-1.svg");
+            background-size: 35px;
+            background-repeat: repeat-x;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 65px;
+            height: 70px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-img{
+            margin-right:30px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-img img{
+            width:77px;
+            height:77px;
+            display: inline-block;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info ul li{
+            display: inline-block;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info ul li i{
+            font-size: 16px;
+            padding-right:5px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info ul li:last-child i{
+            padding-right: 0;
+        }
+        .thmv-testimonial-box  .thmv-testimonial-body h3{
+            margin-bottom: 15px;
+        }
+        .thmv-testimonial-box  .thmv-testimonial-body p{
+            font-size: 16px;
+            line-height:32px;
+            font-style:italic;
+            color:#4E524C;
+        }
+
+        .thmv-testi .slick-testimonial-slider::after,
+        .thmv-testi .slick-testimonial-slider::before{
+            content:"";
+            transform: translate(-30%, -30%);
+        }
+
+        .thmv-testi .slick-testimonial-slider .slick-dots{
+            display: flex;
+            position: absolute;
+            bottom:0;
+            left: -100%;
+            transform: translate(12%, 0px);
+        }
+    /*----------  unique offer style  ----------*/
+        .thmv-uniq-offer{
+            padding:100px 0px;
+        }
+        .thmv-what-todo .thmv-welcome-box,
+        .thmv-uniq-offer .thmv-welcome-box{
+            margin: 0 auto;
+            text-align:center;
+            padding: 60px 0px;
+            max-width:800px;
+        }
+        .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-welcome-box .thmv-pills-blok p{
+            background: #2F2F2F;
+            margin: 0;
+        }
+        .thmv-uniq-offer  .thmv-welcome-box h2 {
+            margin: 30px 0px 15px;
+        }
+        .thmv-uniq-offer  .thmv-welcome-box p{
+            margin-bottom: 50px;
+        }
+    /*----------  booking calender style  ----------*/
+        .thmv-booking-sec{
+            padding:100px 0px;
+            margin:100px 0px;
+        }
+        .thmv-booking-sec .thmv-booking-img{
+            position: relative;
+            padding: 0;
+            height: 560px;
+        }
+        .thmv-booking-sec .thmv-booking-img img{
+            height: 560px;
+            object-fit:cover;
+            width:100%;   
+        }
+        .thmv-booking-sec .thmv-booking-img .thmv-book-price{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding:25px;
+            text-align: center;
+        }
+        .thmv-booking-sec .thmv-booking-img .thmv-book-price h2{
+            font-family:"lato";
+            font-size: 40px;
+            line-height: 52px;
+            font-weight: 700;
+        }
+        .thmv-booking-sec .thmv-booking-img .thmv-book-price p{
+            margin-bottom: 0;
+            line-height:23px;
+        }
+        .thmb-book-room{
+            margin:-75px 0px;
+            display: flex;
+            align-items: center;
+        }
+        .thmb-book-room .thmv-welcome-box{
+            margin:100px 0px 100px 100px;
+            max-width:360px;
+        }
+        .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+            margin-bottom: 0;
+        }
+        .thmb-book-room .thmv-welcome-box h2{
+            margin: 20px 0px 10px;
+        }
+        .thmb-book-room .thmv-welcome-box p{
+            margin-bottom: 30px;
+        }
+        /* datepiker style */
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group{
+            position: relative;
+        }
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group i{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color:#ffffff;
+        }
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group input{
+            background:transparent;
+            border-radius:0;
+            padding: 12px 50px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #DDDDDD;
+        }   
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group input::placeholder{
+            color: #DDDDDD;
+        }
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group button{
+            width:100%;
+            margin-top: 10px;
+        }
+    /*----------  what to do style  ----------*/
+        .thmv-what-todo{
+            padding:80px 0px 100px;
+        }
+        .thmv-what-todo .thmv-welcome-box{
+            max-width: 950px;
+            padding: 0;
+            padding-bottom: 50px;
+        }
+        .thmv-what-todo .thmv-welcome-box h2{
+            margin-bottom: 20px;
+        }
+        .thmv-what-todo-photos .thmv-img-box{
+            position: relative;
+            margin-bottom:24px;
+        }
+        .thmv-content-box{
+            position: absolute;
+            left:50%;
+            bottom:0px;
+            transform:translate(-50% , 0%);
+            background:#FFFFFF;
+            width:calc(100% - 30px);
+            padding:15px;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition:all 0.3s;
+        }
+        .thmv-content-box p{
+            color: #000;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            margin-bottom:2px;
+        }
+        .thmv-what-todo-photos .thmv-img-box:hover .thmv-content-box{
+            opacity: 1;
+            visibility: visible; 
+            bottom:15px;      }
+    /*----------  map style  ----------*/
+        .thmv-map{
+            padding:100px 0px 0;
+            margin-bottom:-130px;
+        }
+        .thmv-map iframe{
+            height:380px;
+            display: block;
+        } 
+    /*----------  Footer section stryle  ----------*/
+        footer{
+            background:#141513;
+            padding:200px 0px 0px;
+        }
+        footer .thmv-footer{
+            padding-bottom: 50px;
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li,
+        footer .thmv-footer .thmv-footer-widget-four ul li a{
+            margin-bottom:10px;
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li:last-child,
+        footer .thmv-footer .thmv-footer-widget-four ul li a:last-child{
+            margin-bottom: 0;
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li h6,
+        .thmv-footer-bottom .thmv-fot-bot-menu ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li address{
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            opacity: 0.7;
+            transition:all 0.3s;
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li a:hover,
+        .thmv-footer-bottom .thmv-fot-bot-menu ul li a:hover,
+        footer .thmv-footer .thmv-foot-wedget ul li address:hover{
+            opacity:1;
+        }
+        /*======= footer bottom style  =======*/
+        .thmv-footer-bottom .container{
+            border-top:1px solid #FFFFFF30;
+            padding:15px 0px;
+        }
+        .thmv-footer-bottom{
+            color:#ffffff;
+        }
+        .thmv-get-in-touch,
+        .thmv-get-in-touch .thmv-social li a i,
+        .thmv-payment li a i{
+            display: flex;
+            flex-flow:row;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFFFFF;
+            transition:all 0.3s;
+        }
+        .thmv-get-in-touch h6{
+            width: 700px;
+        }
+        .thmv-footer-bottom ul li{
+            display: inline-block;
+            margin-right:20px;
+        }
+        .thmv-footer-bottom ul li:last-child{
+            margin-right: 0;
+        }
+        .thmv-footer-bottom ul.thmv-social li a{
+            opacity: 1;
+        }
+        .thmv-footer-bottom ul.thmv-social li a i{
+            font-size: 18px;
+        }
+        .thmv-payment li a i{
+            font-size: 24px;
+            transition:all 0.3s;
+        }
+        .thmv-social li a:hover i,
+        .thmv-payment li a:hover i{
+            opacity: 0.7;
+        }
+/*=====  End of home page style  ======*/
+
+/*====================================
+    =            home style 2 start            =
+    ====================================*/
+    .thmv-home-2 .thmv-testimonial-box .thmv-testimonial-header::before {
+        content: "";
+        background-image: url("../images/icons/quote-light-home-2.svg");
+    }
+    .thmv-home-2 .thmv-testi{
+        background-color: #D8D4C220;
+    }
+    .thmv-home-2 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+        background: #D8D4C2;
+        color:#191B18;
+    }
+/*=====  End of home style 2 end ======*/
+
+/*====================================
+    =            home style 3 start            =
+    ====================================*/
+    .thmv-home-3 .thmv-testimonial-box .thmv-testimonial-header::before {
+        content: "";
+        background-image: url("../images/icons/quote-light-home-3.svg");
+    }
+    .thmv-home-3 .thmv-testi{
+        background-color: #D8D4C220;
+    }
+    .thmv-home-3 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-3 .thmv-testi .slick-testimonial-slider::before{
+        opacity: 0.5;
+    }
+    .thmv-home-3 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+        background: #F5F3E7;
+        color:#042E28;
+    }
+/*=====  End of home style 3 end ======*/
+
+/*====================================
+    =            home style 4 start            =
+    ====================================*/
+    .thmv-home-nav-4 .thmv-right-menu .thmv-social li a{
+        transition: all 0.3s;
+    }
+    .thmv-home-4 .thmv-testimonial-box .thmv-testimonial-header::before {
+        content: "";
+        background-image: url("../images/icons/quote-light-home-4.svg");
+    }
+    .thmv-home-4 .thmv-testi{
+        background-color: #FBC9B310;
+    }
+    .thmv-home-4 .thmv-welcome-box .thmv-pills-blok p{
+        background:transparent;
+        color: #191B18;
+        padding:2px 0px;
+    }
+    .thmv-home-4 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+        background: transparent;
+        color:#ffffff;
+        padding:2px 0px;
+    }
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::before{
+        background:#D8D4C2;
+    }
+    .thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-testi .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::before,
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-4 .thmv-testi .slick-testimonial-slider::before{
+        opacity: 0.5;
+    }
+    .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-4 .thmv-welcome-info .thmv-welcome-box .thmv-pills-blok p{
+        opacity:1;
+    }
+    .thmv-home-4  .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group input,
+    .thmv-home-5  .thmb-book-room .thmv-welcome-box .thmv-availability-check .form-group input{
+        background: #ffffff20;
+    }
+/*=====  End of home style 4 end ======*/
+
+/*====================================
+    =            home style 5 start            =
+    ====================================*/
+    .thmv-home-5 .thmv-testimonial-box .thmv-testimonial-header::before {
+        content: "";
+        background-image: url("../images/icons/quote-light-home-5.svg");
+    }
+    .thmv-home-5 .thmv-testi{
+        background-color: #FFD23110;
+    }
+    .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p{
+        background:transparent;
+        color: #191B18;
+        padding:2px 0px;
+    }
+    .thmv-home-5 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+        background: transparent;
+        color:#ffffff;
+        padding:2px 0px;
+    }
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::before{
+        background:#D8D4C2;
+    }
+    .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-testi .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::after,
+    .thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::before,
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::after,
+    .thmv-home-5 .thmv-testi .slick-testimonial-slider::before{
+        opacity: 0.5;
+    }
+    .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-home-5 .thmv-welcome-info .thmv-welcome-box .thmv-pills-blok p{
+        opacity:1;
+    }
+/*=====  End of home style 5 end ======*/
+
+/*================================================
+    =            home page v2 style start            =
+    ================================================*/
+    /* .thmv-home-v2 .thmv-header-sec{
+        background-image: url('../images/top-header-banner-img.jpg');
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:right;
+        background-color:transparent;
+        position: relative;
+        height:100vh;
+    }
+    .thmv-home-v2 .thmv-wel-col::before{
+        content:"";
+        background-image: url("../images/home-shap/home-top-shap-1.svg");
+        background-repeat:no-repeat;
+        background-size:contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width:100%;
+        height:92vh;
+        z-index:1;
+    }
+    .thmv-home-v2 .thmv-wel-col .thmv-wel-text{
+        z-index: 10;
+        position: relative;
+    }
+    .thmv-home-v2 .thmv-header-sec .thmv-top-row{
+        height: 100vh;
+    } */
+
+/*=====  End of home page v2 style end  ======*/
+
+/*============================================
+    =            home page-1 v2 style            =
+    ============================================*/
+    /* .thmv-home-1.thmv-home-v2 .thmv-welcome-sec{
+        background:transparent;
+    } */
+
+/*=====  End of home page-1 v2 style  ======*/

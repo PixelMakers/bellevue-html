@@ -1,0 +1,787 @@
+/*
+	========================================
+	  		Responsive CSS FOR Bellevue
+	======================================== 
+*/
+
+@media (min-width: 1400px){
+	.container{
+	  max-width: 1140px;
+	}
+}
+
+@media (max-width: 1600px){
+    /* home page */
+    .thmv-wel-col{
+        padding-top: 40px;
+    }
+    .thmv-heading-style::before{
+        height: 75px;
+    }
+    .thmv-wel-text .thmv-wel-title {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+@media (max-width: 1500px){}
+@media (max-width: 1300px){
+    /* home page */
+    .thmv-heading-style::before{
+        height: 60px;
+    }
+    .thmv-wel-text .thmv-wel-title {
+        font-size: 42px;
+        line-height: 54px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    /* header style */
+    .thmv-top-nav-fix .thmv-top-navbar .thmv-logo{
+        position: absolute;
+        top: 50px;
+        transform: translate(0% , -50%);
+    }
+	/* home page */
+    .thmv-heading-style::before{
+        height: 60px;
+    }
+    .thmv-wel-text{
+        margin-left: auto;
+    }
+    .thmv-wel-text .thmv-wel-title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .thmv-wel-text .thmv-wel-info{
+        font-size: 16px;
+        line-height:24px;
+    }
+    .thmv-top-right-banner{
+        height: 550px;
+    }
+    .thmv-top-right-banner img{
+        width:100%;
+        height: 550px;
+        object-fit:cover;    
+    }
+    .thmv-welcome-sec {
+        padding: 70px 0px 0px;
+        margin-bottom: 50px;
+    }
+    .thmv-welcome-box {
+        max-width: 530px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+    .thmv-welcome-box .read-more-btn {
+        margin-top: 10px;
+    }
+    .thmv-home-v2 .thmv-wel-text .thmv-wel-title {
+        font-size: 50px;
+        line-height: 59px;
+    }
+    .thmv-home-v2 .thmv-header-sec{
+        background-size:cover;
+    }
+
+}
+@media only screen and (max-width: 1024px){}
+
+@media screen and (max-width:991px) {
+    .thmv-top-navbar {
+        width: 100%;
+        position: relative;
+        display: inherit;
+    }
+    .thmv-top-navbar ul {
+        width: 100%;
+        display: none;
+    }
+    .thmv-top-navbar ul li {
+        width: 100%;
+        border-top: 1px solid #cccccc50;
+    }
+    .thmv-top-navbar ul li:hover{
+        background: #191B18;
+    }
+    .thmv-top-navbar ul li:hover>a,
+    .thmv-top-navbar ul li.has-sub:hover .submenu-button::before{
+    	color:#FFFFFF;
+    } 
+    .thmv-top-navbar ul ul li,
+    .thmv-top-navbar li:hover>ul>li {
+        height: auto;
+    }
+    .thmv-top-navbar ul li a,
+    .thmv-top-navbar ul ul li a {
+        width: 100%;
+        border-bottom: 0;
+    }
+    .thmv-top-navbar>ul>li {
+        float: none;
+    }
+    .thmv-top-navbar ul ul li a {
+        padding-left: 25px;
+    }
+    .thmv-top-navbar ul ul li {
+        background: #333!important;
+    }
+    .thmv-top-navbar ul ul li:hover {
+        background: #363636!important;
+    }
+    .thmv-top-navbar ul ul ul li a {
+        padding-left: 35px;
+    }
+    .thmv-top-navbar ul ul li a {
+        color: #ddd;
+        background: none;
+    }
+    .thmv-top-navbar ul ul li:hover>a,
+    .thmv-top-navbar ul ul li.active>a {
+        color: #fff;
+    }
+    .thmv-top-navbar ul ul,
+    .thmv-top-navbar ul ul ul {
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+    .thmv-top-navbar>ul>li.has-sub>a:after,
+    .thmv-top-navbar>ul>li.has-sub>a:before,
+    .thmv-top-navbar ul ul>li.has-sub>a:after,
+    .thmv-top-navbar ul ul>li.has-sub>a:before {
+        display: none;
+    }
+    .thmv-top-navbar #head-mobile {
+        display: block;
+        height: 90px;
+    }
+    .thmv-top-navbar .button {
+        width: 38px;
+        height: 32px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        cursor: pointer;
+        z-index: 12399994;
+        transform: translate(0px, -50%);
+    }
+    .thmv-top-navbar .button:after {
+        position: absolute;
+        top: 14px;
+        right: 0;
+        display: block;
+        height: 16px;
+        width: 38px;
+        border-top: 2px solid #404040;
+        border-bottom: 2px solid #404040;
+        content: '';
+    }
+    .thmv-top-navbar .button:before {
+        -webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 2px;
+        width: 38px;
+        background: #404040;
+        content: '';
+    }
+    .thmv-top-navbar .button.menu-opened:after {
+        -webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+        top: 13px;
+        border: 0;
+        height: 2px;
+        width: 38px;
+        background: #404040;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    .thmv-top-navbar .button.menu-opened:before {
+        top: 13px;
+        background: #404040;
+        width: 38px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    .thmv-top-navbar .submenu-button {
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 0;
+        display: block;
+        border-left: 1px solid #cccccc50;
+        height: 50px;
+        width: 50px;
+        cursor: pointer
+    }
+    .thmv-top-navbar .submenu-button:before {
+		content: "\f078";
+		font-size: 10px;
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		color: #000000;
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transition: all 0.3s;
+		transform: translate(-50%, -50%);
+    }
+    .thmv-top-navbar .submenu-button.submenu-opened:before{
+    	top:6px;
+    	left: 20px;
+    	transform:rotate(180deg);
+    }
+    .thmv-nav-menu-list.open ul.open .submenu-button:before,
+    .thmv-nav-menu-list.open ul.open .submenu-button.submenu-opened:before{
+    	color:#ffffff;
+    }
+    .thmv-top-navbar ul ul .submenu-button:before{
+        top: 50%;
+        left:50%;
+    }
+    .thmv-top-navbar ul ul ul li.active a {
+        border-left: none
+    }
+    .thmv-top-navbar>ul>li.has-sub>ul>li.active>a,
+    .thmv-top-navbar>ul ul>li.has-sub>ul>li.active>a {
+        border-top: none
+    }
+    .thmv-nav-menu-list{
+    	padding:30px 0px;
+    }
+    .thmv-nav-menu-list li a {
+        line-height: 50px;
+    }
+    .thmv-nav-menu>ul>li.has-sub>a:before,
+    .thmv-nav-menu>ul>li.has-sub>a:after{
+        display: none;
+    }
+    .thmv-top-navbar .logo {
+        width: 100%;
+        position: absolute;
+        top: 30px;
+    }
+    .thmv-nav-menu {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+	/*----------  Globel Style  ----------*/
+		.thmv-br-none br{
+			display: none;
+		}        
+        .thmv-col-reverse{
+            flex-flow: column-reverse;
+        }
+        .btn-full-filled,
+        .btn-full-filled-light{
+            padding:18px 30px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-1 .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-2 .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-3 .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+
+        .thmv-home-2 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-3 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-4 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-5 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+            background: transparent;
+            color:#191B18;
+        }
+        
+        .thmv-home-2 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-3 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-4 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-5 .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+            color: #FFFFFF;
+        }
+        .thmv-home-1 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-2 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-3 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-4 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-home-5 .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+            opacity: 1
+        }
+
+        .thmv-testi .slick-testimonial-slider::after,
+        .thmv-testi .slick-testimonial-slider::before,
+        .thmv-welcome-sec .thmv-welcome-info::before,
+        .thmv-welcome-sec .thmv-welcome-info::after{
+            display: none;
+        }
+    /*----------  Home page style  ----------*/
+        .thmv-floor-sec .thmvfloor-list-icon .thmv-listing-info p,
+        .thmv-content-box p{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .thmv-floor-sec .thmvfloor-list-icon .thmv-listing-info h6{
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .thmv-wel-text .thmv-wel-info,
+        .thmv-wel-text h6,
+        .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-welcome-box p,
+        .thmv-welcome-box a.read-more-btn,
+        .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p{
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p{
+            background: transparent;
+            color: #191B18;
+            padding: 0;
+        }
+
+        .thmv-wel-col{
+            max-width:720px;
+            margin:0 auto;
+            padding: 80px 20px;
+        }
+        .thmv-wel-text{
+            max-width:100%;
+            margin: 0;
+            text-align: center;
+            padding-top: 70px
+        }
+        .thmv-top-right-banner{
+            height:500px;
+        }
+        .thmv-top-right-banner img{
+            width:100%;
+            height: 500px;
+            object-fit:cover;    
+        }
+        .thmv-wel-text .thmv-wel-title {
+            font-size: 54px;
+            line-height: 70px;
+            letter-spacing: -2px;
+        }
+        .thmv-welcome-box a.read-more-btn{
+            margin-right: 30px;
+        }
+        .thmv-heading-style::before {
+            left: 50%;
+        }
+        .thmv-welcome-box{
+            max-width:100%;
+            margin: 0px 0px 50px;
+        }
+        .thmv-welcome-sec .thmv-welcome-info{
+            text-align: center;
+            padding:0 40px;
+        }
+        .thmv-welcome-box h2{
+            font-size: 32px;
+            line-height:41px;
+            margin-bottom: 15px;
+        }
+        .thmv-welcome-sec .thmv-welcome-info::before,
+        .thmv-welcome-sec .thmv-welcome-info::after{
+            display: none
+        }
+        .thmv-welcome-sec .thmv-welcome-img{
+            margin: 0 auto -100px;
+            width:460px;
+        }
+        .thmv-gallery-sec {
+            padding: 130px 0px 30px;
+        }
+        .thmv-floor-sec {
+            padding: 50px 0px 150px;
+        }
+        .thmv-welcome-box h2 {
+            font-size: 30px;
+            line-height: 39px;
+        }
+        .thmv-floor-sec .thmv-welcome-box{
+            margin-bottom: 0;
+        }
+        .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-what-todo .thmv-welcome-box  .thmv-pills-blok p{
+            padding:0;
+            opacity:0.4;
+        }
+        .thmvfloor-list-icon {
+            margin: 20px 10px 40px;
+        }
+        .thmv-floor-sec {
+            padding: 30px 0px 40px;
+        }
+        .thmv-quote-img{
+            text-align: center;   
+        }
+        .thmv-quote-img img{
+            width:70px;
+        }
+        .thmv-testimonial-sec{
+            padding: 40px 0px 0px;
+        }
+        .thmv-testi{
+            padding:60px 0px;
+        }
+        .thmv-testi .thmv-welcome-box{
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .thmv-testi .thmv-welcome-box .thmv-pills-blok{
+            opacity:0.4;
+        }
+        .thmv-testi .slick-testimonial-slider {
+            margin-top:0px;
+            max-width:550px;
+            position: relative;
+            padding-top:70px;
+        }
+        .thmv-testi .slick-testimonial-slider .slick-dots{
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -0%);
+            height: 20px;
+            width: 320px;
+            margin: 0 auto;
+            justify-content:center;
+        }
+        .thmv-uniq-offer {
+            padding: 90px 0px 80px;
+        }
+        .thmv-uniq-offer .container,
+        .thmv-map .container,
+        .thmv-footer-bottom .container{
+            max-width:100%;
+        }
+        .thmv-uniq-box{
+            padding:0px 50px;
+        }
+        .thmv-uniq-offer .thmv-uniq-box .thmv-pills-blok p,
+        .thmb-book-room .thmv-welcome-box .thmv-pills-blok p{
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+        .thmv-booking-sec .thmv-booking-img,
+        .thmv-booking-sec .thmv-booking-img img{
+            height: 450px;
+        }
+        .thmv-booking-sec{
+            margin: 0;
+            padding:0px 0px 70px;
+        }
+        .thmb-book-room{
+            margin: 0;
+        }
+        .thmb-book-room .thmv-welcome-box{
+            margin:0 auto;
+            padding:80px 0;
+            max-width: 500px;
+            text-align: center;
+        }
+        .thmb-book-room .thmv-welcome-box .thmv-availability-check{
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .thmv-what-todo,
+        .thmv-map .container{
+            padding:0;
+        }
+        .thmv-what-todo .thmv-welcome-box {
+            padding:0px 40px 30px;
+        }
+        .thmv-map{
+            margin: 0;
+            padding:50px 0px 0px;
+        }
+        .thmv-map iframe{
+            height: 350px;
+            display: block;
+        }
+        footer{
+            padding:100px 0px 0px;
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li h6,
+        .thmv-footer-bottom .thmv-fot-bot-menu ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li address{
+            font-size: 20px;
+            line-height: 40px;
+        }
+        footer .thmv-footer-widget-four{
+            margin-top:30px;
+        }
+        footer .thmv-footer-widget-four ul{
+            display: flex;
+        }
+        footer .thmv-footer-widget-four ul li{
+            width:33.33%;
+        }
+        footer .thmv-footer .thmv-footer-widget-four ul li h6{
+            font-weight: 900;
+        }
+        footer .thmv-footer .thmv-footer-widget-four ul li a{
+            margin-bottom: 0;
+        }
+        footer .thmv-footer-bottom .container{
+            padding:15px 40px;
+        }
+        footer .thmv-footer-bottom ul.thmv-payment{
+            text-align: right;
+        }
+        footer .thmv-footer-bottom ul li a{
+            vertical-align:middle;
+        }
+}
+@media only screen and (max-width:767px){
+    /*----------  Globel Style  ----------*/
+		.thmv-br-mob-none br{
+			display: none;
+		}
+		p{
+			font-size: 14px;
+			line-height: 28px;
+		}
+        .btn-full-filled,
+        .btn-full-filled-light{
+            padding:17px 20px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    /*----------  navbar  ----------*/
+        .thmv-top-navbar{
+            padding:0px 10px;
+        }
+        .thmv-top-navbar .logo{
+            width: auto;
+        }
+        .thmv-top-navbar .button{
+            right: 10px;
+        }
+        .thmv-top-navbar .logo img{
+            width:120px;
+        }
+        .thmv-nav-menu-list {
+            padding: 10px 0px 0px;
+        }
+
+    /*----------  Home page style  ----------*/
+
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info h4,
+        .thmv-testimonial-box .thmv-testimonial-body h3{
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .thmv-welcome-box .thmv-pills-blok p,
+        .thmv-wel-text .thmv-wel-info,
+        .thmv-welcome-box a.read-more-btn,
+        .thmv-floor-sec .thmv-welcome-box .thmv-pills-blok p,
+        footer .thmv-footer .thmv-foot-wedget ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li h6,
+        .thmv-footer-bottom .thmv-fot-bot-menu ul li a,
+        footer .thmv-footer .thmv-foot-wedget ul li address{
+            font-size:16px;
+            line-height: 32px;
+        }
+        .thmv-welcome-box p,
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info ul li i{
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .thmv-wel-text{
+            padding-top: 30px;
+        }
+        .thmv-wel-text h6{
+            font-size: 18px;
+            line-height: 36px;
+        }
+        .thmv-wel-text .thmv-wel-title {
+            font-size: 46px;
+            line-height: 59px;
+            letter-spacing:0px;
+        }
+        .thmv-welcome-sec {
+            padding: 40px 0px 0px;
+            margin-bottom: 20px;
+        }
+        .thmv-welcome-sec .thmv-welcome-info{
+            padding: 0 20px;
+        }
+        .thmv-welcome-sec .thmv-welcome-box h2{
+            padding:0 20px;
+        }
+        .thmv-welcome-box h2 {
+            font-size: 25px;
+            line-height: 32px;
+            margin: 10px 0px 15px;
+        }
+        .thmv-welcome-box{
+            margin: 0px 0px 40px;
+        }
+        .thmv-gallery-sec .thmv-img-box{
+            margin:5px 10px 5px;
+        }
+        .thmv-gallery-sec .thmv-mob-img-box .thmv-img-box{
+            margin:0px;
+        }
+        .thmv-gallery-sec .thmv-mob-img-box{
+            padding:0px 18px;
+        }
+        .thmv-gallery-sec .thmv-mob-img-box>div{
+            padding:5px;
+        }
+        .thmv-floor-sec {
+            padding: 20px 0px 0px;
+        }
+        .thmv-floor-sec .thmv-welcome-box{
+            text-align: center;
+            padding: 0px 10px;
+        }
+        .thmv-quote-img img {
+            width: 30px;
+        }
+        .thmv-quote-img {
+            padding: 40px 10px;
+        }
+        .thmv-testi{
+            padding:50px 0px 30px;
+        }
+         .thmv-testi .slick-testimonial-slider{
+            padding-top: 60px;
+         }
+        .thmv-testimonial-box {
+            background: rgba(255, 255, 255, 1);
+            padding: 30px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-img{
+            margin-right: 10px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-img img{
+            width:50px;
+            height:50px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header .thmv-user-info ul{
+            line-height:20px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-header::before {
+            background-size: 26px;
+            width: 50px;
+            height: 50px;
+        }
+        .thmv-testimonial-box .thmv-separator{
+            margin:15px 0px;
+        }
+        .thmv-testimonial-box .thmv-testimonial-body p{
+            font-size:13px;
+            line-height: 23px;
+        }
+        .thmv-uniq-box{
+            padding:0px 20px;
+        }
+        .thmv-uniq-offer {
+            padding: 60px 0px 50px;
+        }
+        .thmv-uniq-offer .thmv-welcome-box h2 {
+            margin: 15px 0px 15px;
+        }
+        .thmv-booking-sec .thmv-booking-img,
+        .thmv-booking-sec .thmv-booking-img img{
+            height:265px;
+        }
+        .thmb-book-room .thmv-welcome-box{
+            padding: 40px 20px;
+        }
+        .thmv-booking-sec {
+            padding: 0px 0px 50px;
+        }
+        .thmv-what-todo .thmv-welcome-box {
+            padding: 0px 20px 30px;
+        }
+        .thmv-what-todo-photos .thmv-img-box{
+            margin:10px 10px;
+        }
+        .thmv-map {
+            margin: 0;
+            padding: 70px 0px 0px;
+        }
+        .thmv-map iframe {
+            height: 450px;
+        }
+        footer {
+            padding: 60px 0px 0px;
+        }
+        footer .thmv-footer-widget-four ul{
+            flex-flow: column;
+        }
+        footer .thmv-footer-widget-four ul li{
+            width:100%;
+        }
+        footer .thmv-footer .thmv-foot-wedget{
+            padding:0px 20px;            
+        }
+        footer .thmv-footer .thmv-foot-wedget ul li,
+        footer .thmv-footer .thmv-footer-widget-four ul li a{
+            text-align: center;
+            display: block;
+        }
+        footer .thmv-footer .thmv-footer-widget-four ul li a,
+        footer .thmv-footer-bottom ul{
+            margin-bottom: 10px;
+        }
+        footer .thmv-footer-widget-four {
+            margin-top: 15px;
+        }
+        footer .thmv-footer {
+            padding-bottom: 20px;
+        }
+        footer  .thmv-footer-bottom .thmv-social,
+        footer .thmv-footer-bottom ul.thmv-payment{
+            width:100%;
+            justify-content: center;
+            text-align: center;
+        }
+        
+}		
+@media only screen and (max-width:575px){
+    /*----------  Home page style  ----------*/
+        .thmv-welcome-sec .thmv-welcome-img{
+            width: 100%;
+        }
+        .thmv-col-reverse .thmv-welimg-box,
+        .thmv-gallery-sec .container,
+        .thmv-gallery-sec .thmv-mob-img-box{
+            padding: 0 !important;
+        }
+        .thmv-gallery-sec .thmv-img-box{
+            margin: 5px 0px 5px;
+        }
+}
