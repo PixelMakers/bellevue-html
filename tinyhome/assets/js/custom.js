@@ -3,13 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 83) {
             document.getElementById('navbar_top').classList.add('fixed-top');
-            // add padding top to show content behind navbar
-            navbar_height = document.querySelector('.thmv-navbar-light').offsetHeight;
-            // document.body.style.paddingTop = navbar_height + 'px';
         } else {
             document.getElementById('navbar_top').classList.remove('fixed-top');
-            // remove padding top from body
-            document.body.style.paddingTop = '0';
         }
     });
 });
@@ -102,19 +97,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-//
-// $(document).ready(function() {
-//   $(window).on("scroll", function() {
-//     console.log($(this).scrollTop())
-//     if($(this).scrollTop() >= 30){
-//       // set to new image
-//       $(".thmv-top-nav-fix .logo a img").attr("src","../images/logo/logo-light.svg");
-//     } else {
-//       //back to default
-//       $(".thmv-top-nav-fix .logo a img").attr("src","../images/logo/logo.svg");
-//     }
-//   })
-// })
+// home page v2 and home page v4 booking section
+$(".thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li, .thmv-choose-option .thmv-choose-room li").click(function () {
+    $(".thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li, .thmv-choose-option .thmv-choose-room li").removeClass("active");
+    $(this).addClass("active");   
+});
 
 // =============================Search Form Guest Script====================
 
@@ -241,7 +228,12 @@ $(function() {
         monthsToShow: 1,
         monthsToStep: 1
     });
-
+    // home page v3 shwo two month js
+    $('#popupDatepickerfrom7, #popupDatepickerto7').datepick({
+            monthsToShow: 2,
+            monthsToStep: 1
+        });
+    
     $('#inlineDatepicker1').datepick({
         monthsToShow: 1,
         monthsToStep: 1,
@@ -257,6 +249,7 @@ $(function() {
         monthsToStep: 1,
         rangeSelect: true
     });
+
 });
 
 function showDate(date) {
@@ -289,7 +282,7 @@ $(".slick-testimonial-slider").slick({
     dots: true,
     arrows: false,
     pauseOnHover: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 1000,
     autoplaySpeed: 5000,
     responsive: [{
@@ -303,3 +296,69 @@ $(".slick-testimonial-slider").slick({
 
     }]
 });
+
+// home page v4 slick floor plan slider //
+$(".slick-floor-plan-slider").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    pauseOnHover: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    responsive: [
+    {
+      breakpoint:1200,
+      settings: {
+        centerMode:false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+  ]
+});
+
+
+// ======= home page v4 gallery filter ========//
+
+
+  $(".responsive-tabs > li button").click(function () {
+      $(".responsive-tabs > li").removeClass("active");
+      $(this).parent().addClass("active");
+      $(".responsive-tabs").toggleClass("open");
+  });
+// =======  gallery
+  $(document).ready(function(){
+
+    $(".thmv-filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            $('.filter').show('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    $(".thmv-appartments-sec .thmv-filter-tabs  .btn-default").click(function () {
+        $(".thmv-appartments-sec .thmv-filter-tabs  .btn-default").removeClass("active");
+    $(this).addClass("active");   
+});
+});
+
