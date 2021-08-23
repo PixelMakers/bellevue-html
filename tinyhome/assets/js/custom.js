@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 // =============================sticky header End Script====================
 
-// navigetion menu //
-
+// ============================navigetion menu============================= //
 (function($) {
     $.fn.menumaker = function(options) {
         var cssmenu = $(this),
@@ -52,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
             resizeFix = function() {
                 var mediasize = 991;
                 if ($(window).width() > mediasize) {
-                    cssmenu.find('ul').show();
+                    cssmenu.find(' ul').show();
                 }
                 if ($(window).width() <= mediasize) {
-                    cssmenu.find('ul').hide().removeClass('open');
+                    cssmenu.find(' ul').hide().removeClass('open');
                 }
             };
             resizeFix();
@@ -86,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             everyitem.addEventListener('mouseleave', function(e) {
                 let el_link = this.querySelector('a[data-bs-toggle]');
-
                 if (el_link != null) {
                     let nextEl = el_link.nextElementSibling;
                     el_link.classList.remove('show');
@@ -94,6 +92,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             })
         });
+    }
+});
+
+// ====== Right side floting buttons ====== //
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 1000) {
+        $(".thmv-home-side").addClass("thmv-home-side-show");
+    } else {
+        $(".thmv-home-side").removeClass("thmv-home-side-show");
     }
 });
 
@@ -158,9 +166,7 @@ function updateGuestCountText(parent) {
 
 // Adult & Child Number Script
 $(document).ready(function() {
-
     var guestAmount = $('#guestNo');
-
     $('#cnt-up').click(function() {
         guestAmount.val(Math.min(parseInt($('#guestNo').val()) + 1, 20));
     });
@@ -171,9 +177,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-
     var guestAmount = $('#kidsNo');
-
     $('#kcnt-up').click(function() {
         guestAmount.val(Math.min(parseInt($('#kidsNo').val()) + 1, 20));
     });
@@ -184,9 +188,7 @@ $(document).ready(function() {
 
 // Adult & Child Number Script
 $(document).ready(function() {
-
     var guestAmount = $('#roomNo');
-
     $('#rom-up').click(function() {
         guestAmount.val(Math.min(parseInt($('#roomNo').val()) + 1, 20));
     });
@@ -197,9 +199,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-
     var guestAmount = $('#kidsroomNo');
-
     $('#krom-up').click(function() {
         guestAmount.val(Math.min(parseInt($('#kidsroomNo').val()) + 1, 20));
     });
@@ -329,10 +329,102 @@ $(".slick-floor-plan-slider").slick({
   ]
 });
 
+// home page inner
+$(".slick-floor-plan-slider-two").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    pauseOnHover: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    responsive: [
+    {
+      breakpoint:1200,
+      settings: {
+        centerMode:true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        centerMode:true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint:576,
+      settings: {
+        centerMode:false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+// about page img slider
+ $('.thmv-ab-img-slider').slick({
+    infinite: true,
+    centerMode:true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    pauseOnHover: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    responsive: [{
+        breakpoint:992,
+        settings: {
+          centerMode:true,
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        },
+        breakpoint:767,
+        settings: {
+          centerMode:true,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+    }]
+});
+
+// 
+ $('.slick-review-slider').slick({
+    infinite: true,
+    centerMode:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    pauseOnHover: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    responsive: [{
+        breakpoint:767,
+        settings: {
+          centerMode:false,
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+    }]
+ });
 
 // ======= home page v4 gallery filter ========//
-
-
   $(".responsive-tabs > li button").click(function () {
       $(".responsive-tabs > li").removeClass("active");
       $(this).parent().addClass("active");
@@ -352,7 +444,6 @@ $(".slick-floor-plan-slider").slick({
         {
             $(".filter").not('.'+value).hide('3000');
             $('.filter').filter('.'+value).show('3000');
-            
         }
     });
     
@@ -362,3 +453,34 @@ $(".slick-floor-plan-slider").slick({
 });
 });
 
+// gallery fancybox js
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  dragToClose: false,
+
+  Toolbar: false,
+  closeButton: "top",
+
+  Image: {
+    zoom: false,
+  },
+
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});

@@ -8,7 +8,7 @@
 
 Created by Bellevue Theme
 
-1. Global styles
+1. Global styles    
 
 /*==========================================
     |||||  END TABLE OF CONTENT  |||||
@@ -16,13 +16,15 @@ Created by Bellevue Theme
 /*  ==========================================================================
     1. Global Styles
     ========================================================================== */
+
     body {
-      font-family: 'Lato', serif; 
+      font-family: 'Lato', serif;   
       color:#191B18;
       font-size: 18px;
       line-height: 36px;
       overflow-x: hidden;
     }
+
     p,ul {
       padding: 0;
       margin: 0;
@@ -288,7 +290,7 @@ Created by Bellevue Theme
 
     /*----------  theme color 1  ----------*/
     
-        /* Theme colors Tundora    " #404040 " */
+        /* Theme colors Tundora  " #404040 " */
             .thmv-bg-tundora{
                 background-color: #404040;
             }
@@ -296,7 +298,7 @@ Created by Bellevue Theme
                 color: #404040;      
             }
 
-        /* Theme colors full light gray    " #EAEAEA " */
+        /* Theme colors full light gray  " #EAEAEA " */
             .thmv-bg-full-light-gray{
                 background-color: #EAEAEA;
             }
@@ -1163,6 +1165,7 @@ Created by Bellevue Theme
             top: 36%;    
             transform:rotate(-180deg);
         }
+        .thmv-top-navbar ul ul li:hover,
         .thmv-top-navbar ul ul li.has-sub:hover,
         .thmv-top-navbar ul li.has-sub ul li.has-sub ul li:hover {
             background: #363636;
@@ -1273,7 +1276,7 @@ Created by Bellevue Theme
        .datepick-cmd:hover{
         background:transparent;
        }
-       /* .datepick-month td a.thmv-date-selectedClass{
+       .datepick-month td a.thmv-date-selectedClass{
             background:transparent !important;
             color: #404040;
             opacity:0.3;
@@ -1290,7 +1293,8 @@ Created by Bellevue Theme
             position: absolute;
             top: 50%;
             transform: rotate(140deg);
-        } */
+        }
+
     /*----------  top banner section style  ----------*/
         .thmv-wel-col{
             max-width:550px;
@@ -1577,7 +1581,7 @@ Created by Bellevue Theme
             align-items: center;
         }
         .thmv-book-room .thmv-welcome-box{
-            margin:100px 0px 100px 100px;
+            margin:100px 0px 100px 90px;
             max-width:360px;
         }
         .thmv-book-room .thmv-welcome-box .thmv-pills-blok p{
@@ -1598,7 +1602,7 @@ Created by Bellevue Theme
         .thmv-book-room .thmv-welcome-box .thmv-mo-check-form .form-group i{
             position: absolute;
             top: 50%;
-            left: 20px;
+            left: 15px;
             transform: translateY(-100%);
             color:#ffffff;
         }
@@ -1621,6 +1625,9 @@ Created by Bellevue Theme
         .thmv-availability-check .thmv-notes textarea::placeholder{
             color: #DDDDDD;
         }
+        .thmv-home-1.thmv-home-v3 .thmv-wel-text .thmv-availability-check .form-group input{
+            padding:12px 50px;
+        }
         .thmv-home-1.thmv-home-v3 .thmv-wel-text .thmv-availability-check .form-group button,
         .thmv-book-room .thmv-welcome-box .thmv-mo-check-form .form-group button{
             width:100%;
@@ -1634,6 +1641,8 @@ Created by Bellevue Theme
             max-width: 950px;
             padding: 0;
             padding-bottom: 50px;
+            margin: 0px auto;
+            text-align: center;
         }
         .thmv-what-todo .thmv-welcome-box h2{
             margin-bottom: 20px;
@@ -1977,7 +1986,7 @@ Created by Bellevue Theme
     .thmv-top-nav .thmv-navbar-dark .thmv-nav-menu-list li.has-sub>a::after, 
     .thmv-top-nav .thmv-navbar-dark .thmv-nav-menu-list li a,
     .thmv-top-nav .thmv-navbar-dark .thmv-right-menu .thmv-social li a,
-    .thmv-top-nav .thmv-navbar-dark.fixed-top .thmv-nav-menu-list li.has-sub>a ul a{
+    .thmv-top-nav .thmv-navbar-dark.fixed-top .thmv-nav-menu-list li.has-sub > ul a{
         color: #ffffff;
     }
     .thmv-top-nav .thmv-navbar-dark.fixed-top .thmv-nav-menu-list li.has-sub>a::after,
@@ -2065,7 +2074,7 @@ Created by Bellevue Theme
             color: #fff;
             position: absolute;
             top: 50%;
-            left:8px;
+            left:12px;
             transform: translate(0, -100%);
             font-size: 18px;
             pointer-events: none;
@@ -2184,6 +2193,15 @@ Created by Bellevue Theme
         right:10px;
         transform: translate(0% , -50%);
     }
+    #location{width: 100% !important;padding: 7px 45px;}
+    select::-ms-expand {display: none;}
+    select{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    #location:focus-visible{
+        outline:0;
+    }
     .thmv-availability-check .thmv-location{
         border: 1px solid #FFFFFF30;
         margin-bottom: 20px;
@@ -2211,6 +2229,14 @@ Created by Bellevue Theme
         left: 10px;
         color:#FFFFFF;
         transform: translate(0%, -50%);
+    }
+    .thmv-availability-check .thmv-location i.fa-chevron-down{
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0% , -50%);
+        left: auto;
     }
     /*----------  video modul  ----------*/
         .thmv-video-modal img{
@@ -2321,11 +2347,13 @@ Created by Bellevue Theme
         margin-top: 30px;
     }
     .thmv-home-v4 .thmv-welcome-box h2,
-    .thmv-amenities-sec .thmv-welcome-box h2{
+    .thmv-amenities-sec .thmv-welcome-box h2,
+    .thmv-about-wel-sec .thmv-welcome-box h2{
         margin: 10px 0px 20px;
     }
     .thmv-home-v4 .thmv-welcome-box .thmv-pills-blok p,
-    .thmv-amenities-sec .thmv-welcome-box .thmv-pills-blok p{
+    .thmv-amenities-sec .thmv-welcome-box .thmv-pills-blok p,
+    .thmv-about-wel-sec .thmv-welcome-info .thmv-pills-blok p{
         background:transparent;
         color:#191B1850;
         padding: 0;
@@ -2529,14 +2557,18 @@ Created by Bellevue Theme
     }
     .thmv-choose-option .thmv-booking-row .thmv-check-out a,
     .thmv-home-1.thmv-home-v4 .thmv-more-blog a,
-    .thmv-more-blog a{
+    .thmv-more-blog a,
+    .thmv-packages .thmv-appartments-info .btn-full-filled,
+    .thmv-contact-top .thmv-header-title a{
         background: #404040;
         color:#FFFFFF;
         min-width:250px;
     }
     .thmv-choose-option .thmv-booking-row .thmv-check-out a:hover,
     .thmv-home-1.thmv-home-v4 .thmv-more-blog a:hover,
-    .thmv-more-blog a:hover{
+    .thmv-more-blog a:hover,
+    .thmv-packages .thmv-appartments-info .btn-full-filled:hover,
+    .thmv-contact-top .thmv-header-title a:hover{
         background:transparent;
         color: #404040;
     }
@@ -2574,7 +2606,7 @@ Created by Bellevue Theme
 /*=====  End of home page-v4 style end  ======*/
 
 /*=============================================
-    =            home inner page style            =
+    =            home inside page style            =
     =============================================*/
     .thmv-home-1.thmv-home-inner .thmv-header-sec{
         background:#FFFFFF;
@@ -2583,22 +2615,36 @@ Created by Bellevue Theme
         margin: 30px 0;
     }
     .thmv-home-inner .thmv-page-title p,
-    .thmv-home-inner .thmv-page-rating p{
+    .thmv-home-inner .thmv-page-rating p,
+    .thmv-home-inner .thmv-location p{
         margin-bottom: 0;
         font-size: 16px;
         color: rgba(25, 27, 24, 0.4);
     }
-    .thmv-home-inner .thmv-page-rating ul li{
+    .thmv-home-inner .thmv-page-rating ul li,
+    .thmv-packages .thmv-appart-meta .thmv-page-rating ul li{
         font-size: 14px;
         padding-right:5px;
         color: rgba(255, 200, 4, 1)
     }
-    .thmv-home-inner .thmv-page-rating p{
+    .thmv-home-inner .thmv-page-rating p,
+    .thmv-packages .thmv-appart-meta .thmv-page-rating p{
         font-size: 18px;
         line-height: 36px;
         margin-left:10px;
     }
-    .thmv-home-inner .thmv-show-btn a {
+    .thmv-home-inner .thmv-location,
+    .thmv-packages .thmv-location{
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .thmv-home-inner .thmv-location i,
+    .thmv-packages .thmv-location i{
+        margin-right:10px;
+    }
+    .thmv-home-inner .thmv-show-btn a,
+    .thmv-reviews-sec .thmv-show-btn a,
+    .thmv-user-review .thmv-show-btn a{
         border-color:rgba(64, 64, 64, 1)
     }
 
@@ -2671,7 +2717,9 @@ Created by Bellevue Theme
         }
         .thmv-booking-text-sec .thmv-book-room .thmv-mo-check-form .form-group input{
             padding-right:10px;
+            padding-left: 20px;
         }
+
     /* book form style 2 */
         .thmv-booking-text-sec .thmv-book-form-style-2 .thmv-heading-style::before{
             display: none;
@@ -2720,6 +2768,7 @@ Created by Bellevue Theme
         .thmv-reviews-sec .thmv-testimonial-header::before {
             display: none;
         }
+        .thmv-one-user-sec .thmv-testimonial-header .thmv-user-info h4,
         .thmv-reviews-sec .thmv-testimonial-box .thmv-user-info h4{
             font-size: 18px;
             line-height: 28px; 
@@ -2743,7 +2792,7 @@ Created by Bellevue Theme
         }
     /* booking section style */
         .thmv-bottom-booking{
-            padding:300px 0px 100px;
+            padding:300px 0px 0px;
         }
         .thmv-bottom-booking .thmv-booking-img,
         .thmv-bottom-booking .thmv-booking-img img {
@@ -2755,4 +2804,960 @@ Created by Bellevue Theme
          .thmv-bottom-booking .thmv-book-room .thmv-welcome-box{
             margin: 150px 0px 100px 100px;
          }
+        .thmv-one-user-sec{
+            padding: 150px 0px;
+        }
+        .thmv-one-user-sec .thmv-testimonial-header .thmv-user-info{
+            padding-top: 10px;
+        }
+        .thmv-one-user-sec .thmv-testimonial-header .thmv-user-img img{
+            margin-right:20px;
+            width:77px;
+            height:77px;
+        }
+        .thmv-one-user-sec .thmv-testimonial-header .thmv-user-info h4{
+            font-size: 22px;
+            line-height:28px;
+        }
+        .thmv-one-user-sec .thmv-testimonial-header .thmv-user-info p{
+            font-size: 18px;
+            line-height: 36px;
+            margin-bottom: 0;
+            color:rgba(25, 27, 24, 0.4);
+        }
+        .thmv-one-user-sec .thmv-testi-user-box .thmv-show-btn{
+            margin-left: 100px;
+        }
+        .thmv-things .thmv-things-list h5{
+            font-size: 22px;
+            line-height:28px;
+            margin-bottom: 20px;
+        }
+        .thmv-things .thmv-things-list ul li{
+            padding-bottom: 10px;
+            font-size: 16px;
+            line-height:32px;
+            color: rgba(25, 27, 24, 0.8);
+            display: flex;
+            align-items:start;
+        }
+        .thmv-things .thmv-things-list ul li:last-child{
+            padding-bottom:0px;
+        }
+        .thmv-things .thmv-things-list ul li i{
+            font-size: 24px;
+            margin-right:15px;
+            margin-top: 4px;
+        }
+        .thmv-appartments-bottom{
+            padding:150px 0px 100px;
+        }
+        .thmv-foot-small{
+            padding: 100px 0px 0px;
+        }
 /*=====  End of home inner page style  ======*/
+
+/*================================================
+    =            home inside pages v2 style start            =
+    ================================================*/
+    .thmv-floor-form.thmv-floor-sec .thmv-user-info,
+    .thmv-floor-form.thmv-floor-sec .thmvfloor-list-icon{
+        max-width:540px;
+        margin-left:auto;
+        margin-top:15px;
+    }
+    .thmv-floor-form .thmv-booking-text-sec{
+        background:transparent;
+        padding: 0;
+    }
+    .thmv-floor-form .thmv-booking-text-sec .thmv-book-form-style-2 .thmv-welcome-box {
+        margin: 100px 0px 100px 100px;
+    }
+    .thmv-floor-form .thmv-booking-text-sec .thmv-book-room{
+        margin-left: 50px;
+    }
+    .thmv-booking-home,
+    .thmv-booking-home .thmv-booking-text{
+        background:transparent;
+        padding: 20px 0px;
+    }
+    .thmv-booking-home .thmv-booking-text .thmv-sub-title{
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(25, 27, 24, 0.4);
+        margin-bottom: 15px;
+    }   
+    .thmv-amenities-home{
+        padding: 30px 0px 80px;
+    }
+    .thmv-amenities-home .thmv-floor-img{
+        width:450px;
+    }
+    .thmv-map-home{
+        padding: 50px 0px 0px;
+    }
+    .thmv-map-home .thmv-map-sec{
+        background:#EAEAEA;
+        margin: 250px 0px 150px;
+        padding-bottom: 150px;
+    }
+    .thmv-map-home .thmv-map-sec iframe{
+        margin-top: -200px;
+    }
+    /*-------- Right Side Floting Buttons Section Style --------*/
+        .datepick-popup{
+            z-index:1060;
+        }
+        .thmv-home-side{
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translate(-20%, -50%);
+            z-index: 999;
+            display: flex;
+            flex-flow:column;
+            justify-content:center;
+            align-items:center;
+            text-align: center;
+            opacity: 0;
+            z-index:-10;
+            transition:all 0.3s ease-in-out 0.3s;
+        }
+        .thmv-home-side-show{
+            opacity: 1;
+            z-index: 10;
+        }
+        .thmv-home-side-show #home-top,
+        #home-top{
+            display: flex !important;
+        }
+        #home-top,
+        #home-top:hover,
+        #home-top:active,
+        #home-top:visited{
+            color: #000;
+        }
+        .thmv-calendar-sticky{
+            margin-bottom: 30px;
+        }
+
+        .thmv-calendar-sticky{
+            background: #404040;
+            color: #fff;
+            width: 83px;
+            height: 83px;
+            border-radius: 100%;
+            font-size: 32px;
+            box-shadow: 0px 14px 20px rgba(118, 118, 118, 0.35);
+        }
+    /*-------- End of Right Side Floting Buttons Section Style ------*/
+    /*-------- Booking Popup Style --------*/
+        .book_popup .modal-content {
+            background: #191B18;
+            border: none;
+        }
+        .book_popup.modal {
+            background: #191B18;
+        }
+        .book_popup .modal-header {
+            border-bottom: none;
+        }
+        .modal_form_title h4 {
+            color: #fff;
+            text-transform: inherit;
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+            line-height: 39px;
+            margin-bottom: 22px;
+        }
+        .book_popup  .btn-close {
+            box-sizing: content-box;
+            width: 1.5em;
+            height: 1.5em;
+            padding: .25em .25em;
+            color: #000;
+            background: transparent url("../images/model-close-icon.png");
+            border: 0;
+            border-radius: .25rem;
+            opacity: 1;
+            background-size: cover;
+        }
+        .book_popup .thmv-mo-check-form input {
+            background: transparent;
+            border: 1px solid #333;
+            border-radius: 0;
+            color: #fff;
+            height: 50px;
+        }
+        .book_popup .thmv-mo-check-form input::placeholder {
+          color: #ffffff;
+        }
+        .book_popup .thmv-mo-check-form input:-ms-input-placeholder {
+          color: #ffffff;
+        }
+        .book_popup .thmv-mo-check-form input::-ms-input-placeholder {
+          color: #ffffff;
+        }
+        .book_popup .thmv-mo-check-form .form-group {
+            position: relative;
+        }
+        .book_popup .thmv-mo-check-form input {
+            background: transparent;
+            border: 1px solid #333;
+            border-radius: 0;
+            color: #fff;
+            height: 50px;
+            position: relative;
+            margin-bottom: 20px;
+            padding-left:50px;
+        }
+        .book_popup .thmv-mo-check-form .form-group i {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translate(10px, -50%);
+            font-size: 20px;
+            pointer-events: none;
+        }
+        .book_popup .thmv-mo-guest-col .form-content .thmv-mo-peoples-icon{
+            transform: translate(10px, -50%);
+        }
+        .book_popup .thmv-mo-guest-col .form-content {
+            border: 1px solid #333;
+            color: #fff;
+        }
+        .book_popup .thmv-mo-guest-col .dropdown-toggle::after{
+            display: none;
+        }
+        .book_popup .thmv-mo-guest-col .form-content {
+            border: 1px solid #333;
+            color: #fff;
+            line-height: 36px;
+            padding: 6px 12px;
+            position: relative;
+            padding-left: 50px;
+        }
+        .book_popup .thmv-mo-peoples-icon {
+            position: absolute;
+            font-size: 18px;
+            top: 50%;
+            right: 15px;
+            transform: translate(0px, -50%);
+        }
+        .btn_mo_search {
+            background: #fff;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 20px;
+            min-width:100%  ;
+        }
+
+        .thmv-room_head_title {
+            background: #191B18;
+            min-height: 320px;
+            position: relative;
+            z-index: 1;
+        }
+        .thmv-room_head_title:after {
+            content: "room";
+            font-size: 278px;
+            line-height: 290px;
+            right: 0;
+            position: absolute;
+            color: #322E2C;
+            letter-spacing: -0.02em;
+            z-index: -1;
+            top: 0;
+        }
+        .thmv-subpage-title h2 {
+            font-size: 44px;
+            color: #fff;
+            line-height: 57px;
+            padding:80px 0px 20px;
+            display: inline-block;
+            border-bottom: 1px solid;
+        }
+    /*------- End Of Booking Popup Style -------*/
+/*=====  End of home inside pages v2 style   ======*/
+
+/*=================================================
+    =            home inside v3 page style start            =
+    =================================================*/
+    .thmv-fix-component{
+        padding:120px 0px; 
+    }
+    .thmv-fix-component .thmv-booking-text,
+    .thmv-fix-component .thmv-floor-slider .thmv-user-info,
+    .thmv-fix-component .thmv-floor-slider .thmvfloor-list-icon,
+    .thmv-fix-component .thmv-amenities-sec,
+    .thmv-fix-component .thmv-amenities-sec .thmv-welcome-box{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding:0px;
+    }
+    .thmv-fix-component .thmv-floor-slider{
+        padding: 0;
+        margin: 70px 0px 130px;
+    }
+    .thmv-fix-component .thmv-booking-text-sec{
+        background:transparent;
+    }
+    .thmv-fix-component .thmv-component-text{
+        max-width: 570px;
+        margin-left: auto;
+    }
+    .thmv-fix-component .thmv-booking-text-sec .thmv-sub-title{
+        font-size: 16px;
+        line-height:32px;
+        color:rgba(25, 27, 24, 0.4);
+        margin-bottom: 20px;
+    }
+    .thmv-fix-component .thmv-booking-text-sec .thmv-floor-img{
+        margin:100px 0 30px;
+    }
+    .thmv-fix-component .thmv-booking-text-sec .thmv-floor-img img{
+        width: 400px;
+    }
+    .thmv-fix-component .thmv-component-text .thmv-floor-sec{
+        padding: 40px 0px 70px;
+    }
+    .thmv-fix-component .thmvfloor-list-icon .thmv-listing-info p{
+        color: #191B18;
+    }
+    .thmv-amenities-home .thmv-floor-img{
+        padding-top:60px;
+    }
+    /* Form sticky */
+    .thmv-component-form{
+        padding-left: 80px;
+        --offset:6rem;
+        align-self: start;
+        position: sticky;
+        top: var(--offset);
+    }
+    .thmv-fix-component .thmv-book-form-style-2 .thmv-welcome-box{
+        padding: 80px 0px 90px 0px;
+        margin-left:100px;        
+    }
+
+
+/*=====  End of home inside v3 page style  ======*/
+
+
+/*=============================================
+    =            home inside v4 pages style start            =
+    =============================================*/
+    .thmv-ame-h4 .thmvfloor-list-icon ul li{
+        align-items: center;
+        padding:15px 0px;
+    }
+    .thmv-ame-h4 .thmvfloor-list-icon .thmv-listing-icon img{
+        width:26px;
+        height:auto;
+    }
+    .thmv-ame-h4 .thmvfloor-list-icon .thmv-listing-icon img.thmv-parking{
+        width: 20px;
+    }
+    .thmv-ame-h4 .thmvfloor-list-icon .thmv-listing-info h4{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .thmv-ame-h4 .thmvfloor-list-icon .thmv-show-btn{
+        margin-left: 0;
+    }
+    .thmv-ame-h4 .thmvfloor-list-icon ul li:last-child{
+        border-bottom: 1px solid rgba(78, 82, 76, 0.1)
+    }
+    .thmv-amenities-home .thmvfloor-list-icon ul li:last-child{
+        border:none;
+    } 
+/*=====  End of home inside v3 pages style  ======*/
+
+/*==============================================
+    =            about page style start            =
+    ==============================================*/
+        .thmv-top-header {
+            background: #EAEAEA;
+            height:460px;
+        }
+        .thmv-page-header-box {
+            max-width: 460px;
+            margin-left: auto;
+            padding-top: 30px;
+            margin-right: 80px;
+        }
+        .thmv-breadcurb-list ul {
+            display: flex;
+        }
+        .thmv-breadcurb-list ul li {
+            font-size: 16px;
+            color: #191B18;
+            margin-right: 7px;
+            padding-right: 15px;
+            position: relative;
+        }
+        .thmv-breadcurb-list ul li a{
+            color: rgba(25, 27, 24, 0.4);
+        }
+        .thmv-breadcurb-list ul li:not(:last-child):after {
+            content: "";
+            background: rgba(25, 27, 24, 0.4);
+            width: 6px;
+            height: 1px;
+            right: 0;
+            top: 55%;
+            position: absolute;
+            transform: translate(0% , 0%);
+        }
+        .thmv-header-title h2 {
+            font-size: 54px;
+            line-height:70px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            padding-top: 100px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .thmv-header-title h2:after {
+            content: "";
+            width: 1px;
+            height: 50px;
+            display: inline-block;
+            background: #191B18;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+        }
+        .thmv-header-title p {
+            font-size: 18px;
+            color: rgba(25, 27, 24, 0.7);
+        }
+        .thmv-header-top-img,
+        .thmv-header-top-img img{
+            height: 460px;
+        }
+        .thmv-header-top-img img{
+            object-fit:cover;
+        }
+        .thmv-about-sec .thmv-about-wel-sec{
+            background-color:transparent;
+            margin: 0;
+            padding: 150px 0px 150px;
+        }
+        .thmv-about-wel-sec .thmv-welcome-img{
+            margin: 0;
+        }
+        .thmv-about-wel-sec .thmv-wel-about{
+            margin-bottom: 150px;
+        }
+        .thmv-about-wel-sec .thmv-wel-about:last-child{
+            margin-bottom: 0;
+        }
+        .thmv-ab-slider .thmv-ab-img-slider .slick-slide{
+            margin: 0px 5px;
+        }
+        .thmv-ab-slider .thmv-ab-img-slider .slick-list{
+            padding: 0px 400px !important;
+        }
+        .thmv-meet-team{
+            padding:150px 0 0px;
+        }
+        .thmv-team-member{
+            margin-bottom: 25px;
+        }
+        .thmv-user-info .thmv-user-title h6{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+        .thmv-user-info .thmv-user-text p,
+        .thmv-listing-info p,
+        .thmv-contact-info a,
+        .thmv-form-heading p{
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba(25, 27, 24, 0.4);
+        }
+        .thmv-getin-touch{
+            padding-top:50px;
+        }
+        .thmv-about-sec .thmv-contact-info .thmv-pills-blok p{
+            background-color:transparent;
+            color:rgba(25, 27, 24, 0.4);
+            padding: 0;
+        }
+        .thmv-about-sec .thmv-contact-info h2 {
+            margin: 10px 0px 15px;
+        }
+        .thmvfloor-list-icon ul li{
+            align-items: flex-start;
+        }
+        .thmv-contact-info .thmv-welcome-box{
+            margin-top: 0;
+        }
+        .thmv-contact-info .thmv-contact-list{
+            margin-top: 20px;
+        }
+        .thmv-contact-info {
+            max-width: 470px;
+            margin-left: auto;
+            margin-right: 70px;
+        }
+        .thmv-contact-info .thmv-contact-list .thmv-listing-icon i{
+            font-size: 30px;
+            line-height:39px;
+            color:#404040;
+        }
+        .thmv-listing-info h6{
+            font-size: 22px;
+            line-height:28px;
+            margin-bottom: 10px;
+        }
+        .thmv-contact-info p{
+            color: rgba(25, 27, 24, 0.8);
+        }
+        .thmv-contact-info a{
+            color: #191B18;
+            margin-top: 10px;
+        }
+        .thmv-contact-col{
+            background:#404040;
+        }
+        .thmv-contact-form{
+            padding: 100px 0px 100px 100px;
+        }
+        .thmv-form-heading{
+            padding-bottom: 50px;
+        }
+        .thmv-form-heading h2,
+        .thmv-form-heading p{
+            color: #FFFFFF;
+        }
+        .thmv-form-heading h2{
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 39px;
+            margin-bottom: 15px;
+        }
+        .thmv-contact-form{
+            max-width:510px;
+        }
+        .thmv-contact-form .thmv-input-box{
+            position: relative;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .thmv-contact-form form input:focus,
+        .thmv-contact-form form textarea:focus,
+        .thmv-packages-join form input:focus{
+            background:transparent;
+            border-color:#FFFFFF;
+            color: #FFFFFF;
+        }
+        .thmv-contact-form form input,
+        .thmv-contact-form form textarea,
+        .thmv-packages-join form input{
+            background: transparent;
+            border-radius: 0;
+            display: inline-block;
+            padding: 10px 50px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #FFFFFF;
+        }
+        .thmv-contact-form form textarea{
+            padding:10px 15px 12px;
+            height:150px;
+        }
+        .thmv-contact-form form input::placeholder,
+        .thmv-contact-form form textarea::placeholder,
+        .thmv-packages-join form input::placeholder{
+            color: #FFFFFF;
+        }
+        .thmv-contact-form .thmv-input-box i{
+            color: #FFFFFF;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform:translate(25px , -50%);
+        }
+/*=====  End of about page style  ======*/
+
+/*========================================
+    =            about page v2 style start            =
+    ========================================*/
+    .thmv-about-style-2 .thmv-wel-about .thmv-welcome-info::after,
+    .thmv-about-style-2 .thmv-wel-about .thmv-welcome-info::before{
+        display: none;
+    }
+    .thmv-about-style-2 .thmv-wel-about .thmv-welcome-img{
+        position: relative;
+        margin-right:60px;
+    }
+    .thmv-about-style-2 .thmv-wel-about .thmv-welcome-img img{
+        position: relative;
+        z-index:5;
+    }
+    .thmv-about-style-2 .thmv-wel-about .thmv-welcome-img::after{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: -40px;
+        top: 40px;
+        transform: translate(0%, 0%);
+        opacity: 0.5;
+        background: #EAEAEA;
+    }
+    .thmv-about-style-2 .thmv-wel-about{
+        margin-bottom: 60px;
+    }
+/*=====  End of about page v2 style  ======*/
+
+/*===========================================
+    =            packages page style            =
+    ===========================================*/
+    .thmv-appartments-sec .thmv-packages .thmv-appartments-info p{
+        color: rgba(25, 27, 24, 0.6);
+    }
+    .thmv-packages .thmv-appartments-info a{
+        margin-top: 15px;
+    }
+    .thmv-packages-sec {
+        padding: 150px 0px 0px;
+    }
+    .thmv-packages-sec .thmv-filter-box .thmv-appartments-info{
+        padding: 20px 5px;
+    }
+    .thmv-packages-sec .thmv-filter-box .thmv-appartments-info h5{
+        padding-bottom: 10px;
+    }
+    .thmv-Specials-packages{
+        padding: 100px 0px 0px;
+    }
+    .thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+    .thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+    .thmv-Specials-packages .thmv-packages .thmv-appartments-info p{
+        color: rgba(25, 27, 24, 0.4);
+    }
+    .thmv-last-deals{
+        margin: 60px auto;
+        padding: 110px 0px 50px;
+        background: #EAEAEA;
+    }
+    .thmv-faqs{
+        padding:60px 10px 50px;
+    }
+    .thmv-faqs .accordion-header{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .thmv-faqs .thmv-accordion-number{
+        width: 50px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        background: #404040;
+        color: #fff;
+    }
+    .thmv-faqs .accordion-item {
+        border:0;
+        position: relative;
+        border-bottom: 1px solid rgba(64, 64, 64, 0.1);
+        padding:15px 0px;
+    }
+    .thmv-faqs .accordion-item:last-child{
+        border:none;
+    }
+    .thmv-faqs .accordion-item:first-child::before{
+        display: none;
+    }
+    .thmv-faqs .accordion-item .accordion-button{
+        background:transparent;
+        border:0;
+        box-shadow:none;
+    }
+    .thmv-faqs .accordion-item .accordion-button h5{
+        font-size: 18px;
+        line-height:32px;
+        max-width:620px;
+    }
+    .thmv-faqs .accordion-item .accordion-body p{
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(25, 27, 24, 0.8);
+    }
+    .thmv-faqs .accordion-item .accordion-collapse{
+        margin-left: 45px;
+    }
+    .thmv-faqs .accordion-button:not(.collapsed),
+    .thmv-faqs .accordion-button:not(.collapsed),
+    .accordion-button:not(.collapsed)::after{
+        color: #171818;
+    }
+    .accordion-button::after {
+        content: "\f078";
+        font-family: 'Font Awesome 5 Free';
+        color: #000000;
+        font-weight: 600;
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        background-image:none;
+        transition: transform .2s ease-in-out;
+    }
+    .accordion-button:not(.collapsed)::after{
+        background-image:none;
+    }
+    .thmv-faqs .accordion-item .accordion-button{
+        padding: 10px 0px;
+        margin-left: 20px;
+    }
+    .thmv-faqs .accordion-item .accordion-collapse .accordion-body{
+        padding:0px 0px 10px;
+        margin-left: 20px;
+    }
+    .thmv-packages-join{
+        padding: 100px 0px 150px;
+    }
+    .thmv-packages-join .thmv-uniq-box .thmv-pills-blok p{
+        background:transparent;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .thmv-packages-join .thmv-welcome-box{
+        max-width:800px;
+    }
+    .thmv-packages-join .thmv-welcome-box h2 {
+        margin: 10px 0px 15px;
+    }
+    .thmv-packages-join .thmv-welcome-box p{
+        margin-bottom: 20px;
+    }
+    .thmv-packages-join .thmv-welcome-box form{
+        max-width: 400px;
+        margin:0 auto;
+    }
+    .thmv-packages-join form .input-group input{
+        position: relative;
+    }
+    .thmv-packages-join form .input-group i{
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(25px , -50%);
+    }
+    .thmv-packages-join .thmv-welcome-box form button{
+        min-width:120px;
+    }
+/*=====  End of packages page style  ======*/
+
+/*===============================================
+    =            packages v2 page style             =
+    ===============================================*/
+    .thmv-appartments-info .thmvfloor-list-icon{
+        margin: 0;
+    }
+    .thmv-appartments-info .thmvfloor-list-icon ul li {
+        align-items: center;
+    }
+    .thmv-appartments-info .thmv-listing-icon{
+        margin-right:15px;
+    }
+    .thmv-appartments-info .thmvfloor-list-icon .thmv-listing-icon img{
+        width: 26px;
+        height: 26px;
+    }
+    .thmv-appartments-info .thmvfloor-list-icon .thmv-listing-info h4{
+        font-size: 16px;
+        line-height: 20px;
+    }
+/*=====  End of packages v2 page style   ======*/
+
+/*=================================================
+    =          experience section style start          =
+    =================================================*/
+    .thmv-review-sec{
+        padding:100px 0px;
+    }
+    .thmv-review-sec .slick-review-slider .slick-list{
+        padding-left: 0 !important;
+        padding-right:350px !important;
+    }
+    .slick-prev::before,
+    .slick-next::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 40px;
+        color: #000000;
+        transition: all 0.3s ease 0s;
+        opacity: 1;
+    }
+    .slick-prev::before{
+        content:"\f053";
+    }
+    .slick-next::before{
+        content:"\f054";
+    }
+    .slick-slider .slick-prev,
+    .slick-slider .slick-next {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        background: #FFFFFF;
+        position: absolute;
+        z-index: 1;
+        transition: all 0.3s ease 0s;
+    }
+    .slick-review-slider{
+        position: relative;
+    }
+    .slick-slider .slick-prev:hover,
+    .slick-slider .slick-next:hover{
+        background: #000000;
+    }
+    .slick-prev:hover::before,
+    .slick-next:hover::before{
+        color: #FFFFFF;
+    }
+    .slick-review-slider .slick-prev,
+    .slick-review-slider .slick-next{
+        position: absolute;
+    }
+    .slick-review-slider.slick-slider .slick-prev{
+        left: 0%;
+        top: 100%;
+        transform: translate(0% , -50%);
+        margin: -32px 0px 0px 20px;
+    }
+    .slick-review-slider.slick-slider .slick-next{
+        right: 100%;
+        top: 100%;
+        transform: translate(0% , -50%);
+        margin: -32px -120px 0px 0px;
+    }
+    .thmv-user-review{
+        max-width: 540px;
+        margin-left: auto;
+    }
+    .thmv-user-review .thmv-sub-title{
+        font-size: 16px;
+        line-height:32px;
+        color: rgba(25, 27, 24, 0.4);
+    }
+    .thmv-user-review h2{
+        margin-bottom: 25px;
+    }
+    .thmv-user-review h3{
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .thmv-user-review p{
+        font-size: 18px;
+        line-height: 36px;
+        color: #191B18;
+        margin-bottom: 30px;
+    }
+    .thmv-review-sec .slick-review-slider .slick-list {
+        padding-left: 0 !important;
+        padding-right: 250px !important;
+    }
+/*=====  End of experience section style   ======*/
+
+/*================================================
+    =            contact us section style            =
+    ================================================*/
+    .thmv-contact-map{
+        padding:150px 0px 50px; 
+    }
+    .thmv-contact-top .thmv-header-title a{
+        margin-top: 15px;
+    }
+    .thmv-contact-sec {
+        padding:100px 0px;
+    }
+    .thmv-contact-faq{
+        padding:60px 0px 100px;
+    }
+/*=====  End of contact us section style  ======*/
+
+/*========================================
+    =            gallery fancybox            =
+    ========================================*/
+
+    a[data-fancybox] img {
+      cursor: zoom-in;
+    }
+    .fancybox__backdrop::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      filter: blur(2px);
+      left: 50%;
+      top: 50%;
+      transform: scale(11);
+      opacity: 0.3;
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .fancybox__container {
+      --fancybox-bg: #000;
+
+      --fancybox-thumbs-width: 48px;
+      --fancybox-thumbs-ratio: 1;
+
+      --carousel-button-bg: rgb(91 78 76 / 74%);
+
+      --carousel-button-svg-width: 24px;
+      --carousel-button-svg-height: 24px;
+
+      --carousel-button-svg-stroke-width: 2.5;
+    }
+    .fancybox__nav {
+      --carousel-button-svg-width: 24px;
+      --carousel-button-svg-height: 24px;
+    }
+    .fancybox__nav .carousel__button.is-prev {
+      left: 20px;
+    }
+    .fancybox__nav .carousel__button.is-next {
+      right: 20px;
+    }
+    .carousel__button.is-close {
+      right: 20px;
+      top: 20px;
+      left:auto;
+    }
+    .carousel__button.is-close,
+    .fancybox__nav .carousel__button{
+        background:#191B18;
+        color:#FFFFFF;
+        transition: all 0.3s;
+    }
+    .carousel__button.is-close:hover,
+    .fancybox__nav .carousel__button:hover{
+        background:#FFFFFF;
+        color:#191B18;
+    }
+    .fancybox__slide {
+      padding: 8px 88px;
+    }
+    /* Thumbnails */
+    .fancybox__thumbs{
+        display: none;
+    }
+/*=====  End of gallery fancybox  ======*/
