@@ -3,36 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Demos</title>
+    <style>
+        ul{
+            padding: 0;
+            list-style: none; /*remove bullets*/
+        }
+
+        ul li{
+            float: left;
+            width: 20%; /*or whatever unit*/
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        ul li ul, ul li ul li{
+            float: none; /* un-"float" */
+            width: 100%;
+            font-weight: normal;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
 <h2>Bellevue HTML Demos</h2>
-<ul>
+<ul class="grid">
     <li><a href="hotel">Hotel</a>
         <ul>
             <li><strong><a href="hotel/index.html">index.html</a></strong></li>
             <li><a href="hotel/about-us.html">about-us.html</a></li>
             <li><a href="hotel/contact-us.html">contact-us.html</a></li>
-            <li><a href="hotel/explore.html">explore.html</a></li>
-            <li><a href="hotel/explore-v2.html">explore-v2.html</a></li>
+            <li><a href="hotel/explore.html">explore.html</a>
+                <ul><li><a href="hotel/explore-v2.html">explore-v2.html</a></li></ul>
+            </li>
             <li><a href="hotel/menu.html">menu.html</a></li>
             <li><a href="hotel/our-history.html">our-history.html</a></li>
             <li><a href="hotel/package-specials.html">package-specials.html</a></li>
-            <li><a href="hotel/room-one-column-card.html">room-one-column-card.html</a></li>
-            <li><a href="hotel/room-one-column-v1.html">room-one-column-v1.html</a></li>
-            <li><a href="hotel/room-one-column-v2.html">room-one-column-v2.html</a></li>
-            <li><a href="hotel/room-one-column-v3.html">room-one-column-v3.html</a></li>
-            <li><a href="hotel/room-single-carousel-v1.2.html">room-single-carousel-v1.2.html</a></li>
-            <li><a href="hotel/room-single-carousel-v1.html">room-single-carousel-v1.html</a></li>
-            <li><a href="hotel/room-single-carousel-v2.html">room-single-carousel-v2.html</a></li>
-            <li><a href="hotel/room-single-modern.html">room-single-modern.html</a></li>
-            <li><a href="hotel/room-two-column-v1.html">room-two-column-v1.html</a></li>
-            <li><a href="hotel/room-two-column-v2.html">room-two-column-v2.html</a></li>
+            <li>Rooms
+                <ul>
+                    <li><a href="hotel/room-one-column-card.html">room-one-column-card.html</a></li>
+                    <li><a href="hotel/room-one-column-v1.html">room-one-column-v1.html</a></li>
+                    <li><a href="hotel/room-one-column-v2.html">room-one-column-v2.html</a></li>
+                    <li><a href="hotel/room-one-column-v3.html">room-one-column-v3.html</a></li>
+                    <li><a href="hotel/room-single-carousel-v1.2.html">room-single-carousel-v1.2.html</a></li>
+                    <li><a href="hotel/room-single-carousel-v1.html">room-single-carousel-v1.html</a></li>
+                    <li><a href="hotel/room-single-carousel-v2.html">room-single-carousel-v2.html</a></li>
+                    <li><a href="hotel/room-single-modern.html">room-single-modern.html</a></li>
+                    <li><a href="hotel/room-two-column-v1.html">room-two-column-v1.html</a></li>
+                    <li><a href="hotel/room-two-column-v2.html">room-two-column-v2.html</a></li>
+                </ul>
+            </li>
+
         </ul>
     </li>
     <li><a href="hostel">Hostel</a>
         <ul>
-            <li><strong><a href="Hostel/index.html">index.html</a></strong></li>
-            <li><strong><a href="Hostel/index-2.html">index-2.html</a></strong></li>
+            <li><strong><a href="Hostel/index.html">index.html</a></strong>
+                <ul><li><strong><a href="Hostel/index-2.html">index-2.html</a></strong></li></ul>
+            </li>
+
             <li><a href="Hostel/about.html">about.html</a></li>
             <li><a href="Hostel/check-availability-v1.html">check-availability-v1.html</a></li>
             <li><a href="Hostel/contact-us.html">contact-us.html</a></li>
@@ -40,29 +69,65 @@
             <li><a href="Hostel/faq.html">faq.html</a></li>
             <li><a href="Hostel/gallery.html">gallery.html</a></li>
             <li><a href="Hostel/groups.html">groups.html</a></li>
-            <li><a href="Hostel/listing-v1.html">listing-v1.html</a></li>
-            <li><a href="Hostel/listing-v2.html">listing-v2.html</a></li>
-            <li><a href="Hostel/listing-v4.html">listing-v4.html</a></li>
+            <li>Listings
+                <ul>
+                    <li><a href="Hostel/listing-v1.html">listing-v1.html</a></li>
+                    <li><a href="Hostel/listing-v2.html">listing-v2.html</a></li>
+                    <li><a href="Hostel/listing-v4.html">listing-v4.html</a></li>
+                </ul>
+            </li>
             <li><a href="Hostel/offers v1.html">offers v1.html</a></li>
-            <li><a href="Hostel/our-blog.html">our-blog.html</a></li>
-            <li><a href="Hostel/our-blog-v2.html">our-blog-v2.html</a></li>
+            <li><a href="Hostel/our-blog.html">our-blog.html</a>
+                <ul>
+                    <li><a href="Hostel/our-blog-v2.html">our-blog-v2.html</a></li>
+                </ul>
+            </li>
             <li><a href="Hostel/our-menu.html">our-menu.html</a></li>
             <li><a href="Hostel/our-reviews.html">our-reviews.html</a></li>
-            <li><a href="Hostel/our-staff.html">our-staff.html</a></li>
-            <li><a href="Hostel/our-staff -v2.html">our-staff -v2.html</a></li>
+            <li><a href="Hostel/our-staff.html">our-staff.html</a>
+                <ul>
+                    <li><a href="Hostel/our-staff -v2.html">our-staff -v2.html</a></li>
+                </ul>
+            </li>
             <li><a href="Hostel/single.html">single.html</a></li>
             <li><a href="Hostel/whats-nearby.html">whats-nearby.html</a></li>
         </ul>
     </li>
     <li><a href="tinyhome">Tiny Home</a>
         <ul>
-            <li><strong><a href="tinyhome/index.html">index.html</a></strong></li>
-            <li><strong><a href="tinyhome/index-2.html">index-2.html</a></strong></li>
-            <li><strong><a href="tinyhome/index-3.html">index-3.html</a></strong></li>
-            <li><strong><a href="tinyhome/index-4.html">index-4.html</a></strong></li>
-            <li><strong><a href="tinyhome/index-5.html">index-5.html</a></strong></li>
-            <li><strong><a href="tinyhome/index-v2.html">index-v2.html</a></strong></li>
+            <li><strong><a href="tinyhome/index.html">index.html</a></strong>
+                <ul>
+                    <li><a href="tinyhome/index-2.html">index-2.html</a></li>
+                    <li><a href="tinyhome/index-3.html">index-3.html</a></li>
+                    <li><a href="tinyhome/index-4.html">index-4.html</a></li>
+                    <li><a href="tinyhome/index-5.html">index-5.html</a></li>
+                    <li><a href="tinyhome/index-v2.html">index-v2.html</a></li>
+                    <li><a href="tinyhome/index-v2-2.html">index-v2-3.html</a></li>
+                    <li><a href="tinyhome/index-v2-3.html">index-v2-3.html</a></li>
+                    <li><a href="tinyhome/index-v2-4.html">index-v2-4.html</a></li>
+                    <li><a href="tinyhome/index-v2-5.html">index-v2-5.html</a></li>
+                    <li><a href="tinyhome/index-v3.html">index-v3.html</a></li>
+                    <li><a href="tinyhome/index-v4.html">index-v4.html</a></li>
+                </ul>
+            </li>
+            <li><a href="tinyhome/about.html">about.html</a></li>
+            <li><a href="tinyhome/about-v2.html">about-v2.html</a></li>
+            <li><a href="tinyhome/contact.html">contact.html</a></li>
+            <li><a href="tinyhome/experience.html">experience.html</a></li>
+            <li><a href="tinyhome/home.html">home.html</a>
+                <ul>
+                    <li><a href="tinyhome/home-inside.html">home-inside.html</a>
+                    <li><a href="tinyhome/home-inside-v2.html">home-inside-vs.html</a>
+                    <li><a href="tinyhome/home-inside-v3.html">home-inside-v3.html</a>
+                    <li><a href="tinyhome/home-inside-v4.html">home-inside-v4.html</a>
+                </ul>
+            </li>
+            <li><a href="tinyhome/package.html">package.html</a></li>
+            <li><a href="tinyhome/package-v2.html">package-v2.html</a></li>
+            <li><a href="tinyhome/reviews.html">reviews.html</a></li>
+
         </ul>
     </li>
+</ul>
 </body>
 </html>
