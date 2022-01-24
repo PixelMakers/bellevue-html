@@ -37,7 +37,7 @@
       <!-- Style CSS -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
- 
+
       <!-- jQuery JS -->
       <script src="assets/js/jquery-3.6.0.min.js"></script>
 
@@ -52,7 +52,7 @@
          <nav id="navbar_top" class="navbar navbar-expand-sm fixed-top thmv-navbar-light ">
             <div class="container thmv-mob-nav">
                <div class="thmv-menu-left">
-                  <a class="offcanvas-toggler" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <a class="offcanvas-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
                   <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                   </a>
                   <div class="d-flex d-none d-md-block">
@@ -85,7 +85,7 @@
             </div>
          </nav>
          <!-- off canvas menu -->
-         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
             <div class="thmv-offcanvas-header">
                <a href="javascript:void(0)" title=""  class="thmv-menu-officon" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
                <h5 class="thmv-offcanvas-title" id="offcanvasExampleLabel">Logotype</h5>
@@ -95,7 +95,7 @@
                   <ul>
                      <li><a href="index.html" title="">Home</a></li>
                      <li><a href="about-us.html" title="">About Us</a></li>
-                     <li><a class="active" href="about-us.html" title="">Rooms</a></li></li>
+                     <li><a class="active" href="about-us.html" title="">Rooms</a></li>
                      <li><a href="menu.html" title="">Food/menu</a></li>
                      <li><a href="explore.html" title="">explore</a></li>
                      <li><a href="our-history.html" title="">Our History</a></li>
@@ -137,21 +137,21 @@
       <!-- ======Top Menu End====== -->
 
       <!-- Room page Header Start-->
-         <section class="thmv-header-room-single-v1 container-fluid">
+         <div class="thmv-header-room-single-v1 container-fluid">
             <div class="row">
             <div class="thmv-header-slick slider">
                   <div>
-                     <img src="assets/images/slider-img/room-single-slider-1.jpg">
+                     <img src="assets/images/slider-img/room-single-slider-1.jpg" alt="Slider image">
                   </div>
                   <div>
-                     <img src="assets/images/slider-img/room-single-slider-2.jpg">
+                     <img src="assets/images/slider-img/room-single-slider-2.jpg" alt="Slider image">
                   </div>
                   <div>
-                     <img src="assets/images/slider-img/room-single-slider-3.jpg">
+                     <img src="assets/images/slider-img/room-single-slider-3.jpg" alt="Slider image">
                   </div>
                </div>
          </div>
-         </section>
+         </div>
       <!-- Room page Header End-->
 
       <!-- Room Listing Start -->
@@ -493,7 +493,7 @@
                            <div class="thmv-form-availability">
                               <h5>Your Reservation</h5>
                            </div>
-                           <form class="thmv-availability-check" _lpchecked="1">
+                           <form class="thmv-availability-check">
                               <div class="thmv-mo-check-form">
                                  <div class="form-group">
                                     <input type="text" class="form-control check-in-out" id="popupDatepickerfrom1" placeholder="Check-in Date" name="dates">
@@ -506,7 +506,7 @@
                               </div>
                               <div class="dropdown form-select-guests thmv-mo-guest-col">
                                  <div class="form-group">
-                                    <div class="form-content dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="form-content dropdown-toggle" data-toggle="dropdown">
                                        <div class="wrapper-more">
                                           <div class="render">
                                              <span class="adults"><span class="one d-none">2 adults</span> <span class="multi" data-html=":count Adults">2 adults</span></span>,
@@ -518,9 +518,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="dropdown-menu select-guests-dropdown" x-placement="bottom-start" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                       <input type="hidden" name="adults" value="4" min="1" max="20">
-                                       <input type="hidden" name="children" value="5" min="0" max="20">
+                                    <div class="dropdown-menu select-guests-dropdown" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                       <input type="hidden" name="adults" value="4">
+                                       <input type="hidden" name="children" value="5">
                                        <div class="dropdown-item-row">
                                           <div class="label">adults</div>
                                           <div class="val">
@@ -546,8 +546,8 @@
                                     <li>
                                        <div class="thmv-services-checkbox">
                                           <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1">
+                                            <label class="form-check-label" for="flexCheckDefault-1">
                                               Cleaning Fee
                                             </label>
                                           </div>
@@ -559,8 +559,8 @@
                                     <li>
                                        <div class="thmv-services-checkbox">
                                           <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2">
+                                            <label class="form-check-label" for="flexCheckDefault-2">
                                               Airport pickup
                                             </label>
                                           </div>
@@ -572,8 +572,8 @@
                                     <li>
                                        <div class="thmv-services-checkbox">
                                           <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-3">
+                                            <label class="form-check-label" for="flexCheckDefault-3">
                                               Breakfast
                                             </label>
                                           </div>
@@ -585,8 +585,8 @@
                                     <li>
                                        <div class="thmv-services-checkbox">
                                           <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-4">
+                                            <label class="form-check-label" for="flexCheckDefault-4">
                                               Parking
                                             </label>
                                           </div>
@@ -607,7 +607,7 @@
                               </div>
                               <div class="thmv-criteria_info text-center d-none">
                                  <a href="#"><img src="assets/images/icons/criteria.svg" alt=""> Search by criteria</a>
-                              </div>                              
+                              </div>
                            </form>
                         </div>
                         <div class="thmv-discount">
@@ -635,7 +635,7 @@
             <div class="row thmv-single-room-blok">
                <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover">
                   <div class="thmv-room-view">
-                     <img src="assets/images/rooms-suites-img/room-1.jpg">
+                     <img src="assets/images/rooms-suites-img/room-1.jpg" alt="Room image">
                      <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
                   </div>
                   <div class="thmv-room-info">
@@ -647,7 +647,7 @@
                </div>
                <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover">
                   <div class="thmv-room-view">
-                     <img src="assets/images/rooms-suites-img/room-2.jpg">
+                     <img src="assets/images/rooms-suites-img/room-2.jpg" alt="Room image">
                      <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
                   </div>
                   <div class="thmv-room-info">
@@ -659,7 +659,7 @@
                </div>
                <div class="col-lg-4 col-md-6 col-12 thmv-img-gray-hover d-block d-md-none d-lg-block">
                   <div class="thmv-room-view">
-                     <img src="assets/images/rooms-suites-img/room-3.jpg">
+                     <img src="assets/images/rooms-suites-img/room-3.jpg" alt="Room image">
                      <div class="thmv-room-price thmv-bg-glass"><p>From 50$</p></div>
                   </div>
                   <div class="thmv-room-info">
@@ -737,7 +737,7 @@
       </section>
       <!-- Footer section End -->
       <!-- Booknow header button Modal -->
-      <div class="modal fade book_popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade book_popup" id="exampleModal" tabindex="-1" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                <div class="modal-header">
@@ -747,24 +747,24 @@
                   <div class="modal_form_title">
                      <h4>Booking</h4>
                   </div>
-                  <form class="thmv-search-form-tour" _lpchecked="1">
+                  <form class="thmv-search-form-tour">
                      <div class="thmv-field-search">
                         <div class="row thmv-mo-tour-row justify-content-center">
                            <div class="col-lg-12 col-md-12 thmv-mo-date-col">
                               <div class="thmv-mo-check-form">
                                  <div class="form-group">
-                                    <input type="text" class="form-control check-in-out" id="popupDatepickerfrom1" placeholder="Check-in Date" name="dates">
+                                    <input type="text" class="form-control check-in-out" id="popupDatepickerfrom1Modal" placeholder="Check-in Date" name="dates">
                                     <i class="fas fa-calendar-day"></i>
                                  </div>
                                  <div class="form-group">
-                                    <input type="text" class="form-control check-in-out" id="popupDatepickerto1" placeholder="Check-out Date" name="dates">
+                                    <input type="text" class="form-control check-in-out" id="popupDatepickerto1Modal" placeholder="Check-out Date" name="dates">
                                     <i class="fas fa-calendar-day"></i>
                                  </div>
                               </div>
                            </div>
                            <div class="col-lg-12 col-md-12 dropdown form-select-guests thmv-mo-guest-col">
                               <div class="form-group">
-                                 <div class="form-content dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                 <div class="form-content dropdown-toggle" data-toggle="dropdown">
                                     <div class="wrapper-more">
                                        <div class="render">
                                           <span class="adults"><span class="one d-none">2 adults</span> <span class="multi" data-html=":count Adults">2 adults</span></span>,
@@ -776,9 +776,9 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="dropdown-menu select-guests-dropdown" x-placement="bottom-start" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <input type="hidden" name="adults" value="4" min="1" max="20">
-                                    <input type="hidden" name="children" value="5" min="0" max="20">
+                                 <div class="dropdown-menu select-guests-dropdown" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <input type="hidden" name="adults" value="4">
+                                    <input type="hidden" name="children" value="5">
                                     <div class="dropdown-item-row">
                                        <div class="label">adults</div>
                                        <div class="val">
@@ -814,12 +814,12 @@
       </div>
       <!--Right side floting buttons -->
       <div class="thmv-home-side thmv-rooms-floting-btn">
-         <a href="#" id="home-top" type="button" class="thmv-backto-top-sticky">
+         <a href="#" id="home-top" class="thmv-backto-top-sticky">
             <i class="fas fa-chevron-up"></i>Go to top
          </a>
          <button type="button" class="thmv-calendar-sticky d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-calendar-day"></i></button>
       </div>
-      
+
 
       <!-- bootstrap JS -->
       <script src="assets/js/bootstrap.min.js"></script>
