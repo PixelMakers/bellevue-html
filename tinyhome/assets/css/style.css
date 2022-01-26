@@ -8,7 +8,7 @@
 
 Created by Bellevue Theme
 
-1. Global styles    
+1. Global styles
 
 /*==========================================
     |||||  END TABLE OF CONTENT  |||||
@@ -18,7 +18,7 @@ Created by Bellevue Theme
     ========================================================================== */
 
     body {
-      font-family: 'Lato', serif;   
+      font-family: 'Lato', serif;
       color:#191B18;
       font-size: 18px;
       line-height: 36px;
@@ -37,7 +37,7 @@ Created by Bellevue Theme
     }
     h1{
       font-size: 54px;
-      line-height: 70px;  
+      line-height: 70px;
     }
     h2{
       font-size: 30px;
@@ -65,14 +65,14 @@ Created by Bellevue Theme
     }
     a {
       color: #191B18;
-      text-decoration: none; 
-      display: inline-block; 
+      text-decoration: none;
+      display: inline-block;
       outline: none;
       transition: .5s ease;
     }
     a:hover{
         color: #191B1870;
-        text-decoration: none; 
+        text-decoration: none;
         outline: none;
         transition: 0.3s ease;
     }
@@ -92,11 +92,11 @@ Created by Bellevue Theme
       display: inline-block;
     }
     button {
-      border:none; 
-      outline:none; 
-      box-shadow: none; 
-      display: block; 
-      padding: 0; 
+      border:none;
+      outline:none;
+      box-shadow: none;
+      display: block;
+      padding: 0;
       background: transparent;
     }
     button:focus,
@@ -106,10 +106,10 @@ Created by Bellevue Theme
     }
     input,textarea {
       font-family: 'Lato', sans-serif;
-      display: block; 
-      font-size: 16px; 
-      line-height: 30px; 
-      outline: none; 
+      display: block;
+      font-size: 16px;
+      line-height: 30px;
+      outline: none;
       box-shadow: none;
       transition: all 0.3s ease-in-out;
     }
@@ -131,7 +131,7 @@ Created by Bellevue Theme
       margin-top: 3px;
       font-size: 16px;
     }
-    .clear_fix { 
+    .clear_fix {
       clear:both;
     }
     .clear_fix:after {
@@ -174,7 +174,7 @@ Created by Bellevue Theme
     }
     .read-more-btn:hover::after{
         transform:translate(80% , -30%);
-        
+
     }
     /*====== Button Style ======*/
     .btn-full-filled,
@@ -210,8 +210,8 @@ Created by Bellevue Theme
     }
     .btn-full-filled-light:hover{
         background: #191B18;
-        color:#FFFFFF; 
-        border-color:#191B18;   
+        color:#FFFFFF;
+        border-color:#191B18;
     }
     /* Image Hover Grayscale */
     .thmv-img-gray img,
@@ -223,7 +223,7 @@ Created by Bellevue Theme
     .thmv-img-gray img:hover{
         filter: grayscale(0%);
         transition: all 0.3s;
-        cursor: pointer;   
+        cursor: pointer;
     }
 
     /* heading style */
@@ -280,7 +280,7 @@ Created by Bellevue Theme
         }
         .thmv-dark-bg{
             background:#191B18;
-        }    
+        }
         .thmv-light-color{
             color:#ffffff;
         }
@@ -289,13 +289,13 @@ Created by Bellevue Theme
         }
 
     /*----------  theme color 1  ----------*/
-    
+
         /* Theme colors Tundora  " #404040 " */
             .thmv-bg-tundora{
                 background-color: #404040;
             }
             .thmv-color-tundora{
-                color: #404040;      
+                color: #404040;
             }
 
         /* Theme colors full light gray  " #EAEAEA " */
@@ -303,17 +303,17 @@ Created by Bellevue Theme
                 background-color: #EAEAEA;
             }
             .thmv-color-full-light-gray{
-                color: #EAEAEA;      
+                color: #EAEAEA;
             }
 
-    /*----------  theme color 2  ----------*/   
-        
+    /*----------  theme color 2  ----------*/
+
         /* Theme colors Gray Asparagus " #4E524C " */
             .thmv-bg-gray-Asparagus{
                 background-color: #4E524C;
             }
             .thmv-color-gray-Asparagus{
-                color: #4E524C;      
+                color: #4E524C;
             }
 
         /* Theme colors sisal " #D8D4C2 " */
@@ -321,17 +321,17 @@ Created by Bellevue Theme
                 background-color: #D8D4C2;
             }
             .thmv-color-sisal{
-                color: #D8D4C2;      
+                color: #D8D4C2;
             }
 
-    /*----------  theme color 3  ----------*/   
-        
+    /*----------  theme color 3  ----------*/
+
         /* Theme colors Tiber " #042E28 " */
             .thmv-bg-tiber{
                 background-color: #042E28;
             }
             .thmv-color-tiber{
-                color: #042E28;      
+                color: #042E28;
             }
 
         /* Theme colors sisal " #D8D4C2 " */
@@ -339,17 +339,17 @@ Created by Bellevue Theme
                 background-color: #D8D4C2;
             }
             .thmv-color-sisal{
-                color: #D8D4C2;      
+                color: #D8D4C2;
             }
 
-    /*----------  theme color 4  ----------*/   
-        
+    /*----------  theme color 4  ----------*/
+
         /* Theme colors Boston Blue " #3E96B6 " */
             .thmv-bg-boston-blue{
                 background-color: #3E96B6;
             }
             .thmv-color-boston-blue{
-                color: #3E96B6;      
+                color: #3E96B6;
             }
 
         /* Theme colors Apricot Peach " #FBC9B3 " */
@@ -357,28 +357,28 @@ Created by Bellevue Theme
                 background-color: #FBC9B3;
             }
             .thmv-color-apricot-peach{
-                color: #FBC9B3;      
+                color: #FBC9B3;
             }
 
-    /*----------  theme color 5  ----------*/   
-        
+    /*----------  theme color 5  ----------*/
+
         /* Theme colors Governor Bay " #4636AE " */
             .thmv-bg-governor-bay{
                 background-color: #4636AE;
             }
             .thmv-color-governor-bay{
-                color: #4636AE;      
+                color: #4636AE;
             }
 
-        /* Theme colors Sunglow " #FFD231 " */ 
+        /* Theme colors Sunglow " #FFD231 " */
             .thmv-bg-sunglow{
                 background-color: #FFD231;
             }
             .thmv-color-sunglow{
-                color: #FFD231;      
+                color: #FFD231;
             }
 /*=====  End of theme colors   ======*/
-       
+
 /*=============================================
     =         Header Section Styles            =
     =============================================*/
@@ -397,7 +397,7 @@ Created by Bellevue Theme
     .thmv-logo h3{
         font-size: 32px;
         line-height: 40px;
-        font-weight: 900; 
+        font-weight: 900;
         text-transform: uppercase;
     }
     .thmv-logo img{
@@ -410,7 +410,7 @@ Created by Bellevue Theme
     }
     .thmv-top-nav-fix .thmv-bg-transparent.fixed-top .thmv-logo h3,
     .thmv-top-nav-fix .thmv-navbar-dark.thmv-bg-transparent.fixed-top .thmv-logo h3{
-        color:#191B18;   
+        color:#191B18;
     }
     .navbar-toggler-icon {
         width: auto;
@@ -420,7 +420,7 @@ Created by Bellevue Theme
         color: #191B18;
         font-size: 30px;
     }
-    
+
     .thmv-navbar-light,
     .thmv-navbar-dark{
         background: #ffffff;
@@ -514,7 +514,7 @@ Created by Bellevue Theme
         color: #404040;
         transition: all 200ms linear;
     }
-    .thmv-menu .dropdown-item:hover, 
+    .thmv-menu .dropdown-item:hover,
     .thmv-menu .dropdown-item:focus {
         color: #fff;
         background-color: rgba(64, 64, 64, .6);
@@ -604,9 +604,9 @@ Created by Bellevue Theme
         border-bottom: 3px solid #000;
         transition: all 300ms linear;
     }
-    .thmv-navbar-light .navbar-toggler-icon:after, 
+    .thmv-navbar-light .navbar-toggler-icon:after,
     .thmv-navbar-light .navbar-toggler-icon:before,
-    .thmv-navbar-drak .navbar-toggler-icon:after, 
+    .thmv-navbar-drak .navbar-toggler-icon:after,
     .thmv-navbar-drak .navbar-toggler-icon:before{
         width: 24px;
         position: absolute;
@@ -639,7 +639,7 @@ Created by Bellevue Theme
     }
     .thmv-dark-bg{
         background:#191B18;
-    }    
+    }
     .thmv-home-1 .thmv-wel-text h6,
     .thmv-home-1 .thmv-wel-text .thmv-wel-title,
     .thmv-home-1 .thmv-wel-info,
@@ -655,7 +655,7 @@ Created by Bellevue Theme
     /* home-v2 */
     .thmv-home-1.thmv-home-v2 .thmv-welcome-sec{
         background:#ffffff;
-    }    
+    }
     .thmv-bg-tundora,
     .thmv-home-1 .thmv-header-sec,
     .thmv-home-1 .thmv-welcome-sec .thmv-welcome-info::after,
@@ -674,7 +674,7 @@ Created by Bellevue Theme
     .thmv-home-1 .thmvfloor-list-icon .thmv-listing-icon i,
     /* home-v2 */
     .thmv-home-1.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
-        color: #404040;      
+        color: #404040;
     }
     .thmv-home-1 .slick-dots li button::before{
         border-color:#404040;
@@ -691,7 +691,7 @@ Created by Bellevue Theme
         background-color: #EAEAEA;
     }
     .thmv-color-full-light-gray{
-        color: #EAEAEA;      
+        color: #EAEAEA;
     }
     .thmv-home-1 .btn-full-filled,
     .thmv-home-1 .thmv-uniq-box .btn-full-filled,
@@ -714,7 +714,7 @@ Created by Bellevue Theme
     }
     .thmv-dark-bg{
         background:#191B18;
-    }    
+    }
     .thmv-home-2 .thmv-wel-text h6,
     .thmv-home-2 .thmv-wel-text .thmv-wel-title,
     .thmv-home-2 .thmv-wel-info,
@@ -729,7 +729,7 @@ Created by Bellevue Theme
     /* home-v2 */
     .thmv-home-2.thmv-home-v2 .thmv-welcome-sec{
         background:#ffffff;
-    }    
+    }
     .thmv-bg-gray-Asparagus,
     .thmv-home-2 .thmv-header-sec,
     .thmv-home-2 .thmv-welcome-sec .thmv-welcome-info::after,
@@ -749,7 +749,7 @@ Created by Bellevue Theme
     .thmv-home-2 .thmvfloor-list-icon .thmv-listing-icon i,
     /* home-v2 */
     .thmv-home-2.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
-        color: #4E524C;      
+        color: #4E524C;
     }
     .thmv-border-gray-Asparagus
     .thmv-home-2 .thmv-border-gray-Asparagus,
@@ -768,10 +768,10 @@ Created by Bellevue Theme
         background-color: #D8D4C2;
     }
     .thmv-color-sisal{
-        color: #D8D4C2;      
+        color: #D8D4C2;
     }
     .thmv-border-sisal{
-        border-color: #D8D4C2;      
+        border-color: #D8D4C2;
     }
     .thmv-home-2 .btn-full-filled,
     .thmv-home-2 .thmv-uniq-box .btn-full-filled,
@@ -794,7 +794,7 @@ Created by Bellevue Theme
     }
     .thmv-dark-bg{
         background:#191B18;
-    }    
+    }
     .thmv-home-3 .thmv-wel-text h6,
     .thmv-home-3 .thmv-wel-text .thmv-wel-title,
     .thmv-home-3 .thmv-wel-info,
@@ -809,7 +809,7 @@ Created by Bellevue Theme
     /* home-v2 */
     .thmv-home-3.thmv-home-v2 .thmv-welcome-sec{
         background:#ffffff;
-    }    
+    }
     .thmv-bg-tiber,
     .thmv-home-3 .thmv-header-sec,
     .thmv-home-3 .thmv-welcome-sec .thmv-welcome-info::after,
@@ -829,7 +829,7 @@ Created by Bellevue Theme
     .thmv-home-3 .thmvfloor-list-icon .thmv-listing-icon i,
     /* home-v2 */
     .thmv-home-3.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
-        color: #042E28;      
+        color: #042E28;
     }
     .thmv-border-gray-tiber
     .thmv-home-3 .thmv-border-gray-tiber,
@@ -848,10 +848,10 @@ Created by Bellevue Theme
         background-color: #D8D4C2;
     }
     .thmv-color-sisal{
-        color: #D8D4C2;      
+        color: #D8D4C2;
     }
     .thmv-border-sisal{
-        border-color: #D8D4C2;      
+        border-color: #D8D4C2;
     }
     .thmv-home-3 .btn-full-filled,
     .thmv-home-3 .thmv-uniq-box .btn-full-filled,
@@ -875,7 +875,7 @@ Created by Bellevue Theme
     }
     .thmv-dark-bg{
         background:#191B18;
-    }    
+    }
     .thmv-light-color,
     .thmv-home-4 .thmv-wel-text h6,
     .thmv-home-4 .thmv-wel-text .thmv-wel-title,
@@ -894,7 +894,7 @@ Created by Bellevue Theme
     /* home-v2 */
     .thmv-home-4.thmv-home-v2 .thmv-welcome-sec{
         background:#ffffff;
-    } 
+    }
 
     .thmv-bg-boston-blue,
     .thmv-home-4 .thmv-header-sec,
@@ -914,7 +914,7 @@ Created by Bellevue Theme
     .thmv-home-4 .thmvfloor-list-icon .thmv-listing-icon i,
     /* home-v2 */
     .thmv-home-4.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
-        color: #3E96B6;      
+        color: #3E96B6;
     }
     .thmv-border-boston-blue,
     .thmv-home-4 .thmv-border-gray-tiber,
@@ -934,10 +934,10 @@ Created by Bellevue Theme
         background-color: #FBC9B3;
     }
     .thmv-color-apricot-peach{
-        color: #FBC9B3;      
+        color: #FBC9B3;
     }
     .thmv-border-apricot-peach{
-        border-color: #FBC9B3;      
+        border-color: #FBC9B3;
     }
     .thmv-home-4 .btn-full-filled,
     .thmv-home-4 .thmv-uniq-box .btn-full-filled,
@@ -961,7 +961,7 @@ Created by Bellevue Theme
     }
     .thmv-dark-bg{
         background:#191B18;
-    }    
+    }
     .thmv-light-color,
     .thmv-home-5 .thmv-wel-text h6,
     .thmv-home-5 .thmv-wel-text .thmv-wel-title,
@@ -980,7 +980,7 @@ Created by Bellevue Theme
     /* home-v2 */
     .thmv-home-5.thmv-home-v2 .thmv-welcome-sec{
         background:#ffffff;
-    }    
+    }
     .thmv-bg-governor-bay,
     .thmv-home-5 .thmv-header-sec,
     .thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
@@ -999,7 +999,7 @@ Created by Bellevue Theme
     .thmv-home-5 .thmvfloor-list-icon .thmv-listing-icon i,
     /* home-v2 */
     .thmv-home-5.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
-        color: #4636AE;      
+        color: #4636AE;
     }
     .thmv-border-governor-bay,
     .thmv-home-5 .thmv-border-gray-tiber,
@@ -1019,10 +1019,10 @@ Created by Bellevue Theme
         background-color: #FFD231;
     }
     .thmv-color-sunglow{
-        color: #FFD231;      
+        color: #FFD231;
     }
     .thmv-border-sunglow{
-        border-color: #FFD231;      
+        border-color: #FFD231;
     }
     .thmv-home-5 .btn-full-filled,
     .thmv-home-5 .thmv-uniq-box .btn-full-filled,
@@ -1037,7 +1037,7 @@ Created by Bellevue Theme
         background: #FFFFFF;
         color: #191B18;
         border-color: #191B18;
-    }    
+    }
 
 /*=======================================
     =            home page style            =
@@ -1110,7 +1110,7 @@ Created by Bellevue Theme
             transition: all 0.3s;
             transform: translate(0px , 2px);
         }
-        .thmv-nav-menu>ul>li.has-sub:hover>a:after {    
+        .thmv-nav-menu>ul>li.has-sub:hover>a:after {
             top: 0%;
             transform:rotate(180deg);
         }
@@ -1162,7 +1162,7 @@ Created by Bellevue Theme
             transform: translate(-0%, -50%);
         }
         .thmv-top-navbar ul ul>li.has-sub:hover>a:before {
-            top: 36%;    
+            top: 36%;
             transform:rotate(-180deg);
         }
         .thmv-top-navbar ul ul li:hover,
@@ -1184,7 +1184,7 @@ Created by Bellevue Theme
             background: transparent;
             height:auto;
         }
-    /*----------  Datepiker style  ----------*/   
+    /*----------  Datepiker style  ----------*/
        .datepick {
            font-family: 'lato', sans-serif;
            font-size: 14px;
@@ -1236,10 +1236,10 @@ Created by Bellevue Theme
            height: 40px;
            line-height: 40px;
            display: inline-block;
-           text-align: center;           
+           text-align: center;
        }
        .datepick-cmd-next:after {
-           content: "\f054";        
+           content: "\f054";
        }
        .datepick-month td {
            background-color: #ffffff;
@@ -1416,7 +1416,7 @@ Created by Bellevue Theme
             padding:20px 0px;
             display: flex;
             align-items:center;
-        }            
+        }
         .thmvfloor-list-icon ul li:last-child{
             border:none;
         }
@@ -1556,7 +1556,7 @@ Created by Bellevue Theme
         .thmv-booking-sec .thmv-booking-img img{
             height: 560px;
             object-fit:cover;
-            width:100%;   
+            width:100%;
         }
         .thmv-booking-sec .thmv-booking-img .thmv-book-price{
             position: absolute;
@@ -1616,10 +1616,10 @@ Created by Bellevue Theme
             margin-bottom: 20px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             color: #DDDDDD;
-        } 
+        }
         .thmv-availability-check .thmv-notes textarea{
             padding: 12px 20px;
-        }  
+        }
         .thmv-home-1.thmv-home-v3 .thmv-wel-text .thmv-availability-check .form-group input::placeholder,
         .thmv-book-room .thmv-welcome-box .thmv-mo-check-form .form-group input::placeholder,
         .thmv-availability-check .thmv-notes textarea::placeholder{
@@ -1673,7 +1673,7 @@ Created by Bellevue Theme
         }
         .thmv-what-todo-photos .thmv-img-box:hover .thmv-content-box{
             opacity: 1;
-            visibility: visible; 
+            visibility: visible;
             bottom:15px;      }
     /*----------  map style  ----------*/
         .thmv-map{
@@ -1683,7 +1683,7 @@ Created by Bellevue Theme
         .thmv-map iframe{
             height:380px;
             display: block;
-        } 
+        }
     /*----------  Footer section stryle  ----------*/
         footer{
             background:#141513;
@@ -1908,7 +1908,7 @@ Created by Bellevue Theme
         padding: 190px 0px 0px;
     }
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection{
-        
+
         margin-right: 60px;
     }
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul{
@@ -1955,7 +1955,7 @@ Created by Bellevue Theme
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-info{
         position: relative;
         z-index: 10;
-        
+
     }
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i{
         font-size:30px;
@@ -1968,7 +1968,7 @@ Created by Bellevue Theme
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-info p,
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-info span{
         font-size: 16px;
-        line-height:32px;   
+        line-height:32px;
         margin-bottom:0;
     }
     .thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-info span{
@@ -1983,7 +1983,7 @@ Created by Bellevue Theme
         background: #191B18;
         border-bottom: 1px solid #f5f5f5;
     }
-    .thmv-top-nav .thmv-navbar-dark .thmv-nav-menu-list li.has-sub>a::after, 
+    .thmv-top-nav .thmv-navbar-dark .thmv-nav-menu-list li.has-sub>a::after,
     .thmv-top-nav .thmv-navbar-dark .thmv-nav-menu-list li a,
     .thmv-top-nav .thmv-navbar-dark .thmv-right-menu .thmv-social li a,
     .thmv-top-nav .thmv-navbar-dark.fixed-top .thmv-nav-menu-list li.has-sub > ul a{
@@ -1998,7 +1998,7 @@ Created by Bellevue Theme
         color: #FFFFFF;
     }
     .thmv-navbar-dark.fixed-top .navbar-toggler-icon{
-        color: #191B18;   
+        color: #191B18;
     }
     .thmv-home-1.thmv-home-v3 .thmv-header-sec{
         height:100vh;
@@ -2131,7 +2131,7 @@ Created by Bellevue Theme
             color: #191B18;
             font-weight: 500;
         }
-        .form-select-guests .btn-add, 
+        .form-select-guests .btn-add,
         .form-select-guests .btn-minus {
             font-size: 12px;
             width: 30px;
@@ -2149,7 +2149,7 @@ Created by Bellevue Theme
             font-weight: 500;
             display: inline-block;
             text-align: center;
-        }    
+        }
 
     .thmv-home-v4 .thmv-wel-col{
         background: #4D4D4D;
@@ -2245,13 +2245,13 @@ Created by Bellevue Theme
         .thmv-video-modal{
           position: relative;
         }
-        .thmv-video-modal .embed-container { 
+        .thmv-video-modal .embed-container {
           position: relative;
           padding-bottom: 56.25%;
           height: 0;
           overflow: hidden;
           max-width: 100%;
-        } 
+        }
         .thmv-video-modal .embed-container iframe,
         .thmv-video-modal .embed-container object,
         .thmv-video-modal .embed-container embed {
@@ -2382,7 +2382,7 @@ Created by Bellevue Theme
             letter-spacing: 0em;
             text-align: center;
             color: #191B18;
-            padding:20px 30px; 
+            padding:20px 30px;
 
         }
         .thmv-filter-tabs li{
@@ -2407,9 +2407,9 @@ Created by Bellevue Theme
         .thmv-filter-box{
             margin-bottom: 30px;
         }
-    
+
     .thmv-appartments-sec{
-        padding:180px 0px 0px; 
+        padding:180px 0px 0px;
     }
     .thmv-wel-title-sec{
         overflow: hidden;
@@ -2586,7 +2586,7 @@ Created by Bellevue Theme
         color:rgba(25, 27, 24, 0.6);
         padding-bottom:15px;
         margin-bottom:15px;
-        border-bottom: 1px solid rgba(25, 27, 24, 0.1) 
+        border-bottom: 1px solid rgba(25, 27, 24, 0.1)
     }
     .thmv-blog-info h3{
         margin-bottom:15px;
@@ -2702,7 +2702,7 @@ Created by Bellevue Theme
         }
         .thmv-booking-text-sec .thmv-book-room .thmv-heading-style::before {
             left: 10%;
-        }    
+        }
         .thmv-booking-text-sec .thmv-book-room{
             margin: 0;
         }
@@ -2771,7 +2771,7 @@ Created by Bellevue Theme
         .thmv-one-user-sec .thmv-testimonial-header .thmv-user-info h4,
         .thmv-reviews-sec .thmv-testimonial-box .thmv-user-info h4{
             font-size: 18px;
-            line-height: 28px; 
+            line-height: 28px;
         }
         .thmv-reviews-sec .thmv-testimonial-box .thmv-user-info ul,
         .thmv-reviews-sec .thmv-testimonial-box .thmv-user-info ul li{
@@ -2785,7 +2785,7 @@ Created by Bellevue Theme
         .thmv-reviews-sec .thmv-testimonial-body{
             margin-top: 20px;
         }
-    /* map style 2 section start */    
+    /* map style 2 section start */
         .thmv-map-style-2 {
             padding:50px 0px;
             margin-bottom:-240px;
@@ -2886,7 +2886,7 @@ Created by Bellevue Theme
         line-height: 32px;
         color: rgba(25, 27, 24, 0.4);
         margin-bottom: 15px;
-    }   
+    }
     .thmv-amenities-home{
         padding: 30px 0px 80px;
     }
@@ -3087,7 +3087,7 @@ Created by Bellevue Theme
     =            home inside v3 page style start            =
     =================================================*/
     .thmv-fix-component{
-        padding:120px 0px; 
+        padding:120px 0px;
     }
     .thmv-fix-component .thmv-booking-text,
     .thmv-fix-component .thmv-floor-slider .thmv-user-info,
@@ -3141,7 +3141,7 @@ Created by Bellevue Theme
     }
     .thmv-fix-component .thmv-book-form-style-2 .thmv-welcome-box{
         padding: 80px 0px 90px 0px;
-        margin-left:100px;        
+        margin-left:100px;
     }
 
 
@@ -3175,7 +3175,7 @@ Created by Bellevue Theme
     }
     .thmv-amenities-home .thmvfloor-list-icon ul li:last-child{
         border:none;
-    } 
+    }
 /*=====  End of home inside v3 pages style  ======*/
 
 /*==============================================
@@ -3491,6 +3491,12 @@ Created by Bellevue Theme
         line-height:32px;
         max-width:620px;
     }
+    .thmv-faqs .accordion-item .accordion-button {
+        font-family: 'Spinnaker', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
     .thmv-faqs .accordion-item .accordion-body p{
         font-size: 16px;
         line-height: 32px;
@@ -3679,7 +3685,7 @@ Created by Bellevue Theme
     =            contact us section style            =
     ================================================*/
     .thmv-contact-map{
-        padding:150px 0px 50px; 
+        padding:150px 0px 50px;
     }
     .thmv-contact-top .thmv-header-title a{
         margin-top: 15px;
