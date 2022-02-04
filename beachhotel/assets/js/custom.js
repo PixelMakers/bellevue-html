@@ -75,29 +75,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // rooms & suites slider //
 (function () {
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        autoplay: {
-            delay: 4000,
-        },
-        loop: true,
-        speed: 1000,
-        slidesPerView: 4,
-        spaceBetween: 40,
-        autoHeight: true,
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+    let slider = document.querySelector('.swiper');
+    if (slider) {
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 4000,
             },
-            700: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            1200: {
-                slidesPerView: 4,
-                spaceBetween: 40
+            loop: true,
+            speed: 1000,
+            slidesPerView: 4,
+            spaceBetween: 40,
+            autoHeight: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
             }
-        }
-    });
+        });
+    }
 })();
+
+// gallery fancybox js
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    dragToClose: false,
+
+    Toolbar: false,
+    closeButton: "top",
+
+    Image: {
+        zoom: false,
+    },
+
+    on: {
+        initCarousel: (fancybox) => {
+            const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+            fancybox.$container.style.setProperty(
+                "--bg-image",
+                `url("${slide.$thumb.src}")`
+            );
+        },
+        "Carousel.change": (fancybox, carousel, to, from) => {
+            const slide = carousel.slides[to];
+
+            fancybox.$container.style.setProperty(
+                "--bg-image",
+                `url("${slide.$thumb.src}")`
+            );
+        },
+    },
+});

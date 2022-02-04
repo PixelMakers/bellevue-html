@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: 400;
     font-family: 'Domine', serif;
+    color: #074365;
 }
 
 h1 {
@@ -220,15 +221,15 @@ hr.thmv-separator {
 }
 
 .btn-full-filled {
-    background: #191B18;
-    color: #ffffff;
-    border-color: #191B18;
+    background: #074365;
+    color: #fff;
+    border-color: #074365;
 }
 
 .btn-full-filled:hover {
-    background: transparent;
-    color: #191B18;
-    border-color: #191B18;
+    background: #fff;
+    color: #074365;
+    border-color: #074365;
 }
 
 .btn-full-filled-light {
@@ -2324,19 +2325,352 @@ footer .thmv-footer .thmv-foot-wedget ul li address:hover {
     font-weight: 300;
 }
 
-.thmv-form-block button {
-    width: 269px;
-    background: #074365;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 21px 0;
-    transition: 0.3s;
+/*.thmv-form-block button {*/
+/*    width: 269px;*/
+/*    background: #074365;*/
+/*    font-weight: 900;*/
+/*    font-size: 16px;*/
+/*    line-height: 19px;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    color: #FFFFFF;*/
+/*    padding: 21px 0;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*=======================================
+    =            why us page style            =
+    =======================================*/
+
+.thmv-hostel-features.blue-bg {
+    background-color: #074365;
+    padding: 80px 0 70px 0;
 }
 
-.thmv-form-block button:hover {
-    background: rgba(7, 67, 101, 0.7)
+.thmv-hostel-features.blue-bg .thmv-service-info h6 {
+    color: #fff;
 }
+
+.thmv-hostel-features.blue-bg .thmv-service-info p {
+    color: rgba(255, 255, 255, .7);
+}
+
+/* Video Modal styles */
+
+.thmv-video-sec {
+    padding: 90px 0;
+}
+
+.thmv-video-modal img {
+    width: 100%;
+}
+
+.thmv-video-modal {
+    position: relative;
+}
+
+.thmv-video-modal .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.thmv-video-modal .embed-container iframe,
+.thmv-video-modal .embed-container object,
+.thmv-video-modal .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thmv-video-sec .thmv-play-btn {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-sec .thmv-play-btn i {
+    color: #074365;
+    font-size: 32px;
+    line-height: 52px;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-sec .thmv-play-btn:hover,
+.thmv-video-modal .modal-body .btn-close:hover {
+    background: #074365;
+}
+
+.thmv-video-sec .thmv-play-btn:hover i,
+.thmv-video-modal .modal-body .btn-close:hover i {
+    color: #fff;
+}
+
+.thmv-video-modal .modal-content {
+    border-radius: 0;
+}
+
+.thmv-video-modal .modal-body {
+    position: relative;
+}
+
+.thmv-video-modal .modal-body .btn-close {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border: none;
+    border-radius: 0;
+    line-height: 30px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-modal .modal-body .btn-close i {
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-modal .modal-dialog video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.thmv-video-text h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 15px;
+}
+
+.thmv-video-text h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.thmv-video-text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+/* Video Modal styles end */
+
+/*----------  photo gallery section  ----------*/
+
+.thmv-gallery-sec {
+    padding: 0 0 80px;
+}
+
+.thmv-gallery-sec .thmv-img-box,
+.thmv-what-todo-photos .thmv-img-box {
+    overflow: hidden;
+}
+
+.thmv-gallery-sec .thmv-img-box img,
+.thmv-what-todo-photos .thmv-img-box img {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.thmv-img-box:hover img,
+.thmv-what-todo-photos .thmv-img-box:hover img {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+
+.fancybox__backdrop::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fancybox__container {
+    --fancybox-bg: #000;
+
+    --fancybox-thumbs-width: 48px;
+    --fancybox-thumbs-ratio: 1;
+
+    --carousel-button-bg: rgb(91 78 76 / 74%);
+
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__nav {
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+    left: 20px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+    right: 20px;
+}
+
+.carousel__button.is-close {
+    right: 20px;
+    top: 20px;
+    left: auto;
+}
+
+.carousel__button.is-close,
+.fancybox__nav .carousel__button {
+    background: #191B18;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.carousel__button.is-close:hover,
+.fancybox__nav .carousel__button:hover {
+    background: #FFFFFF;
+    color: #191B18;
+}
+
+.fancybox__slide {
+    padding: 8px 88px;
+}
+
+/* Thumbnails */
+.fancybox__thumbs {
+    display: none;
+}
+
+/*----------  photo gallery section end  ----------*/
+
+/*=======> people say section styles  <=======*/
+
+.thmv-talk-to-reviews {
+    padding: 70px 0px;
+}
+
+.thmv-our-reviews {
+    border-bottom: 1px solid #EBECEF;
+    padding: 30px 0px;
+}
+
+.thmv-our-reviews:last-child {
+    border-bottom: none;
+    padding: 30px 0px 50px;
+}
+
+.thmv-user-review {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-user-review img {
+    width: 100px;
+}
+
+.thmv-user-review .thmv-user-info {
+    margin-left: 20px;
+}
+
+.thmv-user-review .thmv-user-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    opacity: 0.5;
+}
+
+.thmv-user-review .thmv-user-info h5 {
+    font-size: 22px;
+}
+
+.thmv-our-reviews .thmv-user-review-text {
+    padding: 40px 0;
+}
+
+.thmv-our-reviews .thmv-user-review-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #1A222C;
+    opacity: 0.5;
+}
+
+.thmv-our-reviews .thmv-user-review-text::after,
+.thmv-our-reviews .thmv-user-review-text::before {
+    content: "";
+    background-image: url("../images/icons/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 19px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+}
+
+.thmv-our-reviews .thmv-user-review-text::before {
+    top: 20px;
+    left: 0px;
+}
+
+.thmv-our-reviews .thmv-user-review-text::after {
+    bottom: 20px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.thmv-reviews-sec {
+    padding-bottom: 20px;
+}
+
+.thmv-reviews-sec h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.thmv-reviews-sec .subtitle-text {
+    max-width: 560px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+/*=======================================
+    =            why us page style end          =
+    =======================================*/
