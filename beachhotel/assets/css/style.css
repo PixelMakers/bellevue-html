@@ -2674,3 +2674,534 @@ a[data-fancybox] img {
 /*=======================================
     =            why us page style end          =
     =======================================*/
+
+/* ----------------- Cart page -----------------*/
+
+.thmv-cart-title {
+    margin-bottom: 34px;
+}
+
+.cart-input {
+    outline: none;
+    border: 1px solid #07436510;
+    padding: 12px 30px;
+}
+
+.cart-input:focus {
+    border: 1px solid #07436583;
+}
+
+.thmv-cart-col {}
+
+.cart__button {
+    padding: 47px 0 119px;
+}
+
+.cart-tabel__info {
+    background-color: #F4F6F8;
+    padding: 16px 20px;
+}
+
+.cart-tabel__plus-minus {
+    background-color: white;
+    padding: 5px 7px;
+    font-size: 16px;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+}
+
+.cart-tabel__minus,
+.cart-tabel__plus {
+    cursor: pointer;
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-tabel__price h5 {
+    color: black;
+}
+
+.cart-tabel__date {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.cart-tabel__date_i {
+    cursor: pointer;
+}
+
+.cart-tabel__date_i svg {
+    margin-bottom: 4px;
+}
+
+.cart-tabel__delete h6 {
+    color: #FB4646;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.thmv-cart-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-cart-title p {
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.desk-none {
+    display: none;
+}
+
+
+/* ----------------- Cart page end -----------------*/
+
+
+/* ----------------- checkout page -----------------*/
+
+.thmv-checkout-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-checkout-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-checkout__total-price {
+    background-color: #F4F6F8;
+    padding: 30px 20px 55px;
+}
+
+.thmv-checkout__total-price hr {
+    height: 2px;
+    background: #074365;
+    opacity: 0.1;
+}
+
+.thmv-checkout-col {
+    margin-bottom: 34px;
+}
+
+.thmv-checkout__total-price h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.thmv-checkout__total-price h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.thmv-checkout-mb {
+    margin-bottom: 20px;
+}
+
+.thmv-checkout {
+    margin-bottom: 196px;
+}
+
+
+/* ----------------- checkout page  end-----------------*/
+
+
+/* ----------------- Booking Confirmation page -----------------*/
+
+.thmv-booking-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-booking-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-booking__bg {
+    background-color: #F4F6F8;
+}
+
+.thmv-booking-col {
+    margin-bottom: 35px;
+}
+
+.thmv-booking__date {
+    background-color: white;
+    border: 1px solid rgba(7, 67, 101, 0.1);
+    padding: 12px;
+    width: 173px;
+    text-align: center;
+    position: relative;
+    margin: 0 20px 0 20px;
+}
+
+.thmv-booking__calendar {
+    padding: 27px 0;
+}
+
+.thmv-booking__calendar h5 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-booking__calendar h6 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-booking__date::before {
+    content: url(../images/icons/calendar-booking.svg);
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: 21px;
+    top: 14px;
+}
+
+.choice__people {
+    border: 1px solid rgba(7, 67, 101, 0.1);
+    padding: 17px 26px 22px 54px;
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    cursor: pointer;
+}
+
+.choice__people::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/choice-people.svg);
+    background-repeat: no-repeat;
+    left: 18px;
+    top: 20px;
+}
+
+.choice__people::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(-45deg);
+    right: 26px;
+    top: 25px;
+}
+
+.thmv-booking__content h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.thmv-booking__content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1A222C;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+}
+
+.thmv-booking__content {}
+
+#booking__border-bottom {
+    color: #074365;
+    position: relative;
+}
+
+.booking__mb {
+    margin-bottom: 27px !important;
+}
+
+#booking__border-bottom::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #074365;
+    bottom: -2px;
+    left: 0;
+}
+
+.thmv-booking__accommodation {
+    margin-top: 44px;
+    margin-bottom: 36px;
+}
+
+.label-checkbox__booking {
+    cursor: pointer;
+}
+
+.svg-checkbox__booking rect {
+    fill: transparent;
+}
+
+.svg-checkbox__booking path {
+    fill: transparent;
+}
+
+.svg-checkbox__booking {
+    left: 12px;
+}
+
+.booking__checkbox-item {
+    position: relative;
+}
+
+.thmv-booking__checkbox {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.booking__checkbox-item input:checked~.svg-checkbox__booking rect {
+    fill: #074365;
+    stroke: #074365;
+}
+
+.booking__checkbox-item input:checked~.svg-checkbox__booking path {
+    fill: #E6ECF0;
+}
+
+.thmv-booking__services h4 {
+    margin-bottom: 29px;
+}
+
+.booking__counter h6 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+    font-family: Lato;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking__counter {
+    margin-left: 50px;
+}
+
+.booking__minus-plus {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #07436510;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.thmv-booking__content hr {
+    opacity: 0.1;
+    height: 1px;
+    background-color: #074365;
+    margin: 50px 0 40px;
+}
+
+.thmv-booking__price h4 {
+    margin-bottom: 28px;
+}
+
+.thmv-booking__price {
+    margin-bottom: 46px;
+}
+
+.booking-receipt {
+    padding: 24px 50px 30px;
+}
+
+.booking-receipt__border-dashed {
+    border: 1px dashed #1A222C;
+    opacity: 0.2;
+    height: 0px;
+}
+
+.booking-receipt h4 {
+    margin: 0;
+    color: #1A222C;
+    padding-right: 8px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.booking-receipt h5 {
+    padding-left: 20px;
+}
+
+.booking-receipt h5,
+.booking-receipt h6 {
+    color: #1A222C;
+}
+
+.booking-receipt h6 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    padding-right: 25px;
+}
+
+.booking-receipt__item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+#booking-receipt__bold {
+    font-weight: bold;
+}
+
+.booking-receipt__price {
+    padding: 0 0 0 25px !important;
+}
+
+.booking-receipt__item:first-child {
+    margin-bottom: 12px;
+}
+
+.input-notes {
+    height: 166px;
+}
+
+.thmv-information h4 {
+    margin-bottom: 28px;
+}
+
+.thmv-information {
+    margin-bottom: 44px;
+}
+
+.thmv-payment-method h4 {
+    margin-bottom: 29px;
+}
+
+.payment-method__item label {
+    margin: 0 0 0 14px;
+    color: #074365;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 200%;
+}
+
+.payment-method__item p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 190%;
+    padding-left: 44px;
+}
+
+.radio-payment {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.payment-method__item:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.thmv-payment-method {
+    margin-bottom: 33px;
+}
+
+.total-price__main {
+    padding: 35px 97px;
+}
+
+.thmv-total-price {
+    margin-bottom: 146px;
+}
+
+.total-price__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    padding-right: 22px;
+}
+
+.total-price__price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    padding-left: 16px;
+}
+
+.total-price__btn {
+    margin-top: 30px;
+}
+
+
+/*
+.radio-payment:hover {
+    background-color: #CFD5DC;
+    outline: 0;
+    border: 5px solid white;
+}
+
+.radio-payment:focus {
+    border-color: #65BFE4;
+    outline: 0;
+    border: 5px solid white;
+    box-shadow: 0 0 11px rgb(66 68 71 / 25%);
+}
+
+.radio-payment:checked[type=radio] {
+    background-image: none;
+    background-color: #65BFE4 !important;
+    border: 5px solid white;
+    box-shadow: 0 0 11px rgb(66 68 71 / 25%);
+} */
+
+
+/* ----------------- Booking Confirmation page  end-----------------*/

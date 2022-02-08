@@ -397,6 +397,16 @@
     .swiper {
         padding: 0 20px;
     }
+
+    /* ----------------- checkout page -----------------*/
+    .thmv-checkout__total-price {
+        margin-top: 30px;
+    }
+    .thmv-checkout__total-price {
+        background-color: #F4F6F8;
+        padding: 30px 20px;
+    }
+    /* ----------------- checkout page  end-----------------*/
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3255,6 +3265,231 @@
         padding-bottom: 0;
     }
 
+    /* ----------------- Cart page -----------------*/
+    .thmv-cart-title {
+        margin-bottom: 42px;
+    }
+    .thmv-cart-title p {
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: #074365;
+        margin-bottom: 5px;
+    }
+    .thmv-cart-title h2 {
+        font-size: 30px;
+        line-height: 110%;
+    }
+    .cart-tabel__info h5 {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 200%;
+    }
+    .cart-tabel__plus-minus {
+        background-color: white;
+        padding: 5px 7px;
+        width: 84px;
+        font-size: 14px;
+        line-height: 150%;
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        letter-spacing: -0.1px;
+    }
+    .cart-tabel__date {
+        color: #1A222C;
+        font-weight: normal;
+    }
+    .cart-tabel__date_i svg path {
+        fill: #1A222C;
+    }
+    .cart-tabel__delete {
+        width: 100%;
+    }
+    .cart-tabel__delete a {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FB4646;
+        margin-top: 23px;
+    }
+    .cart-tabel__row:first-child {
+        margin-bottom: 30px;
+    }
+    .cart-tabel__delete a:hover {
+        background-color: #FB4646;
+    }
+    .cart-tabel__delete a:hover h6 {
+        color: white;
+    }
+    .cart__button {
+        padding: 41px 0 60px;
+    }
+    .cart-tabel__minus {
+        margin-right: 6px;
+    }
+    .cart-tabel__plus {
+        margin-left: 6px;
+    }
+    .mob-none {
+        display: none;
+    }
+    .desk-none {
+        display: block;
+    }
+    /* ----------------- Cart page end -----------------*/
+    /* ----------------- checkout page -----------------*/
+    .thmv-checkout-mb_mob {
+        margin-bottom: 20px;
+    }
+    .thmv-checkout {
+        margin-bottom: 60px;
+    }
+    .thmv-checkout__total-price h4 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .thmv-checkout-title h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 110%;
+    }
+    .thmv-checkout-title p {
+        font-size: 16px;
+    }
+    .thmv-checkout-col {
+        margin-bottom: 17px;
+    }
+    /* ----------------- checkout page  end-----------------*/
+    /* ----------------- Booking Confirmation page -----------------*/
+    .thmv-booking__calendar {
+        padding: 36px 20px 31px;
+    }
+    .thmv-booking__date {
+        margin: 0;
+        width: 100%;
+    }
+    .thmv-booking__calendar h5 {
+        font-family: Domine;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        color: #1A222C;
+    }
+    .thmv-booking__date {
+        padding: 12px 12px 12px 54px;
+        text-align: left;
+        position: relative;
+    }
+    .thmv-booking__content h4 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .thmv-booking__content p {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    #booking__border-bottom {
+        color: #1A222C;
+        font-weight: bold;
+    }
+    #booking__border-bottom::after {
+        background-color: #1A222C;
+    }
+    .choice__people {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 200%;
+    }
+    .thmv-booking-title h2 {
+        font-size: 30px;
+        line-height: 110%;
+    }
+    .thmv-booking-col {
+        margin-bottom: 10px;
+    }
+    .booking__mb {
+        margin-bottom: 20px !important;
+    }
+    .choice__people {
+        padding: 8px 20px 8px 54px;
+    }
+    .choice__people::after {
+        top: 19px;
+    }
+    .choice__people::before {
+        top: 12px;
+    }
+    .thmv-booking__accommodation {
+        margin-top: 48px;
+        margin-bottom: 47px;
+    }
+    .thmv-booking__services h4 {
+        margin-bottom: 26px;
+    }
+    .booking__counter {
+        width: 100%;
+        margin-top: 11px;
+    }
+    .thmv-booking__content hr {
+        margin: 50px 0 30px;
+    }
+    #second-hr-booking {
+        margin: 30px 0 50px;
+    }
+    .thmv-booking__price h4 {
+        margin-bottom: 25px;
+    }
+    .booking-receipt h4,
+    .booking-receipt h5 {
+        margin-bottom: 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 200%;
+    }
+    .booking-receipt {
+        padding: 24px 12px 30px;
+    }
+    .thmv-booking__content p {
+        font-weight: bold;
+    }
+    .booking-receipt h6 {
+        padding-right: 15px;
+    }
+    .booking-receipt__price {
+        padding-left: 8px;
+    }
+    .total-price__main {
+        padding: 15px;
+    }
+    .total-price__title,
+    .total-price__price {
+        color: #1A222C;
+    }
+    .thmv-total-price {
+        margin-bottom: 60px;
+    }
+    .payment-method__item p {
+        font-weight: normal;
+    }
+    .thmv-booking-title p {
+        font-size: 16px;
+    }
+    /* ----------------- Booking Confirmation page  end-----------------*/
+
 }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
@@ -3372,4 +3607,17 @@
         padding: 0px;
     }
 
+    /* ----------------- Booking Confirmation page-----------------*/
+    .label-checkbox__booking {
+        font-size: 15px;
+    }
+    .payment-method__item label {
+        font-size: 15px;
+    }
+    .booking-receipt__item h6 {
+        font-size: 15px;
+    }
+    /* ----------------- Booking Confirmation page end-----------------*/
+
 }
+
