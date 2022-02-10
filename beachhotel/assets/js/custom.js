@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })(jQuery);
 
 
-// rooms & suites slider //
+// rooms & suites slider
 (function () {
     let slider = document.querySelector('.swiper');
     if (slider) {
@@ -107,32 +107,71 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // gallery fancybox js
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-    dragToClose: false,
+let fancybox = document.querySelector('[data-fancybox="gallery"]');
 
-    Toolbar: false,
-    closeButton: "top",
+if (fancybox) {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        dragToClose: false,
 
-    Image: {
-        zoom: false,
-    },
+        Toolbar: false,
+        closeButton: "top",
 
-    on: {
-        initCarousel: (fancybox) => {
-            const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
-
-            fancybox.$container.style.setProperty(
-                "--bg-image",
-                `url("${slide.$thumb.src}")`
-            );
+        Image: {
+            zoom: false,
         },
-        "Carousel.change": (fancybox, carousel, to, from) => {
-            const slide = carousel.slides[to];
 
-            fancybox.$container.style.setProperty(
-                "--bg-image",
-                `url("${slide.$thumb.src}")`
-            );
+        on: {
+            initCarousel: (fancybox) => {
+                const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
+            "Carousel.change": (fancybox, carousel, to, from) => {
+                const slide = carousel.slides[to];
+
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
         },
-    },
-});
+    });
+}
+
+
+// What to see slider
+(function () {
+    let slider = document.querySelector('.what-to-see-slider');
+    if (slider) {
+        const swiper = new Swiper('.what-to-see-slider', {
+            // Optional parameters
+            loop: true,
+            speed: 1000,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                }
+            }
+        });
+    }
+})();
+

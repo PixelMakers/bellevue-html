@@ -803,6 +803,14 @@ h3 {
     border-color: #074365;
 }
 
+.btn-full-filled.white-border {
+    border-color: #fff;
+}
+
+.btn-full-filled.white-border:hover {
+    border-color: #fff;
+}
+
 /*----------  home style 2 colors  ----------*/
 .thmv-dark-color {
     color: #191B18;
@@ -1511,9 +1519,9 @@ h3 {
 
 .thmv-wel-text .thmv-wel-title {
     text-transform: uppercase;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 700;
-    line-height: 99px;
+    line-height: 77px;
     margin: 15px 0;
 }
 
@@ -1531,6 +1539,12 @@ h3 {
 .thmv-facilities-sec {
     padding: 100px 10px;
     background-color: #F2FAFF;
+}
+
+.thmv-facilities-sec.benefits {
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 80px;
 }
 
 .thmv-facilities-sec .thmv-facilities-info {
@@ -1614,11 +1628,13 @@ h3 {
 
 .thmv-expo-location {
     font-size: 18px;
+    color: #074365;
 }
 
 .thmv-expo-location i {
     font-size: 18px;
     margin-right: 20px;
+    color: #4A86CC;
 }
 
 .thmv-expo-name h3 {
@@ -1666,7 +1682,7 @@ h3 {
     text-transform: inherit;
     font-size: 20px;
     line-height: 26px;
-    border-left: 7px solid #191B18;
+    border-left: 7px solid #074365;
     padding-left: 10px;
     margin: 35px 0;
 }
@@ -2691,7 +2707,8 @@ a[data-fancybox] img {
     border: 1px solid #07436583;
 }
 
-.thmv-cart-col {}
+.thmv-cart-col {
+}
 
 .cart__button {
     padding: 47px 0 119px;
@@ -2937,7 +2954,8 @@ a[data-fancybox] img {
     user-select: none !important;
 }
 
-.thmv-booking__content {}
+.thmv-booking__content {
+}
 
 #booking__border-bottom {
     color: #074365;
@@ -2992,12 +3010,12 @@ a[data-fancybox] img {
     cursor: pointer;
 }
 
-.booking__checkbox-item input:checked~.svg-checkbox__booking rect {
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking rect {
     fill: #074365;
     stroke: #074365;
 }
 
-.booking__checkbox-item input:checked~.svg-checkbox__booking path {
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking path {
     fill: #E6ECF0;
 }
 
@@ -3205,3 +3223,444 @@ a[data-fancybox] img {
 
 
 /* ----------------- Booking Confirmation page  end-----------------*/
+
+/*===========================================
+    =            packages page style            =
+    ===========================================*/
+.thmv-appartments-sec .thmv-packages .thmv-appartments-info p {
+    color: rgba(25, 27, 24, 0.6);
+}
+
+.thmv-packages .thmv-appartments-info a {
+    margin-top: 15px;
+}
+
+.thmv-packages-sec {
+    padding: 120px 0 0;
+}
+
+.thmv-packages-sec .thmv-filter-box .thmv-appartments-info {
+    padding: 20px 5px;
+}
+
+.thmv-packages-sec .thmv-filter-box .thmv-appartments-info h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+.thmv-Specials-packages {
+    padding: 100px 0 0;
+}
+
+.thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+.thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+.thmv-Specials-packages .thmv-packages .thmv-appartments-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+}
+
+.thmv-last-deals {
+    margin: 60px auto;
+    padding: 110px 0px 50px;
+    background: #EAEAEA;
+}
+
+.thmv-faqs {
+    padding: 60px 10px 50px;
+}
+
+.thmv-faqs .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thmv-faqs .thmv-accordion-number {
+    width: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    background: #404040;
+    color: #fff;
+}
+
+.thmv-faqs .accordion-item {
+    border: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.1);
+    padding: 15px 0px;
+}
+
+.thmv-faqs .accordion-item:last-child {
+    border: none;
+}
+
+.thmv-faqs .accordion-item:first-child::before {
+    display: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button h5 {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 620px;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.thmv-faqs .accordion-item .accordion-body p {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(25, 27, 24, 0.8);
+}
+
+.thmv-faqs .accordion-item .accordion-collapse {
+    margin-left: 45px;
+}
+
+.thmv-faqs .accordion-button:not(.collapsed),
+.thmv-faqs .accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed)::after {
+    color: #171818;
+}
+
+.accordion-button::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    background-image: none;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+.thmv-faqs .accordion-item .accordion-collapse .accordion-body {
+    padding: 0px 0px 10px;
+    margin-left: 20px;
+}
+
+.thmv-packages-join {
+    padding: 100px 0px 150px;
+}
+
+.thmv-packages-join .thmv-uniq-box .thmv-pills-blok p {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.thmv-packages-join .thmv-welcome-box {
+    max-width: 800px;
+}
+
+.thmv-packages-join .thmv-welcome-box h2 {
+    margin: 10px 0px 15px;
+}
+
+.thmv-packages-join .thmv-welcome-box p {
+    margin-bottom: 20px;
+}
+
+.thmv-packages-join .thmv-welcome-box form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.thmv-packages-join form .input-group input {
+    position: relative;
+}
+
+.thmv-packages-join form .input-group i {
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(25px, -50%);
+}
+
+.thmv-packages-join .thmv-welcome-box form button {
+    min-width: 120px;
+}
+
+/*=====  End of packages page style  ======*/
+
+/*===============================================
+    =            packages v2 page style             =
+    ===============================================*/
+.thmv-appartments-info .thmvfloor-list-icon {
+    margin: 0;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon ul li {
+    align-items: center;
+}
+
+.thmv-appartments-info .thmv-listing-icon {
+    margin-right: 15px;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon .thmv-listing-icon img {
+    width: 26px;
+    height: 26px;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon .thmv-listing-info h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*=====  End of packages v2 page style   ======*/
+
+/*=================================================
+    =          experience section style start          =
+    =================================================*/
+.thmv-what-to-see {
+    padding: 100px 0 50px 0;
+}
+
+.thmv-user-review {
+    max-width: 540px;
+    margin-left: auto;
+}
+
+.thmv-user-review .thmv-sub-title {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(25, 27, 24, 0.4);
+}
+
+.thmv-user-review h2 {
+    margin-bottom: 25px;
+}
+
+.thmv-user-review h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.thmv-user-review p {
+    font-size: 18px;
+    line-height: 36px;
+    color: #191B18;
+    margin-bottom: 30px;
+}
+
+.thmv-review-sec .slick-review-slider .slick-list {
+    padding-left: 0 !important;
+    padding-right: 250px !important;
+}
+
+.thmv-appartments-sec .thmv-appartments-img {
+    position: relative;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price {
+    position: absolute;
+    background-color: #EAEAEA;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price h4 {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1A222C;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1A222C;
+    margin-bottom: 0;
+}
+
+.thmv-packages .thmv-appart-meta .thmv-page-rating ul li {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #FFC804;
+}
+
+.thmv-home-inner .thmv-location i, .thmv-packages .thmv-location i {
+    margin-right: 10px;
+}
+
+.what-to-see {
+    max-width: 540px;
+    margin-left: auto;
+}
+
+.what-to-see h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.what-to-see h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.what-to-see p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.what-to-see-slider .swiper-wrapper {
+    max-height: 670px;
+}
+
+.what-to-see-slider .swiper-button-prev,
+.what-to-see-slider .swiper-button-next {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+}
+
+.what-to-see-slider .swiper-button-prev:hover,
+.what-to-see-slider .swiper-button-next:hover {
+    background-color: #074365;
+}
+
+.what-to-see-slider .swiper-button-prev::after,
+.what-to-see-slider .swiper-button-next::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    color: #074365;
+    transition: all .3s ease 0s;
+}
+
+.what-to-see-slider .swiper-button-prev::after {
+    content: '\f053';
+}
+
+.what-to-see-slider .swiper-button-next::after {
+    content: '\f054';
+}
+
+.what-to-see-slider .swiper-button-prev:hover::after,
+.what-to-see-slider .swiper-button-next:hover::after {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/*=====  End of experience section style   ======*/
+
+.thmv-offer .thmv-covid-row {
+    background-color: #074365;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.thmv-offer h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.thmv-offer h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.thmv-offer p {
+    max-width: 760px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 20px auto;
+}
+
+.benefits h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefits p {
+    max-width: 560px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    margin: 0 auto 30px auto;
+}
+
+.thmv-creation-timelines {
+    padding: 90px 0 70px 0;
+}
+
+.thmv-creation-timelines p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+    margin-top: 15px;
+}
+
+.thmv-creation-timelines h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}

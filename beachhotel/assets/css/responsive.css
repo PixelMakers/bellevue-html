@@ -1937,6 +1937,25 @@
         line-height: 57px;
     }
 
+    .thmv-what-to-see {
+        padding: 40px 0 0 0;
+    }
+
+    .what-to-see {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .what-to-see h2 {
+        font-size: 44px;
+        line-height: 57px;
+    }
+
+    .thmv-expogird-info {
+        margin-left: 0;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -3490,6 +3509,16 @@
     }
     /* ----------------- Booking Confirmation page  end-----------------*/
 
+    .what-to-see h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .thmv-facilities-sec.benefits {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
@@ -3550,6 +3579,16 @@
 
     .thmv-video-text h2,
     .thmv-reviews-sec h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .thmv-offer h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .benefits h2 {
         font-size: 30px;
         line-height: 33px;
     }
