@@ -407,6 +407,15 @@
         padding: 30px 20px;
     }
     /* ----------------- checkout page  end-----------------*/
+
+    .thmv-menu-tabs .thmv-yello-bg:before {
+        width: 570px;
+    }
+
+    .thmv-menu-tabs .nav-pills .nav-link.active:after {
+        width: 45px;
+        right: -24px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1954,6 +1963,21 @@
 
     .thmv-expogird-info {
         margin-left: 0;
+    }
+
+    .thmv-menu-tabs .tab-content {
+        padding-top: 250px;
+    }
+
+    .thmv-menu-tabs .thmv-yello-bg:before {
+        width: 660px;
+        top: -100px;
+        left: -17.6%;
+    }
+
+    .thmv-menu-tabs .nav-pills .nav-link.active:after {
+        right: unset;
+        left: 32%;
     }
 
 }
@@ -3517,6 +3541,10 @@
     .thmv-facilities-sec.benefits {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .thmv-menu-tabs .nav-pills .nav-link.active:after {
+        left: 73%;
     }
 
 }

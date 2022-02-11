@@ -2135,6 +2135,7 @@ footer .thmv-footer .thmv-foot-wedget ul li address:hover {
     font-weight: 900;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
+    color: #fff;
 }
 
 .thmv-footer-bottom ul li {
@@ -3663,4 +3664,106 @@ a[data-fancybox] img {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+}
+
+
+/*=======> our menu page <=======*/
+
+.thmv-menu-tabs {
+    padding-top: 100px;
+}
+
+.thmv-tab-info {
+    max-width: 660px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.thmv-tab-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+}
+
+.thmv-menu-tabs .tab-content {
+    width: 100%;
+    padding: 100px 0px 50px;
+}
+
+.thmv-menu-tabs .tab-content .thmv-tab-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.thmv-menu-tabs .tab-content .thmv-tab-info .thmv-tab-title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link {
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link.active,
+.thmv-menu-tabs .nav-pills .show > .nav-link {
+    background: transparent;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link.active:after {
+    content: "";
+    background: #fff;
+    width: 60px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thmv-menu-tabs .thmv-yello-bg:before {
+    content: "";
+    width: 660px;
+    height: 646px;
+    position: absolute;
+    left: -33.6%;
+    top: -10%;
+    background: url(../images/menu-section-bg.png) center no-repeat #074365;
+    z-index: 1;
+}
+
+.thmv-best-solution-row {
+    position: relative;
+}
+
+.thmv-best-solution-row::before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    height: 1px;
+    background-color: #1A222C;
+    opacity: .1;
+}
+
+.thmv-best-solution figure figcaption {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #1A222C;
+    opacity: 0.5;
+    margin-top: 15px;
 }
