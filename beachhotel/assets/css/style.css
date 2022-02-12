@@ -3767,3 +3767,470 @@ a[data-fancybox] img {
     opacity: 0.5;
     margin-top: 15px;
 }
+
+/* ----------------- Blog single page-----------------*/
+
+.thmv-our-blog-title p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
+    color: #074365;
+}
+
+.thmv-our-blog-title h2 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.our-blog__img {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 90px;
+}
+
+.thmv-our-blog-col {
+    margin-bottom: 40px;
+}
+
+.our-blog__img img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.our-blog__paragraph p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.our-blog__paragraph {
+    margin-bottom: 100px;
+}
+
+.our-blog__row-img {
+    margin-bottom: 84px;
+}
+
+.row-img__item {
+    width: 367px;
+    height: 367px;
+}
+
+.row-img__item img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.row-img__item:nth-child(2) {
+    position: relative;
+}
+
+.row-img__item:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    width: 327px;
+    height: 327px;
+    border: 10px solid white;
+    top: 19px;
+    left: 19px;
+}
+
+.our-blog__enjoy {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.our-blog__enjoy h3 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.our-blog__enjoy p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.our-blog__icon {
+    background-color: #F2FAFF;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.icon-blog__title {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #074365;
+    text-transform: lowercase;
+}
+
+.icon-blog__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 190%;
+    color: #074365;
+    opacity: 0.9;
+}
+
+.ready-blog__img img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.ready-blog__img {}
+
+.our-blog__ready {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.ready-blog__subtitle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.ready-blog__content h2 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.ready-blog__content p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 200%;
+}
+
+.ready-blog__content {
+    margin-left: 97px;
+}
+
+
+/* ----------------- Blog single page end-----------------*/
+
+/* ----------------- Listing page start -----------------*/
+
+.btn-border {
+    color: #074365;
+    border: 2px solid #074365;
+    background-color: white;
+}
+
+.btn-border:hover {
+    color: white;
+    background-color: #074365;
+}
+
+.thmv-listing__img {
+    position: relative;
+}
+
+.thmv-listing-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.thmv-listing-title h2 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.listing-title__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-listing-title {
+    padding-top: 162px;
+    padding-bottom: 245px;
+    position: relative;
+}
+
+.thmv-listing-title::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/listing-before.svg);
+    background-repeat: no-repeat;
+    width: 1190px;
+    height: 182px;
+    left: calc(-50vw);
+    top: 0;
+}
+
+.listing-room__number-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.listing-room__number-item:hover {
+    background-color: #07436518;
+    color: black;
+}
+
+.listing-room__number-item.active {
+    color: white;
+    background-color: #074365;
+}
+
+.listing-room__next-item {
+    border: 1px solid #074365;
+    color: #074365;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9px 24px;
+}
+
+.listing-room__next-item:hover {
+    color: white;
+    background-color: #074365;
+}
+
+.thmv-listing-col {
+    width: 463px;
+}
+
+.thmv-listing__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thmv-listing {
+    /* width: 100vw; */
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+}
+
+.thmv-listing__img {
+    position: absolute;
+    /* right: calc(50vw - 65%); */
+    right: 0;
+    top: -82px;
+    /* width: 980px; */
+    width: 51vw;
+    height: 836px;
+}
+
+.listing__wrapper {
+    margin-top: 103px;
+    margin-bottom: 120px;
+}
+
+.listing-room__item {
+    width: 357px;
+    margin-bottom: 39px;
+}
+
+.listing-room__item:nth-child(2n) {
+    margin-right: 20px;
+}
+
+.listing-room__img {
+    width: 357px;
+    height: 357px;
+    position: relative;
+}
+
+.listing-room__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#feature-room {
+    cursor: pointer;
+}
+
+#feature-room svg path {
+    transition: .3s;
+}
+
+#feature-room:hover svg path {
+    stroke: #FB4646;
+}
+
+.feature-svg.active path {
+    fill: #FB4646;
+}
+
+.listing-room__price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 14px 38px;
+}
+
+.listing-room__price h5 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1A222C;
+}
+
+.listing-room__title h4 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.listing-room__subtitle {
+    font-size: 16px;
+    line-height: 200%;
+    color: #074365;
+}
+
+.listing-room__item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    color: #1A222C;
+    margin: 0;
+}
+
+.listing-form__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #074365;
+}
+
+.listing-room__form {
+    padding: 64px 30px;
+    width: 367px;
+    height: 490px;
+    background: #F4F6F8;
+}
+
+.listing-form__input {
+    border: none;
+    padding: 14px 50px 14px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.listing-form__ceck-in {
+    background-image: url(../images/icons/check-in-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+}
+
+.listing-form__ceck-out {
+    background-image: url(../images/icons/check-out-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 23px);
+    background-position-y: center;
+}
+
+.listing-form__people {
+    background-image: url(../images/icons/people-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+}
+
+.listing-form__input::placeholder {
+    font-weight: 300;
+}
+
+.listing-form__btn {
+    background: #074365;
+    color: white;
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #074365;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.listing-form__btn:hover {
+    background: white;
+    border: 2px solid #074365;
+    color: #074365;
+}
+
+.listing-form__link {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.1px;
+}
+
+.listing-form__link span {
+    padding-left: 10px;
+}
+
+.listing-form__link svg path {
+    transition: .3s;
+}
+
+.listing-form__link:hover svg path {
+    fill: #191B1870;
+}
+
+
+/* ----------------- Listing page end-----------------*/

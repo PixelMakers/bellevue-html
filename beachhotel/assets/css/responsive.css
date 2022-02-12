@@ -402,12 +402,13 @@
     .thmv-checkout__total-price {
         margin-top: 30px;
     }
+
     .thmv-checkout__total-price {
         background-color: #F4F6F8;
         padding: 30px 20px;
     }
-    /* ----------------- checkout page  end-----------------*/
 
+    /* ----------------- checkout page  end-----------------*/
     .thmv-menu-tabs .thmv-yello-bg:before {
         width: 570px;
     }
@@ -415,6 +416,64 @@
     .thmv-menu-tabs .nav-pills .nav-link.active:after {
         width: 45px;
         right: -24px;
+    }
+
+    .ready-blog__content h2 {
+        font-size: 50px;
+    }
+
+    .ready-blog__content {
+        margin-left: 46px;
+    }
+
+    .row-img__item {
+        width: 290px;
+        height: 290px;
+    }
+
+    .row-img__item:nth-child(2)::after {
+        width: 250px;
+        height: 250px;
+        border: 7px solid white;
+    }
+
+    .icon-blog__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .thmv-listing {
+        margin-right: 0;
+    }
+    .thmv-listing__img {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        height: 357px;
+    }
+    .thmv-listing-title {
+        padding-top: 52px;
+        padding-bottom: 60px;
+    }
+    .thmv-listing-col {
+        width: 60vw;
+    }
+    .listing-room__form {
+        display: none !important;
+    }
+    .listing-room__item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .thmv-listing-title::before {
+        background-size: 80% 80%;
+    }
+    .listing-room__img {
+        width: 300px;
+        height: 300px;
+    }
+    .listing-room__item {
+        width: 300px;
     }
 }
 
@@ -545,7 +604,6 @@
     }
 
     /*----------  navbar style  ----------*/
-
     .thmv-navbar-light {
         background: #fff;
     }
@@ -1980,6 +2038,34 @@
         left: 32%;
     }
 
+    .icon-blog__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .icon-blog__item:nth-child(1),
+    .icon-blog__item:nth-child(2) {
+        margin-bottom: 25px;
+    }
+
+    .row-img__item {
+        width: 213px;
+        height: 213px;
+    }
+
+    .row-img__item:nth-child(2)::after {
+        width: 173px;
+        height: 173px;
+        border: 7px solid white;
+    }
+
+    .ready-blog__content h2 {
+        font-size: 30px;
+    }
+
+    .ready-blog__content {
+        margin: 50px 20px 60px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -3312,6 +3398,7 @@
     .thmv-cart-title {
         margin-bottom: 42px;
     }
+
     .thmv-cart-title p {
         font-size: 16px;
         line-height: 32px;
@@ -3319,10 +3406,12 @@
         color: #074365;
         margin-bottom: 5px;
     }
+
     .thmv-cart-title h2 {
         font-size: 30px;
         line-height: 110%;
     }
+
     .cart-tabel__info h5 {
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -3330,6 +3419,7 @@
         font-size: 16px;
         line-height: 200%;
     }
+
     .cart-tabel__plus-minus {
         background-color: white;
         padding: 5px 7px;
@@ -3342,16 +3432,20 @@
         text-align: center;
         letter-spacing: -0.1px;
     }
+
     .cart-tabel__date {
         color: #1A222C;
         font-weight: normal;
     }
+
     .cart-tabel__date_i svg path {
         fill: #1A222C;
     }
+
     .cart-tabel__delete {
         width: 100%;
     }
+
     .cart-tabel__delete a {
         width: 100%;
         height: 48px;
@@ -3361,38 +3455,49 @@
         border: 1px solid #FB4646;
         margin-top: 23px;
     }
+
     .cart-tabel__row:first-child {
         margin-bottom: 30px;
     }
+
     .cart-tabel__delete a:hover {
         background-color: #FB4646;
     }
+
     .cart-tabel__delete a:hover h6 {
         color: white;
     }
+
     .cart__button {
         padding: 41px 0 60px;
     }
+
     .cart-tabel__minus {
         margin-right: 6px;
     }
+
     .cart-tabel__plus {
         margin-left: 6px;
     }
+
     .mob-none {
         display: none;
     }
+
     .desk-none {
         display: block;
     }
+
     /* ----------------- Cart page end -----------------*/
     /* ----------------- checkout page -----------------*/
     .thmv-checkout-mb_mob {
         margin-bottom: 20px;
     }
+
     .thmv-checkout {
         margin-bottom: 60px;
     }
+
     .thmv-checkout__total-price h4 {
         font-weight: bold;
         font-size: 16px;
@@ -3401,26 +3506,32 @@
         text-transform: uppercase;
         font-weight: 800;
     }
+
     .thmv-checkout-title h2 {
         font-weight: bold;
         font-size: 30px;
         line-height: 110%;
     }
+
     .thmv-checkout-title p {
         font-size: 16px;
     }
+
     .thmv-checkout-col {
         margin-bottom: 17px;
     }
+
     /* ----------------- checkout page  end-----------------*/
     /* ----------------- Booking Confirmation page -----------------*/
     .thmv-booking__calendar {
         padding: 36px 20px 31px;
     }
+
     .thmv-booking__date {
         margin: 0;
         width: 100%;
     }
+
     .thmv-booking__calendar h5 {
         font-family: Domine;
         font-style: normal;
@@ -3429,71 +3540,90 @@
         line-height: 130%;
         color: #1A222C;
     }
+
     .thmv-booking__date {
         padding: 12px 12px 12px 54px;
         text-align: left;
         position: relative;
     }
+
     .thmv-booking__content h4 {
         font-size: 18px;
         line-height: 130%;
     }
+
     .thmv-booking__content p {
         font-size: 14px;
         line-height: 130%;
     }
+
     #booking__border-bottom {
         color: #1A222C;
         font-weight: bold;
     }
+
     #booking__border-bottom::after {
         background-color: #1A222C;
     }
+
     .choice__people {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 200%;
     }
+
     .thmv-booking-title h2 {
         font-size: 30px;
         line-height: 110%;
     }
+
     .thmv-booking-col {
         margin-bottom: 10px;
     }
+
     .booking__mb {
         margin-bottom: 20px !important;
     }
+
     .choice__people {
         padding: 8px 20px 8px 54px;
     }
+
     .choice__people::after {
         top: 19px;
     }
+
     .choice__people::before {
         top: 12px;
     }
+
     .thmv-booking__accommodation {
         margin-top: 48px;
         margin-bottom: 47px;
     }
+
     .thmv-booking__services h4 {
         margin-bottom: 26px;
     }
+
     .booking__counter {
         width: 100%;
         margin-top: 11px;
     }
+
     .thmv-booking__content hr {
         margin: 50px 0 30px;
     }
+
     #second-hr-booking {
         margin: 30px 0 50px;
     }
+
     .thmv-booking__price h4 {
         margin-bottom: 25px;
     }
+
     .booking-receipt h4,
     .booking-receipt h5 {
         margin-bottom: 0;
@@ -3503,36 +3633,45 @@
         font-size: 16px;
         line-height: 200%;
     }
+
     .booking-receipt {
         padding: 24px 12px 30px;
     }
+
     .thmv-booking__content p {
         font-weight: bold;
     }
+
     .booking-receipt h6 {
         padding-right: 15px;
     }
+
     .booking-receipt__price {
         padding-left: 8px;
     }
+
     .total-price__main {
         padding: 15px;
     }
+
     .total-price__title,
     .total-price__price {
         color: #1A222C;
     }
+
     .thmv-total-price {
         margin-bottom: 60px;
     }
+
     .payment-method__item p {
         font-weight: normal;
     }
+
     .thmv-booking-title p {
         font-size: 16px;
     }
-    /* ----------------- Booking Confirmation page  end-----------------*/
 
+    /* ----------------- Booking Confirmation page  end-----------------*/
     .what-to-see h2 {
         font-size: 30px;
         line-height: 33px;
@@ -3545,6 +3684,81 @@
 
     .thmv-menu-tabs .nav-pills .nav-link.active:after {
         left: 73%;
+    }
+
+    .row-img__item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .row-img__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .row-img__item:nth-child(2)::after {
+        width: 460px;
+        height: 460px;
+        border: 10px solid white;
+    }
+
+    .our-blog__img {
+        margin-bottom: 30px;
+        height: 318px;
+    }
+
+    .our-blog__paragraph p {
+        margin: 0 !important;
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .our-blog__paragraph p:first-child {
+        margin-bottom: 20px !important;
+    }
+
+    .our-blog__paragraph {
+        margin-bottom: 70px;
+    }
+
+    .our-blog__row-img {
+        margin-bottom: 50px;
+    }
+
+    .thmv-our-blog-title h2 {
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+    .thmv-our-blog-title p {
+        font-size: 16px;
+        line-height: 200%;
+    }
+
+    .our-blog__enjoy h3 {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .our-blog__enjoy {
+        margin-bottom: 70px;
+    }
+
+    .listing-room__item {
+        width: 100%;
+    }
+    .listing-room__img {
+        width: 100%;
+        height: 300px;
+    }
+    .thmv-listing-col {
+        width: 100%;
+    }
+    .thmv-listing-title::before {
+        background-size: 60% 60%;
+        left: calc(-61vw);
+    }
+    .listing__wrapper {
+        margin-bottom: 60px;
     }
 
 }
@@ -3620,6 +3834,77 @@
         font-size: 30px;
         line-height: 33px;
     }
+
+    .icon-blog__item:not(:last-child) {
+        margin-bottom: 37px;
+    }
+
+    .ready-blog__content h2 {
+        text-align: center;
+    }
+
+    .row-img__item:nth-child(2)::after {
+        display: none;
+    }
+
+    .our-blog__icon {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .icon-blog__title {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .icon-blog__text {
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .ready-blog__content .btn-full-filled {
+        width: 100%;
+    }
+
+    .thmv-listing-title h2 {
+        font-size: 54px;
+        line-height: 110%;
+        text-align: center;
+    }
+    .thmv-listing-title p {
+        font-size: 16px;
+        line-height: 170%;
+        text-align: center;
+    }
+    .thmv-listing-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .listing-title__text {
+        margin-bottom: 38px !important;
+    }
+    .listing__wrapper {
+        margin-top: 40px;
+    }
+    .listing-room__img {
+        width: 100%;
+        height: 321px;
+    }
+    .listing-room__title h4 {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .listing-room__price h5 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .listing__list {
+        width: 100%;
+    }
+    .thmv-listing-title::before {
+        left: calc(-89vw);
+    }
 }
 
 @media only screen and (max-width: 359px) {
@@ -3674,17 +3959,21 @@
         padding: 0px;
     }
 
-    /* ----------------- Booking Confirmation page-----------------*/
     .label-checkbox__booking {
         font-size: 15px;
     }
+
     .payment-method__item label {
         font-size: 15px;
     }
+
     .booking-receipt__item h6 {
         font-size: 15px;
     }
-    /* ----------------- Booking Confirmation page end-----------------*/
+
+    .listing-room__next {
+        margin-left: 8px;
+    }
 
 }
 
