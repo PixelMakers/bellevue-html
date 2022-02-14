@@ -2066,6 +2066,14 @@
         margin: 50px 20px 60px;
     }
 
+    .thmv-amenities-sec .thmv-rooms-info p {
+        margin-bottom: 20px;
+    }
+
+    .thmv-amenities-sec .thmv-welcome-box h2 {
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -3904,6 +3912,21 @@
     }
     .thmv-listing-title::before {
         left: calc(-89vw);
+    }
+
+    .thmv-hero-gallery h6 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .thmv-amenities-sec .thmv-sec-title h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .thmv-amenities-sec .thmv-welcome-box h2 {
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 

@@ -3111,8 +3111,8 @@ a[data-fancybox] img {
     line-height: 170%;
 }
 
-#booking-receipt__bold {
-    font-weight: bold;
+.booking-receipt__bold {
+    font-weight: bold !important;
 }
 
 .booking-receipt__price {
@@ -3901,7 +3901,8 @@ a[data-fancybox] img {
     object-fit: cover;
 }
 
-.ready-blog__img {}
+.ready-blog__img {
+}
 
 .our-blog__ready {
     width: 100vw;
@@ -4234,3 +4235,136 @@ a[data-fancybox] img {
 
 
 /* ----------------- Listing page end-----------------*/
+
+
+/*  Room single page start  */
+
+.thmv-hero-gallery {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.thmv-hero-gallery h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.thmv-hero-gallery h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.thmv-photo-gallery {
+    margin-top: 30px;
+}
+
+.thmv-hero-gallery .thmv-page-rating ul li {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #FFC804;
+}
+
+.thmv-hero-gallery .thmv-location i {
+    margin-right: 10px;
+}
+
+.thmv-hero-gallery .thmv-location p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+}
+
+.thmv-hero-gallery .thmv-page-rating p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #074365;
+}
+
+.thmv-hero-gallery .thmv-img-gray-hover {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.thmv-amenities-sec {
+    padding-top: 80px;
+}
+
+.thmv-amenities-sec .thmv-sec-title h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.thmv-amenities-sec .thmv-rooms-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    max-width: 754px;
+    margin: 0 auto 70px auto;
+}
+
+.thmv-amenities-sec .thmv-welcome-box {
+    padding-top: 50px;
+}
+
+.thmv-amenities-sec .thmv-welcome-box h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+
+.thmv-amenities-sec .thmvfloor-list-icon ul li {
+    padding: 20px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(78, 82, 76, 0.1);
+}
+
+.thmv-amenities-sec .thmvfloor-list-icon ul li:last-child {
+    border: none;
+}
+
+.thmv-amenities-sec .thmv-listing-icon {
+    margin-right: 25px;
+}
+
+.thmv-amenities-sec .thmv-listing-info h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.thmv-amenities-sec .thmv-listing-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+}
+
+.thmv-contact-form.blue-bg {
+    background-color: #074365;
+    margin-bottom: 90px;
+}
+
+.thmv-contact-form.blue-bg .thmv-form-title,
+.thmv-contact-form.blue-bg .thmv-form-subtitle,
+.thmv-contact-form.blue-bg input {
+    color: #fff;
+}
+
+.thmv-contact-form.blue-bg input::placeholder {
+    color: #fff;
+}
+
+.thmv-contact-form.blue-bg input {
+    border-color: #fff;
+}
+
+/*  Room single page end  */
