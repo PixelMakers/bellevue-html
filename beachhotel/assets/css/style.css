@@ -1566,6 +1566,27 @@ h3 {
     margin-top: 10px;
 }
 
+.thmv-facilities-img {
+    cursor: pointer;
+    position: relative;
+}
+
+.thmv-facilities-img::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    border: 5px solid white;
+    top: 16px;
+    left: 16px;
+    transition: all 0.3s ease 0s;
+    display: none;
+}
+
+.thmv-facilities-img:hover::before {
+    display: block;
+}
+
 /*=====  End Of Facilities Section Styles  ======*/
 
 /*================================================
@@ -2054,6 +2075,27 @@ h3 {
     font-size: 16px;
     line-height: 27px;
     color: #1A222C;
+}
+
+.card-image {
+    cursor: pointer;
+    position: relative;
+}
+
+.card-image::before {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background: url(../images/icons/arrow-right2.svg) center no-repeat #fff;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease 0s;
+    display: none;
+}
+
+.card-image:hover::before {
+    display: block;
 }
 
 /*----------  Footer section style  ----------*/
@@ -3771,7 +3813,7 @@ a[data-fancybox] img {
 /* ----------------- Blog single page-----------------*/
 
 .thmv-our-blog-title p {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -3780,7 +3822,7 @@ a[data-fancybox] img {
 }
 
 .thmv-our-blog-title h2 {
-    font-family: Domine;
+    font-family: Domine, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -3823,6 +3865,8 @@ a[data-fancybox] img {
 .row-img__item {
     width: 367px;
     height: 367px;
+    cursor: pointer;
+    position: relative;
 }
 
 .row-img__item img {
@@ -3831,18 +3875,20 @@ a[data-fancybox] img {
     object-fit: cover;
 }
 
-.row-img__item:nth-child(2) {
-    position: relative;
-}
-
-.row-img__item:nth-child(2)::after {
+.row-img__item::after {
     position: absolute;
     content: '';
-    width: 327px;
-    height: 327px;
+    width: calc(100% - 38px);
+    height: calc(100% - 38px);
     border: 10px solid white;
     top: 19px;
     left: 19px;
+    transition: all 0.3s ease 0s;
+    display: none;
+}
+
+.row-img__item:hover::after {
+    display: block;
 }
 
 .our-blog__enjoy {
@@ -3851,7 +3897,7 @@ a[data-fancybox] img {
 }
 
 .our-blog__enjoy h3 {
-    font-family: Domine;
+    font-family: Domine, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
