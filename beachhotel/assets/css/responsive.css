@@ -3600,6 +3600,7 @@
 
     /* ----------------- checkout page  end-----------------*/
     /* ----------------- Booking Confirmation page -----------------*/
+
     .thmv-booking__calendar {
         padding: 36px 20px 31px;
     }
@@ -3618,10 +3619,9 @@
         color: #1A222C;
     }
 
-    .thmv-booking__date {
+    .input-booking__date {
         padding: 12px 12px 12px 54px;
         text-align: left;
-        position: relative;
     }
 
     .thmv-booking__content h4 {
@@ -3661,10 +3661,6 @@
 
     .booking__mb {
         margin-bottom: 20px !important;
-    }
-
-    .choice__people {
-        padding: 8px 20px 8px 54px;
     }
 
     .choice__people::after {

@@ -175,3 +175,41 @@ if (fancybox) {
     }
 })();
 
+// cart and booking confirmation
+
+$('.del').on('click', function() {
+    $(this).parentsUntil('.cart-tabel').remove();
+});
+
+// $(document).ready(function() {
+//     $('.minus').click(function() {
+//         var $input = $(this).parent().find('input');
+//         var count = parseInt($input.val()) - 1;
+//         count = count < 1 ? 1 : count;
+//         $input.val(count);
+//         $input.change();
+//         return false;
+//     });
+//     $('.plus').click(function() {
+//         var $input = $(this).parent().find('input');
+//         $input.val(parseInt($input.val()) + 1);
+//         $input.change();
+//         return false;
+//     });
+//
+//     $('.select-choice').niceSelect();
+// });
+
+// $(function() {
+//     $("#datepicker").datepicker({
+//         minDate: 0,
+//         dateFormat: 'dd/m/y',
+//     });
+// });
+//
+// $(function() {
+//     $("#datepicker1").datepicker({
+//         minDate: 0,
+//         dateFormat: 'dd/m/y',
+//     });
+// });
