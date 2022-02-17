@@ -159,6 +159,10 @@ hr.thmv-separator {
     margin: 30px 0px;
 }
 
+.thmv-home-1 {
+    overflow: hidden;
+}
+
 /*====== Background Color ======*/
 .thmv-bg-dark {
     background: #181818;
@@ -1671,7 +1675,7 @@ h3 {
 .thmv-expo-name p {
     font-weight: 300;
     color: #1A222C;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .thmv-expo-btn {
@@ -1689,6 +1693,10 @@ h3 {
     background: #074365;
     color: #fff;
     border-color: #074365;
+}
+
+.thmv-rooms-ready {
+    overflow: hidden;
 }
 
 .thmv-expo-name h2 {
@@ -1709,6 +1717,7 @@ h3 {
 }
 
 .thmv-expo-name h6 {
+    font-family: Lato, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
@@ -1870,6 +1879,7 @@ h3 {
 
 .thmv-rooms-suites .thmv-rooms-info {
     margin: 20px 0 50px;
+    max-width: 560px;
 }
 
 .thmv-rooms-suites .thmv-rooms-info p {
@@ -1985,15 +1995,17 @@ h3 {
     color: #074365;
 }
 
-.thmv-covid h2,
-.thmv-covid p {
+.thmv-covid h2 {
     margin-bottom: 15px;
 }
 
 .thmv-covid p {
     font-weight: 300;
+    font-size: 16px;
     line-height: 27px;
     color: #1A222C;
+    max-width: 755px;
+    margin: 0 auto 15px auto;
 }
 
 .thmv-covid a {

@@ -49,10 +49,6 @@
 
 @media (max-width: 1600px) {
     /* home page */
-    .thmv-wel-col {
-        padding-top: 40px;
-    }
-
     .thmv-heading-style::before {
         height: 75px;
     }
@@ -438,6 +434,7 @@
     .thmv-listing {
         margin-right: 0;
     }
+
     .thmv-listing__img {
         position: relative;
         right: 0;
@@ -446,28 +443,39 @@
         margin-left: calc(-50vw + 50%);
         height: 357px;
     }
+
     .thmv-listing-title {
         padding-top: 52px;
         padding-bottom: 60px;
     }
+
     .thmv-listing-col {
         width: 60vw;
     }
+
     .listing-room__form {
         display: none !important;
     }
+
     .listing-room__item:nth-child(2n) {
         margin-right: 0;
     }
+
     .thmv-listing-title::before {
         background-size: 80% 80%;
     }
+
     .listing-room__img {
         width: 300px;
         height: 300px;
     }
+
     .listing-room__item {
         width: 300px;
+    }
+
+    .thmv-wel-text {
+        padding-right: 40px;
     }
 }
 
@@ -1131,6 +1139,7 @@
     .thmv-expo-name h3 {
         font-size: 44px;
         line-height: 57px;
+        padding-top: 0;
     }
 
     .thmv-expogird-info-left {
@@ -1145,18 +1154,19 @@
         max-width: 100%;
     }
 
-    .thmv-blue-bg:before {
+    .thmv-blue-bg::before {
         width: 100%;
-        height: 45%;
+        height: 48%;
     }
 
     .thmv-hostel-features .thmv-hostel-service {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .thmv-hostel-service-info h2 {
         font-size: 44px;
         line-height: 57px;
+        margin-bottom: 5px;
     }
 
     /*----------  Right side floting buttons Style  ----------*/
@@ -1983,7 +1993,7 @@
 
     .thmv-rooms-ready .thmv-expogird-info {
         margin-left: 0;
-        padding: 70px 0;
+        padding: 70px 0 80px 0;
         text-align: center;
     }
 
@@ -2060,6 +2070,96 @@
 
     .thmv-amenities-sec .thmv-welcome-box h2 {
         text-align: center;
+    }
+
+    .thmv-wel-text {
+        padding-right: 0;
+    }
+
+    .thmv-wel-text .thmv-wel-info {
+        max-width: 463px;
+        margin: 0 auto 35px auto;
+    }
+
+    .thmv-expo-name p {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 35px;
+    }
+
+    .thmv-hostel-service-info .thmv-hostel-info-text p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .thmv-service-info h6 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .thmv-service-info p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .thmv-rooms-suites {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .thmv-rooms-suites .thmv-rooms-info {
+        margin-top: 5px;
+    }
+
+    .thmv-rooms-suites h2 {
+        font-size: 44px;
+        line-height: 57px;
+    }
+
+    .thmv-rooms-suites .thmv-rooms-info p {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    .thmv-rooms-img-slider .thmv-room-info h5 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .thmv-expo-name h6 {
+        margin-bottom: 15px;
+    }
+
+    .thmv-covid p {
+        font-size: 18px;
+        line-height: 36px;
+        max-width: 497px;
+        margin-bottom: 0;
+    }
+
+    .thmv-covid a {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .thmv-traveler-card {
+        padding-bottom: 80px;
+    }
+
+    .thmv-traveler-card .thmv-section-title {
+        margin-bottom: 40px;
+    }
+
+    .thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title {
+        font-size: 21px;
+        line-height: 29px;
+        margin-bottom: 7px;
+    }
+
+    .thmv-traveler-card .thmv-cards .card .card-body .card-text {
+        font-size: 18px;
+        line-height: 36px;
     }
 
 }
@@ -2289,17 +2389,6 @@
 
     .thmv-wel-text {
         padding-top: 30px;
-    }
-
-    .thmv-wel-text h6 {
-        font-size: 18px;
-        line-height: 36px;
-    }
-
-    .thmv-wel-text .thmv-wel-title {
-        font-size: 46px;
-        line-height: 59px;
-        letter-spacing: 0px;
     }
 
     .thmv-welcome-sec {
@@ -3328,11 +3417,6 @@
         margin-bottom: 10px;
     }
 
-    .thmv-expo-name h3 {
-        font-size: 30px;
-        line-height: 33px;
-    }
-
     .thmv-explore-grid {
         padding-top: 20px;
     }
@@ -3340,10 +3424,6 @@
     .thmv-hostel-service-info h2 {
         font-size: 30px;
         line-height: 33px;
-    }
-
-    .thmv-blue-bg:before {
-        height: 30px;
     }
 
     .thmv-rooms-suites {
@@ -3369,6 +3449,7 @@
     .thmv-expo-name h2 {
         font-size: 54px;
         line-height: 59px;
+        margin-bottom: 10px;
     }
 
     .thmv-covid h2 {
@@ -3736,19 +3817,32 @@
     .listing-room__item {
         width: 100%;
     }
+
     .listing-room__img {
         width: 100%;
         height: 300px;
     }
+
     .thmv-listing-col {
         width: 100%;
     }
+
     .thmv-listing-title::before {
         background-size: 60% 60%;
         left: calc(-61vw);
     }
+
     .listing__wrapper {
         margin-bottom: 60px;
+    }
+
+    .thmv-facilities-sec {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .thmv-blue-bg::before {
+        height: 39%;
     }
 
 }
@@ -3857,37 +3951,46 @@
         line-height: 110%;
         text-align: center;
     }
+
     .thmv-listing-title p {
         font-size: 16px;
         line-height: 170%;
         text-align: center;
     }
+
     .thmv-listing-title {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
     .listing-title__text {
         margin-bottom: 38px !important;
     }
+
     .listing__wrapper {
         margin-top: 40px;
     }
+
     .listing-room__img {
         width: 100%;
         height: 321px;
     }
+
     .listing-room__title h4 {
         font-size: 20px;
         line-height: 130%;
     }
+
     .listing-room__price h5 {
         font-size: 18px;
         line-height: 130%;
     }
+
     .listing__list {
         width: 100%;
     }
+
     .thmv-listing-title::before {
         left: calc(-89vw);
     }
@@ -3905,6 +4008,136 @@
     .thmv-amenities-sec .thmv-welcome-box h2 {
         font-size: 20px;
         line-height: 26px;
+    }
+
+    .thmv-facilities-img:hover::before {
+        display: none;
+    }
+
+    .thmv-wel-text h6 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .thmv-wel-text .thmv-wel-title {
+        font-size: 54px;
+        line-height: 59px;
+    }
+
+    .banner-wrapper::before {
+        top: 30px;
+        left: -40%;
+        background-size: 100%;
+        width: 500px;
+    }
+
+    .thmv-expo-name h3 {
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+
+    .thmv-expo-name p {
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 50px;
+    }
+
+    .thmv-explore-grid {
+        padding-bottom: 40px;
+    }
+
+    .thmv-blue-bg::before {
+        height: 32%;
+    }
+
+    .thmv-hostel-service-info h2 {
+        margin-bottom: 30px;
+    }
+
+    .thmv-hostel-service-info .thmv-hostel-info-text p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-service-info p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-rooms-suites {
+        padding-top: 30px;
+    }
+
+    .thmv-rooms-suites .thmv-rooms-info p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-room-view .thmv-room-price p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .thmv-rooms-img-slider .thmv-room-info p {
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 10px;
+    }
+
+    .thmv-rooms-ready .thmv-expogird-info {
+        padding: 50px 0 60px 0;
+    }
+
+    .thmv-covid h2 {
+        margin-bottom: 8px;
+    }
+
+    .thmv-covid p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+
+    .thmv-covid a {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .thmv-traveler-card .thmv-cards .card .card-body .card-text {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-traveler-card {
+        padding-bottom: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .banner-wrapper::before {
+        left: -60%;
+    }
+
+    .thmv-blue-bg::before {
+        height: 36%;
+    }
+
+    .btn-full-filled,
+    .btn-full-filled.white,
+    .btn-full-filled.thmv-expo-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .thmv-expo-name a {
+        max-width: 90% !important;
     }
 }
 
