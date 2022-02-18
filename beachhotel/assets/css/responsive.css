@@ -507,6 +507,14 @@
         padding: 50px 0px 80px;
     }
 
+    a.cart-mobile {
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        transform: translate(0px, -50%);
+        margin-right: 27px;
+    }
 
     .thmv-form-title {
         text-align: center;
@@ -2168,6 +2176,10 @@
 
     .thmv-contact-form {
         padding: 55px 0px 60px;
+    }
+
+    a.cart-mobile {
+        top: 38px;
     }
 
     .thmv-form-title {

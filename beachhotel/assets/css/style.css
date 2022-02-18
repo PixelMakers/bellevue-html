@@ -720,6 +720,42 @@ h3 {
     border-color: transparent;
 }
 
+.thmv-nav-menu .thmv-right-menu .btn-full-filled {
+    min-width: 173px;
+    height: 54px;
+    padding: 15px 30px;
+}
+
+a.cart {
+    position: relative;
+    margin-right: 44px;
+    transition: all .3s ease;
+}
+
+a.cart:hover {
+    opacity: .6;
+}
+
+a.cart .cart-counter {
+    position: absolute;
+    top: -4px;
+    right: -14px;
+    width: 21px;
+    height: 21px;
+    background-color: #FB4646;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+a.cart-mobile {
+    display: none;
+}
+
 /*=====  End of Header Section Styles  ======*/
 
 /*----------  home style 1 colors  ----------*/
@@ -1583,12 +1619,14 @@ h3 {
     border: 5px solid white;
     top: 16px;
     left: 16px;
-    transition: all 0.3s ease 0s;
-    display: none;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .thmv-facilities-img:hover::before {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /*=====  End Of Facilities Section Styles  ======*/
@@ -2102,12 +2140,14 @@ h3 {
     background: url(../images/icons/arrow-right2.svg) center no-repeat #fff;
     bottom: 0;
     right: 0;
-    transition: all 0.3s ease 0s;
-    display: none;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .card-image:hover::before {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /*----------  Footer section style  ----------*/
@@ -2762,7 +2802,8 @@ a[data-fancybox] img {
     border: 1px solid #07436583;
 }
 
-.thmv-cart-col {}
+.thmv-cart-col {
+}
 
 .cart__button {
     padding: 47px 0 119px;
@@ -3029,7 +3070,8 @@ a[data-fancybox] img {
     border-radius: 0px;
 }
 
-.nice-select.open:after {}
+.nice-select.open:after {
+}
 
 .select-choice::before {
     position: absolute;
@@ -3058,7 +3100,8 @@ a[data-fancybox] img {
     user-select: none !important;
 }
 
-.thmv-booking__content {}
+.thmv-booking__content {
+}
 
 #booking__border-bottom {
     color: #074365;
@@ -3113,12 +3156,12 @@ a[data-fancybox] img {
     cursor: pointer;
 }
 
-.booking__checkbox-item input:checked~.svg-checkbox__booking rect {
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking rect {
     fill: #074365;
     stroke: #074365;
 }
 
-.booking__checkbox-item input:checked~.svg-checkbox__booking path {
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking path {
     fill: #E6ECF0;
 }
 
@@ -4116,12 +4159,14 @@ html .ui-button.ui-state-disabled:hover {
     border: 10px solid white;
     top: 19px;
     left: 19px;
-    transition: all 0.3s ease 0s;
-    display: none;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .row-img__item:hover::after {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .our-blog__enjoy {
