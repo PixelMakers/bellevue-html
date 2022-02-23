@@ -4718,7 +4718,7 @@ section.coming-soon img {
     background-color: rgba(16, 34, 45, .6);
 }
 
-.book_popup .modal-header {
+.modal-header {
     border-bottom: none;
 }
 
@@ -4915,3 +4915,172 @@ textarea.form-control:focus {
 }
 
 /*  Homepage hero section slider page end  */
+
+/*  Homepage hero section request page start  */
+
+.thmv-top-right-request {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 463px;
+}
+
+.thmv-top-right-request .modal-content {
+    background-color: #10222D;
+}
+
+.thmv-top-right-request h4,
+.thmv-top-right-request p {
+    color: #fff;
+}
+
+.thmv-top-right-request .form-control {
+    color: #ddd;
+    background-color: #10222D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thmv-top-right-request .form-control::placeholder {
+    color: #ddd;
+}
+
+.thmv-top-right-request .form-control:focus {
+    color: #ddd;
+    background-color: #10222D;
+}
+
+.thmv-top-right-request .form-control.name {
+    background-image: url(../images/icons/person-light.svg);
+}
+
+.thmv-top-right-request .form-control.email {
+    background-image: url(../images/icons/mail-light.svg);
+}
+
+@media only screen and (max-width: 1650px) {
+
+    .thmv-top-right-request {
+        width: 400px;
+    }
+
+    .thmv-top-right-request .modal-body {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .thmv-top-right-request .modal-header {
+        display: none;
+    }
+
+    .thmv-top-right-request h4 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .thmv-top-right-request p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-top-right-request input.form-control {
+        margin-bottom: 10px;
+    }
+
+    .thmv-top-right-request textarea.form-control {
+        margin-bottom: 10px;
+    }
+
+    .thmv-field-search .btn-full-filled {
+        height: 50px;
+        line-height: 12px;
+    }
+}
+
+/*  Homepage hero section request page end  */
+
+/*  Homepage calendar start  */
+
+.thmv-top-right-request .thmv-booking__date {
+    margin: 0;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.thmv-top-right-request .thmv-booking__date::before {
+    content: url(../images/icons/calendar-booking-light.svg);
+    left: 20px;
+}
+
+.thmv-top-right-request .thmv-booking__date::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    right: 26px;
+    top: 19px;
+    border-radius: 0;
+}
+
+.thmv-top-right-request .input-booking__date {
+    background-color: #10222D;
+    color: #ddd;
+}
+
+.thmv-top-right-request .form-select-guests .form-group {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thmv-top-right-request .thmv-guest-col .render {
+    min-height: 54px;
+    color: #ddd;
+    padding-left: 55px;
+    padding-top: 16px;
+    position: relative;
+}
+
+.thmv-top-right-request .thmv-guest-col .render::before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    right: 26px;
+    top: 19px;
+    border-radius: 0;
+}
+
+.thmv-top-right-request .nice-select {
+    height: 54px;
+    color: #ddd;
+    padding-top: 11px;
+    background-color: #10222D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+}
+
+.thmv-top-right-request .nice-select::before {
+    top: 15px;
+    left: 23px;
+    background-image: url(../images/icons/location.svg);
+}
+
+.thmv-top-right-request .nice-select::after {
+    top: 22px;
+    border-color: #fff;
+}
+
+.thmv-top-right-request .form-select-guests .form-content .render i {
+    left: 20px;
+    right: auto;
+    color: #fff;
+}
+
+.thmv-top-right-request .nice-select .option {
+    color: #000;
+}
+
+/*  Homepage calendar end  */
