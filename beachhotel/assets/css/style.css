@@ -1902,7 +1902,7 @@ a.cart-mobile {
 /*=====  Features Of Our Hostel Section Style End  ======*/
 
 /*=============================================
-    =       Rooms & Suites Sectin Style         =
+    =       Rooms & Suites Section Style         =
     =============================================*/
 .thmv-rooms-suites {
     padding: 100px 10px 50px 10px;
@@ -1959,6 +1959,17 @@ a.cart-mobile {
     color: #1A222C;
     margin-bottom: 0;
     padding: 20px 35px;
+}
+
+.welcome-slider,
+.what-to-see-slider {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
 }
 
 .thmv-rooms-img-slider .thmv-room-info {
@@ -3462,7 +3473,7 @@ a[data-fancybox] img {
 .ui-widget.ui-widget-content {
     border: none;
     border-radius: 0px;
-    box-shadow: 0 0 15px rgb(190, 190, 190);
+    filter: drop-shadow(10px 14px 24px rgba(7, 67, 101, 0.2));
     padding: 35px 20px;
 }
 
@@ -4692,3 +4703,215 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 /*  Room single page end  */
+
+/*  Coming soon page start  */
+
+section.coming-soon {
+    height: 100vh;
+}
+
+section.coming-soon img {
+    object-fit: cover;
+}
+
+.book_popup.modal {
+    background-color: rgba(16, 34, 45, .6);
+}
+
+.book_popup .modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 0 50px 50px 50px;
+}
+
+.modal_form_title h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.modal_form_subtitle p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+input.form-control {
+    min-height: 54px;
+    padding-left: 55px;
+    margin-bottom: 20px;
+    border-radius: unset;
+    border: 1px solid #ddd;
+}
+
+textarea.form-control {
+    min-height: 122px;
+    padding-left: 20px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #ddd;
+}
+
+.thmv-field-search .btn-full-filled {
+    width: 100%;
+}
+
+.form-control.name {
+    background: url(../images/icons/person.svg) 21px center no-repeat;
+}
+
+.form-control.email {
+    background: url(../images/icons/mail.svg) 19px center no-repeat;
+}
+
+/*  Coming soon page end  */
+
+/*  Homepage search page start  */
+
+.thmv-tour-row {
+    background: #fff;
+    margin: 20px auto;
+}
+
+.thmv-tour-row .form-group {
+    display: flex;
+    width: 230px;
+    height: 54px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.thmv-tour-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.thmv-check-form .form-group i,
+.form-select-guests .form-content .render i {
+    color: #074365;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.thmv-date-col, .thmv-guest-col {
+    width: auto;
+}
+
+.thmv-guest-col .dropdown-toggle::after {
+    display: none;
+}
+
+.form-select-guests .form-group {
+    border: 1px solid #ddd;
+}
+
+.thmv-guest-col .render {
+    padding: 13px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #6c757d;
+}
+
+.thmv-check-form input.form-control {
+    padding-left: 20px;
+}
+
+.form-control.check-in-out {
+    background: url(../images/icons/calendar-booking.svg) 190px center no-repeat;
+}
+
+.form-select-guests .dropdown-menu {
+    min-width: 228px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    transform: translate3d(0, 54px, 0) !important;
+}
+
+.form-select-guests .dropdown-item-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-select-guests .btn-add, .form-select-guests .btn-minus {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #eef1f7;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-select-guests .count-display {
+    width: 30px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+/*  Homepage search page end  */
+
+/*  Homepage hero section slider page start  */
+
+.welcome-slider .swiper-button-prev, .welcome-slider .swiper-button-next {
+    top: auto;
+    bottom: 40px;
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+}
+
+.welcome-slider .swiper-button-prev {
+    left: 40px;
+}
+
+.welcome-slider .swiper-button-next {
+    left: 106px;
+    right: auto;
+}
+
+.welcome-slider .swiper-button-prev::after, .welcome-slider .swiper-button-next::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 22px;
+    color: #074365;
+    transition: all .3s ease 0s;
+}
+
+.welcome-slider .swiper-button-prev::after {
+    content: '\f060';
+}
+
+.welcome-slider .swiper-button-next::after {
+    content: '\f061';
+}
+
+.welcome-slider .swiper-button-prev:hover, .welcome-slider .swiper-button-next:hover {
+    background-color: #074365;
+}
+
+.welcome-slider .swiper-button-prev:hover::after, .welcome-slider .swiper-button-next:hover::after {
+    color: #fff;
+}
+
+/*  Homepage hero section slider page end  */

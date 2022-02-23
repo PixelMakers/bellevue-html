@@ -2170,6 +2170,9 @@
         line-height: 36px;
     }
 
+    section.coming-soon {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 767px) {

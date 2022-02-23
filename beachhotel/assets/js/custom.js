@@ -72,6 +72,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 })(jQuery);
 
+// welcome section slider
+(function () {
+    let slider = document.querySelector('.welcome-slider');
+    if (slider) {
+        const swiper = new Swiper('.welcome-slider', {
+            // Optional parameters
+            autoplay: {
+                delay: 4000,
+            },
+            loop: true,
+            speed: 1000,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+})();
 
 // rooms & suites slider
 (function () {
