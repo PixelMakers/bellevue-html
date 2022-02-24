@@ -3180,12 +3180,12 @@ a[data-fancybox] img {
     margin-bottom: 29px;
 }
 
-.booking__counter h6 {
+.booking__counter .singleInfo__price {
     font-weight: bold;
     font-size: 16px;
     line-height: 200%;
     color: #1A222C;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -4483,10 +4483,11 @@ html .ui-button.ui-state-disabled:hover {
     font-size: 20px;
     line-height: 130%;
     color: #074365;
+    margin-bottom: 25px;
 }
 
 .listing-room__form {
-    padding: 64px 30px;
+    padding: 64px 30px 60px 30px;
     width: 367px;
     height: 490px;
     background: #F4F6F8;
@@ -4554,6 +4555,7 @@ html .ui-button.ui-state-disabled:hover {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.1px;
+    color: #1A222C;
 }
 
 .listing-form__link span {
@@ -4568,6 +4570,43 @@ html .ui-button.ui-state-disabled:hover {
     fill: #191B1870;
 }
 
+.listing-room__form input.form-control {
+    background-color: #fff;
+    padding-left: 20px;
+    background-position: 270px center;
+    border-color: transparent;
+}
+
+.listing-room__form .form-group {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.listing-room__form .render {
+    padding: 13px 15px 13px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #6c757d;
+}
+
+.listing-room__form .form-content .render i {
+    color: #074365;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.listing-room__form .form-group .dropdown-toggle::after {
+    display: none;
+}
 
 /* ----------------- Listing page end-----------------*/
 
