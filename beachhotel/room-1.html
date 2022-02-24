@@ -37,6 +37,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <!-- gallery fancybox -->
+    <link rel="stylesheet" href="assets/plugin/fancybox/css/fancybox.css">
+
     <!-- jQuery JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
@@ -92,6 +95,15 @@
                                         </li>
                                         <li>
                                             <a href="contact-us.html">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="cart.html">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="checkout.html">Checkout</a>
+                                        </li>
+                                        <li>
+                                            <a href="booking-confirmation.html">Booking Confirmation</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -176,25 +188,35 @@
             <div class="row thmv-photo-gallery">
                 <div class="col-lg-6">
                     <div class="thmv-img-gray-hover">
-                        <img src="assets/images/gallery/home-gallery-1.jpg" alt="">
+                        <a href="assets/images/gallery/home-gallery-1.jpg" data-fancybox="gallery">
+                            <img src="assets/images/gallery/home-gallery-1.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row thmv-two-col-photos">
                         <div class="col-lg-6">
                             <div class="thmv-img-gray-hover">
-                                <img src="assets/images/gallery/home-gallery-2.jpg" alt="">
+                                <a href="assets/images/gallery/home-gallery-2.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery/home-gallery-2.jpg" alt="">
+                                </a>
                             </div>
                             <div class="thmv-img-gray-hover">
-                                <img src="assets/images/gallery/home-gallery-3.jpg" alt="">
+                                <a href="assets/images/gallery/home-gallery-3.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery/home-gallery-3.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="thmv-img-gray-hover">
-                                <img src="assets/images/gallery/home-gallery-4.jpg" alt="">
+                                <a href="assets/images/gallery/home-gallery-4.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery/home-gallery-4.jpg" alt="">
+                                </a>
                             </div>
                             <div class="thmv-img-gray-hover">
-                                <img src="assets/images/gallery/home-gallery-5.jpg" alt="">
+                                <a href="assets/images/gallery/home-gallery-5.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery/home-gallery-5.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -589,6 +611,8 @@
 </footer>
 <!-- bootstrap JS -->
 <script src="assets/js/bootstrap.min.js"></script>
+<!-- fancybox js -->
+<script src="assets/plugin/fancybox/js/fancybox.js"></script>
 <!-- custom JS -->
 <script src="assets/js/custom.js"></script>
 </body>
