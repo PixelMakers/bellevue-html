@@ -4397,17 +4397,16 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .listing__wrapper {
-    margin-top: 103px;
-    margin-bottom: 120px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.listing__list {
+    margin-right: 10px;
 }
 
 .listing-room__item {
-    width: 357px;
     margin-bottom: 39px;
-}
-
-.listing-room__item:nth-child(2n) {
-    margin-right: 20px;
 }
 
 .listing-room__img {

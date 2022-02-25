@@ -394,17 +394,6 @@
         padding: 0 20px;
     }
 
-    /* ----------------- checkout page -----------------*/
-    .thmv-checkout__total-price {
-        margin-top: 30px;
-    }
-
-    .thmv-checkout__total-price {
-        background-color: #F4F6F8;
-        padding: 30px 20px;
-    }
-
-    /* ----------------- checkout page  end-----------------*/
     .thmv-menu-tabs .thmv-yello-bg:before {
         width: 570px;
     }
@@ -470,13 +459,19 @@
         height: 300px;
     }
 
-    .listing-room__item {
-        width: 300px;
+    .listing__list {
+        margin-right: 0;
     }
 
     .thmv-wel-text {
         padding-right: 40px;
     }
+
+    .what-to-see {
+        padding: 0 15px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -560,13 +555,6 @@
 
     .thmv-col-reverse {
         flex-flow: column-reverse;
-    }
-
-    .btn-full-filled,
-    .btn-full-filled-light {
-        padding: 18px 30px;
-        font-size: 18px;
-        line-height: 21px;
     }
 
     .thmv-welcome-box .thmv-pills-blok p,
@@ -2156,7 +2144,7 @@
     }
 
     .thmv-traveler-card .thmv-section-title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title {
@@ -2177,6 +2165,53 @@
     .thmv-top-right-request {
         display: none;
     }
+
+    .cart__button {
+        padding-bottom: 70px;
+        justify-content: space-between;
+    }
+
+    .cart__button > div {
+        width: 49%;
+    }
+
+    .thmv-checkout__total-price {
+        background-color: #F4F6F8;
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+
+    .thmv-checkout {
+        margin-bottom: 70px;
+    }
+
+    .thmv-contact-title {
+        margin-bottom: 20px;
+    }
+
+    .thmv-appartments-sec .thmv-appartments-img .thmv-book-price {
+        padding: 10px;
+    }
+
+    .thmv-appartments-sec .thmv-appartments-img .thmv-book-price h4 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .listing__wrapper {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .listing-room__item {
+        max-width: 320px;
+    }
+
+    .thmv-creation-timelines {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2211,7 +2246,6 @@
     }
 
     .thmv-form-block button {
-        width: 100%;
         padding: 15px 0;
     }
 
@@ -2814,7 +2848,7 @@
     }
 
     .thmv-appartments-sec {
-        padding: 60px 10px 0px;
+        padding: 60px 0 0 0;
     }
 
     .thmv-wel-title-sec .thmv-sub-title::before {
@@ -3440,6 +3474,10 @@
         padding-top: 20px;
     }
 
+    .thmv-explore-grid.chef {
+        padding-top: 70px;
+    }
+
     .thmv-hostel-service-info h2 {
         font-size: 30px;
         line-height: 33px;
@@ -3619,7 +3657,6 @@
 
     /* ----------------- checkout page  end-----------------*/
     /* ----------------- Booking Confirmation page -----------------*/
-
     .thmv-booking__calendar {
         padding: 36px 20px 31px;
     }
@@ -3829,10 +3866,6 @@
         margin-bottom: 70px;
     }
 
-    .listing-room__item {
-        width: 100%;
-    }
-
     .listing-room__img {
         width: 100%;
         height: 300px;
@@ -3858,6 +3891,11 @@
 
     .thmv-blue-bg::before {
         height: 39%;
+    }
+
+    .listing-room__item {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
@@ -4131,6 +4169,27 @@
 
     .thmv-traveler-card {
         padding-bottom: 60px;
+    }
+
+    .cart__button {
+        flex-direction: column;
+    }
+
+    .cart__button > div {
+        width: 100%;
+    }
+
+    .thmv-timeline-three-col {
+        width: 367px;
+    }
+
+    .thmv-menu-tabs .tab-content .thmv-tab-info .thmv-tab-title h5 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .thmv-menu-tabs .nav-pills .nav-link {
+        font-size: 20px;
     }
 
 }
