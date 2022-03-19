@@ -1,0 +1,5124 @@
+/*  ==========================================================================
+    1. Global Styles
+    ========================================================================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #191B18;
+    font-size: 18px;
+    line-height: 36px;
+    overflow-x: hidden;
+}
+
+p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Domine', serif;
+    color: #074365;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 39px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 31px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #191B18;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    transition: .5s ease;
+}
+
+a:hover {
+    color: #191B1870;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+p {
+    color: #191B18;
+    margin-bottom: 10px;
+}
+
+p.thmv-p-light {
+    color: #191B18;
+    opacity: 0.5;
+}
+
+.thmv-paragraph p:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    background: transparent;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input, textarea {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus,
+.form-select:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.clear_fix {
+    clear: both;
+}
+
+.clear_fix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+hr.thmv-separator {
+    margin: 30px 0px;
+}
+
+.thmv-home-1 {
+    overflow: hidden;
+}
+
+/*====== Background Color ======*/
+.thmv-bg-dark {
+    background: #181818;
+}
+
+.thmv-bg-glass {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+
+}
+
+/*====== Read More Button Style ======*/
+.read-more-btn {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.read-more-btn:hover {
+    opacity: 1;
+}
+
+.read-more-btn::after {
+    content: "";
+    background-image: url("../images/icons/arrow-right.svg");
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -30%);
+    transition: all 0.3s;
+}
+
+.read-more-btn:hover::after {
+    transform: translate(80%, -30%);
+
+}
+
+/*====== Button Style ======*/
+.btn-full-filled,
+.btn-full-filled-light {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 800;
+    text-align: center;
+    border: 2px solid #191B18;
+    min-width: 220px;
+    padding: 17px 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+}
+
+.btn-full-filled {
+    background: #074365;
+    color: #fff;
+    border-color: #074365;
+}
+
+.btn-full-filled:hover {
+    background: #fff;
+    color: #074365;
+    border-color: #074365;
+}
+
+.btn-full-filled-light {
+    background: #FFFFFF;
+    color: #191B18;
+    border-color: #FFFFFF;
+}
+
+.btn-full-filled-light:hover {
+    background: #191B18;
+    color: #FFFFFF;
+    border-color: #191B18;
+}
+
+/* Image Hover Grayscale */
+.thmv-img-gray img,
+.thmv-img-gray-hover img:hover {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.thmv-img-gray img:hover {
+    filter: grayscale(0%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* heading style */
+.thmv-heading-style {
+    position: relative;
+}
+
+/* slick Slider */
+
+.slider {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+}
+
+.slick-dots li button::before {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 0;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    background: #000;
+    opacity: 1;
+}
+
+/*=====================================
+    =            theme colors             =
+    =====================================*/
+/*----------  theme globel color  ----------*/
+.thmv-dark-color {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-light-color {
+    color: #ffffff;
+}
+
+.thmv-light-bg {
+    background: #ffffff;
+}
+
+/*----------  theme color 1  ----------*/
+
+/* Theme colors Tundora  " #404040 " */
+.thmv-bg-tundora {
+    background-color: #404040;
+}
+
+.thmv-color-tundora {
+    color: #404040;
+}
+
+/* Theme colors full light gray  " #EAEAEA " */
+.thmv-bg-full-light-gray {
+    background-color: #EAEAEA;
+}
+
+.thmv-color-full-light-gray {
+    color: #EAEAEA;
+}
+
+/*----------  theme color 2  ----------*/
+
+/* Theme colors Gray Asparagus " #4E524C " */
+.thmv-bg-gray-Asparagus {
+    background-color: #4E524C;
+}
+
+.thmv-color-gray-Asparagus {
+    color: #4E524C;
+}
+
+/* Theme colors sisal " #D8D4C2 " */
+.thmv-bg-sisal {
+    background-color: #D8D4C2;
+}
+
+.thmv-color-sisal {
+    color: #D8D4C2;
+}
+
+/*----------  theme color 3  ----------*/
+
+/* Theme colors Tiber " #042E28 " */
+.thmv-bg-tiber {
+    background-color: #042E28;
+}
+
+.thmv-color-tiber {
+    color: #042E28;
+}
+
+/* Theme colors sisal " #D8D4C2 " */
+.thmv-bg-sisal {
+    background-color: #D8D4C2;
+}
+
+.thmv-color-sisal {
+    color: #D8D4C2;
+}
+
+/*----------  theme color 4  ----------*/
+
+/* Theme colors Boston Blue " #3E96B6 " */
+.thmv-bg-boston-blue {
+    background-color: #3E96B6;
+}
+
+.thmv-color-boston-blue {
+    color: #3E96B6;
+}
+
+/* Theme colors Apricot Peach " #FBC9B3 " */
+.thmv-bg-apricot-peach {
+    background-color: #FBC9B3;
+}
+
+.thmv-color-apricot-peach {
+    color: #FBC9B3;
+}
+
+/*----------  theme color 5  ----------*/
+
+/* Theme colors Governor Bay " #4636AE " */
+.thmv-bg-governor-bay {
+    background-color: #4636AE;
+}
+
+.thmv-color-governor-bay {
+    color: #4636AE;
+}
+
+/* Theme colors Sunglow " #FFD231 " */
+.thmv-bg-sunglow {
+    background-color: #FFD231;
+}
+
+.thmv-color-sunglow {
+    color: #FFD231;
+}
+
+/*=====  End of theme colors   ======*/
+
+/*=============================================
+    =         Header Section Styles            =
+    =============================================*/
+.thmv-top-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+    z-index: 1000;
+}
+
+#navbar_top {
+    position: relative;
+}
+
+.thmv-top-nav.fixed-top {
+    position: fixed;
+    background: #fff;
+}
+
+.thmv-logo img {
+    width: 100%;
+    /* max-width: 170px; */
+}
+
+.thmv-top-nav-fix .thmv-bg-transparent .thmv-logo h3,
+.thmv-top-nav-fix .thmv-navbar-dark.thmv-bg-transparent .thmv-logo h3 {
+    color: #ffffff;
+}
+
+.thmv-top-nav-fix .thmv-bg-transparent.fixed-top .thmv-logo h3,
+.thmv-top-nav-fix
+.thmv-navbar-dark.thmv-bg-transparent.fixed-top
+.thmv-logo
+h3 {
+    color: #191b18;
+}
+
+.navbar-toggler-icon {
+    width: auto;
+    height: 30px;
+}
+
+.navbar-toggler-icon i {
+    color: #191b18;
+    font-size: 30px;
+}
+
+.thmv-navbar-light,
+.thmv-navbar-dark {
+    background: transparent;
+    border-bottom: 1px solid rgba(7, 67, 101, .1);;
+    transition: all 0.3s;
+    padding: 0;
+}
+
+.thmv-navbar-light.thmv-bg-transparent,
+.thmv-navbar-dark.thmv-bg-transparent {
+    background: transparent;
+    border: none;
+}
+
+.thmv-navbar-light .nav-link,
+.thmv-navbar-dark .nav-link {
+    color: #282828;
+    font-size: 16px;
+    line-height: 99px;
+    font-weight: 400;
+    padding: 0;
+    padding: 0px 20px !important;
+    height: 99px;
+    position: relative;
+}
+
+.thmv-menu .nav-item:hover .nav-link {
+    color: #404040 !important;
+}
+
+.thmv-menu .nav-item.active .nav-link {
+    color: #404040 !important;
+}
+
+.thmv-menu .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.thmv-menu .nav-item {
+    position: relative;
+    transition: all 200ms linear;
+}
+
+.thmv-menu .nav-item:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: #404040;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.thmv-menu .nav-item:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.thmv-menu .nav-item.active:hover:after {
+    opacity: 0;
+}
+
+.thmv-menu .nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    transition: all 200ms linear;
+    min-width: 250px;
+    border: none;
+    border-radius: 0;
+}
+
+.thmv-menu .nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+
+.thmv-menu .dropdown-menu {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #404040;
+    background-color: #eaeaea;
+    border: none;
+    transition: all 200ms linear;
+}
+
+.thmv-menu .dropdown-toggle::after {
+    display: none;
+}
+
+.thmv-menu .dropdown-item {
+    padding: 3px 15px;
+    color: #404040;
+    transition: all 200ms linear;
+}
+
+.thmv-menu .dropdown-item:hover,
+.thmv-menu .dropdown-item:focus {
+    color: #fff;
+    background-color: rgba(64, 64, 64, 0.6);
+}
+
+.thmv-sub-menu {
+    min-width: 200px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 100%;
+    transform: translate(0%, 15%);
+    opacity: 0;
+    display: none;
+    transition: all 0.3s;
+}
+
+.thmv-sub-menu li a {
+    line-height: 24px;
+    padding: 15px;
+    display: block;
+}
+
+.thmv-sub-menu li a:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+.thmv-navbar-light .navbar-nav .thmv-menu:hover .thmv-sub-menu,
+.thmv-navbar-dark .navbar-nav .thmv-menu:hover .thmv-sub-menu {
+    top: 100%;
+    transform: translate(0%, 0%);
+    opacity: 1;
+    display: block;
+}
+
+.thmv-right-menu {
+    padding-top: 5px;
+}
+
+.thmv-right-menu .thmv-social {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* width:130px; */
+}
+
+.thmv-right-menu .thmv-social li {
+    margin-left: 15px;
+    position: relative;
+}
+
+.thmv-right-menu .thmv-social li:first-child {
+    margin-left: 0;
+}
+
+.thmv-right-menu .thmv-social li a {
+    width: 40px;
+    height: 40px;
+    text-align: right;
+}
+
+.thmv-right-menu .thmv-social li i {
+    font-size: 18px;
+}
+
+.thmv-right-menu .btn-outline {
+    margin-left: 15px;
+}
+
+.thmv-navbar-light.fixed-top,
+.thmv-navbar-dark.fixed-top {
+    border-bottom: 1px solid #cccccc;
+}
+
+.thmv-navbar-light.fixed-top .navbar-brand,
+.thmv-navbar-dark.fixed-top .navbar-brand {
+    color: #191b18;
+    text-transform: uppercase;
+}
+
+.thmv-navbar-light.fixed-top .nav-link,
+.thmv-navbar-dark.fixed-top .nav-link {
+    color: #191b18;
+}
+
+.thmv-navbar-light.fixed-top.thmv-bg-transparent,
+.thmv-navbar-dark.fixed-top.thmv-bg-transparent {
+    background: #ffffff;
+}
+
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.thmv-navbar-light .navbar-toggler-icon,
+.thmv-navbar-dark .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 3px solid #000;
+    transition: all 300ms linear;
+}
+
+.thmv-navbar-light .navbar-toggler-icon:after,
+.thmv-navbar-light .navbar-toggler-icon:before,
+.thmv-navbar-drak .navbar-toggler-icon:after,
+.thmv-navbar-drak .navbar-toggler-icon:before {
+    width: 24px;
+    position: absolute;
+    height: 3px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 2;
+    transition: all 300ms linear;
+}
+
+.thmv-navbar-light .navbar-toggler-icon:after,
+.thmv-navbar-dark .navbar-toggler-icon:after {
+    top: 7px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(7px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.thmv-nav-menu .thmv-right-menu .btn-full-filled {
+    min-width: 173px;
+    height: 54px;
+    padding: 15px 30px;
+}
+
+a.cart {
+    position: relative;
+    margin-right: 44px;
+    transition: all .3s ease;
+}
+
+a.cart:hover {
+    opacity: .6;
+}
+
+a.cart .cart-counter {
+    position: absolute;
+    top: -4px;
+    right: -14px;
+    width: 21px;
+    height: 21px;
+    background-color: #FB4646;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+a.cart-mobile {
+    display: none;
+}
+
+/*=====  End of Header Section Styles  ======*/
+
+/*----------  home style 1 colors  ----------*/
+.thmv-dark-color {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-home-1 .thmv-wel-text h6,
+.thmv-home-1 .thmv-wel-text .thmv-wel-title,
+.thmv-home-1 .thmv-wel-info,
+.thmv-home-1 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-1 .thmv-uniq-offer .thmv-welcome-box h2,
+.thmv-home-1 .thmv-uniq-offer .thmv-welcome-box p,
+.thmv-home-1 .thmv-book-room .thmv-welcome-box h2,
+.thmv-home-1 .thmv-book-room .thmv-welcome-box p {
+    color: #074365;
+}
+
+.thmv-light-bg,
+.thmv-home-1 .thmv-testimonial-box,
+    /* home-v2 */
+.thmv-home-1.thmv-home-v2 .thmv-welcome-sec {
+    background: #ffffff;
+}
+
+.thmv-bg-tundora,
+.thmv-home-1 .thmv-header-sec,
+.thmv-home-1 .thmv-welcome-sec .thmv-welcome-info::after,
+.thmv-home-1 .thmv-welcome-sec .thmv-welcome-info::before,
+.thmv-home-1 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-1 .thmv-quote-icon,
+.thmv-home-1 .slick-dots li.slick-active button:before,
+.thmv-home-1 .thmv-uniq-offer .thmv-uniq-box,
+.thmv-home-1 .thmv-book-room,
+.thmv-home-1 .datepick-popup .datepick-cmd-prev:after,
+.thmv-home-1 .datepick-popup .datepick-cmd-next:after,
+.thmv-home-1 .datepick-popup .datepick-ctrl .datepick-cmd {
+    background-color: #fff;
+}
+
+.thmv-color-tundora,
+.thmv-home-1 .thmvfloor-list-icon .thmv-listing-icon i,
+    /* home-v2 */
+.thmv-home-1.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i {
+    color: #404040;
+}
+
+.thmv-home-1 .slick-dots li button::before {
+    border-color: #404040;
+}
+
+.thmv-bg-full-light-gray,
+.thmv-home-1 .thmv-welcome-sec,
+.thmv-home-1 .thmv-testi,
+.thmv-home-1 .thmv-testi .slick-testimonial-slider::after,
+.thmv-home-1 .thmv-testi .slick-testimonial-slider::before,
+.thmv-home-1 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+    /* home-v2 */
+.thmv-home-1.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li:hover::after,
+.thmv-home-1.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li.active::after {
+    background-color: #EAEAEA;
+}
+
+.thmv-color-full-light-gray {
+    color: #EAEAEA;
+}
+
+.thmv-home-1 .btn-full-filled,
+.thmv-home-1 .thmv-uniq-box .btn-full-filled,
+.thmv-home-1 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button {
+    background: #074365;
+    color: #fff;
+    border-color: #074365;
+}
+
+.thmv-home-1 .btn-full-filled:hover,
+.thmv-home-1 .thmv-uniq-box .btn-full-filled:hover,
+.thmv-home-1 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover {
+    background: #fff;
+    color: #074365;
+    border-color: #074365;
+}
+
+.btn-full-filled.white-border {
+    border-color: #fff;
+}
+
+.btn-full-filled.white-border:hover {
+    border-color: #fff;
+}
+
+/*----------  home style 2 colors  ----------*/
+.thmv-dark-color {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-home-2 .thmv-wel-text h6,
+.thmv-home-2 .thmv-wel-text .thmv-wel-title,
+.thmv-home-2 .thmv-wel-info,
+.thmv-home-2 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-2 .thmv-uniq-offer .thmv-welcome-box h2,
+.thmv-home-2 .thmv-uniq-offer .thmv-welcome-box p,
+.thmv-home-2 .thmv-book-room .thmv-welcome-box h2,
+.thmv-home-2 .thmv-book-room .thmv-welcome-box p {
+    color: #ffffff;
+}
+
+.thmv-light-bg,
+    /* home-v2 */
+.thmv-home-2.thmv-home-v2 .thmv-welcome-sec {
+    background: #ffffff;
+}
+
+.thmv-bg-gray-Asparagus,
+.thmv-home-2 .thmv-header-sec,
+.thmv-home-2 .thmv-welcome-sec .thmv-welcome-info::after,
+.thmv-home-2 .thmv-welcome-sec .thmv-welcome-info::before,
+.thmv-home-2 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-2 .thmv-quote-icon,
+.thmv-home-2 .slick-dots li.slick-active button:before,
+.thmv-home-2 .thmv-uniq-offer .thmv-uniq-box,
+.thmv-home-2 .thmv-book-room,
+.thmv-home-2 .datepick-popup .datepick-cmd-prev:after,
+.thmv-home-2 .datepick-popup .datepick-cmd-next:after,
+.thmv-home-2 .datepick-popup .datepick-ctrl .datepick-cmd {
+    background-color: #4E524C;
+}
+
+.thmv-color-gray-Asparagus,
+.thmv-home-2 .thmv-color-gray-Asparagus,
+.thmv-home-2 .thmvfloor-list-icon .thmv-listing-icon i,
+    /* home-v2 */
+.thmv-home-2.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i {
+    color: #4E524C;
+}
+
+.thmv-border-gray-Asparagus
+.thmv-home-2 .thmv-border-gray-Asparagus,
+.thmv-home-2 .slick-dots li button::before {
+    border-color: #4E524C;
+}
+
+.thmv-bg-sisal,
+.thmv-home-2 .thmv-welcome-sec,
+.thmv-home-2 .thmv-testimonial-box,
+.thmv-home-2 .thmv-testi .slick-testimonial-slider::after,
+.thmv-home-2 .thmv-testi .slick-testimonial-slider::before,
+.thmv-home-2 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+    /* home-v2 */
+.thmv-home-2.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li:hover::after,
+.thmv-home-2.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li.active::after {
+    background-color: #D8D4C2;
+}
+
+.thmv-color-sisal {
+    color: #D8D4C2;
+}
+
+.thmv-border-sisal {
+    border-color: #D8D4C2;
+}
+
+.thmv-home-2 .btn-full-filled,
+.thmv-home-2 .thmv-uniq-box .btn-full-filled,
+.thmv-home-2 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button {
+    background: #F1E7A9;
+    color: #191B18;
+    border-color: #F1E7A9;
+}
+
+.thmv-home-2 .btn-full-filled:hover,
+.thmv-home-2 .thmv-uniq-box .btn-full-filled:hover,
+.thmv-home-2 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover {
+    background: #191B18;
+    color: #FFFFFF;
+    border-color: #191B18;
+}
+
+/*----------  home style 3 colors  ----------*/
+.thmv-dark-color {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-home-3 .thmv-wel-text h6,
+.thmv-home-3 .thmv-wel-text .thmv-wel-title,
+.thmv-home-3 .thmv-wel-info,
+.thmv-home-3 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-3 .thmv-uniq-offer .thmv-welcome-box h2,
+.thmv-home-3 .thmv-uniq-offer .thmv-welcome-box p,
+.thmv-home-3 .thmv-book-room .thmv-welcome-box h2,
+.thmv-home-3 .thmv-book-room .thmv-welcome-box p {
+    color: #ffffff;
+}
+
+.thmv-light-bg,
+    /* home-v2 */
+.thmv-home-3.thmv-home-v2 .thmv-welcome-sec {
+    background: #ffffff;
+}
+
+.thmv-bg-tiber,
+.thmv-home-3 .thmv-header-sec,
+.thmv-home-3 .thmv-welcome-sec .thmv-welcome-info::after,
+.thmv-home-3 .thmv-welcome-sec .thmv-welcome-info::before,
+.thmv-home-3 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-3 .thmv-quote-icon,
+.thmv-home-3 .slick-dots li.slick-active button:before,
+.thmv-home-3 .thmv-uniq-offer .thmv-uniq-box,
+.thmv-home-3 .thmv-book-room,
+.thmv-home-3 .datepick-popup .datepick-cmd-prev:after,
+.thmv-home-3 .datepick-popup .datepick-cmd-next:after,
+.thmv-home-3 .datepick-popup .datepick-ctrl .datepick-cmd {
+    background-color: #042E28;
+}
+
+.thmv-color-tiber
+.thmv-home-3 .thmv-color-tiber,
+.thmv-home-3 .thmvfloor-list-icon .thmv-listing-icon i,
+    /* home-v2 */
+.thmv-home-3.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i {
+    color: #042E28;
+}
+
+.thmv-border-gray-tiber
+.thmv-home-3 .thmv-border-gray-tiber,
+.thmv-home-3 .slick-dots li button::before {
+    border-color: #042E28;
+}
+
+.thmv-bg-sisal,
+.thmv-home-3 .thmv-welcome-sec,
+.thmv-home-3 .thmv-testimonial-box,
+.thmv-home-3 .thmv-testi .slick-testimonial-slider::after,
+.thmv-home-3 .thmv-testi .slick-testimonial-slider::before,
+.thmv-home-3 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+    /* home-v2 */
+.thmv-home-3.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li:hover::after,
+.thmv-home-3.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li.active::after {
+    background-color: #D8D4C2;
+}
+
+.thmv-color-sisal {
+    color: #D8D4C2;
+}
+
+.thmv-border-sisal {
+    border-color: #D8D4C2;
+}
+
+.thmv-home-3 .btn-full-filled,
+.thmv-home-3 .thmv-uniq-box .btn-full-filled,
+.thmv-home-3 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button {
+    background: #FFFFFF;
+    color: #191B18;
+    border-color: #FFFFFF;
+}
+
+.thmv-home-3 .btn-full-filled:hover,
+.thmv-home-3 .thmv-uniq-box .btn-full-filled:hover,
+.thmv-home-3 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover {
+    background: #D8D4C2;
+    color: #191B18;
+    border-color: #D8D4C2;
+}
+
+/*----------  home style 4 colors  ----------*/
+.thmv-dark-color,
+.thmv-home-nav-4 .thmv-right-menu .thmv-social li a:hover {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-light-color,
+.thmv-home-4 .thmv-wel-text h6,
+.thmv-home-4 .thmv-wel-text .thmv-wel-title,
+.thmv-home-4 .thmv-wel-info,
+.thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-4 .thmv-uniq-offer .thmv-welcome-box h2,
+.thmv-home-4 .thmv-uniq-offer .thmv-welcome-box p,
+.thmv-home-4 .thmv-book-room .thmv-welcome-box h2,
+.thmv-home-4 .thmv-book-room .thmv-welcome-box p,
+.thmv-home-nav-4 .thmv-right-menu .thmv-social li a {
+    color: #ffffff;
+}
+
+.thmv-light-bg,
+.thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::after,
+.thmv-home-4 .thmv-welcome-sec .thmv-welcome-info::before,
+    /* home-v2 */
+.thmv-home-4.thmv-home-v2 .thmv-welcome-sec {
+    background: #ffffff;
+}
+
+.thmv-bg-boston-blue,
+.thmv-home-4 .thmv-header-sec,
+.thmv-home-4 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-4 .thmv-quote-icon,
+.thmv-home-4 .slick-dots li.slick-active button:before,
+.thmv-home-4 .thmv-uniq-offer .thmv-uniq-box,
+.thmv-home-4 .thmv-book-room,
+.thmv-home-4 .datepick-popup .datepick-cmd-prev:after,
+.thmv-home-4 .datepick-popup .datepick-cmd-next:after,
+.thmv-home-4 .datepick-popup .datepick-ctrl .datepick-cmd,
+.thmv-home-nav-4 .thmv-right-menu .thmv-social li a {
+    background-color: #3E96B6;
+}
+
+.thmv-color-boston-blue,
+.thmv-home-4 .thmv-color-tiber,
+.thmv-home-4 .thmvfloor-list-icon .thmv-listing-icon i,
+    /* home-v2 */
+.thmv-home-4.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i {
+    color: #3E96B6;
+}
+
+.thmv-border-boston-blue,
+.thmv-home-4 .thmv-border-gray-tiber,
+.thmv-home-4 .slick-dots li button::before {
+    border-color: #3E96B6;
+}
+
+.thmv-bg-apricot-peach,
+.thmv-home-4 .thmv-welcome-sec,
+.thmv-home-4 .thmv-testimonial-box,
+.thmv-home-4 .thmv-testi .slick-testimonial-slider::after,
+.thmv-home-4 .thmv-testi .slick-testimonial-slider::before,
+.thmv-home-4 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+.thmv-home-nav-4 .thmv-right-menu .thmv-social li a:hover,
+    /* home-v2 */
+.thmv-home-4.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li:hover::after,
+.thmv-home-4.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li.active::after {
+    background-color: #FBC9B3;
+}
+
+.thmv-color-apricot-peach {
+    color: #FBC9B3;
+}
+
+.thmv-border-apricot-peach {
+    border-color: #FBC9B3;
+}
+
+.thmv-home-4 .btn-full-filled,
+.thmv-home-4 .thmv-uniq-box .btn-full-filled,
+.thmv-home-4 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button {
+    background: #FFFFFF;
+    color: #12617E;
+    border-color: #FFFFFF;
+}
+
+.thmv-home-4 .btn-full-filled:hover,
+.thmv-home-4 .thmv-uniq-box .btn-full-filled:hover,
+.thmv-home-4 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover {
+    background: #FBC9B3;
+    color: #191B18;
+    border-color: #191B18;
+}
+
+/*----------  home style 5 colors  ----------*/
+.thmv-dark-color,
+.thmv-home-nav-5 .thmv-right-menu .thmv-social li a:hover {
+    color: #191B18;
+}
+
+.thmv-dark-bg {
+    background: #191B18;
+}
+
+.thmv-light-color,
+.thmv-home-5 .thmv-wel-text h6,
+.thmv-home-5 .thmv-wel-text .thmv-wel-title,
+.thmv-home-5 .thmv-wel-info,
+.thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-5 .thmv-uniq-offer .thmv-welcome-box h2,
+.thmv-home-5 .thmv-uniq-offer .thmv-welcome-box p,
+.thmv-home-5 .thmv-book-room .thmv-welcome-box h2,
+.thmv-home-5 .thmv-book-room .thmv-welcome-box p,
+.thmv-home-nav-5 .thmv-right-menu .thmv-social li a {
+    color: #ffffff;
+}
+
+.thmv-light-bg,
+.thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::after,
+.thmv-home-5 .thmv-welcome-sec .thmv-welcome-info::before,
+    /* home-v2 */
+.thmv-home-5.thmv-home-v2 .thmv-welcome-sec {
+    background: #ffffff;
+}
+
+.thmv-bg-governor-bay,
+.thmv-home-5 .thmv-header-sec,
+.thmv-home-5 .thmv-welcome-box .thmv-pills-blok p,
+.thmv-home-5 .thmv-quote-icon,
+.thmv-home-5 .slick-dots li.slick-active button:before,
+.thmv-home-5 .thmv-uniq-offer .thmv-uniq-box,
+.thmv-home-5 .thmv-book-room,
+.thmv-home-5 .datepick-popup .datepick-cmd-prev:after,
+.thmv-home-5 .datepick-popup .datepick-cmd-next:after,
+.thmv-home-5 .datepick-popup .datepick-ctrl .datepick-cmd,
+.thmv-home-nav-5 .thmv-right-menu .thmv-social li a {
+    background-color: #4636AE;
+}
+
+.thmv-color-governor-bay,
+.thmv-home-5 .thmv-color-tiber,
+.thmv-home-5 .thmvfloor-list-icon .thmv-listing-icon i,
+    /* home-v2 */
+.thmv-home-5.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li .thmv-booklist-icon i {
+    color: #4636AE;
+}
+
+.thmv-border-governor-bay,
+.thmv-home-5 .thmv-border-gray-tiber,
+.thmv-home-5 .slick-dots li button::before {
+    border-color: #4636AE;
+}
+
+.thmv-bg-sunglow,
+.thmv-home-5 .thmv-welcome-sec,
+.thmv-home-5 .thmv-testimonial-box,
+.thmv-home-5 .thmv-testi .slick-testimonial-slider::after,
+.thmv-home-5 .thmv-testi .slick-testimonial-slider::before,
+.thmv-home-5 .thmv-booking-sec .thmv-booking-img .thmv-book-price,
+.thmv-home-nav-5 .thmv-right-menu .thmv-social li a:hover,
+    /* home-v2 */
+.thmv-home-5.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li:hover::after,
+.thmv-home-5.thmv-home-v2 .thmv-booking-sec .thmv-booking-selection ul li.active::after {
+    background-color: #FFD231;
+}
+
+.thmv-color-sunglow {
+    color: #FFD231;
+}
+
+.thmv-border-sunglow {
+    border-color: #FFD231;
+}
+
+.thmv-home-5 .btn-full-filled,
+.thmv-home-5 .thmv-uniq-box .btn-full-filled,
+.thmv-home-5 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button {
+    background: #FFD231;
+    color: #4636AE;
+    border-color: #FFD231;
+}
+
+.thmv-home-5 .btn-full-filled:hover,
+.thmv-home-5 .thmv-uniq-box .btn-full-filled:hover,
+.thmv-home-5 .thmv-book-room .thmv-welcome-box .thmv-availability-check .form-group button:hover {
+    background: #FFFFFF;
+    color: #191B18;
+    border-color: #191B18;
+}
+
+/*=======================================
+    =            home page style            =
+    =======================================*/
+/*----------  navbar style  ----------*/
+.thmv-top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thmv-top-nav.thmv-top-nav-fix {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.thmv-top-navbar .logo {
+    width: 20%;
+}
+
+.thmv-nav-menu {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.thmv-nav-menu ul {
+    display: block;
+}
+
+.thmv-nav-menu ul li {
+    float: left;
+}
+
+.thmv-nav-menu-list li a {
+    padding: 0 31px;
+    line-height: 81px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #074365;
+}
+
+.thmv-nav-menu-list li a:hover {
+    color: rgba(7, 67, 101, 0.6);
+}
+
+.thmv-nav-menu li.has-sub {
+    position: relative;
+}
+
+.thmv-top-navbar:after,
+.thmv-top-navbar > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.thmv-top-navbar #head-mobile {
+    display: none;
+}
+
+.thmv-top-navbar > ul > li {
+    float: left;
+}
+
+.thmv-top-navbar > ul > li > a {
+    padding: 17px;
+    font-size: 16px;
+    color: #282828;
+}
+
+.thmv-top-navbar > ul > li.has-sub > a {
+    padding-right: 30px;
+    position: relative;
+}
+
+.thmv-nav-menu > ul > li.has-sub:hover > a:after {
+    top: 0%;
+    transform: rotate(180deg);
+}
+
+.thmv-top-navbar ul ul {
+    position: absolute;
+    left: -9999px;
+}
+
+.thmv-top-navbar ul ul li {
+    -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    background: #074365;
+    transition: all 0.25s ease;
+}
+
+.thmv-top-navbar li:hover > ul {
+    left: auto;
+}
+
+.thmv-top-navbar ul ul ul {
+    margin-left: 100%;
+    top: 0;
+}
+
+.thmv-top-navbar ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 15px 15px;
+    width: 220px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 400;
+    line-height: initial;
+}
+
+.thmv-top-navbar ul ul li:last-child > a,
+.thmv-top-navbar ul ul li.last-item > a {
+    border-bottom: 0;
+}
+
+.thmv-top-navbar ul ul li:hover > a,
+.thmv-top-navbar ul ul li a:hover {
+    color: #fff;
+}
+
+.thmv-top-navbar ul ul li.has-sub > a:before {
+    content: "\f078";
+    font-size: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transition: all 0.3s;
+    transform: translate(-0%, -50%);
+}
+
+.thmv-top-navbar ul ul > li.has-sub:hover > a:before {
+    top: 36%;
+    transform: rotate(-180deg);
+}
+
+.thmv-top-navbar ul ul li:hover,
+.thmv-top-navbar ul ul li.has-sub:hover,
+.thmv-top-navbar ul li.has-sub ul li.has-sub ul li:hover {
+    background: #04293F;
+}
+
+.thmv-top-navbar ul ul ul li.active a {
+    border-left: 1px solid #333;
+}
+
+.thmv-top-navbar > ul > li.has-sub > ul > li.active > a,
+.thmv-top-navbar > ul ul > li.has-sub > ul > li.active > a {
+    border-top: 1px solid #333;
+}
+
+.thmv-nav-menu ul .has-sub ul {
+    display: block;
+}
+
+.thmv-top-nav-fix .thmv-right-menu .thmv-social li a {
+    background: transparent;
+    height: auto;
+}
+
+/*----------  Datepiker style  ----------*/
+.datepick {
+    font-family: 'lato', sans-serif;
+    font-size: 14px;
+    border: 2px solid rgb(28 23 21 / 20%);
+    width: 355px !important;
+    border-radius: 0;
+}
+
+.datepick-nav, .datepick-ctrl {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datepick a {
+    color: #404040;
+    padding: 0;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.datepick-month {
+    border: none;
+    width: 100%;
+}
+
+.datepick-month th, .datepick-month th a {
+    background-color: #ffffff;
+    color: #404040;
+    font-weight: 600;
+    border: none;
+}
+
+.datepick-month-header, .datepick-month-header select, .datepick-month-header input {
+    background-color: #ffffff;
+    color: #404040;
+    height: 34px;
+}
+
+.datepick-cmd-prev,
+.datepick-cmd-next {
+    font-size: 0;
+    position: relative;
+}
+
+.datepick-cmd-prev:after,
+.datepick-cmd-next:after {
+    content: "\f053";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
+    background: #404040;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.datepick-cmd-next:after {
+    content: "\f054";
+}
+
+.datepick-month td {
+    background-color: #ffffff;
+    border: none;
+}
+
+.datepick-month td .datepick-weekend {
+    background-color: #ffffff;
+}
+
+.datepick-month td .datepick-selected {
+    background-color: #404040;
+    color: #FFFFFF;
+    border: 1px solid #404040;
+    font-weight: 700;
+}
+
+.datepick-month td .datepick-highlight {
+    background-color: rgb(28 23 21 / 20%);
+}
+
+.datepick-ctrl {
+    justify-content: flex-end;
+}
+
+.datepick-ctrl .datepick-cmd {
+    background: #404040;
+    color: #ffffff;
+    width: auto;
+    margin-left: 15px;
+    padding: 0 10px;
+}
+
+.datepick-ctrl .datepick-cmd:hover {
+    background-color: rgb(28 23 21 / 20%);
+    color: #404040;
+}
+
+.datepick-popup .datepick-nav .datepick-cmd-today,
+.datepick-popup .datepick-nav .datepick-cmd:hover,
+.datepick-cmd:hover {
+    background: transparent;
+}
+
+.datepick-month td a.thmv-date-selectedClass {
+    background: transparent !important;
+    color: #404040;
+    opacity: 0.3;
+}
+
+.datepick-month td a.thmv-date-selectedClass {
+    position: relative;
+}
+
+.datepick-month td a.thmv-date-selectedClass::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: rotate(140deg);
+}
+
+/*----------  top banner section style  ----------*/
+
+.banner-wrapper::before {
+    content: "";
+    width: 596px;
+    height: 182px;
+    display: inline-block;
+    background: url(../images/top-header-banner-bg.svg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 95px;
+    left: 0;
+
+}
+
+.thmv-wel-col {
+    max-width: 565px;
+    margin-left: auto;
+    padding: 0;
+}
+
+.thmv-wel-text {
+    max-width: 460px;
+}
+
+.thmv-wel-text h6 {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.thmv-wel-text .thmv-wel-title {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 77px;
+    margin: 15px 0;
+}
+
+.thmv-wel-info {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: #1A222C !important;
+}
+
+/*=============================================
+    =         Facilities Section Styles            =
+    =============================================*/
+.thmv-facilities-sec {
+    padding: 100px 10px;
+    background-color: #F2FAFF;
+}
+
+.thmv-facilities-sec.benefits {
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.thmv-facilities-sec .thmv-facilities-info {
+    margin-top: 30px;
+}
+
+.thmv-facilities-sec .thmv-facilities-info h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #074365;
+}
+
+.thmv-facilities-sec .thmv-facilities-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+    margin-top: 10px;
+}
+
+.thmv-facilities-img {
+    cursor: pointer;
+    position: relative;
+}
+
+.thmv-facilities-img::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    border: 5px solid white;
+    top: 16px;
+    left: 16px;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.thmv-facilities-img:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*=====  End Of Facilities Section Styles  ======*/
+
+/*================================================
+    =            Expore Top Section Style            =
+    ================================================*/
+.thmv-explore-top-sec {
+    background: url('../images/explore/explore-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.thmv-explore-top-title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-left: 10px solid #1C1715;
+    padding: 30px 90px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+}
+
+/*----------  Explore Section CSS  ----------*/
+.thmv-explore-grid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.thmv-expo-bred {
+    display: flex;
+    padding: 40px 0 20px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.thmv-expo-row {
+    padding: 20px 0;
+}
+
+.thmv-expo-rating {
+    display: flex;
+}
+
+.thmv-expo-rating ul {
+    display: flex;
+}
+
+.thmv-expo-rating ul li {
+    color: #FFC804;
+    margin-right: 5px;
+}
+
+.thmv-expo-rating p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.thmv-expo-location {
+    font-size: 18px;
+    color: #074365;
+}
+
+.thmv-expo-location i {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #4A86CC;
+}
+
+.thmv-expo-name h3 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 20px;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-expo-name p {
+    font-weight: 300;
+    color: #1A222C;
+    margin-bottom: 25px;
+}
+
+.thmv-expo-btn {
+    max-width: 250px;
+    width: 100%;
+}
+
+.btn-full-filled.white {
+    background: #fff;
+    color: #074365;
+    border-color: #074365;
+}
+
+.btn-full-filled.white:hover {
+    background: #074365;
+    color: #fff;
+    border-color: #074365;
+}
+
+.thmv-rooms-ready {
+    overflow: hidden;
+}
+
+.thmv-expo-name h2 {
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 99px;
+    text-transform: uppercase;
+    color: #074365;
+}
+
+.thmv-expo-name h4 {
+    text-transform: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    border-left: 7px solid #074365;
+    padding-left: 10px;
+    margin: 35px 0;
+}
+
+.thmv-expo-name h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.thmv-expogird-info {
+    margin-left: 30px;
+}
+
+.thmv-expogird-info-left {
+    margin: 0 30px 0 0;
+}
+
+/*----------  What We Do CSS  ----------*/
+.thmv-whatdo-box {
+    margin-bottom: 50px;
+}
+
+.thmv-whatdo-box img:hover {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.thmv-whatdo-box h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: inherit;
+    line-height: 28px;
+    padding: 20px 0 10px;
+}
+
+.thmv-whatdo-box p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.5;
+}
+
+/*----------  explore page version2 CSS  ----------*/
+.thmv-expo-titlev2 {
+    position: relative;
+    padding-left: 200px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.thmv-expo-titlev2:after {
+    content: "";
+    background: #1C1715;
+    width: 170px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.thmv-what-we-sec {
+    padding-top: 40px;
+}
+
+/*=====  End of Expore Top Section Style  ======*/
+
+/*  ==========================================================================
+        Features Of Our Hostel Section Style Start
+    ========================================================================== */
+.thmv-hostel-features {
+    padding: 100px 0 20px 0;
+    position: relative;
+}
+
+.thmv-hostel-features .thmv-hostel-service {
+    margin-top: 70px;
+}
+
+.thmv-hostel-features .thmv-hostel-service .thmv-service-row {
+    margin-bottom: 20px;
+}
+
+.thmv-hostel-features .thmv-hostel-service .thmv-service-row:last-child,
+.thmv-hostel-service-info .thmv-hostel-info-text p:last-child {
+    margin-bottom: 0;
+}
+
+.thmv-hostel-service-info {
+    max-width: 500px;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.thmv-hostel-service-info h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.thmv-hostel-service-info .thmv-hostel-info-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.thmv-blue-bg:before {
+    content: "";
+    background-color: #074365;
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: -2.5%;
+    top: 0;
+    z-index: 1;
+}
+
+.thmv-svg-icon {
+    margin-bottom: 30px;
+}
+
+.thmv-service-info h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #074365;
+    margin-bottom: 10px;
+}
+
+.thmv-service-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+/*=====  Features Of Our Hostel Section Style End  ======*/
+
+/*=============================================
+    =       Rooms & Suites Section Style         =
+    =============================================*/
+.thmv-rooms-suites {
+    padding: 100px 10px 50px 10px;
+}
+
+.thmv-rooms-suites h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #074365;
+}
+
+.thmv-rooms-suites .thmv-rooms-info {
+    margin: 20px 0 50px;
+    max-width: 560px;
+}
+
+.thmv-rooms-suites .thmv-rooms-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+.thmv-rooms-img-slider .slick-list {
+    padding: 0 0 !important;
+    margin: 0 -20px;
+}
+
+.thmv-rooms-img-slider .slick-slide {
+    margin: 0 20px;
+}
+
+.thmv-room-view {
+    position: relative;
+    overflow: hidden;
+}
+
+.thmv-room-view img {
+    width: 100%;
+}
+
+.thmv-room-view .thmv-room-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.thmv-room-view .thmv-room-price p {
+    font-family: Domine, serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1A222C;
+    margin-bottom: 0;
+    padding: 20px 35px;
+}
+
+.welcome-slider,
+.what-to-see-slider {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.thmv-rooms-img-slider .thmv-room-info {
+    display: none;
+}
+
+.thmv-rooms-img-slider .slick-active.slick-center + .slick-slide .thmv-room-info {
+    display: none !important;
+}
+
+.thmv-rooms-img-slider .swiper-slide-next .thmv-room-info,
+.thmv-rooms-img-slider .swiper-slide-next + .swiper-slide .thmv-room-info {
+    display: inline-block;
+}
+
+.thmv-rooms-img-slider .thmv-room-info {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thmv-rooms-img-slider .thmv-room-info h5 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: #074365;
+}
+
+.thmv-rooms-img-slider .thmv-room-info h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+}
+
+.thmv-rooms-img-slider .thmv-room-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    margin: 20px 0;
+}
+
+.thmv-room-info {
+    position: relative;
+}
+
+.thmv-rooms-img-slider .slick-rooms-slider .slick-slide:hover .thmv-room-info:after {
+    bottom: 0;
+}
+
+/*.swiper-slide {*/
+/*    margin: 0 20px;*/
+/*}*/
+
+/*=====  End Of Rooms & Suites Sectin Style  ======*/
+
+/*  ==========================================================================
+    5.    Covid Updates  styles
+    ========================================================================== */
+
+.thmv-covid .thmv-covid-row {
+    background: #F2FAFF;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.thmv-covid h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #074365;
+}
+
+.thmv-covid h2 {
+    margin-bottom: 15px;
+}
+
+.thmv-covid p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+    max-width: 755px;
+    margin: 0 auto 15px auto;
+}
+
+.thmv-covid a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #074365;
+    transition: all 0.3s;
+}
+
+.thmv-covid a:hover {
+    opacity: .7;
+}
+
+.learn-more-btn1 i {
+    margin-left: 5px;
+}
+
+/*  ==========================================================================
+    Read our blog section style start
+    ========================================================================== */
+
+.thmv-travelers.thmv-home-two {
+    padding: 80px 0px 50px;
+}
+
+.thmv-traveler-card {
+    padding: 70px 0px 100px;
+}
+
+.thmv-traveler-card .thmv-section-title {
+    margin-bottom: 50px;
+}
+
+.thmv-traveler-card .thmv-cards .card,
+.thmv-traveler-card .thmv-cards .card img {
+    border: none;
+    border-radius: 0;
+}
+
+.thmv-traveler-card .thmv-cards .card .card-body {
+    padding: 20px 0px;
+}
+
+.thmv-traveler-card .thmv-cards .card .card-body h6 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.thmv-traveler-card .thmv-cards .card .card-body .thmv-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.thmv-traveler-card .thmv-cards .card .card-body .card-text {
+    font-size: 14px;
+    line-height: 26.6px;
+}
+
+.thmv-traveler-card h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.thmv-traveler-card h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #074365;
+}
+
+.thmv-traveler-card p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+}
+
+.card-image {
+    cursor: pointer;
+    position: relative;
+}
+
+.card-image::before {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background: url(../images/icons/arrow-right2.svg) center no-repeat #fff;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-image:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*----------  Footer section style  ----------*/
+footer {
+    background: #04293F;
+    padding: 62px 0px 0px;
+}
+
+.thmv-foot-wedget {
+    margin-top: 44px;
+}
+
+footer .thmv-footer {
+    padding-bottom: 60px;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li,
+footer .thmv-footer .thmv-footer-widget-four ul li a {
+    margin-bottom: 10px;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li:last-child,
+footer .thmv-footer .thmv-footer-widget-four ul li a:last-child {
+    margin-bottom: 0;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li a,
+footer .thmv-footer .thmv-foot-wedget ul li h6,
+.thmv-footer-bottom .thmv-fot-bot-menu ul li a,
+footer .thmv-footer .thmv-foot-wedget ul li address {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li h6 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+footer .thmv-footer .thmv-foot-wedget ul li a:hover,
+.thmv-footer-bottom .thmv-fot-bot-menu ul li a:hover,
+footer .thmv-footer .thmv-foot-wedget ul li address:hover {
+    opacity: 1;
+}
+
+/*======= footer bottom style  =======*/
+.thmv-footer-bottom .container {
+    border-top: 1px solid #ffffff30;
+    padding: 7px 0px;
+}
+
+.thmv-footer-bottom {
+    color: #ffffff;
+}
+
+.thmv-get-in-touch,
+.thmv-get-in-touch .thmv-social li a i,
+.thmv-payment li a i {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.thmv-get-in-touch h6 {
+    /* width: 700px; */
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+}
+
+.thmv-footer-bottom ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.thmv-footer-bottom ul li:last-child {
+    margin-right: 0;
+}
+
+.thmv-footer-bottom ul.thmv-social li a {
+    opacity: 1;
+}
+
+.thmv-footer-bottom ul.thmv-social li a i {
+    font-size: 18px;
+}
+
+.thmv-payment li a i {
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
+.thmv-social li a:hover i,
+.thmv-payment li a:hover i {
+    opacity: 0.7;
+}
+
+/*=====  End of home page style  ======*/
+
+
+/*=======================================
+    =          contact  =
+    =======================================*/
+.thmv-contact-info {
+    overflow: hidden;
+    padding-top: 82px;
+}
+
+.thmv-contact-col {
+    padding-top: 26px;
+}
+
+.thmv-contact-title {
+    margin-bottom: 60px;
+}
+
+.thmv-contact-title p {
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-contact-title h2 {
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #074365;
+    letter-spacing: 3px;
+}
+
+.thmv-phone-numbre {
+    margin-bottom: 34px;
+    display: flex;
+}
+
+.thmv-contact-icon {
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.thmv-contact-icon i {
+    color: #074365;
+    font-size: 28px;
+}
+
+.thmv-contact-text {
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #1A222C;
+    width: 100%;
+}
+
+.thmv-contact-text p:last-child {
+    margin: 0;
+}
+
+.thmv-phone-address {
+    margin-bottom: 46px;
+    display: flex;
+}
+
+.thmv-social-contact h5 {
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #074365;
+    margin-bottom: 20px;
+}
+
+.thmv-contact-us ul {
+    display: flex;
+    align-items: center;
+}
+
+
+.thmv-contact-us ul li {
+    margin-right: 22px;
+}
+
+.thmv-contact-us ul li:last-child {
+    margin: 0;
+}
+
+.thmv-contact-us ul li i {
+    font-size: 38px;
+}
+
+.thmv-contact-us ul li i.fa-instagram {
+    color: #EDA823;
+}
+
+.thmv-contact-us ul li i.fa-facebook {
+    color: #252DE9;
+}
+
+.thmv-contact-map {
+    height: 606px;
+    position: relative;
+}
+
+.thmv-contact-map iframe {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50vw;
+    top: 0;
+}
+
+
+.thmv-contact-form {
+    background: #F4F6F8;
+    padding: 50px 0px 70px;
+}
+
+.thmv-form-title {
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #074365;
+    margin-bottom: 10px;
+}
+
+.thmv-form-subtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+    margin-bottom: 22px;
+}
+
+.thmv-form-block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.thmv-form-inputs {
+    max-width: 463px;
+    width: 100%;
+}
+
+.thmv-form-block input {
+    display: block;
+    width: 100%;
+    margin-bottom: 17px;
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #074365;
+}
+
+.thmv-form-block input:last-child {
+    margin: 0;
+}
+
+.thmv-form-block input::placeholder {
+    color: #074365;
+    font-weight: 300;
+}
+
+/*.thmv-form-block button {*/
+/*    width: 269px;*/
+/*    background: #074365;*/
+/*    font-weight: 900;*/
+/*    font-size: 16px;*/
+/*    line-height: 19px;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    color: #FFFFFF;*/
+/*    padding: 21px 0;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*=======================================
+    =            why us page style            =
+    =======================================*/
+
+.thmv-hostel-features.blue-bg {
+    background-color: #074365;
+    padding: 80px 0 70px 0;
+}
+
+.thmv-hostel-features.blue-bg .thmv-service-info h6 {
+    color: #fff;
+}
+
+.thmv-hostel-features.blue-bg .thmv-service-info p {
+    color: rgba(255, 255, 255, .7);
+}
+
+/* Video Modal styles */
+
+.thmv-video-sec {
+    padding: 90px 0;
+}
+
+.thmv-video-modal img {
+    width: 100%;
+}
+
+.thmv-video-modal {
+    position: relative;
+}
+
+.thmv-video-modal .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.thmv-video-modal .embed-container iframe,
+.thmv-video-modal .embed-container object,
+.thmv-video-modal .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thmv-video-sec .thmv-play-btn {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-sec .thmv-play-btn i {
+    color: #074365;
+    font-size: 32px;
+    line-height: 52px;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-sec .thmv-play-btn:hover,
+.thmv-video-modal .modal-body .btn-close:hover {
+    background: #074365;
+}
+
+.thmv-video-sec .thmv-play-btn:hover i,
+.thmv-video-modal .modal-body .btn-close:hover i {
+    color: #fff;
+}
+
+.thmv-video-modal .modal-content {
+    border-radius: 0;
+}
+
+.thmv-video-modal .modal-body {
+    position: relative;
+}
+
+.thmv-video-modal .modal-body .btn-close {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border: none;
+    border-radius: 0;
+    line-height: 30px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-modal .modal-body .btn-close i {
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.thmv-video-modal .modal-dialog video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.thmv-video-text h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 15px;
+}
+
+.thmv-video-text h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.thmv-video-text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+/* Video Modal styles end */
+
+/*----------  photo gallery section  ----------*/
+
+.thmv-gallery-sec {
+    padding: 0 0 80px;
+}
+
+.thmv-gallery-sec .thmv-img-box,
+.thmv-what-todo-photos .thmv-img-box {
+    overflow: hidden;
+}
+
+.thmv-gallery-sec .thmv-img-box img,
+.thmv-what-todo-photos .thmv-img-box img {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.thmv-img-box:hover img,
+.thmv-what-todo-photos .thmv-img-box:hover img {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+
+.fancybox__backdrop::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fancybox__container {
+    --fancybox-bg: #000;
+
+    --fancybox-thumbs-width: 48px;
+    --fancybox-thumbs-ratio: 1;
+
+    --carousel-button-bg: rgb(91 78 76 / 74%);
+
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__nav {
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+    left: 20px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+    right: 20px;
+}
+
+.carousel__button.is-close {
+    right: 20px;
+    top: 20px;
+    left: auto;
+}
+
+.carousel__button.is-close,
+.fancybox__nav .carousel__button {
+    background: #191B18;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.carousel__button.is-close:hover,
+.fancybox__nav .carousel__button:hover {
+    background: #FFFFFF;
+    color: #191B18;
+}
+
+.fancybox__slide {
+    padding: 8px 88px;
+}
+
+/* Thumbnails */
+.fancybox__thumbs {
+    display: none;
+}
+
+/*----------  photo gallery section end  ----------*/
+
+/*=======> people say section styles  <=======*/
+
+.thmv-talk-to-reviews {
+    padding: 70px 0px;
+}
+
+.thmv-our-reviews {
+    border-bottom: 1px solid #EBECEF;
+    padding: 30px 0px;
+}
+
+.thmv-our-reviews:last-child {
+    border-bottom: none;
+    padding: 30px 0px 50px;
+}
+
+.thmv-user-review {
+    display: flex;
+    align-items: center;
+}
+
+.thmv-user-review img {
+    width: 100px;
+}
+
+.thmv-user-review .thmv-user-info {
+    margin-left: 20px;
+}
+
+.thmv-user-review .thmv-user-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    opacity: 0.5;
+}
+
+.thmv-user-review .thmv-user-info h5 {
+    font-size: 22px;
+}
+
+.thmv-our-reviews .thmv-user-review-text {
+    padding: 40px 0;
+}
+
+.thmv-our-reviews .thmv-user-review-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #1A222C;
+    opacity: 0.5;
+}
+
+.thmv-our-reviews .thmv-user-review-text::after,
+.thmv-our-reviews .thmv-user-review-text::before {
+    content: "";
+    background-image: url("../images/icons/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 19px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+}
+
+.thmv-our-reviews .thmv-user-review-text::before {
+    top: 20px;
+    left: 0px;
+}
+
+.thmv-our-reviews .thmv-user-review-text::after {
+    bottom: 20px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.thmv-reviews-sec {
+    padding-bottom: 20px;
+}
+
+.thmv-reviews-sec h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.thmv-reviews-sec .subtitle-text {
+    max-width: 560px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+/*=======================================
+    =            why us page style end          =
+    =======================================*/
+
+/* ----------------- Cart page -----------------*/
+
+.thmv-cart-title {
+    margin-bottom: 34px;
+}
+
+.cart-input {
+    outline: none;
+    border: 1px solid #07436510;
+    padding: 12px 30px;
+}
+
+.cart-input:focus {
+    border: 1px solid #07436583;
+}
+
+.thmv-cart-col {
+}
+
+.cart__button {
+    padding: 47px 0 119px;
+}
+
+.cart-tabel__info {
+    background-color: #F4F6F8;
+    padding: 16px 20px;
+}
+
+.cart-tabel__plus-minus {
+    background-color: white;
+    padding: 5px 7px;
+    font-size: 16px;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+}
+
+.cart-tabel__minus,
+.cart-tabel__plus {
+    cursor: pointer;
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-tabel__price h5 {
+    color: black;
+}
+
+.cart-tabel__date {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.cart-tabel__date_i {
+    cursor: pointer;
+}
+
+.cart-tabel__date_i svg {
+    margin-bottom: 4px;
+}
+
+.cart-tabel__delete h6 {
+    color: #FB4646;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.thmv-cart-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-cart-title p {
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.desk-none {
+    display: none;
+}
+
+.singleInfo__price,
+.singleInfo__price1,
+.singleInfo__price2,
+.singleInfo__price3 {
+    border: none;
+    width: 23px;
+    text-align: center;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+}
+
+
+/* ----------------- Cart page end -----------------*/
+
+
+/* ----------------- checkout page -----------------*/
+
+.thmv-checkout-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-checkout-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-checkout__total-price {
+    background-color: #F4F6F8;
+    padding: 30px 20px 55px;
+}
+
+.thmv-checkout__total-price hr {
+    height: 2px;
+    background: #074365;
+    opacity: 0.1;
+}
+
+.thmv-checkout-col {
+    margin-bottom: 34px;
+}
+
+.thmv-checkout__total-price h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.thmv-checkout__total-price h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.thmv-checkout-mb {
+    margin-bottom: 20px;
+}
+
+.thmv-checkout {
+    margin-bottom: 196px;
+}
+
+
+/* ----------------- checkout page  end-----------------*/
+
+
+/* ----------------- Booking Confirmation page -----------------*/
+
+.thmv-booking-title h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.thmv-booking-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+    margin-bottom: 5px;
+}
+
+.thmv-booking__bg {
+    background-color: #F4F6F8;
+}
+
+.thmv-booking-col {
+    margin-bottom: 35px;
+}
+
+.thmv-booking__date {
+    background-color: white;
+    border: 1px solid rgba(7, 67, 101, 0.1);
+    width: 173px;
+    position: relative;
+    margin: 0 20px 0 20px;
+}
+
+.input-booking__date {
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.thmv-booking__calendar {
+    padding: 27px 0;
+}
+
+.thmv-booking__calendar h5 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-booking__calendar h6 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-booking__date::before {
+    content: url(../images/icons/calendar-booking.svg);
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: 28px;
+    top: 11px;
+}
+
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid rgba(7, 67, 101, 0.1);
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    height: 66px;
+    line-height: 170px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 54px;
+    padding-top: 19px;
+    padding: 19px 20px 19px 54px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.select-choice {
+    border: 1px solid rgba(7, 67, 101, 0.1);
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.nice-select:after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    right: 26px;
+    top: 30px;
+    border-radius: 0px;
+}
+
+.nice-select.open:after {
+}
+
+.select-choice::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/choice-people.svg);
+    background-repeat: no-repeat;
+    left: 18px;
+    top: 20px;
+}
+
+.thmv-booking__content h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.thmv-booking__content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1A222C;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+}
+
+.thmv-booking__content {
+}
+
+#booking__border-bottom {
+    color: #074365;
+    position: relative;
+}
+
+.booking__mb {
+    margin-bottom: 27px !important;
+}
+
+#booking__border-bottom::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #074365;
+    bottom: -2px;
+    left: 0;
+}
+
+.thmv-booking__accommodation {
+    margin-top: 44px;
+    margin-bottom: 36px;
+}
+
+.label-checkbox__booking {
+    cursor: pointer;
+}
+
+.svg-checkbox__booking rect {
+    fill: transparent;
+}
+
+.svg-checkbox__booking path {
+    fill: transparent;
+}
+
+.svg-checkbox__booking {
+    left: 12px;
+}
+
+.booking__checkbox-item {
+    position: relative;
+}
+
+.thmv-booking__checkbox {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking rect {
+    fill: #074365;
+    stroke: #074365;
+}
+
+.booking__checkbox-item input:checked ~ .svg-checkbox__booking path {
+    fill: #E6ECF0;
+}
+
+.thmv-booking__services h4 {
+    margin-bottom: 29px;
+}
+
+.booking__counter .singleInfo__price {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+    font-family: Lato, sans-serif;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking__counter {
+    margin-left: 50px;
+}
+
+.booking__minus-plus {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #07436510;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.thmv-booking__content hr {
+    opacity: 0.1;
+    height: 1px;
+    background-color: #074365;
+    margin: 50px 0 40px;
+}
+
+.thmv-booking__price h4 {
+    margin-bottom: 28px;
+}
+
+.thmv-booking__price {
+    margin-bottom: 46px;
+}
+
+.booking-receipt {
+    padding: 24px 50px 30px;
+}
+
+.booking-receipt__border-dashed {
+    border: 1px dashed #1A222C;
+    opacity: 0.2;
+    height: 0px;
+}
+
+.booking-receipt h4 {
+    margin: 0;
+    color: #1A222C;
+    padding-right: 8px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.booking-receipt h5 {
+    padding-left: 20px;
+}
+
+.booking-receipt h5,
+.booking-receipt h6 {
+    color: #1A222C;
+}
+
+.booking-receipt h6 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    padding-right: 25px;
+}
+
+.booking-receipt__item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.booking-receipt__bold {
+    font-weight: bold !important;
+}
+
+.booking-receipt__price {
+    padding: 0 0 0 25px !important;
+}
+
+.booking-receipt__item:first-child {
+    margin-bottom: 12px;
+}
+
+.input-notes {
+    height: 166px;
+}
+
+.thmv-information h4 {
+    margin-bottom: 28px;
+}
+
+.thmv-information {
+    margin-bottom: 44px;
+}
+
+.thmv-payment-method h4 {
+    margin-bottom: 29px;
+}
+
+.payment-method__item label {
+    margin: 0 0 0 14px;
+    color: #074365;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 200%;
+}
+
+.payment-method__item p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 190%;
+    padding-left: 44px;
+}
+
+.radio-payment {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.payment-method__item:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.thmv-payment-method {
+    margin-bottom: 33px;
+}
+
+.total-price__main {
+    padding: 35px 97px;
+}
+
+.thmv-total-price {
+    margin-bottom: 146px;
+}
+
+.total-price__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    padding-right: 22px;
+}
+
+.total-price__price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    padding-left: 16px;
+}
+
+.total-price__btn {
+    margin-top: 30px;
+}
+
+.ui-datepicker-title {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #074365;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: white;
+    border: none;
+}
+
+.ui-datepicker .ui-icon {
+    width: 36px;
+    height: 36px;
+    background-position: center bottom;
+    background-image: url(../images/icons/arrow.svg);
+    margin: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    left: 0;
+    margin-left: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    top: 0;
+    right: 0;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 0 !important;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: none;
+    background: #ededed;
+    font-weight: normal;
+    color: #2b2b2b;
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 0
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 0
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 0
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 0
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 0
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+    transform: rotate(180deg);
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    border-radius: 0px;
+    filter: drop-shadow(10px 14px 24px rgba(7, 67, 101, 0.2));
+    padding: 35px 20px;
+}
+
+.ui-datepicker table {
+    margin: 0;
+    border-spacing: 28px;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    width: 36px;
+    height: 36px;
+}
+
+.ui-datepicker th {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: none;
+    /* height: 28px; */
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background: white;
+    line-height: 160%;
+    color: #1A222C;
+}
+
+html .ui-button.ui-state-disabled:hover {
+    background-color: #07436510;
+    color: #1A222C;
+}
+
+.html .ui-button.ui-state-disabled:active {
+    background: #074365;
+    color: white;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    background: #074365;
+    color: white;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    background-color: #07436510;
+    color: #1A222C;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: none;
+    background: #ededed;
+    font-weight: normal;
+    color: #2b2b2b
+}
+
+
+/* ----------------- Booking Confirmation page  end-----------------*/
+
+/*===========================================
+    =            packages page style            =
+    ===========================================*/
+.thmv-appartments-sec .thmv-packages .thmv-appartments-info p {
+    color: rgba(25, 27, 24, 0.6);
+}
+
+.thmv-packages .thmv-appartments-info a {
+    margin-top: 15px;
+}
+
+.thmv-packages-sec {
+    padding: 120px 0 0;
+}
+
+.thmv-packages-sec .thmv-filter-box .thmv-appartments-info {
+    padding: 20px 5px;
+}
+
+.thmv-packages-sec .thmv-filter-box .thmv-appartments-info h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+.thmv-Specials-packages {
+    padding: 100px 0 0;
+}
+
+.thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+.thmv-packages-sec .thmv-packages .thmv-appartments-info p,
+.thmv-Specials-packages .thmv-packages .thmv-appartments-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+}
+
+.thmv-last-deals {
+    margin: 60px auto;
+    padding: 110px 0px 50px;
+    background: #EAEAEA;
+}
+
+.thmv-faqs {
+    padding: 60px 10px 50px;
+}
+
+.thmv-faqs .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thmv-faqs .thmv-accordion-number {
+    width: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    background: #404040;
+    color: #fff;
+}
+
+.thmv-faqs .accordion-item {
+    border: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.1);
+    padding: 15px 0px;
+}
+
+.thmv-faqs .accordion-item:last-child {
+    border: none;
+}
+
+.thmv-faqs .accordion-item:first-child::before {
+    display: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button h5 {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 620px;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.thmv-faqs .accordion-item .accordion-body p {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(25, 27, 24, 0.8);
+}
+
+.thmv-faqs .accordion-item .accordion-collapse {
+    margin-left: 45px;
+}
+
+.thmv-faqs .accordion-button:not(.collapsed),
+.thmv-faqs .accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed)::after {
+    color: #171818;
+}
+
+.accordion-button::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    background-image: none;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.thmv-faqs .accordion-item .accordion-button {
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+.thmv-faqs .accordion-item .accordion-collapse .accordion-body {
+    padding: 0px 0px 10px;
+    margin-left: 20px;
+}
+
+.thmv-packages-join {
+    padding: 100px 0px 150px;
+}
+
+.thmv-packages-join .thmv-uniq-box .thmv-pills-blok p {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.thmv-packages-join .thmv-welcome-box {
+    max-width: 800px;
+}
+
+.thmv-packages-join .thmv-welcome-box h2 {
+    margin: 10px 0px 15px;
+}
+
+.thmv-packages-join .thmv-welcome-box p {
+    margin-bottom: 20px;
+}
+
+.thmv-packages-join .thmv-welcome-box form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.thmv-packages-join form .input-group input {
+    position: relative;
+}
+
+.thmv-packages-join form .input-group i {
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(25px, -50%);
+}
+
+.thmv-packages-join .thmv-welcome-box form button {
+    min-width: 120px;
+}
+
+/*=====  End of packages page style  ======*/
+
+/*===============================================
+    =            packages v2 page style             =
+    ===============================================*/
+.thmv-appartments-info .thmvfloor-list-icon {
+    margin: 0;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon ul li {
+    align-items: center;
+}
+
+.thmv-appartments-info .thmv-listing-icon {
+    margin-right: 15px;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon .thmv-listing-icon img {
+    width: 26px;
+    height: 26px;
+}
+
+.thmv-appartments-info .thmvfloor-list-icon .thmv-listing-info h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*=====  End of packages v2 page style   ======*/
+
+/*=================================================
+    =          experience section style start          =
+    =================================================*/
+.thmv-what-to-see {
+    padding: 100px 0 50px 0;
+}
+
+.thmv-user-review {
+    max-width: 540px;
+    margin-left: auto;
+}
+
+.thmv-user-review .thmv-sub-title {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(25, 27, 24, 0.4);
+}
+
+.thmv-user-review h2 {
+    margin-bottom: 25px;
+}
+
+.thmv-user-review h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.thmv-user-review p {
+    font-size: 18px;
+    line-height: 36px;
+    color: #191B18;
+    margin-bottom: 30px;
+}
+
+.thmv-review-sec .slick-review-slider .slick-list {
+    padding-left: 0 !important;
+    padding-right: 250px !important;
+}
+
+.thmv-appartments-sec .thmv-appartments-img {
+    position: relative;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price {
+    position: absolute;
+    background-color: #EAEAEA;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price h4 {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1A222C;
+}
+
+.thmv-appartments-sec .thmv-appartments-img .thmv-book-price p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1A222C;
+    margin-bottom: 0;
+}
+
+.thmv-packages .thmv-appart-meta .thmv-page-rating ul li {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #FFC804;
+}
+
+.thmv-home-inner .thmv-location i, .thmv-packages .thmv-location i {
+    margin-right: 10px;
+}
+
+.what-to-see {
+    max-width: 540px;
+    margin-left: auto;
+}
+
+.what-to-see h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.what-to-see h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.what-to-see p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.what-to-see-slider .swiper-wrapper {
+    max-height: 670px;
+}
+
+.what-to-see-slider .swiper-button-prev,
+.what-to-see-slider .swiper-button-next {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+}
+
+.what-to-see-slider .swiper-button-prev:hover,
+.what-to-see-slider .swiper-button-next:hover {
+    background-color: #074365;
+}
+
+.what-to-see-slider .swiper-button-prev::after,
+.what-to-see-slider .swiper-button-next::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    color: #074365;
+    transition: all .3s ease 0s;
+}
+
+.what-to-see-slider .swiper-button-prev::after {
+    content: '\f053';
+}
+
+.what-to-see-slider .swiper-button-next::after {
+    content: '\f054';
+}
+
+.what-to-see-slider .swiper-button-prev:hover::after,
+.what-to-see-slider .swiper-button-next:hover::after {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/*=====  End of experience section style   ======*/
+
+.thmv-offer .thmv-covid-row {
+    background-color: #074365;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.thmv-offer h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.thmv-offer h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.thmv-offer p {
+    max-width: 760px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 20px auto;
+}
+
+.benefits h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefits p {
+    max-width: 560px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    margin: 0 auto 30px auto;
+}
+
+.thmv-creation-timelines {
+    padding: 90px 0 70px 0;
+}
+
+.thmv-creation-timelines p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+    margin-top: 15px;
+}
+
+.thmv-creation-timelines h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/*=======> our menu page <=======*/
+
+.thmv-menu-tabs {
+    padding-top: 100px;
+}
+
+.thmv-tab-info {
+    max-width: 660px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.thmv-tab-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+}
+
+.thmv-menu-tabs .tab-content {
+    width: 100%;
+    padding: 100px 0px 50px;
+}
+
+.thmv-menu-tabs .tab-content .thmv-tab-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.thmv-menu-tabs .tab-content .thmv-tab-info .thmv-tab-title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link {
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link.active,
+.thmv-menu-tabs .nav-pills .show > .nav-link {
+    background: transparent;
+}
+
+.thmv-menu-tabs .nav-pills .nav-link.active:after {
+    content: "";
+    background: #fff;
+    width: 60px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thmv-menu-tabs .thmv-yello-bg:before {
+    content: "";
+    width: 660px;
+    height: 646px;
+    position: absolute;
+    left: -33.6%;
+    top: -10%;
+    background: url(../images/menu-section-bg.png) center no-repeat #074365;
+    z-index: 1;
+}
+
+.thmv-best-solution-row {
+    position: relative;
+}
+
+.thmv-best-solution-row::before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    height: 1px;
+    background-color: #1A222C;
+    opacity: .1;
+}
+
+.thmv-best-solution figure figcaption {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #1A222C;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+/* ----------------- Blog single page-----------------*/
+
+.thmv-our-blog-title p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
+    color: #074365;
+}
+
+.thmv-our-blog-title h2 {
+    font-family: Domine, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.our-blog__img {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 90px;
+}
+
+.thmv-our-blog-col {
+    margin-bottom: 40px;
+}
+
+.our-blog__img img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.our-blog__paragraph p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.our-blog__paragraph {
+    margin-bottom: 100px;
+}
+
+.our-blog__row-img {
+    margin-bottom: 84px;
+}
+
+.row-img__item {
+    width: 367px;
+    height: 367px;
+    cursor: pointer;
+    position: relative;
+}
+
+.row-img__item img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.row-img__item::after {
+    position: absolute;
+    content: '';
+    width: calc(100% - 38px);
+    height: calc(100% - 38px);
+    border: 10px solid white;
+    top: 19px;
+    left: 19px;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.row-img__item:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.our-blog__enjoy {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.our-blog__enjoy h3 {
+    font-family: Domine, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.our-blog__enjoy p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.our-blog__icon {
+    background-color: #F2FAFF;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.icon-blog__title {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #074365;
+    text-transform: lowercase;
+}
+
+.icon-blog__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 190%;
+    color: #074365;
+    opacity: 0.9;
+}
+
+.ready-blog__img img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.ready-blog__img {
+}
+
+.our-blog__ready {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.ready-blog__subtitle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.ready-blog__content h2 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.ready-blog__content p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 200%;
+}
+
+.ready-blog__content {
+    margin-left: 97px;
+}
+
+
+/* ----------------- Blog single page end-----------------*/
+
+/* ----------------- Listing page start -----------------*/
+
+.btn-border {
+    color: #074365;
+    border: 2px solid #074365;
+    background-color: white;
+}
+
+.btn-border:hover {
+    color: white;
+    background-color: #074365;
+}
+
+.thmv-listing__img {
+    position: relative;
+}
+
+.thmv-listing-title p {
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: #074365;
+}
+
+.thmv-listing-title h2 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.listing-title__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.thmv-listing-title {
+    padding-top: 162px;
+    padding-bottom: 245px;
+    position: relative;
+}
+
+.thmv-listing-title::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/listing-before.svg);
+    background-repeat: no-repeat;
+    width: 1190px;
+    height: 182px;
+    left: calc(-50vw);
+    top: 0;
+}
+
+.listing-room__number-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 200%;
+    color: #1A222C;
+}
+
+.listing-room__number-item:hover {
+    background-color: #07436518;
+    color: black;
+}
+
+.listing-room__number-item.active {
+    color: white;
+    background-color: #074365;
+}
+
+.listing-room__next-item {
+    border: 1px solid #074365;
+    color: #074365;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9px 24px;
+}
+
+.listing-room__next-item:hover {
+    color: white;
+    background-color: #074365;
+}
+
+.thmv-listing-col {
+    width: 463px;
+}
+
+.thmv-listing__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thmv-listing {
+    /* width: 100vw; */
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+}
+
+.thmv-listing__img {
+    position: absolute;
+    /* right: calc(50vw - 65%); */
+    right: 0;
+    top: -82px;
+    /* width: 980px; */
+    width: 51vw;
+    height: 836px;
+}
+
+.listing__wrapper {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.listing__list {
+    margin-right: 10px;
+}
+
+.listing-room__item {
+    margin-bottom: 39px;
+}
+
+.listing-room__img {
+    width: 357px;
+    height: 357px;
+    position: relative;
+}
+
+.listing-room__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#feature-room {
+    cursor: pointer;
+}
+
+#feature-room svg path {
+    transition: .3s;
+}
+
+#feature-room:hover svg path {
+    stroke: #FB4646;
+}
+
+.feature-svg.active path {
+    fill: #FB4646;
+}
+
+.listing-room__price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 14px 38px;
+}
+
+.listing-room__price h5 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1A222C;
+}
+
+.listing-room__title h4 {
+    font-family: Domine;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.listing-room__subtitle {
+    font-size: 16px;
+    line-height: 200%;
+    color: #074365;
+}
+
+.listing-room__item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    color: #1A222C;
+    margin: 0;
+}
+
+.listing-form__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #074365;
+    margin-bottom: 25px;
+}
+
+.listing-room__form {
+    padding: 64px 30px 60px 30px;
+    width: 367px;
+    height: 490px;
+    background: #F4F6F8;
+}
+
+.listing-form__input {
+    border: none;
+    padding: 14px 50px 14px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.listing-form__ceck-in {
+    background-image: url(../images/icons/check-in-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+}
+
+.listing-form__ceck-out {
+    background-image: url(../images/icons/check-out-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 23px);
+    background-position-y: center;
+}
+
+.listing-form__people {
+    background-image: url(../images/icons/people-listing.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+}
+
+.listing-form__input::placeholder {
+    font-weight: 300;
+}
+
+.listing-form__btn {
+    background: #074365;
+    color: white;
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #074365;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.listing-form__btn:hover {
+    background: white;
+    border: 2px solid #074365;
+    color: #074365;
+}
+
+.listing-form__link {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.1px;
+    color: #1A222C;
+}
+
+.listing-form__link span {
+    padding-left: 10px;
+}
+
+.listing-form__link svg path {
+    transition: .3s;
+}
+
+.listing-form__link:hover svg path {
+    fill: #191B1870;
+}
+
+.listing-room__form input.form-control {
+    background-color: #fff;
+    padding-left: 20px;
+    background-position: 270px center;
+    border-color: transparent;
+}
+
+.listing-room__form .form-group {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.listing-room__form .render {
+    padding: 13px 15px 13px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #6c757d;
+}
+
+.listing-room__form .form-content .render i {
+    color: #074365;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.listing-room__form .form-group .dropdown-toggle::after {
+    display: none;
+}
+
+/* ----------------- Listing page end-----------------*/
+
+
+/*  Room single page start  */
+
+.thmv-hero-gallery {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.thmv-hero-gallery h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.thmv-hero-gallery h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.thmv-photo-gallery {
+    margin-top: 30px;
+}
+
+.thmv-hero-gallery .thmv-page-rating ul li {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #FFC804;
+}
+
+.thmv-hero-gallery .thmv-location i {
+    margin-right: 10px;
+}
+
+.thmv-hero-gallery .thmv-location p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #074365;
+}
+
+.thmv-hero-gallery .thmv-page-rating p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #074365;
+}
+
+.thmv-hero-gallery .thmv-img-gray-hover {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.thmv-amenities-sec {
+    padding-top: 80px;
+}
+
+.thmv-amenities-sec .thmv-sec-title h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.thmv-amenities-sec .thmv-rooms-info p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+    max-width: 754px;
+    margin: 0 auto 70px auto;
+}
+
+.thmv-amenities-sec .thmv-welcome-box {
+    padding-top: 50px;
+}
+
+.thmv-amenities-sec .thmv-welcome-box h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+
+.thmv-amenities-sec .thmvfloor-list-icon ul li {
+    padding: 20px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(78, 82, 76, 0.1);
+}
+
+.thmv-amenities-sec .thmvfloor-list-icon ul li:last-child {
+    border: none;
+}
+
+.thmv-amenities-sec .thmv-listing-icon {
+    margin-right: 25px;
+}
+
+.thmv-amenities-sec .thmv-listing-info h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.thmv-amenities-sec .thmv-listing-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1A222C;
+}
+
+.thmv-contact-form.blue-bg {
+    background-color: #074365;
+    margin-bottom: 90px;
+}
+
+.thmv-contact-form.blue-bg .thmv-form-title,
+.thmv-contact-form.blue-bg .thmv-form-subtitle,
+.thmv-contact-form.blue-bg input {
+    color: #fff;
+}
+
+.thmv-contact-form.blue-bg input::placeholder {
+    color: #fff;
+}
+
+.thmv-contact-form.blue-bg input {
+    border-color: #fff;
+}
+
+/*  Room single page end  */
+
+/*  Coming soon page start  */
+
+section.coming-soon {
+    height: 100vh;
+}
+
+section.coming-soon img {
+    object-fit: cover;
+}
+
+.book_popup.modal {
+    background-color: rgba(16, 34, 45, .6);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 0 50px 50px 50px;
+}
+
+.modal_form_title h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.modal_form_subtitle p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1A222C;
+}
+
+input.form-control {
+    min-height: 54px;
+    padding-left: 55px;
+    margin-bottom: 20px;
+    border-radius: unset;
+    border: 1px solid #ddd;
+}
+
+textarea.form-control {
+    min-height: 122px;
+    padding-left: 20px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #ddd;
+}
+
+.thmv-field-search .btn-full-filled {
+    width: 100%;
+}
+
+.form-control.name {
+    background: url(../images/icons/person.svg) 21px center no-repeat;
+}
+
+.form-control.email {
+    background: url(../images/icons/mail.svg) 19px center no-repeat;
+}
+
+/*  Coming soon page end  */
+
+/*  Homepage search page start  */
+
+.thmv-tour-row {
+    background: #fff;
+    margin: 20px auto;
+}
+
+.thmv-tour-row .form-group {
+    display: flex;
+    width: 230px;
+    height: 54px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.thmv-tour-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.thmv-check-form .form-group i,
+.form-select-guests .form-content .render i {
+    color: #074365;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.thmv-date-col, .thmv-guest-col {
+    width: auto;
+}
+
+.thmv-guest-col .dropdown-toggle::after {
+    display: none;
+}
+
+.form-select-guests .form-group {
+    border: 1px solid #ddd;
+}
+
+.thmv-guest-col .render {
+    padding: 13px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #6c757d;
+}
+
+.thmv-check-form input.form-control {
+    padding-left: 20px;
+}
+
+.form-control.check-in-out {
+    background: url(../images/icons/calendar-booking.svg) 190px center no-repeat;
+}
+
+.form-select-guests .dropdown-menu {
+    min-width: 228px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    transform: translate3d(0, 54px, 0) !important;
+}
+
+.form-select-guests .dropdown-item-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-select-guests .btn-add, .form-select-guests .btn-minus {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #eef1f7;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-select-guests .count-display {
+    width: 30px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+/*  Homepage search page end  */
+
+/*  Homepage hero section slider page start  */
+
+.welcome-slider .swiper-button-prev, .welcome-slider .swiper-button-next {
+    top: auto;
+    bottom: 40px;
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+}
+
+.welcome-slider .swiper-button-prev {
+    left: 40px;
+}
+
+.welcome-slider .swiper-button-next {
+    left: 106px;
+    right: auto;
+}
+
+.welcome-slider .swiper-button-prev::after, .welcome-slider .swiper-button-next::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 22px;
+    color: #074365;
+    transition: all .3s ease 0s;
+}
+
+.welcome-slider .swiper-button-prev::after {
+    content: '\f060';
+}
+
+.welcome-slider .swiper-button-next::after {
+    content: '\f061';
+}
+
+.welcome-slider .swiper-button-prev:hover, .welcome-slider .swiper-button-next:hover {
+    background-color: #074365;
+}
+
+.welcome-slider .swiper-button-prev:hover::after, .welcome-slider .swiper-button-next:hover::after {
+    color: #fff;
+}
+
+/*  Homepage hero section slider page end  */
+
+/*  Homepage hero section request page start  */
+
+.thmv-top-right-request {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 463px;
+}
+
+.thmv-top-right-request .modal-content {
+    background-color: #10222D;
+}
+
+.thmv-top-right-request h4,
+.thmv-top-right-request p {
+    color: #fff;
+}
+
+.thmv-top-right-request .form-control {
+    color: #ddd;
+    background-color: #10222D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thmv-top-right-request .form-control::placeholder {
+    color: #ddd;
+}
+
+.thmv-top-right-request .form-control:focus {
+    color: #ddd;
+    background-color: #10222D;
+}
+
+.thmv-top-right-request .form-control.name {
+    background-image: url(../images/icons/person-light.svg);
+}
+
+.thmv-top-right-request .form-control.email {
+    background-image: url(../images/icons/mail-light.svg);
+}
+
+@media only screen and (max-width: 1650px) {
+
+    .thmv-top-right-request {
+        width: 400px;
+    }
+
+    .thmv-top-right-request .modal-body {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .thmv-top-right-request .modal-header {
+        display: none;
+    }
+
+    .thmv-top-right-request h4 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .thmv-top-right-request p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .thmv-top-right-request input.form-control {
+        margin-bottom: 10px;
+    }
+
+    .thmv-top-right-request textarea.form-control {
+        margin-bottom: 10px;
+    }
+
+    .thmv-field-search .btn-full-filled {
+        height: 50px;
+        line-height: 12px;
+    }
+}
+
+/*  Homepage hero section request page end  */
+
+/*  Homepage calendar start  */
+
+.thmv-top-right-request .thmv-booking__date {
+    margin: 0;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.thmv-top-right-request .thmv-booking__date::before {
+    content: url(../images/icons/calendar-booking-light.svg);
+    left: 20px;
+}
+
+.thmv-top-right-request .thmv-booking__date::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    right: 26px;
+    top: 19px;
+    border-radius: 0;
+}
+
+.thmv-top-right-request .input-booking__date {
+    background-color: #10222D;
+    color: #ddd;
+}
+
+.thmv-top-right-request .form-select-guests .form-group {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thmv-top-right-request .thmv-guest-col .render {
+    min-height: 54px;
+    color: #ddd;
+    padding-left: 55px;
+    padding-top: 16px;
+    position: relative;
+}
+
+.thmv-top-right-request .thmv-guest-col .render::before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    right: 26px;
+    top: 19px;
+    border-radius: 0;
+}
+
+.thmv-top-right-request .nice-select {
+    height: 54px;
+    color: #ddd;
+    padding-top: 11px;
+    background-color: #10222D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+}
+
+.thmv-top-right-request .nice-select::before {
+    top: 15px;
+    left: 23px;
+    background-image: url(../images/icons/location.svg);
+}
+
+.thmv-top-right-request .nice-select::after {
+    top: 22px;
+    border-color: #fff;
+}
+
+.thmv-top-right-request .form-select-guests .form-content .render i {
+    left: 20px;
+    right: auto;
+    color: #fff;
+}
+
+.thmv-top-right-request .nice-select .option {
+    color: #000;
+}
+
+/*  Homepage calendar end  */

@@ -1,5 +1,5 @@
 // ====== Right side floting buttons ====== //
-$(window).scroll(function() {    
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 1000) {
@@ -10,18 +10,18 @@ $(window).scroll(function() {
 });
 
 // ==== back To Top jquery  ===== //
-$(document).ready(function(){ 
-   $(window).scroll(function(){ 
-       if ($(this).scrollTop() > 100) { 
-           $('#home-top').fadeIn(); 
-       } else { 
-           $('#home-top').fadeOut(); 
-       } 
-   }); 
-   $('#home-top').click(function(){ 
-       $("html, body").animate({ scrollTop: 0 }, 100); 
-       return false; 
-   }); 
+$(document).ready(function(){
+   $(window).scroll(function(){
+       if ($(this).scrollTop() > 100) {
+           $('#home-top').fadeIn();
+       } else {
+           $('#home-top').fadeOut();
+       }
+   });
+   $('#home-top').click(function(){
+       $("html, body").animate({ scrollTop: 0 }, 100);
+       return false;
+   });
 });
 
 // ======= our menu responsive tabs ========//
@@ -89,7 +89,7 @@ $(document).ready(function(){
       parent.find('.render .children .one').removeClass('d-none').html(parent.find('.render .children .one').data('html').replace(':count', children));
     }
   }
-  
+
   // Adult & Child Number Script
   $(document).ready(function() {
 
@@ -103,7 +103,7 @@ $(document).ready(function(){
     });
 
   });
-  
+
   $(document).ready(function() {
 
     var guestAmount = $('#kidsNo');
@@ -115,7 +115,7 @@ $(document).ready(function(){
     guestAmount.val(Math.max(parseInt($('#kidsNo').val()) - 1, 0));
     });
   });
-  
+
   // Adult & Child Number Script
   $(document).ready(function() {
 
@@ -129,7 +129,7 @@ $(document).ready(function(){
     });
 
   });
-  
+
   $(document).ready(function() {
 
     var guestAmount = $('#kidsroomNo');
@@ -154,9 +154,9 @@ $(document).ready(function(){
 // =============================Date Picker Script Start====================
 
   $(function() {
-    $('#popupDatepickerfrom1, #popupDatepickerfrom2, #popupDatepickerfrom3, #popupDatepickerfrom4, #popupDatepickerfrom5').datepick({
+    $('#popupDatepickerfrom1, #popupDatepickerfrom1Modal, #popupDatepickerfrom2, #popupDatepickerfrom3, #popupDatepickerfrom4, #popupDatepickerfrom5').datepick({
       monthsToShow: 1, monthsToStep: 1});
-    $('#popupDatepickerto1, #popupDatepickerto2, #popupDatepickerto3, #popupDatepickerto4, #popupDatepickerto5').datepick({
+    $('#popupDatepickerto1, #popupDatepickerto1Modal, #popupDatepickerto2, #popupDatepickerto3, #popupDatepickerto4, #popupDatepickerto5').datepick({
       monthsToShow: 1, monthsToStep: 1});
 
     $('#inlineDatepicker1').datepick({monthsToShow: 1, monthsToStep: 1, rangeSelect: true});
@@ -237,7 +237,7 @@ $(".slick-rooms-slider").slick({
   ]
 });
 
-// Rooms Singla Slider 
+// Rooms Singla Slider
 $(".thmv-header-slick").slick({
   infinite: true,
   arrows:true,
@@ -303,7 +303,7 @@ jQuery(document).ready(function($){
   //open-close lateral menu clicking on the menu icon
   $lateral_menu_trigger.on('click', function(event){
     event.preventDefault();
-    
+
     $lateral_menu_trigger.toggleClass('is-clicked');
     $navigation.toggleClass('lateral-menu-is-open');
     $content_wrapper.toggleClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
@@ -311,7 +311,7 @@ jQuery(document).ready(function($){
       $('body').toggleClass('overflow-hidden');
     });
     $('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
-    
+
     //check if transitions are not supported - i.e. in IE9
     // if($('html').hasClass('no-csstransitions')) {
     //   $('body').toggleClass('overflow-hidden');

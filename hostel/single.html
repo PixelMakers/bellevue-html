@@ -41,7 +41,7 @@
          <div class="thmv-top-nav thmv-header-v2">
             <nav id="navbar_top" class="navbar navbar-expand-sm thmv-navbar-light thmv-transparent-menu">
                <div class="container">
-                  <a class="offcanvas-toggler" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <a class="offcanvas-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                </a>
                   <a class="navbar-brand" href="index.html">Logotype</a>
@@ -83,7 +83,7 @@
                </div>
             </nav>
             <!-- off canvas menu -->
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
                <div class="thmv-offcanvas-header">
                   <a href="javascript:void(0)" title=""  class="thmv-menu-officon" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
                   <h5 class="thmv-offcanvas-title" id="offcanvasExampleLabel">Logotype</h5>
@@ -186,29 +186,29 @@
          </section>
          <!-- bredcom section End -->
          <!-- slick image slider start -->
-         <section class="thmv-slick-img-slider thmv-single-page-slick">
+         <div class="thmv-slick-img-slider thmv-single-page-slick">
             <div class="container-fluid">
                <div class="row">
                   <div class="slick-image-center slider">
                      <div>
-                        <img src="assets/images/slider-img/slider-img-1.jpg">
+                        <img src="assets/images/slider-img/slider-img-1.jpg" alt="Slider image">
                      </div>
                      <div>
-                        <img src="assets/images/slider-img/slider-img-1.jpg">
+                        <img src="assets/images/slider-img/slider-img-1.jpg" alt="Slider image">
                      </div>
                      <div>
-                        <img src="assets/images/slider-img/slider-img-1.jpg">
+                        <img src="assets/images/slider-img/slider-img-1.jpg" alt="Slider image">
                      </div>
                      <div>
-                        <img src="assets/images/slider-img/slider-img-1.jpg">
+                        <img src="assets/images/slider-img/slider-img-1.jpg" alt="Slider image">
                      </div>
                   </div>
                </div>
             </div>
-         </section>
+         </div>
          <!-- slick image slider End -->
          <!-- single info text start -->
-         <section class="thmv-single-info-text">
+         <div class="thmv-single-info-text">
             <div class="container">
                <div class="row">
                   <div class="col-md-6">
@@ -219,7 +219,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </div>
          <!-- singl info text End -->
          <!-- Services Section Start-->
          <section class="thmv-service thmv-service-2 thmv-single-service">
@@ -322,12 +322,12 @@
                <div class="row thmv-availability-booking">
                   <h5>Details</h5>
                   <div class="col-lg-6 col-md-12">
-                     <form class="thmv-search-form-tour" _lpchecked="1">
+                     <form class="thmv-search-form-tour">
                         <div class="thmv-field-search">
                            <div class="row thmv-tour-row">
                               <div class="col-lg-6 col-md-12 border-right dropdown form-select-guests thmv-guest-col">
                                  <div class="form-group">
-                                    <div class="form-content dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="form-content dropdown-toggle" data-toggle="dropdown">
                                        <div class="wrapper-more">
                                           <label>Guests</label>
                                           <div class="render">
@@ -339,9 +339,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="dropdown-menu select-guests-dropdown" x-placement="bottom-start" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                       <input type="hidden" name="adults" value="4" min="1" max="20">
-                                       <input type="hidden" name="children" value="5" min="0" max="20">
+                                    <div class="dropdown-menu select-guests-dropdown" style="display: none; position: absolute; transform: translate3d(5px, 82px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                       <input type="hidden" name="adults" value="4">
+                                       <input type="hidden" name="children" value="5">
                                        <div class="dropdown-item-row">
                                           <div class="label">adults</div>
                                           <div class="val">
@@ -402,7 +402,7 @@
                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                         </ul>
-                        <a class="thmv-address" href="tel:+00 (00) 0000 000 00">+00 (00) 0000 000 00</a>
+                        <a class="thmv-address" href="tel:+00(00)000000000">+00 (00) 0000 000 00</a>
                      </div>
                      <p>st. Example 58, 8726HS Prague, Czech Republic</p>
                   </div>
@@ -421,7 +421,7 @@
          </section>
          <!-- Footer Section Start -->
          <!-- Footer Bottom section start -->
-         <section class="thmv-footer-bottom">
+         <div class="thmv-footer-bottom">
             <div class="container">
                <div class="row">
                   <div class="col-lg-6 col-md-12 text-start text-md-start  text-lg-start">
@@ -440,9 +440,9 @@
                   </div>
                </div>
             </div>
-         </section>
+         </div>
          <!-- Footer Bottom section End -->
-         
+
          <!-- bootstrap JS -->
          <script src="assets/js/bootstrap.min.js"></script>
          <!-- Slick Slider JS -->
