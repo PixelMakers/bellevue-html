@@ -9,7 +9,7 @@ Bellevue uses Bootstrap 5, Datepick, Fancybox, Slick and Swiper.
 WordPress Version
 --------------------------------
 
-This HTML template is based on the [#1 Selling Hotel + Bed and Breakfast WordPress Theme](https://1.envato.market/githubhtml).
+This HTML template is based on the [#1 Selling Hotel + Bed and Breakfast WordPress Theme](https://bellevuetheme.com/)
 
 License
 -------
